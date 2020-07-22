@@ -1,0 +1,7 @@
+# Gemini Bringup
+
+This repository contains the electronic design files for the Gemini Bringup
+board. This board contains some of the moving parts of the final Gemini system,
+but laid out in a way that is easier to probe and test.
+
+This is a KiCad project; you will need KiCad (preferably 5.1.2) to participate.
