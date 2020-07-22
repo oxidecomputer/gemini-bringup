@@ -1,0 +1,469 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 2 2
+Title "Service Processor"
+Date ""
+Rev ""
+Comp "Oxide Computer"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32H7:STM32H753BITx U?
+U 1 1 5F192C5B
+P 11500 7950
+F 0 "U?" H 11550 3800 50  0000 C CNN
+F 1 "STM32H755BITx" H 11550 3700 50  0000 C CNN
+F 2 "Package_QFP:LQFP-208_28x28mm_P0.5mm" H 10200 2850 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00388325.pdf" H 11500 7950 50  0001 C CNN
+	1    11500 7950
+	1    0    0    -1  
+$EndComp
+Text Label 10000 2950 2    50   ~ 0
+NRST
+Text Label 10000 3250 2    50   ~ 0
+BOOT0
+Text Label 13000 4250 0    50   ~ 0
+SWD_DATA
+Text Label 13000 4350 0    50   ~ 0
+SWD_CLK
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 5F197A06
+P 2300 2400
+F 0 "J?" H 1857 2446 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 2750 2600 50  0000 R CNN
+F 2 "" H 2300 2400 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1950 1150 50  0001 C CNN
+	1    2300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F19920A
+P 3250 2300
+F 0 "R?" V 3150 2300 50  0000 C CNN
+F 1 "22" V 3250 2300 50  0000 C CNN
+F 2 "" V 3180 2300 50  0001 C CNN
+F 3 "~" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1994A7
+P 3500 2400
+F 0 "R?" V 3400 2400 50  0000 C CNN
+F 1 "22" V 3500 2400 50  0000 C CNN
+F 2 "" V 3430 2400 50  0001 C CNN
+F 3 "~" H 3500 2400 50  0001 C CNN
+	1    3500 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F199B54
+P 3250 2500
+F 0 "R?" V 3350 2500 50  0000 C CNN
+F 1 "22" V 3250 2500 50  0000 C CNN
+F 2 "" V 3180 2500 50  0001 C CNN
+F 3 "~" H 3250 2500 50  0001 C CNN
+	1    3250 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 2300 3100 2300
+Wire Wire Line
+	2800 2400 3350 2400
+Wire Wire Line
+	2800 2500 3100 2500
+Wire Wire Line
+	3400 2300 3700 2300
+Wire Wire Line
+	3650 2400 3700 2400
+Wire Wire Line
+	3400 2500 3700 2500
+Text Label 3700 2300 0    50   ~ 0
+SWD_CLK
+Text Label 3700 2400 0    50   ~ 0
+SWD_IO
+Text Label 3700 2500 0    50   ~ 0
+TRACESWO
+Text Notes 4150 2350 0    50   ~ 0
+Note: STM32H7 has internal pull\nresistors on SWD lines and reset\nso we don't need to add them here.
+$Comp
+L Device:C_Small C?
+U 1 1 5F19C2DA
+P 3000 2850
+F 0 "C?" H 3092 2896 50  0000 L CNN
+F 1 "0µ1" H 3092 2805 50  0000 L CNN
+F 2 "" H 3000 2850 50  0001 C CNN
+F 3 "~" H 3000 2850 50  0001 C CNN
+	1    3000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2100 3000 2100
+Wire Wire Line
+	3000 2100 3000 2750
+Wire Wire Line
+	3000 2100 3700 2100
+Connection ~ 3000 2100
+Text Label 3700 2100 0    50   ~ 0
+NRST
+Wire Wire Line
+	2200 3000 2300 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5F19E3B7
+P 2650 3150
+F 0 "#PWR?" H 2650 2900 50  0001 C CNN
+F 1 "GND" H 2655 2977 50  0000 C CNN
+F 2 "" H 2650 3150 50  0001 C CNN
+F 3 "" H 2650 3150 50  0001 C CNN
+	1    2650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F19E661
+P 2300 1800
+F 0 "#PWR?" H 2300 1650 50  0001 C CNN
+F 1 "+3V3" H 2315 1973 50  0000 C CNN
+F 2 "" H 2300 1800 50  0001 C CNN
+F 3 "" H 2300 1800 50  0001 C CNN
+	1    2300 1800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2800 2600
+Text Notes 3050 3000 0    50   ~ 0
+(near CPU)
+Text Label 13000 4950 0    50   ~ 0
+TRACESWO
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F19FD56
+P 3550 2950
+F 0 "SW?" V 3504 3048 50  0000 L CNN
+F 1 "RESET" V 3595 3048 50  0000 L CNN
+F 2 "" H 3550 2950 50  0001 C CNN
+F 3 "~" H 3550 2950 50  0001 C CNN
+	1    3550 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 3000 2300 3150
+Wire Wire Line
+	2300 3150 2650 3150
+Connection ~ 2300 3000
+Wire Wire Line
+	2650 3150 3000 3150
+Connection ~ 2650 3150
+Wire Wire Line
+	3000 2950 3000 3150
+Connection ~ 3000 3150
+Wire Wire Line
+	3000 3150 3550 3150
+Wire Wire Line
+	3550 2750 3000 2750
+Connection ~ 3000 2750
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5F1A4001
+P 4850 2950
+F 0 "SW?" H 4800 3200 50  0000 C CNN
+F 1 "BOOT0" H 4800 3100 50  0000 C CNN
+F 2 "" H 4850 2950 50  0001 C CNN
+F 3 "~" H 4850 2950 50  0001 C CNN
+	1    4850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1A57FA
+P 4500 2950
+F 0 "R?" V 4400 2950 50  0000 C CNN
+F 1 "10k" V 4500 2950 50  0000 C CNN
+F 2 "" V 4430 2950 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	0    1    1    0   
+$EndComp
+Text Label 4350 2950 2    50   ~ 0
+BOOT0
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F1A61C5
+P 5050 2850
+F 0 "#PWR?" H 5050 2700 50  0001 C CNN
+F 1 "+3V3" V 5065 2978 50  0000 L CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1A6A8C
+P 5050 3050
+F 0 "#PWR?" H 5050 2800 50  0001 C CNN
+F 1 "GND" V 5055 2922 50  0000 R CNN
+F 2 "" H 5050 3050 50  0001 C CNN
+F 3 "" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	0    -1   -1   0   
+$EndComp
+Text Notes 5000 2800 0    50   ~ 0
+ROM
+Text Notes 5000 3200 0    50   ~ 0
+FLASH
+Text Notes 4100 3450 0    50   ~ 0
+BOOT0 has internal pulldown,\nbut this switch permits recovery\nfrom bad flashing.
+Wire Notes Line
+	1750 1550 5600 1550
+Wire Notes Line
+	5600 1550 5600 3600
+Wire Notes Line
+	5600 3600 1750 3600
+Wire Notes Line
+	1750 3600 1750 1550
+Text Notes 1800 3550 0    50   ~ 0
+Debug, Reset, Recovery
+$Comp
+L Device:C_Small C?
+U 1 1 5F1A9081
+P 8750 3400
+F 0 "C?" V 8600 3400 50  0000 C CNN
+F 1 "0µ2 ceramic" V 8650 3450 50  0000 C CNN
+F 2 "" H 8750 3400 50  0001 C CNN
+F 3 "~" H 8750 3400 50  0001 C CNN
+	1    8750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F1A9EC9
+P 8750 3700
+F 0 "C?" V 8600 3700 50  0000 C CNN
+F 1 "0µ2 ceramic" V 8650 3750 50  0000 C CNN
+F 2 "" H 8750 3700 50  0001 C CNN
+F 3 "~" H 8750 3700 50  0001 C CNN
+	1    8750 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 3450 8950 3450
+Wire Wire Line
+	8950 3450 8950 3550
+Wire Wire Line
+	10000 3550 8950 3550
+Wire Wire Line
+	8850 3400 8950 3400
+Wire Wire Line
+	8950 3400 8950 3450
+Connection ~ 8950 3450
+Wire Wire Line
+	8950 3550 8950 3700
+Wire Wire Line
+	8950 3700 8850 3700
+Connection ~ 8950 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5F1ADA7D
+P 8650 3400
+F 0 "#PWR?" H 8650 3150 50  0001 C CNN
+F 1 "GND" V 8655 3272 50  0000 R CNN
+F 2 "" H 8650 3400 50  0001 C CNN
+F 3 "" H 8650 3400 50  0001 C CNN
+	1    8650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1ADAF2
+P 8650 3700
+F 0 "#PWR?" H 8650 3450 50  0001 C CNN
+F 1 "GND" V 8655 3572 50  0000 R CNN
+F 2 "" H 8650 3700 50  0001 C CNN
+F 3 "" H 8650 3700 50  0001 C CNN
+	1    8650 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDDA #PWR?
+U 1 1 5F1AF75C
+P 10000 3650
+F 0 "#PWR?" H 10000 3500 50  0001 C CNN
+F 1 "VDDA" V 10015 3778 50  0000 L CNN
+F 2 "" H 10000 3650 50  0001 C CNN
+F 3 "" H 10000 3650 50  0001 C CNN
+	1    10000 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDDA #PWR?
+U 1 1 5F1AFE60
+P 12400 2200
+F 0 "#PWR?" H 12400 2050 50  0001 C CNN
+F 1 "VDDA" H 12415 2373 50  0000 C CNN
+F 2 "" H 12400 2200 50  0001 C CNN
+F 3 "" H 12400 2200 50  0001 C CNN
+	1    12400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 2650 12400 2300
+Wire Wire Line
+	10600 2650 10700 2650
+Connection ~ 10700 2650
+Wire Wire Line
+	10700 2650 10800 2650
+Connection ~ 10800 2650
+Wire Wire Line
+	10800 2650 10900 2650
+Connection ~ 10900 2650
+Wire Wire Line
+	10900 2650 11000 2650
+Connection ~ 11000 2650
+Wire Wire Line
+	11000 2650 11100 2650
+Connection ~ 11100 2650
+Wire Wire Line
+	11100 2650 11200 2650
+Connection ~ 11200 2650
+Wire Wire Line
+	11200 2650 11300 2650
+Connection ~ 11300 2650
+Wire Wire Line
+	11300 2650 11350 2650
+Connection ~ 11400 2650
+Wire Wire Line
+	11400 2650 11500 2650
+Connection ~ 11500 2650
+Wire Wire Line
+	11500 2650 11600 2650
+Connection ~ 11600 2650
+Wire Wire Line
+	11600 2650 11700 2650
+Connection ~ 11700 2650
+Wire Wire Line
+	11700 2650 11800 2650
+Connection ~ 11800 2650
+Wire Wire Line
+	11800 2650 11900 2650
+Connection ~ 11900 2650
+Wire Wire Line
+	11900 2650 12000 2650
+Connection ~ 12000 2650
+Wire Wire Line
+	12000 2650 12100 2650
+Connection ~ 12100 2650
+Wire Wire Line
+	12100 2650 12200 2650
+Connection ~ 12200 2650
+Wire Wire Line
+	12200 2650 12300 2650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F1B23B4
+P 11350 2200
+F 0 "#PWR?" H 11350 2050 50  0001 C CNN
+F 1 "+3V3" H 11365 2373 50  0000 C CNN
+F 2 "" H 11350 2200 50  0001 C CNN
+F 3 "" H 11350 2200 50  0001 C CNN
+	1    11350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 2200 11350 2300
+Connection ~ 11350 2650
+Wire Wire Line
+	11350 2650 11400 2650
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5F1B33B5
+P 11850 2300
+F 0 "FB?" V 11613 2300 50  0000 C CNN
+F 1 "tbd" V 11704 2300 50  0000 C CNN
+F 2 "" V 11780 2300 50  0001 C CNN
+F 3 "~" H 11850 2300 50  0001 C CNN
+	1    11850 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 2300 11350 2300
+Connection ~ 11350 2300
+Wire Wire Line
+	11350 2300 11350 2650
+Wire Wire Line
+	11950 2300 12400 2300
+Connection ~ 12400 2300
+Wire Wire Line
+	12400 2300 12400 2200
+Wire Wire Line
+	10800 13250 10900 13250
+Connection ~ 10900 13250
+Wire Wire Line
+	10900 13250 11000 13250
+Connection ~ 11000 13250
+Wire Wire Line
+	11000 13250 11100 13250
+Connection ~ 11100 13250
+Wire Wire Line
+	11100 13250 11200 13250
+Connection ~ 11200 13250
+Wire Wire Line
+	11200 13250 11300 13250
+Connection ~ 11300 13250
+Wire Wire Line
+	11300 13250 11400 13250
+Connection ~ 11400 13250
+Wire Wire Line
+	11400 13250 11450 13250
+Connection ~ 11500 13250
+Wire Wire Line
+	11500 13250 11600 13250
+Connection ~ 11600 13250
+Wire Wire Line
+	11600 13250 11700 13250
+Connection ~ 11700 13250
+Wire Wire Line
+	11700 13250 11800 13250
+Connection ~ 11800 13250
+Wire Wire Line
+	11800 13250 11900 13250
+Connection ~ 11900 13250
+Wire Wire Line
+	11900 13250 12000 13250
+Connection ~ 12000 13250
+Wire Wire Line
+	12000 13250 12100 13250
+Wire Wire Line
+	12200 13250 12200 13400
+Wire Wire Line
+	12200 13400 11450 13400
+Wire Wire Line
+	11450 13400 11450 13250
+Connection ~ 11450 13250
+Wire Wire Line
+	11450 13250 11500 13250
+$Comp
+L power:GND #PWR?
+U 1 1 5F1B85B2
+P 11450 13400
+F 0 "#PWR?" H 11450 13150 50  0001 C CNN
+F 1 "GND" H 11455 13227 50  0000 C CNN
+F 2 "" H 11450 13400 50  0001 C CNN
+F 3 "" H 11450 13400 50  0001 C CNN
+	1    11450 13400
+	1    0    0    -1  
+$EndComp
+Connection ~ 11450 13400
+Text Notes 12250 13300 0    50   ~ 0
+Isolating VSSA would improve\nanalog performance.
+$EndSCHEMATC
