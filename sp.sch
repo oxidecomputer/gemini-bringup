@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "Service Processor"
 Date ""
 Rev ""
@@ -1203,4 +1203,51 @@ Wire Wire Line
 	10450 2250 10600 2250
 Wire Wire Line
 	10150 2250 10050 2250
+$Sheet
+S 20550 5850 900  1350
+U 5F29584B
+F0 "sp-ethernet" 50
+F1 "sp-ethernet.sch" 50
+F2 "TXD0" I L 20550 5950 50 
+F3 "TXD1" I L 20550 6050 50 
+F4 "RXD0" O L 20550 6350 50 
+F5 "RXD1" O L 20550 6450 50 
+F6 "TXEN" I L 20550 6150 50 
+F7 "CRS_DV" O L 20550 6650 50 
+F8 "MDIO" B L 20550 6950 50 
+F9 "MDC" I L 20550 7050 50 
+F10 "REF_CLK" O L 20550 6750 50 
+$EndSheet
+Text Label 20550 5950 2    50   ~ 0
+RMII_TXD0
+Text Label 20550 6050 2    50   ~ 0
+RMII_TXD1
+Text Label 20550 6150 2    50   ~ 0
+RMII_TXEN
+Text Label 20550 6350 2    50   ~ 0
+RMII_RXD0
+Text Label 20550 6450 2    50   ~ 0
+RMII_RXD1
+Text Label 20550 6650 2    50   ~ 0
+RMII_CRS_DV
+Text Label 20550 6750 2    50   ~ 0
+RMII_REF_CLK
+Text Label 20550 6950 2    50   ~ 0
+RMII_MDIO
+Text Label 20550 7050 2    50   ~ 0
+RMII_MDC
+Text Label 13000 5850 0    50   ~ 0
+RMII_TXD0
+Text Label 13000 5750 0    50   ~ 0
+RMII_TXEN
+Text Label 13000 5950 0    50   ~ 0
+RMII_TXD1
+Text Label 13000 6850 0    50   ~ 0
+RMII_RXD1
+Text Label 13000 6750 0    50   ~ 0
+RMII_RXD0
+Text Label 13000 6450 0    50   ~ 0
+RMII_MDC
+Text Label 13000 3150 0    50   ~ 0
+RMII_MDIO
 $EndSCHEMATC
