@@ -1204,7 +1204,7 @@ Wire Wire Line
 Wire Wire Line
 	10150 2250 10050 2250
 $Sheet
-S 20550 5850 900  1350
+S 20550 5850 750  1650
 U 5F29584B
 F0 "sp-ethernet" 50
 F1 "sp-ethernet.sch" 50
@@ -1217,6 +1217,8 @@ F7 "CRS_DV" O L 20550 6650 50
 F8 "MDIO" B L 20550 6950 50 
 F9 "MDC" I L 20550 7050 50 
 F10 "REF_CLK" O L 20550 6750 50 
+F11 "NRST" I L 20550 7250 50 
+F12 "NINTR" I L 20550 7400 50 
 $EndSheet
 Text Label 20550 5950 2    50   ~ 0
 RMII_TXD0
@@ -1250,4 +1252,8 @@ Text Label 13000 6450 0    50   ~ 0
 RMII_MDC
 Text Label 13000 3150 0    50   ~ 0
 RMII_MDIO
+Text Label 20550 7250 2    50   ~ 0
+NRST
+Text Notes 21350 7350 0    50   ~ 0
+Note: stm32h7 actively pulls NRST to\nensure minimum pulse width, so we can\njust reuse it here.
 $EndSCHEMATC
