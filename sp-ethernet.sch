@@ -991,7 +991,7 @@ Wire Wire Line
 Connection ~ 1900 1550
 Connection ~ 2100 1550
 Wire Wire Line
-	2100 1550 1900 1550
+	2100 1550 2000 1550
 Wire Wire Line
 	2300 1550 2100 1550
 $Comp
@@ -1322,4 +1322,18 @@ Text Notes 8400 5800 0    50   ~ 0
 LED pins are active low\nand expect to sink
 Text Notes 8450 3100 0    50   ~ 0
 LED pins are active low\nand expect to sink
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FC26A53
+P 2000 1550
+F 0 "#PWR?" H 2000 1400 50  0001 C CNN
+F 1 "+3V3" H 2015 1723 50  0000 C CNN
+F 2 "" H 2000 1550 50  0001 C CNN
+F 3 "" H 2000 1550 50  0001 C CNN
+	1    2000 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 1550
+Wire Wire Line
+	2000 1550 1900 1550
 $EndSCHEMATC
