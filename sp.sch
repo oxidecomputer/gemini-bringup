@@ -1220,11 +1220,11 @@ F10 "REF_CLK" O L 20550 6750 50
 F11 "NRST" I L 20550 7250 50 
 F12 "NINTR" I L 20550 7400 50 
 $EndSheet
-Text Label 20550 5950 2    50   ~ 0
+Text Label 19700 5950 2    50   ~ 0
 RMII_TXD0
-Text Label 20550 6050 2    50   ~ 0
+Text Label 19700 6050 2    50   ~ 0
 RMII_TXD1
-Text Label 20550 6150 2    50   ~ 0
+Text Label 19700 6150 2    50   ~ 0
 RMII_TXEN
 Text Label 20550 6350 2    50   ~ 0
 RMII_RXD0
@@ -1234,9 +1234,9 @@ Text Label 20550 6650 2    50   ~ 0
 RMII_CRS_DV
 Text Label 20550 6750 2    50   ~ 0
 RMII_REF_CLK
-Text Label 20550 6950 2    50   ~ 0
+Text Label 19700 6950 2    50   ~ 0
 RMII_MDIO
-Text Label 20550 7050 2    50   ~ 0
+Text Label 19700 7050 2    50   ~ 0
 RMII_MDC
 Text Label 13000 5850 0    50   ~ 0
 RMII_TXD0
@@ -1256,4 +1256,85 @@ Text Label 20550 7250 2    50   ~ 0
 NRST
 Text Notes 21350 7350 0    50   ~ 0
 Note: stm32h7 actively pulls NRST to\nensure minimum pulse width, so we can\njust reuse it here.
+$Comp
+L Device:R R?
+U 1 1 5F1C317F
+P 20000 5950
+F 0 "R?" V 19950 5800 50  0000 C CNN
+F 1 "22" V 20000 5950 50  0000 C CNN
+F 2 "" V 19930 5950 50  0001 C CNN
+F 3 "~" H 20000 5950 50  0001 C CNN
+	1    20000 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1C38F7
+P 20000 6050
+F 0 "R?" V 19950 5900 50  0000 C CNN
+F 1 "22" V 20000 6050 50  0000 C CNN
+F 2 "" V 19930 6050 50  0001 C CNN
+F 3 "~" H 20000 6050 50  0001 C CNN
+	1    20000 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1C3CA3
+P 20000 6150
+F 0 "R?" V 19950 6000 50  0000 C CNN
+F 1 "22" V 20000 6150 50  0000 C CNN
+F 2 "" V 19930 6150 50  0001 C CNN
+F 3 "~" H 20000 6150 50  0001 C CNN
+	1    20000 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	20150 5950 20550 5950
+Wire Wire Line
+	20550 6050 20150 6050
+Wire Wire Line
+	20550 6150 20150 6150
+Wire Wire Line
+	19850 5950 19700 5950
+Wire Wire Line
+	19850 6050 19700 6050
+Wire Wire Line
+	19850 6150 19700 6150
+$Comp
+L Device:R R?
+U 1 1 5F1EA258
+P 20000 7050
+F 0 "R?" V 19950 6900 50  0000 C CNN
+F 1 "22" V 20000 7050 50  0000 C CNN
+F 2 "" V 19930 7050 50  0001 C CNN
+F 3 "~" H 20000 7050 50  0001 C CNN
+	1    20000 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1EAD63
+P 20000 6950
+F 0 "R?" V 19950 6800 50  0000 C CNN
+F 1 "22" V 20000 6950 50  0000 C CNN
+F 2 "" V 19930 6950 50  0001 C CNN
+F 3 "~" H 20000 6950 50  0001 C CNN
+	1    20000 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19700 6950 19850 6950
+Wire Wire Line
+	19700 7050 19850 7050
+Wire Wire Line
+	20150 6950 20550 6950
+Wire Wire Line
+	20150 7050 20550 7050
+Text Notes 19600 5850 0    50   ~ 0
+Series drive resistors as\nrecommended by datasheet;\nplace close to CPU
+Text Label 20550 7400 2    50   ~ 0
+ETH_IRQ
+Text Notes 20000 7750 0    50   ~ 0
+NOT ROUTED\nFigure out if\nwe need the\nirq
 $EndSCHEMATC
