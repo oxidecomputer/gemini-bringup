@@ -1238,12 +1238,6 @@ Text Label 19700 6950 2    50   ~ 0
 RMII_MDIO
 Text Label 19700 7050 2    50   ~ 0
 RMII_MDC
-Text Label 13000 5850 0    50   ~ 0
-RMII_TXD0
-Text Label 13000 5750 0    50   ~ 0
-RMII_TXEN
-Text Label 13000 5950 0    50   ~ 0
-RMII_TXD1
 Text Label 13000 6850 0    50   ~ 0
 RMII_RXD1
 Text Label 13000 6750 0    50   ~ 0
@@ -1337,4 +1331,144 @@ Text Label 20550 7400 2    50   ~ 0
 ETH_IRQ
 Text Notes 20000 7750 0    50   ~ 0
 NOT ROUTED\nFigure out if\nwe need the\nirq
+Text Label 13000 3050 0    50   ~ 0
+RMII_REF_CLK
+Text Label 13000 3650 0    50   ~ 0
+RMII_CRS_DV
+Text Label 13000 5150 0    50   ~ 0
+I2C1_B_SMBA
+Text Label 13000 5350 0    50   ~ 0
+FMC_NL
+Text Label 13000 5550 0    50   ~ 0
+I2C1_B_SDA
+Text Label 13000 5650 0    50   ~ 0
+I2C2_B_SCL
+Text Label 13000 5750 0    50   ~ 0
+I2C2_B_SDA
+Text Label 13000 5850 0    50   ~ 0
+I2C2_B_SMBA
+Text Label 13000 7150 0    50   ~ 0
+SDMMC1_D0
+Text Label 13000 7250 0    50   ~ 0
+SDMMC1_D1
+Text Label 13000 7350 0    50   ~ 0
+SDMMC1_D2
+Text Label 13000 7450 0    50   ~ 0
+SDMMC1_D3
+Text Label 13000 7550 0    50   ~ 0
+SDMMC1_CLK
+Text Label 13000 8050 0    50   ~ 0
+FMC_D2
+Text Label 13000 8150 0    50   ~ 0
+FMC_D3
+Text Label 13000 8250 0    50   ~ 0
+SDMMC1_CMD
+Text Label 13000 8350 0    50   ~ 0
+FMC_CLK
+Text Label 13000 8450 0    50   ~ 0
+FMC_NOE
+Text Label 13000 8750 0    50   ~ 0
+FMC_NE1
+Text Label 13000 8850 0    50   ~ 0
+FMC_D13
+Text Label 13000 8950 0    50   ~ 0
+FMC_D14
+Text Label 13000 9050 0    50   ~ 0
+FMC_D15
+Text Label 13000 9150 0    50   ~ 0
+I2C4_D_SMBA
+Text Label 13000 9250 0    50   ~ 0
+I2C4_D_SCL
+Text Label 13000 9350 0    50   ~ 0
+I2C4_D_SDA
+Text Label 13000 9450 0    50   ~ 0
+FMC_D0
+Text Label 13000 9550 0    50   ~ 0
+FMC_D1
+Text Label 13000 9750 0    50   ~ 0
+FMC_NBL0
+Text Label 13000 9850 0    50   ~ 0
+FMC_NBL1
+Text Label 13000 10450 0    50   ~ 0
+FMC_D4
+Text Label 13000 10550 0    50   ~ 0
+FMC_D5
+Text Label 13000 10650 0    50   ~ 0
+FMC_D6
+Text Label 13000 10750 0    50   ~ 0
+FMC_D7
+Text Label 13000 10850 0    50   ~ 0
+FMC_D8
+Text Label 13000 10950 0    50   ~ 0
+FMC_D9
+Text Label 13000 11050 0    50   ~ 0
+FMC_D10
+Text Label 13000 11150 0    50   ~ 0
+FMC_D11
+Text Label 13000 11250 0    50   ~ 0
+FMC_D12
+Text Label 13000 11450 0    50   ~ 0
+I2C2_F_SDA
+Text Label 13000 11550 0    50   ~ 0
+I2C2_F_SCL
+Text Label 13000 11650 0    50   ~ 0
+I2C2_F_SMBA
+Text Label 13000 12050 0    50   ~ 0
+QSPI1_IO3
+Text Label 13000 12150 0    50   ~ 0
+QSPI1_IO2
+Text Label 13000 12250 0    50   ~ 0
+QSPI1_IO0
+Text Label 13000 12350 0    50   ~ 0
+QSPI1_IO1
+Text Label 13000 12450 0    50   ~ 0
+QSPI1_CLK
+Text Label 13000 12750 0    50   ~ 0
+I2C4_F_SMBA
+Text Label 13000 12850 0    50   ~ 0
+I2C4_F_SCL
+Text Label 13000 12950 0    50   ~ 0
+I2C4_F_SDA
+Text Label 10000 12350 2    50   ~ 0
+FMC_NE2
+Text Label 10000 12550 2    50   ~ 0
+RMII_TXEN
+Text Label 10000 12650 2    50   ~ 0
+RMII_TXD1
+Text Label 10000 12850 2    50   ~ 0
+RMII_TXD1
+Text Label 10000 12750 2    50   ~ 0
+RMII_TXD0
+Text Notes 9600 12700 2    50   ~ 0
+(choose one TXD1 option)
+Text Label 10000 10150 2    50   ~ 0
+I2C2_H_SCL
+Text Label 10000 10250 2    50   ~ 0
+I2C2_H_SDA
+Text Label 10000 10350 2    50   ~ 0
+I2C2_H_SMBA
+Text Label 10000 10450 2    50   ~ 0
+I2C3_H_SCL
+Text Label 10000 10550 2    50   ~ 0
+I2C3_H_SDA
+Text Label 10000 10650 2    50   ~ 0
+I2C3_H_SMBA
+Text Label 10000 10750 2    50   ~ 0
+I2C4_H_SMBA
+Text Label 10000 10850 2    50   ~ 0
+I2C4_H_SCL
+Text Label 10000 10950 2    50   ~ 0
+I2C4_H_SDA
+Text Label 10000 12050 2    50   ~ 0
+QSPI_NCS
+Text Label 13000 5250 0    50   ~ 0
+QSPI_NCS
+Text Notes 13400 5250 0    50   ~ 0
+<-- option
+Text Notes 9600 12050 2    50   ~ 0
+option -->
+Text Label 13000 5450 0    50   ~ 0
+I2C1_B_SCL
+Text Notes 7650 10600 0    50   ~ 0
+I2C Routing Strategy:\nWhere possible, each controller is brought\nout on multiple pins. Nets are named with\nthe port name when a controller appears\nmore than once, e.g. I2C2_B vs I2C2_H.\n\nOptions:\n- I2C1: B only\n- I2C2: B / F / H\n- I2C3: H only\n- I2C4: D / F / H
 $EndSCHEMATC
