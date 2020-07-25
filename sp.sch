@@ -1471,4 +1471,50 @@ Text Label 13000 5450 0    50   ~ 0
 I2C1_B_SCL
 Text Notes 7650 10600 0    50   ~ 0
 I2C Routing Strategy:\nWhere possible, each controller is brought\nout on multiple pins. Nets are named with\nthe port name when a controller appears\nmore than once, e.g. I2C2_B vs I2C2_H.\n\nOptions:\n- I2C1: B only\n- I2C2: B / F / H\n- I2C3: H only\n- I2C4: D / F / H
+Text Label 13000 3850 0    50   ~ 0
+USART1_TX
+Text Label 13000 3950 0    50   ~ 0
+USART1_RX
+Text Label 10000 7150 2    50   ~ 0
+UART8_TX
+Text Label 10000 7250 2    50   ~ 0
+UART8_RX
+Text Label 10000 7350 2    50   ~ 0
+SPI5_MOSI
+Text Label 10000 7450 2    50   ~ 0
+SPI5_MISO
+Text Label 10000 5450 2    50   ~ 0
+SPI5_SCK
+Text Label 10000 5550 2    50   ~ 0
+SPI5_NSS
+Text Label 10000 8050 2    50   ~ 0
+SPI2_NSS
+Text Label 10000 8150 2    50   ~ 0
+SPI2_SCK
+Text Label 10000 8250 2    50   ~ 0
+SPI2_MISO
+Text Label 10000 8350 2    50   ~ 0
+SPI2_MOSI
+Text Label 10000 11050 2    50   ~ 0
+UART4_TX
+Text Label 10000 11150 2    50   ~ 0
+UART4_RX
+Text Label 13000 9950 0    50   ~ 0
+SPI4_SCK
+Text Label 13000 10250 0    50   ~ 0
+SPI4_MISO
+Text Label 13000 10350 0    50   ~ 0
+SPI4_MOSI
+Text Label 13000 8550 0    50   ~ 0
+USART2_TX
+Text Label 13000 8650 0    50   ~ 0
+USART2_RX
+Text Label 13000 6950 0    50   ~ 0
+USART6_TX
+Text Label 13000 7050 0    50   ~ 0
+USART6_RX
+Text Label 13000 3750 0    50   ~ 0
+UART7_RX
+Text Label 13000 4450 0    50   ~ 0
+UART7_TX
 $EndSCHEMATC
