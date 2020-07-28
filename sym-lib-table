@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ksz8863)(type Legacy)(uri ${KIPRJMOD}/lib/ksz8863.lib)(options "")(descr ""))
+  (lib (name si860x)(type Legacy)(uri ${KIPRJMOD}/lib/si860x.lib)(options "")(descr ""))
 )
