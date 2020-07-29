@@ -1469,8 +1469,6 @@ Text Notes 9600 12050 2    50   ~ 0
 option -->
 Text Label 13000 5450 0    50   ~ 0
 I2C1_B_SCL
-Text Notes 7650 10600 0    50   ~ 0
-I2C Routing Strategy:\nWhere possible, each controller is brought\nout on multiple pins. Nets are named with\nthe port name when a controller appears\nmore than once, e.g. I2C2_B vs I2C2_H.\n\nOptions:\n- I2C1: B only\n- I2C2: B / F / H\n- I2C3: H only\n- I2C4: D / F / H
 Text Label 13000 3850 0    50   ~ 0
 USART1_TX
 Text Label 13000 3950 0    50   ~ 0
@@ -1719,714 +1717,70 @@ Text Label 1750 11450 2    50   ~ 0
 SDMMC1_D2
 Text Label 1750 11550 2    50   ~ 0
 SDMMC1_D3
-Text HLabel 2250 12550 2    50   BiDi ~ 0
+Text HLabel 2250 12050 2    50   BiDi ~ 0
 I2C1_B_SDA
-Text HLabel 2250 12650 2    50   BiDi ~ 0
+Text HLabel 2250 12150 2    50   BiDi ~ 0
 I2C1_B_SCL
-Text HLabel 2250 12750 2    50   BiDi ~ 0
+Text HLabel 2250 12250 2    50   BiDi ~ 0
 I2C1_B_SMBA
-Text HLabel 2250 13350 2    50   BiDi ~ 0
+Text HLabel 2250 12850 2    50   BiDi ~ 0
 I2C2_F_SDA
-Text HLabel 2250 13450 2    50   BiDi ~ 0
+Text HLabel 2250 12950 2    50   BiDi ~ 0
 I2C2_F_SCL
-Text HLabel 2250 13550 2    50   BiDi ~ 0
+Text HLabel 2250 13050 2    50   BiDi ~ 0
 I2C2_F_SMBA
-Text HLabel 2250 14950 2    50   BiDi ~ 0
-I2C4_F_SDA
-Text HLabel 2250 15050 2    50   BiDi ~ 0
-I2C4_F_SCL
-Text HLabel 2250 15150 2    50   BiDi ~ 0
-I2C4_F_SMBA
-Text HLabel 3900 14350 2    50   BiDi ~ 0
+Text HLabel 2250 13850 2    50   BiDi ~ 0
 I2C4_D_SMBA
-Text HLabel 3900 14250 2    50   BiDi ~ 0
+Text HLabel 2250 13750 2    50   BiDi ~ 0
 I2C4_D_SCL
-Text HLabel 3900 14150 2    50   BiDi ~ 0
+Text HLabel 2250 13650 2    50   BiDi ~ 0
 I2C4_D_SDA
-Text HLabel 3900 13350 2    50   BiDi ~ 0
+Text HLabel 3900 12850 2    50   BiDi ~ 0
 I2C2_H_SDA
-Text HLabel 3900 13450 2    50   BiDi ~ 0
+Text HLabel 3900 12950 2    50   BiDi ~ 0
 I2C2_H_SCL
-Text HLabel 3900 13550 2    50   BiDi ~ 0
+Text HLabel 3900 13050 2    50   BiDi ~ 0
 I2C2_H_SMBA
-Text HLabel 2250 14150 2    50   BiDi ~ 0
-I2C3_H_SDA
-Text HLabel 2250 14250 2    50   BiDi ~ 0
-I2C3_H_SCL
-Text HLabel 2250 14350 2    50   BiDi ~ 0
-I2C3_H_SMBA
-Text HLabel 3950 14950 2    50   BiDi ~ 0
+Text HLabel 3950 13700 2    50   BiDi ~ 0
 I2C4_H_SDA
-Text HLabel 3950 15050 2    50   BiDi ~ 0
+Text HLabel 3950 13800 2    50   BiDi ~ 0
 I2C4_H_SCL
-Text HLabel 3950 15150 2    50   BiDi ~ 0
+Text HLabel 3950 13900 2    50   BiDi ~ 0
 I2C4_H_SMBA
-Text HLabel 3900 12550 2    50   BiDi ~ 0
-I2C2_B_SDA
-Text HLabel 3900 12650 2    50   BiDi ~ 0
-I2C2_B_SCL
-Text HLabel 3900 12750 2    50   BiDi ~ 0
-I2C2_B_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F72DA5E
-P 1850 12450
-F 0 "R?" V 1800 12550 50  0000 L CNN
-F 1 "1k" V 1850 12400 50  0000 L CNN
-F 2 "" V 1780 12450 50  0001 C CNN
-F 3 "~" H 1850 12450 50  0001 C CNN
-	1    1850 12450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 12550 2000 12550
-Wire Wire Line
-	2250 12650 2100 12650
-Wire Wire Line
-	2250 12750 2200 12750
-$Comp
-L Device:R R?
-U 1 1 5F75081F
-P 1850 12350
-F 0 "R?" V 1800 12450 50  0000 L CNN
-F 1 "1k" V 1850 12300 50  0000 L CNN
-F 2 "" V 1780 12350 50  0001 C CNN
-F 3 "~" H 1850 12350 50  0001 C CNN
-	1    1850 12350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F750CBC
-P 1850 12250
-F 0 "R?" V 1800 12350 50  0000 L CNN
-F 1 "1k" V 1850 12200 50  0000 L CNN
-F 2 "" V 1780 12250 50  0001 C CNN
-F 3 "~" H 1850 12250 50  0001 C CNN
-	1    1850 12250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 12450 2000 12550
-Connection ~ 2000 12550
-Wire Wire Line
-	2000 12550 1700 12550
-Wire Wire Line
-	2000 12350 2100 12350
-Wire Wire Line
-	2100 12350 2100 12650
-Connection ~ 2100 12650
-Wire Wire Line
-	2100 12650 1700 12650
-Wire Wire Line
-	2000 12250 2200 12250
-Wire Wire Line
-	2200 12250 2200 12750
-Connection ~ 2200 12750
-Wire Wire Line
-	2200 12750 1700 12750
-Wire Wire Line
-	1700 12450 1700 12350
-Connection ~ 1700 12350
-Wire Wire Line
-	1700 12350 1700 12250
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F78C1F3
-P 1700 12250
-F 0 "#PWR?" H 1700 12100 50  0001 C CNN
-F 1 "+3V3" H 1715 12423 50  0000 C CNN
-F 2 "" H 1700 12250 50  0001 C CNN
-F 3 "" H 1700 12250 50  0001 C CNN
-	1    1700 12250
-	1    0    0    -1  
-$EndComp
-Connection ~ 1700 12250
-Text Label 1700 12550 2    50   ~ 0
-I2C1_B_SDA
-Text Label 1700 12650 2    50   ~ 0
+Text Label 1700 12150 2    50   ~ 0
 I2C1_B_SCL
-Text Label 1700 12750 2    50   ~ 0
+Text Label 1700 12250 2    50   ~ 0
 I2C1_B_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F7970EF
-P 3500 12450
-F 0 "R?" V 3450 12550 50  0000 L CNN
-F 1 "1k" V 3500 12400 50  0000 L CNN
-F 2 "" V 3430 12450 50  0001 C CNN
-F 3 "~" H 3500 12450 50  0001 C CNN
-	1    3500 12450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 12550 3650 12550
-Wire Wire Line
-	3900 12650 3750 12650
-Wire Wire Line
-	3900 12750 3850 12750
-$Comp
-L Device:R R?
-U 1 1 5F7970F8
-P 3500 12350
-F 0 "R?" V 3450 12450 50  0000 L CNN
-F 1 "1k" V 3500 12300 50  0000 L CNN
-F 2 "" V 3430 12350 50  0001 C CNN
-F 3 "~" H 3500 12350 50  0001 C CNN
-	1    3500 12350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F7970FE
-P 3500 12250
-F 0 "R?" V 3450 12350 50  0000 L CNN
-F 1 "1k" V 3500 12200 50  0000 L CNN
-F 2 "" V 3430 12250 50  0001 C CNN
-F 3 "~" H 3500 12250 50  0001 C CNN
-	1    3500 12250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 12450 3650 12550
-Connection ~ 3650 12550
-Wire Wire Line
-	3650 12550 3350 12550
-Wire Wire Line
-	3650 12350 3750 12350
-Wire Wire Line
-	3750 12350 3750 12650
-Connection ~ 3750 12650
-Wire Wire Line
-	3750 12650 3350 12650
-Wire Wire Line
-	3650 12250 3850 12250
-Wire Wire Line
-	3850 12250 3850 12750
-Connection ~ 3850 12750
-Wire Wire Line
-	3850 12750 3350 12750
-Wire Wire Line
-	3350 12450 3350 12350
-Connection ~ 3350 12350
-Wire Wire Line
-	3350 12350 3350 12250
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F797112
-P 3350 12250
-F 0 "#PWR?" H 3350 12100 50  0001 C CNN
-F 1 "+3V3" H 3365 12423 50  0000 C CNN
-F 2 "" H 3350 12250 50  0001 C CNN
-F 3 "" H 3350 12250 50  0001 C CNN
-	1    3350 12250
-	1    0    0    -1  
-$EndComp
-Connection ~ 3350 12250
-Text Label 3350 12550 2    50   ~ 0
-I2C2_B_SDA
-Text Label 3350 12650 2    50   ~ 0
-I2C2_B_SCL
-Text Label 3350 12750 2    50   ~ 0
-I2C2_B_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F7B38B2
-P 1850 13250
-F 0 "R?" V 1800 13350 50  0000 L CNN
-F 1 "1k" V 1850 13200 50  0000 L CNN
-F 2 "" V 1780 13250 50  0001 C CNN
-F 3 "~" H 1850 13250 50  0001 C CNN
-	1    1850 13250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 13350 2000 13350
-Wire Wire Line
-	2250 13450 2100 13450
-Wire Wire Line
-	2250 13550 2200 13550
-$Comp
-L Device:R R?
-U 1 1 5F7B38BB
-P 1850 13150
-F 0 "R?" V 1800 13250 50  0000 L CNN
-F 1 "1k" V 1850 13100 50  0000 L CNN
-F 2 "" V 1780 13150 50  0001 C CNN
-F 3 "~" H 1850 13150 50  0001 C CNN
-	1    1850 13150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F7B38C1
-P 1850 13050
-F 0 "R?" V 1800 13150 50  0000 L CNN
-F 1 "1k" V 1850 13000 50  0000 L CNN
-F 2 "" V 1780 13050 50  0001 C CNN
-F 3 "~" H 1850 13050 50  0001 C CNN
-	1    1850 13050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 13250 2000 13350
-Connection ~ 2000 13350
-Wire Wire Line
-	2000 13350 1700 13350
-Wire Wire Line
-	2000 13150 2100 13150
-Wire Wire Line
-	2100 13150 2100 13450
-Connection ~ 2100 13450
-Wire Wire Line
-	2100 13450 1700 13450
-Wire Wire Line
-	2000 13050 2200 13050
-Wire Wire Line
-	2200 13050 2200 13550
-Connection ~ 2200 13550
-Wire Wire Line
-	2200 13550 1700 13550
-Wire Wire Line
-	1700 13250 1700 13150
-Connection ~ 1700 13150
-Wire Wire Line
-	1700 13150 1700 13050
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F7B38D5
-P 1700 13050
-F 0 "#PWR?" H 1700 12900 50  0001 C CNN
-F 1 "+3V3" H 1715 13223 50  0000 C CNN
-F 2 "" H 1700 13050 50  0001 C CNN
-F 3 "" H 1700 13050 50  0001 C CNN
-	1    1700 13050
-	1    0    0    -1  
-$EndComp
-Connection ~ 1700 13050
-Text Label 1700 13350 2    50   ~ 0
+Text Label 1700 12850 2    50   ~ 0
 I2C2_F_SDA
-Text Label 1700 13450 2    50   ~ 0
+Text Label 1700 12950 2    50   ~ 0
 I2C2_F_SCL
-Text Label 1700 13550 2    50   ~ 0
+Text Label 1700 13050 2    50   ~ 0
 I2C2_F_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F7C441B
-P 3500 13250
-F 0 "R?" V 3450 13350 50  0000 L CNN
-F 1 "1k" V 3500 13200 50  0000 L CNN
-F 2 "" V 3430 13250 50  0001 C CNN
-F 3 "~" H 3500 13250 50  0001 C CNN
-	1    3500 13250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 13350 3650 13350
-Wire Wire Line
-	3900 13450 3750 13450
-Wire Wire Line
-	3900 13550 3850 13550
-$Comp
-L Device:R R?
-U 1 1 5F7C4424
-P 3500 13150
-F 0 "R?" V 3450 13250 50  0000 L CNN
-F 1 "1k" V 3500 13100 50  0000 L CNN
-F 2 "" V 3430 13150 50  0001 C CNN
-F 3 "~" H 3500 13150 50  0001 C CNN
-	1    3500 13150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F7C442A
-P 3500 13050
-F 0 "R?" V 3450 13150 50  0000 L CNN
-F 1 "1k" V 3500 13000 50  0000 L CNN
-F 2 "" V 3430 13050 50  0001 C CNN
-F 3 "~" H 3500 13050 50  0001 C CNN
-	1    3500 13050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 13250 3650 13350
-Connection ~ 3650 13350
-Wire Wire Line
-	3650 13350 3350 13350
-Wire Wire Line
-	3650 13150 3750 13150
-Wire Wire Line
-	3750 13150 3750 13450
-Connection ~ 3750 13450
-Wire Wire Line
-	3750 13450 3350 13450
-Wire Wire Line
-	3650 13050 3850 13050
-Wire Wire Line
-	3850 13050 3850 13550
-Connection ~ 3850 13550
-Wire Wire Line
-	3850 13550 3350 13550
-Wire Wire Line
-	3350 13250 3350 13150
-Connection ~ 3350 13150
-Wire Wire Line
-	3350 13150 3350 13050
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F7C443E
-P 3350 13050
-F 0 "#PWR?" H 3350 12900 50  0001 C CNN
-F 1 "+3V3" H 3365 13223 50  0000 C CNN
-F 2 "" H 3350 13050 50  0001 C CNN
-F 3 "" H 3350 13050 50  0001 C CNN
-	1    3350 13050
-	1    0    0    -1  
-$EndComp
-Connection ~ 3350 13050
-Text Label 3350 13350 2    50   ~ 0
+Text Label 3350 12850 2    50   ~ 0
 I2C2_H_SDA
-Text Label 3350 13450 2    50   ~ 0
+Text Label 3350 12950 2    50   ~ 0
 I2C2_H_SCL
-Text Label 3350 13550 2    50   ~ 0
+Text Label 3350 13050 2    50   ~ 0
 I2C2_H_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F7E7F88
-P 1850 14050
-F 0 "R?" V 1800 14150 50  0000 L CNN
-F 1 "1k" V 1850 14000 50  0000 L CNN
-F 2 "" V 1780 14050 50  0001 C CNN
-F 3 "~" H 1850 14050 50  0001 C CNN
-	1    1850 14050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 14150 2000 14150
-Wire Wire Line
-	2250 14250 2100 14250
-Wire Wire Line
-	2250 14350 2200 14350
-$Comp
-L Device:R R?
-U 1 1 5F7E7F91
-P 1850 13950
-F 0 "R?" V 1800 14050 50  0000 L CNN
-F 1 "1k" V 1850 13900 50  0000 L CNN
-F 2 "" V 1780 13950 50  0001 C CNN
-F 3 "~" H 1850 13950 50  0001 C CNN
-	1    1850 13950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F7E7F97
-P 1850 13850
-F 0 "R?" V 1800 13950 50  0000 L CNN
-F 1 "1k" V 1850 13800 50  0000 L CNN
-F 2 "" V 1780 13850 50  0001 C CNN
-F 3 "~" H 1850 13850 50  0001 C CNN
-	1    1850 13850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 14050 2000 14150
-Connection ~ 2000 14150
-Wire Wire Line
-	2000 14150 1700 14150
-Wire Wire Line
-	2000 13950 2100 13950
-Wire Wire Line
-	2100 13950 2100 14250
-Connection ~ 2100 14250
-Wire Wire Line
-	2100 14250 1700 14250
-Wire Wire Line
-	2000 13850 2200 13850
-Wire Wire Line
-	2200 13850 2200 14350
-Connection ~ 2200 14350
-Wire Wire Line
-	2200 14350 1700 14350
-Wire Wire Line
-	1700 14050 1700 13950
-Connection ~ 1700 13950
-Wire Wire Line
-	1700 13950 1700 13850
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F7E7FAB
-P 1700 13850
-F 0 "#PWR?" H 1700 13700 50  0001 C CNN
-F 1 "+3V3" H 1715 14023 50  0000 C CNN
-F 2 "" H 1700 13850 50  0001 C CNN
-F 3 "" H 1700 13850 50  0001 C CNN
-	1    1700 13850
-	1    0    0    -1  
-$EndComp
-Connection ~ 1700 13850
-Text Label 1700 14150 2    50   ~ 0
-I2C3_H_SDA
-Text Label 1700 14250 2    50   ~ 0
-I2C3_H_SCL
-Text Label 1700 14350 2    50   ~ 0
-I2C3_H_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F7FDA37
-P 3500 14050
-F 0 "R?" V 3450 14150 50  0000 L CNN
-F 1 "1k" V 3500 14000 50  0000 L CNN
-F 2 "" V 3430 14050 50  0001 C CNN
-F 3 "~" H 3500 14050 50  0001 C CNN
-	1    3500 14050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 14150 3650 14150
-Wire Wire Line
-	3900 14250 3750 14250
-Wire Wire Line
-	3900 14350 3850 14350
-$Comp
-L Device:R R?
-U 1 1 5F7FDA40
-P 3500 13950
-F 0 "R?" V 3450 14050 50  0000 L CNN
-F 1 "1k" V 3500 13900 50  0000 L CNN
-F 2 "" V 3430 13950 50  0001 C CNN
-F 3 "~" H 3500 13950 50  0001 C CNN
-	1    3500 13950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F7FDA46
-P 3500 13850
-F 0 "R?" V 3450 13950 50  0000 L CNN
-F 1 "1k" V 3500 13800 50  0000 L CNN
-F 2 "" V 3430 13850 50  0001 C CNN
-F 3 "~" H 3500 13850 50  0001 C CNN
-	1    3500 13850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 14050 3650 14150
-Connection ~ 3650 14150
-Wire Wire Line
-	3650 14150 3350 14150
-Wire Wire Line
-	3650 13950 3750 13950
-Wire Wire Line
-	3750 13950 3750 14250
-Connection ~ 3750 14250
-Wire Wire Line
-	3750 14250 3350 14250
-Wire Wire Line
-	3650 13850 3850 13850
-Wire Wire Line
-	3850 13850 3850 14350
-Connection ~ 3850 14350
-Wire Wire Line
-	3850 14350 3350 14350
-Wire Wire Line
-	3350 14050 3350 13950
-Connection ~ 3350 13950
-Wire Wire Line
-	3350 13950 3350 13850
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F7FDA5A
-P 3350 13850
-F 0 "#PWR?" H 3350 13700 50  0001 C CNN
-F 1 "+3V3" H 3365 14023 50  0000 C CNN
-F 2 "" H 3350 13850 50  0001 C CNN
-F 3 "" H 3350 13850 50  0001 C CNN
-	1    3350 13850
-	1    0    0    -1  
-$EndComp
-Connection ~ 3350 13850
-Text Label 3350 14150 2    50   ~ 0
+Text Label 1700 13650 2    50   ~ 0
 I2C4_D_SDA
-Text Label 3350 14250 2    50   ~ 0
+Text Label 1700 13750 2    50   ~ 0
 I2C4_D_SCL
-Text Label 3350 14350 2    50   ~ 0
+Text Label 1700 13850 2    50   ~ 0
 I2C4_D_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F828A70
-P 1850 14850
-F 0 "R?" V 1800 14950 50  0000 L CNN
-F 1 "1k" V 1850 14800 50  0000 L CNN
-F 2 "" V 1780 14850 50  0001 C CNN
-F 3 "~" H 1850 14850 50  0001 C CNN
-	1    1850 14850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 14950 2000 14950
-Wire Wire Line
-	2250 15050 2100 15050
-Wire Wire Line
-	2250 15150 2200 15150
-$Comp
-L Device:R R?
-U 1 1 5F828A79
-P 1850 14750
-F 0 "R?" V 1800 14850 50  0000 L CNN
-F 1 "1k" V 1850 14700 50  0000 L CNN
-F 2 "" V 1780 14750 50  0001 C CNN
-F 3 "~" H 1850 14750 50  0001 C CNN
-	1    1850 14750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F828A7F
-P 1850 14650
-F 0 "R?" V 1800 14750 50  0000 L CNN
-F 1 "1k" V 1850 14600 50  0000 L CNN
-F 2 "" V 1780 14650 50  0001 C CNN
-F 3 "~" H 1850 14650 50  0001 C CNN
-	1    1850 14650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 14850 2000 14950
-Connection ~ 2000 14950
-Wire Wire Line
-	2000 14950 1700 14950
-Wire Wire Line
-	2000 14750 2100 14750
-Wire Wire Line
-	2100 14750 2100 15050
-Connection ~ 2100 15050
-Wire Wire Line
-	2100 15050 1700 15050
-Wire Wire Line
-	2000 14650 2200 14650
-Wire Wire Line
-	2200 14650 2200 15150
-Connection ~ 2200 15150
-Wire Wire Line
-	2200 15150 1700 15150
-Wire Wire Line
-	1700 14850 1700 14750
-Connection ~ 1700 14750
-Wire Wire Line
-	1700 14750 1700 14650
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F828A93
-P 1700 14650
-F 0 "#PWR?" H 1700 14500 50  0001 C CNN
-F 1 "+3V3" H 1715 14823 50  0000 C CNN
-F 2 "" H 1700 14650 50  0001 C CNN
-F 3 "" H 1700 14650 50  0001 C CNN
-	1    1700 14650
-	1    0    0    -1  
-$EndComp
-Connection ~ 1700 14650
-Text Label 1700 14950 2    50   ~ 0
-I2C4_F_SDA
-Text Label 1700 15050 2    50   ~ 0
-I2C4_F_SCL
-Text Label 1700 15150 2    50   ~ 0
-I2C4_F_SMBA
-$Comp
-L Device:R R?
-U 1 1 5F841538
-P 3550 14850
-F 0 "R?" V 3500 14950 50  0000 L CNN
-F 1 "1k" V 3550 14800 50  0000 L CNN
-F 2 "" V 3480 14850 50  0001 C CNN
-F 3 "~" H 3550 14850 50  0001 C CNN
-	1    3550 14850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3950 14950 3700 14950
-Wire Wire Line
-	3950 15050 3800 15050
-Wire Wire Line
-	3950 15150 3900 15150
-$Comp
-L Device:R R?
-U 1 1 5F841541
-P 3550 14750
-F 0 "R?" V 3500 14850 50  0000 L CNN
-F 1 "1k" V 3550 14700 50  0000 L CNN
-F 2 "" V 3480 14750 50  0001 C CNN
-F 3 "~" H 3550 14750 50  0001 C CNN
-	1    3550 14750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F841547
-P 3550 14650
-F 0 "R?" V 3500 14750 50  0000 L CNN
-F 1 "1k" V 3550 14600 50  0000 L CNN
-F 2 "" V 3480 14650 50  0001 C CNN
-F 3 "~" H 3550 14650 50  0001 C CNN
-	1    3550 14650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3700 14850 3700 14950
-Connection ~ 3700 14950
-Wire Wire Line
-	3700 14950 3400 14950
-Wire Wire Line
-	3700 14750 3800 14750
-Wire Wire Line
-	3800 14750 3800 15050
-Connection ~ 3800 15050
-Wire Wire Line
-	3800 15050 3400 15050
-Wire Wire Line
-	3700 14650 3900 14650
-Wire Wire Line
-	3900 14650 3900 15150
-Connection ~ 3900 15150
-Wire Wire Line
-	3900 15150 3400 15150
-Wire Wire Line
-	3400 14850 3400 14750
-Connection ~ 3400 14750
-Wire Wire Line
-	3400 14750 3400 14650
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F84155B
-P 3400 14650
-F 0 "#PWR?" H 3400 14500 50  0001 C CNN
-F 1 "+3V3" H 3415 14823 50  0000 C CNN
-F 2 "" H 3400 14650 50  0001 C CNN
-F 3 "" H 3400 14650 50  0001 C CNN
-	1    3400 14650
-	1    0    0    -1  
-$EndComp
-Connection ~ 3400 14650
-Text Label 3400 14950 2    50   ~ 0
+Text Label 3400 13700 2    50   ~ 0
 I2C4_H_SDA
-Text Label 3400 15050 2    50   ~ 0
+Text Label 3400 13800 2    50   ~ 0
 I2C4_H_SCL
-Text Label 3400 15150 2    50   ~ 0
+Text Label 3400 13900 2    50   ~ 0
 I2C4_H_SMBA
 Wire Notes Line
 	1150 11900 4600 11900
-Wire Notes Line
-	4600 11900 4600 15650
-Wire Notes Line
-	4600 15650 1150 15650
-Wire Notes Line
-	1150 15650 1150 11900
-Text Notes 1200 15600 0    50   ~ 0
-I2C pullup and egress
-Text Notes 2550 15400 0    50   ~ 0
-ADJUST ALL PULLUP VALUES
+Text Notes 1200 14150 0    50   ~ 0
+I2C egress
+Text Notes 2100 14050 0    50   ~ 0
+Pullups left to external devices
 Wire Notes Line
 	1150 8350 3300 8350
 Wire Notes Line
@@ -2445,12 +1799,58 @@ Wire Notes Line
 	22800 8000 18950 8000
 Wire Notes Line
 	18950 8000 18950 5600
+Text Notes 19000 7950 0    50   ~ 0
+RMII to ethernet switch
+Text Label 1700 12050 2    50   ~ 0
+I2C1_B_SDA
+Wire Wire Line
+	1700 12250 2250 12250
+Wire Wire Line
+	1700 12150 2250 12150
+Wire Wire Line
+	1700 12050 2250 12050
+Wire Wire Line
+	1700 12850 2250 12850
+Wire Wire Line
+	1700 12950 2250 12950
+Wire Wire Line
+	1700 13050 2250 13050
+Wire Wire Line
+	3350 12850 3900 12850
+Wire Wire Line
+	3350 12950 3900 12950
+Wire Wire Line
+	3350 13050 3900 13050
+Wire Wire Line
+	1700 13650 2250 13650
+Wire Wire Line
+	1700 13750 2250 13750
+Wire Wire Line
+	1700 13850 2250 13850
+Wire Wire Line
+	3400 13700 3950 13700
+Wire Wire Line
+	3400 13800 3950 13800
+Wire Wire Line
+	3400 13900 3950 13900
+Wire Notes Line
+	1150 14200 4600 14200
+Wire Notes Line
+	1150 14200 1150 11900
+Wire Notes Line
+	4600 11900 4600 14200
+Text Label 10000 6850 2    50   ~ 0
+I2C2_H_ENABLE
+Text HLabel 3900 13150 2    50   Output ~ 0
+I2C2_H_ENABLE
+Wire Wire Line
+	3350 13150 3900 13150
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
-Text Notes 19000 7950 0    50   ~ 0
-RMII to ethernet switch
+Text Label 3350 13150 2    50   ~ 0
+I2C2_H_ENABLE
 $EndSCHEMATC

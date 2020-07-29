@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ltc4306:LTC4306CGN U?
+U 1 1 5F3B5B2A
+P 4250 3850
+F 0 "U?" H 4250 3900 50  0000 C CNN
+F 1 "LTC4306CGN" H 4250 3800 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 4250 3850 50  0001 C CNN
+F 3 "" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	1    0    0    -1  
+$EndComp
+Text HLabel 3300 3250 0    50   BiDi ~ 0
+SCL
+Text HLabel 3300 3350 0    50   BiDi ~ 0
+SDA
+Text HLabel 3300 3450 0    50   BiDi ~ 0
+SMBA
+Text HLabel 3300 3650 0    50   BiDi ~ 0
+ENABLE
+NoConn ~ 3600 3750
+NoConn ~ 3600 3950
+NoConn ~ 3600 4050
+Wire Wire Line
+	3600 3250 3300 3250
+Wire Wire Line
+	3300 3350 3600 3350
+Wire Wire Line
+	3300 3450 3600 3450
+Wire Wire Line
+	3300 3650 3600 3650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3B7235
+P 4250 3050
+F 0 "#PWR?" H 4250 2900 50  0001 C CNN
+F 1 "+3V3" H 4265 3223 50  0000 C CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3B7CF2
+P 4250 4650
+F 0 "#PWR?" H 4250 4400 50  0001 C CNN
+F 1 "GND" H 4255 4477 50  0000 C CNN
+F 2 "" H 4250 4650 50  0001 C CNN
+F 3 "" H 4250 4650 50  0001 C CNN
+	1    4250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4250 3550 4250
+Wire Wire Line
+	3550 4250 3550 4350
+Wire Wire Line
+	3550 4450 3600 4450
+Wire Wire Line
+	3600 4350 3550 4350
+Connection ~ 3550 4350
+Wire Wire Line
+	3550 4350 3550 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5F3B811A
+P 3550 4450
+F 0 "#PWR?" H 3550 4200 50  0001 C CNN
+F 1 "GND" H 3555 4277 50  0000 C CNN
+F 2 "" H 3550 4450 50  0001 C CNN
+F 3 "" H 3550 4450 50  0001 C CNN
+	1    3550 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 4450
+Text Notes 3850 4200 0    50   ~ 0
+I2C addr 1000 100
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F3BA39E
+P 6850 2750
+F 0 "J?" H 6930 2742 50  0000 L CNN
+F 1 "Conn_01x04" H 6930 2651 50  0000 L CNN
+F 2 "" H 6850 2750 50  0001 C CNN
+F 3 "~" H 6850 2750 50  0001 C CNN
+	1    6850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F3BAB90
+P 6850 3250
+F 0 "J?" H 6930 3242 50  0000 L CNN
+F 1 "Conn_01x04" H 6930 3151 50  0000 L CNN
+F 2 "" H 6850 3250 50  0001 C CNN
+F 3 "~" H 6850 3250 50  0001 C CNN
+	1    6850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F3BB0F7
+P 6850 3750
+F 0 "J?" H 6930 3742 50  0000 L CNN
+F 1 "Conn_01x04" H 6930 3651 50  0000 L CNN
+F 2 "" H 6850 3750 50  0001 C CNN
+F 3 "~" H 6850 3750 50  0001 C CNN
+	1    6850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F3BB614
+P 6850 4250
+F 0 "J?" H 6930 4242 50  0000 L CNN
+F 1 "Conn_01x04" H 6930 4151 50  0000 L CNN
+F 2 "" H 6850 4250 50  0001 C CNN
+F 3 "~" H 6850 4250 50  0001 C CNN
+	1    6850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3200 4900 2650
+Wire Wire Line
+	4900 2650 6650 2650
+Wire Wire Line
+	6650 2750 5000 2750
+Wire Wire Line
+	5000 2750 5000 3300
+Wire Wire Line
+	5000 3300 4900 3300
+Wire Wire Line
+	4900 3400 5100 3400
+Wire Wire Line
+	5100 3400 5100 2850
+Wire Wire Line
+	5100 2850 6650 2850
+Wire Wire Line
+	6650 3150 5200 3150
+Wire Wire Line
+	5200 3150 5200 3550
+Wire Wire Line
+	5200 3550 4900 3550
+Wire Wire Line
+	4900 3650 5300 3650
+Wire Wire Line
+	5300 3650 5300 3250
+Wire Wire Line
+	5300 3250 6650 3250
+Wire Wire Line
+	6650 3350 5400 3350
+Wire Wire Line
+	5400 3350 5400 3750
+Wire Wire Line
+	5400 3750 4900 3750
+Wire Wire Line
+	4900 3900 5500 3900
+Wire Wire Line
+	5500 3900 5500 3650
+Wire Wire Line
+	5500 3650 6650 3650
+Wire Wire Line
+	5600 4000 5600 3750
+Wire Wire Line
+	5600 3750 6650 3750
+Wire Wire Line
+	4900 4000 5600 4000
+Wire Wire Line
+	6650 3850 5700 3850
+Wire Wire Line
+	5700 3850 5700 4100
+Wire Wire Line
+	5700 4100 4900 4100
+Wire Wire Line
+	4900 4250 5800 4250
+Wire Wire Line
+	5800 4250 5800 4150
+Wire Wire Line
+	5800 4150 6650 4150
+Wire Wire Line
+	6650 4250 5900 4250
+Wire Wire Line
+	5900 4250 5900 4350
+Wire Wire Line
+	5900 4350 4900 4350
+Wire Wire Line
+	4900 4450 6000 4450
+Wire Wire Line
+	6000 4450 6000 4350
+Wire Wire Line
+	6000 4350 6650 4350
+Wire Wire Line
+	6650 2950 6600 2950
+Wire Wire Line
+	6600 2950 6600 3450
+Wire Wire Line
+	6600 4450 6650 4450
+Wire Wire Line
+	6650 3950 6600 3950
+Connection ~ 6600 3950
+Wire Wire Line
+	6600 3950 6600 4450
+Wire Wire Line
+	6650 3450 6600 3450
+Connection ~ 6600 3450
+Wire Wire Line
+	6600 3450 6600 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5F3C2401
+P 6600 4450
+F 0 "#PWR?" H 6600 4200 50  0001 C CNN
+F 1 "GND" H 6605 4277 50  0000 C CNN
+F 2 "" H 6600 4450 50  0001 C CNN
+F 3 "" H 6600 4450 50  0001 C CNN
+	1    6600 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 4450
+Text Notes 4950 4900 0    50   ~ 0
+Notes:\n- Remote devices responsible for PUs\n- 2.2V-5.5V OK\n- NOT ISOLATED - common ground req'd
+$EndSCHEMATC
