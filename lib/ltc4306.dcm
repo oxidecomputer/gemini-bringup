@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC4306CGN
+D 4-ch 2-wire bus mux with capacitance buffering
+$ENDCMP
+#
+$CMP LTC4306CUFD
+D 4-ch 2-wire bus mux with capacitance buffering
+$ENDCMP
+#
+#End Doc Library
