@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Gemini Bringup Top"
 Date ""
 Rev ""
@@ -74,4 +74,80 @@ Wire Wire Line
 	9300 3900 9850 3900
 Wire Wire Line
 	9300 4000 9850 4000
+$Sheet
+S 1950 5900 850  700 
+U 5F3C4D2C
+F0 "power" 50
+F1 "power.sch" 50
+F2 "PWR_SDA" B R 2800 6050 50 
+F3 "PWR_SCL" B R 2800 6150 50 
+$EndSheet
+Wire Wire Line
+	2800 6050 2900 6050
+Wire Wire Line
+	2800 6150 2900 6150
+Text Label 2900 6050 0    50   ~ 0
+SP_I2C1_B_SDA
+Text Label 2900 6150 0    50   ~ 0
+SP_I2C1_B_SCL
+Text Label 10000 2600 0    50   ~ 0
+SP_I2C1_B_SDA
+Text Label 10000 2700 0    50   ~ 0
+SP_I2C1_B_SCL
+Wire Wire Line
+	9300 2600 9650 2600
+Wire Wire Line
+	9300 2700 9800 2700
+$Comp
+L Device:R R?
+U 1 1 5F3F1FE8
+P 9650 2400
+F 0 "R?" V 9600 2500 50  0000 L CNN
+F 1 "3k" V 9650 2350 50  0000 L CNN
+F 2 "" V 9580 2400 50  0001 C CNN
+F 3 "~" H 9650 2400 50  0001 C CNN
+	1    9650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F3F24C2
+P 9800 2400
+F 0 "R?" V 9750 2500 50  0000 L CNN
+F 1 "3k" V 9800 2350 50  0000 L CNN
+F 2 "" V 9730 2400 50  0001 C CNN
+F 3 "~" H 9800 2400 50  0001 C CNN
+	1    9800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2550 9650 2600
+Connection ~ 9650 2600
+Wire Wire Line
+	9650 2600 10000 2600
+Wire Wire Line
+	9800 2550 9800 2700
+Connection ~ 9800 2700
+Wire Wire Line
+	9800 2700 10000 2700
+Wire Wire Line
+	9650 2250 9650 2200
+Wire Wire Line
+	9650 2200 9700 2200
+Wire Wire Line
+	9800 2200 9800 2250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3F2A9E
+P 9700 2200
+F 0 "#PWR?" H 9700 2050 50  0001 C CNN
+F 1 "+3V3" H 9715 2373 50  0000 C CNN
+F 2 "" H 9700 2200 50  0001 C CNN
+F 3 "" H 9700 2200 50  0001 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 2200
+Wire Wire Line
+	9700 2200 9800 2200
 $EndSCHEMATC
