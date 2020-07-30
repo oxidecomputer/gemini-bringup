@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LPC5528JBD100
+D 32-bit Arm Cortex ® -M33, 256 KB SRAM; 512 KB flash, USB HS, Flexcomm Interface, SDIO, 32-bit counter/timers, SCTimer/PWM, PLU, 16-bit 1.0 Msamples/sec ADC, Comparator, Temperature Sensor, CRC, RNG
+$ENDCMP
+#
+$CMP LPC55S28JBD100
+D 32-bit Arm Cortex ® -M33, 256 KB SRAM; 512 KB flash, USB HS, Flexcomm Interface, SDIO, 32-bit counter/timers, SCTimer/PWM, PLU, 16-bit 1.0 Msamples/sec ADC, Comparator, Temperature Sensor, AES, PUF, SHA, CASPER, CRC, RNG
+$ENDCMP
+#
+#End Doc Library
