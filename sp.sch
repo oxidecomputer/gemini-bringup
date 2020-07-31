@@ -25,7 +25,7 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Text Label 10000 2950 2    50   ~ 0
-NRST
+~RESET
 Text Label 10000 3250 2    50   ~ 0
 BOOT0
 Text Label 13000 4250 0    50   ~ 0
@@ -115,7 +115,7 @@ Wire Wire Line
 	3000 2100 3700 2100
 Connection ~ 3000 2100
 Text Label 3700 2100 0    50   ~ 0
-NRST
+~RESET
 Wire Wire Line
 	2200 3000 2300 3000
 $Comp
@@ -1336,9 +1336,9 @@ RMII_REF_CLK
 Text Label 13000 3650 0    50   ~ 0
 RMII_CRS_DV
 Text Label 13000 5150 0    50   ~ 0
-I2C1_B_SMBA
+~I2C1_B_SMBA
 Text Label 13000 5350 0    50   ~ 0
-FPGA_NL
+~FPGA_LE
 Text Label 13000 5550 0    50   ~ 0
 I2C1_B_SDA
 Text Label 13000 5650 0    50   ~ 0
@@ -1346,7 +1346,7 @@ I2C2_B_SCL
 Text Label 13000 5750 0    50   ~ 0
 I2C2_B_SDA
 Text Label 13000 5850 0    50   ~ 0
-I2C2_B_SMBA
+~I2C2_B_SMBA
 Text Label 13000 7150 0    50   ~ 0
 SDMMC1_D0
 Text Label 13000 7250 0    50   ~ 0
@@ -1366,9 +1366,9 @@ SDMMC1_CMD
 Text Label 13000 8350 0    50   ~ 0
 FPGA_CLK
 Text Label 13000 8450 0    50   ~ 0
-FPGA_NOE
+~FPGA_OE
 Text Label 13000 8750 0    50   ~ 0
-FPGA_NE1
+~FPGA_CE1
 Text Label 13000 8850 0    50   ~ 0
 FPGA_DA13
 Text Label 13000 8950 0    50   ~ 0
@@ -1376,7 +1376,7 @@ FPGA_DA14
 Text Label 13000 9050 0    50   ~ 0
 FPGA_DA15
 Text Label 13000 9150 0    50   ~ 0
-I2C4_D_SMBA
+~I2C4_D_SMBA
 Text Label 13000 9250 0    50   ~ 0
 I2C4_D_SCL
 Text Label 13000 9350 0    50   ~ 0
@@ -1386,9 +1386,9 @@ FPGA_DA0
 Text Label 13000 9550 0    50   ~ 0
 FPGA_DA1
 Text Label 13000 9750 0    50   ~ 0
-FPGA_NBL0
+~FPGA_BL0
 Text Label 13000 9850 0    50   ~ 0
-FPGA_NBL1
+~FPGA_BL1
 Text Label 13000 10450 0    50   ~ 0
 FPGA_DA4
 Text Label 13000 10550 0    50   ~ 0
@@ -1412,7 +1412,7 @@ I2C2_F_SDA
 Text Label 13000 11550 0    50   ~ 0
 I2C2_F_SCL
 Text Label 13000 11650 0    50   ~ 0
-I2C2_F_SMBA
+~I2C2_F_SMBA
 Text Label 13000 12050 0    50   ~ 0
 QSPI1_IO3
 Text Label 13000 12150 0    50   ~ 0
@@ -1424,13 +1424,13 @@ QSPI1_IO1
 Text Label 13000 12450 0    50   ~ 0
 QSPI1_CLK
 Text Label 13000 12750 0    50   ~ 0
-I2C4_F_SMBA
+~I2C4_F_SMBA
 Text Label 13000 12850 0    50   ~ 0
 I2C4_F_SCL
 Text Label 13000 12950 0    50   ~ 0
 I2C4_F_SDA
 Text Label 10000 12350 2    50   ~ 0
-FPGA_NE2
+~FPGA_CE2
 Text Label 10000 12550 2    50   ~ 0
 RMII_TXEN
 Text Label 10000 12650 2    50   ~ 0
@@ -1446,23 +1446,23 @@ I2C2_H_SCL
 Text Label 10000 10250 2    50   ~ 0
 I2C2_H_SDA
 Text Label 10000 10350 2    50   ~ 0
-I2C2_H_SMBA
+~I2C2_H_SMBA
 Text Label 10000 10450 2    50   ~ 0
 I2C3_H_SCL
 Text Label 10000 10550 2    50   ~ 0
 I2C3_H_SDA
 Text Label 10000 10650 2    50   ~ 0
-I2C3_H_SMBA
+~I2C3_H_SMBA
 Text Label 10000 10750 2    50   ~ 0
-I2C4_H_SMBA
+~I2C4_H_SMBA
 Text Label 10000 10850 2    50   ~ 0
 I2C4_H_SCL
 Text Label 10000 10950 2    50   ~ 0
 I2C4_H_SDA
 Text Label 10000 12050 2    50   ~ 0
-QSPI_NCS
+~QSPI_CS
 Text Label 13000 5250 0    50   ~ 0
-QSPI_NCS
+~QSPI_CS
 Text Notes 13400 5250 0    50   ~ 0
 <-- option
 Text Notes 9600 12050 2    50   ~ 0
@@ -1484,9 +1484,9 @@ SPI5_MISO
 Text Label 10000 5450 2    50   ~ 0
 SPI5_SCK
 Text Label 10000 5550 2    50   ~ 0
-SPI5_NSS
+~SPI5_CS
 Text Label 10000 8050 2    50   ~ 0
-SPI2_NSS
+~SPI2_CS
 Text Label 10000 8150 2    50   ~ 0
 SPI2_SCK
 Text Label 10000 8250 2    50   ~ 0
@@ -1612,49 +1612,49 @@ FPGA_DA14
 Text Label 1700 10000 2    50   ~ 0
 FPGA_DA15
 Text HLabel 2400 8650 2    50   Output ~ 0
-FPGA_NOE
+~FPGA_OE
 Text HLabel 2400 8750 2    50   Output ~ 0
 FPGA_CLK
 Text HLabel 2400 8850 2    50   Output ~ 0
-FPGA_NL
+~FPGA_LE
 Text HLabel 2400 8950 2    50   Output ~ 0
-FPGA_NE1
+~FPGA_CE1
 Text HLabel 2400 9050 2    50   Output ~ 0
-FPGA_NE2
+~FPGA_CE2
 Text HLabel 2400 9150 2    50   Output ~ 0
-FPGA_NBL0
+~FPGA_BL0
 Text HLabel 2400 9250 2    50   Output ~ 0
-FPGA_NBL1
+~FPGA_BL1
 Text Label 13000 8550 0    50   ~ 0
-FPGA_NWE
+~FPGA_WE
 Text HLabel 2400 9350 2    50   Output ~ 0
-FPGA_NWE
+~FPGA_WE
 Text Label 2400 8650 2    50   ~ 0
-FPGA_NOE
+~FPGA_OE
 Text Label 2400 8750 2    50   ~ 0
 FPGA_CLK
 Text Label 2400 8850 2    50   ~ 0
-FPGA_NL
+~FPGA_LE
 Text Label 2400 8950 2    50   ~ 0
-FPGA_NE1
+~FPGA_CE1
 Text Label 2400 9050 2    50   ~ 0
-FPGA_NE2
+~FPGA_CE2
 Text Label 2400 9150 2    50   ~ 0
-FPGA_NBL0
+~FPGA_BL0
 Text Label 2400 9250 2    50   ~ 0
-FPGA_NBL1
+~FPGA_BL1
 Text Label 2400 9350 2    50   ~ 0
-FPGA_NWE
+~FPGA_WE
 Text HLabel 2400 10400 2    50   BiDi ~ 0
 QSPI_IO[0..3]
 Text HLabel 2400 10550 2    50   Output ~ 0
 QSPI_CLK
 Text HLabel 2400 10700 2    50   Output ~ 0
-QSPI_NCS
+~QSPI_CS
 Text Label 2400 10550 2    50   ~ 0
 QSPI_CLK
 Text Label 2400 10700 2    50   ~ 0
-QSPI_NCS
+~QSPI_CS
 Wire Bus Line
 	2400 10400 1900 10400
 Entry Wire Line
@@ -1722,15 +1722,15 @@ I2C1_B_SDA
 Text HLabel 2250 12150 2    50   BiDi ~ 0
 I2C1_B_SCL
 Text HLabel 2250 12250 2    50   BiDi ~ 0
-I2C1_B_SMBA
+~I2C1_B_SMBA
 Text HLabel 2250 12850 2    50   BiDi ~ 0
 I2C2_F_SDA
 Text HLabel 2250 12950 2    50   BiDi ~ 0
 I2C2_F_SCL
 Text HLabel 2250 13050 2    50   BiDi ~ 0
-I2C2_F_SMBA
+~I2C2_F_SMBA
 Text HLabel 2250 13850 2    50   BiDi ~ 0
-I2C4_D_SMBA
+~I2C4_D_SMBA
 Text HLabel 2250 13750 2    50   BiDi ~ 0
 I2C4_D_SCL
 Text HLabel 2250 13650 2    50   BiDi ~ 0
@@ -1740,41 +1740,41 @@ I2C2_H_SDA
 Text HLabel 3900 12950 2    50   BiDi ~ 0
 I2C2_H_SCL
 Text HLabel 3900 13050 2    50   BiDi ~ 0
-I2C2_H_SMBA
+~I2C2_H_SMBA
 Text HLabel 3950 13700 2    50   BiDi ~ 0
 I2C4_H_SDA
 Text HLabel 3950 13800 2    50   BiDi ~ 0
 I2C4_H_SCL
 Text HLabel 3950 13900 2    50   BiDi ~ 0
-I2C4_H_SMBA
+~I2C4_H_SMBA
 Text Label 1700 12150 2    50   ~ 0
 I2C1_B_SCL
 Text Label 1700 12250 2    50   ~ 0
-I2C1_B_SMBA
+~I2C1_B_SMBA
 Text Label 1700 12850 2    50   ~ 0
 I2C2_F_SDA
 Text Label 1700 12950 2    50   ~ 0
 I2C2_F_SCL
 Text Label 1700 13050 2    50   ~ 0
-I2C2_F_SMBA
+~I2C2_F_SMBA
 Text Label 3350 12850 2    50   ~ 0
 I2C2_H_SDA
 Text Label 3350 12950 2    50   ~ 0
 I2C2_H_SCL
 Text Label 3350 13050 2    50   ~ 0
-I2C2_H_SMBA
+~I2C2_H_SMBA
 Text Label 1700 13650 2    50   ~ 0
 I2C4_D_SDA
 Text Label 1700 13750 2    50   ~ 0
 I2C4_D_SCL
 Text Label 1700 13850 2    50   ~ 0
-I2C4_D_SMBA
+~I2C4_D_SMBA
 Text Label 3400 13700 2    50   ~ 0
 I2C4_H_SDA
 Text Label 3400 13800 2    50   ~ 0
 I2C4_H_SCL
 Text Label 3400 13900 2    50   ~ 0
-I2C4_H_SMBA
+~I2C4_H_SMBA
 Wire Notes Line
 	1150 11900 4600 11900
 Text Notes 1200 14150 0    50   ~ 0
@@ -1862,7 +1862,7 @@ Text HLabel 2400 14950 2    50   Output ~ 0
 Text HLabel 2400 14550 2    50   Output ~ 0
 ~RESET
 Text Label 1850 14550 2    50   ~ 0
-NRST
+~RESET
 Text Label 1850 14650 2    50   ~ 0
 ROT_SPI4_SCK
 Text Label 1850 14750 2    50   ~ 0
@@ -1895,12 +1895,12 @@ Wire Notes Line
 	3000 14350 3000 15250
 Wire Notes Line
 	3000 15250 1150 15250
+Text Label 3350 13150 2    50   ~ 0
+I2C2_H_ENABLE
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
-Text Label 3350 13150 2    50   ~ 0
-I2C2_H_ENABLE
 $EndSCHEMATC

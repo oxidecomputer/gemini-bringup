@@ -29,7 +29,7 @@ SCL
 Text HLabel 3300 3350 0    50   BiDi ~ 0
 SDA
 Text HLabel 3300 3450 0    50   BiDi ~ 0
-SMBA
+~SMBA
 Text HLabel 3300 3650 0    50   BiDi ~ 0
 ENABLE
 NoConn ~ 3600 3750
