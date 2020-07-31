@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Gemini Bringup Top"
 Date ""
 Rev ""
@@ -97,10 +97,10 @@ $EndSheet
 Wire Wire Line
 	2800 6050 2900 6050
 Wire Wire Line
-	2800 6150 2900 6150
-Text Label 2900 6050 0    50   ~ 0
+	2800 6150 3000 6150
+Text Label 3100 6050 0    50   ~ 0
 SP_I2C1_B_SDA
-Text Label 2900 6150 0    50   ~ 0
+Text Label 3100 6150 0    50   ~ 0
 SP_I2C1_B_SCL
 Text Label 10000 2600 0    50   ~ 0
 SP_I2C1_B_SDA
@@ -174,4 +174,26 @@ Wire Wire Line
 	4150 3050 7300 3050
 Wire Wire Line
 	4150 3150 7300 3150
+$Sheet
+S 1950 6800 850  650 
+U 5F24B563
+F0 "fans.sch" 50
+F1 "fans.sch" 50
+F2 "SDA" B R 2800 6900 50 
+F3 "SCL" B R 2800 7000 50 
+$EndSheet
+Wire Wire Line
+	2800 6900 2900 6900
+Wire Wire Line
+	2900 6900 2900 6050
+Connection ~ 2900 6050
+Wire Wire Line
+	2900 6050 3100 6050
+Wire Wire Line
+	3000 6150 3000 7000
+Wire Wire Line
+	3000 7000 2800 7000
+Connection ~ 3000 6150
+Wire Wire Line
+	3000 6150 3100 6150
 $EndSCHEMATC
