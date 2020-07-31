@@ -1498,11 +1498,11 @@ UART4_TX
 Text Label 10000 11150 2    50   ~ 0
 UART4_RX
 Text Label 13000 9950 0    50   ~ 0
-SPI4_SCK
+ROT_SPI4_SCK
 Text Label 13000 10250 0    50   ~ 0
-SPI4_MISO
+ROT_SPI4_MISO
 Text Label 13000 10350 0    50   ~ 0
-SPI4_MOSI
+ROT_SPI4_MOSI
 Text Label 13000 6950 0    50   ~ 0
 USART6_TX
 Text Label 13000 7050 0    50   ~ 0
@@ -1845,6 +1845,56 @@ Text HLabel 3900 13150 2    50   Output ~ 0
 I2C2_H_ENABLE
 Wire Wire Line
 	3350 13150 3900 13150
+Text Label 13000 10050 0    50   ~ 0
+~ROT_IRQ
+Text Label 13000 10150 0    50   ~ 0
+~ROT_SPI4_CS
+Text HLabel 2400 14650 2    50   Output ~ 0
+ROT_SCK
+Text HLabel 2400 14750 2    50   Input ~ 0
+ROT_MISO
+Text HLabel 2400 14850 2    50   Output ~ 0
+ROT_MOSI
+Text HLabel 2400 15050 2    50   Output ~ 0
+~ROT_IRQ
+Text HLabel 2400 14950 2    50   Output ~ 0
+~ROT_CS
+Text HLabel 2400 14550 2    50   Output ~ 0
+~RESET
+Text Label 1850 14550 2    50   ~ 0
+NRST
+Text Label 1850 14650 2    50   ~ 0
+ROT_SPI4_SCK
+Text Label 1850 14750 2    50   ~ 0
+ROT_SPI4_MISO
+Text Label 1850 14850 2    50   ~ 0
+ROT_SPI4_MOSI
+Text Label 1850 14950 2    50   ~ 0
+~ROT_SPI4_CS
+Text Label 1850 15050 2    50   ~ 0
+~ROT_IRQ
+Wire Wire Line
+	1850 15050 2400 15050
+Wire Wire Line
+	2400 14950 1850 14950
+Wire Wire Line
+	1850 14850 2400 14850
+Wire Wire Line
+	2400 14750 1850 14750
+Wire Wire Line
+	1850 14650 2400 14650
+Wire Wire Line
+	2400 14550 1850 14550
+Text Notes 1200 15200 0    50   ~ 0
+RoT egress
+Wire Notes Line
+	1150 15250 1150 14350
+Wire Notes Line
+	1150 14350 3000 14350
+Wire Notes Line
+	3000 14350 3000 15250
+Wire Notes Line
+	3000 15250 1150 15250
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
