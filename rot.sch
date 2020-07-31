@@ -1280,35 +1280,6 @@ Text HLabel 21300 2350 2    50   Output ~ 0
 ~SP_RESET
 Text Label 19600 2350 2    50   ~ 0
 ~SP_RESET
-Wire Wire Line
-	21300 2350 21100 2350
-$Comp
-L power:GND #PWR?
-U 1 1 5F98B4AB
-P 21100 2850
-F 0 "#PWR?" H 21100 2600 50  0001 C CNN
-F 1 "GND" H 21150 2650 50  0000 C CNN
-F 2 "" H 21100 2850 50  0001 C CNN
-F 3 "" H 21100 2850 50  0001 C CNN
-	1    21100 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F98BE0A
-P 21100 2550
-F 0 "R?" H 21200 2600 50  0000 L CNN
-F 1 "100kR" H 21200 2550 50  0000 L CNN
-F 2 "" V 21030 2550 50  0001 C CNN
-F 3 "~" H 21100 2550 50  0001 C CNN
-	1    21100 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	21100 2400 21100 2350
-Connection ~ 21100 2350
-Wire Wire Line
-	21100 2350 19600 2350
 $Comp
 L Device:R R?
 U 1 1 5F9BF965
@@ -1322,8 +1293,6 @@ F 3 "~" H 21100 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	19600 2250 21100 2250
-Wire Wire Line
-	21100 2700 21100 2850
 Wire Wire Line
 	21100 1750 21100 2250
 Connection ~ 21100 2250
@@ -1375,7 +1344,7 @@ Wire Wire Line
 Wire Wire Line
 	21100 1400 20650 1400
 Connection ~ 20450 1400
-Text Notes 19200 2950 0    50   ~ 10
+Text Notes 19150 2550 0    50   ~ 10
 SP SPI egress
 $Comp
 L Device:R R?
@@ -1420,11 +1389,15 @@ Wire Wire Line
 	19750 1400 20200 1400
 Connection ~ 20200 1400
 Wire Notes Line
-	19000 3200 21900 3200
+	19000 2600 21900 2600
 Wire Notes Line
-	21900 3200 21900 950 
+	21900 2600 21900 950 
 Wire Notes Line
 	21900 950  19000 950 
 Wire Notes Line
-	19000 950  19000 3200
+	19000 950  19000 2600
+Wire Wire Line
+	19600 2350 21300 2350
+Text Notes 13650 6450 0    50   ~ 0
+Must emulate open-drain by being either Hi-Z or driving LOW only.
 $EndSCHEMATC
