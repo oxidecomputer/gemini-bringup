@@ -145,23 +145,18 @@ Wire Wire Line
 Wire Wire Line
 	9650 2250 9650 2200
 Wire Wire Line
-	9650 2200 9700 2200
-Wire Wire Line
 	9800 2200 9800 2250
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F3F2A9E
-P 9700 2200
-F 0 "#PWR?" H 9700 2050 50  0001 C CNN
-F 1 "+3V3" H 9715 2373 50  0000 C CNN
-F 2 "" H 9700 2200 50  0001 C CNN
-F 3 "" H 9700 2200 50  0001 C CNN
-	1    9700 2200
+P 9800 2200
+F 0 "#PWR?" H 9800 2050 50  0001 C CNN
+F 1 "+3V3" H 9815 2373 50  0000 C CNN
+F 2 "" H 9800 2200 50  0001 C CNN
+F 3 "" H 9800 2200 50  0001 C CNN
+	1    9800 2200
 	1    0    0    -1  
 $EndComp
-Connection ~ 9700 2200
-Wire Wire Line
-	9700 2200 9800 2200
 Wire Wire Line
 	4150 2600 7300 2600
 Wire Wire Line
@@ -181,6 +176,7 @@ F0 "fans.sch" 50
 F1 "fans.sch" 50
 F2 "SDA" B R 2800 6900 50 
 F3 "SCL" B R 2800 7000 50 
+F4 "~ALERT" O R 2800 7150 50 
 $EndSheet
 Wire Wire Line
 	2800 6900 2900 6900
@@ -196,4 +192,37 @@ Wire Wire Line
 Connection ~ 3000 6150
 Wire Wire Line
 	3000 6150 3100 6150
+Wire Wire Line
+	2800 7150 3100 7150
+Wire Wire Line
+	3100 7150 3100 6250
+Text Label 3100 6250 0    50   ~ 0
+SP_I2C1_B_SMBA
+$Comp
+L Device:R R?
+U 1 1 5F285AAC
+P 9950 2400
+F 0 "R?" V 9900 2500 50  0000 L CNN
+F 1 "3k" V 9950 2350 50  0000 L CNN
+F 2 "" V 9880 2400 50  0001 C CNN
+F 3 "~" H 9950 2400 50  0001 C CNN
+	1    9950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2800 9950 2800
+Wire Wire Line
+	9950 2550 9950 2800
+Connection ~ 9950 2800
+Wire Wire Line
+	9950 2800 10000 2800
+Text Label 10000 2800 0    50   ~ 0
+SP_I2C1_B_SMBA
+Wire Wire Line
+	9800 2200 9950 2200
+Wire Wire Line
+	9950 2200 9950 2250
+Connection ~ 9800 2200
+Wire Wire Line
+	9650 2200 9800 2200
 $EndSCHEMATC
