@@ -1,4 +1,9 @@
 (sym_lib_table
+  (lib (name Connector)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Connector.lib)(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Device.lib)(options "")(descr ""))
+  (lib (name Jumper)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Jumper.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
+  (lib (name Switch)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Switch.lib)(options "")(descr ""))
   (lib (name ksz8863)(type Legacy)(uri ${KIPRJMOD}/lib/ksz8863.lib)(options "")(descr ""))
   (lib (name si860x)(type Legacy)(uri ${KIPRJMOD}/lib/si860x.lib)(options "")(descr ""))
   (lib (name ltc4306)(type Legacy)(uri ${KIPRJMOD}/lib/ltc4306.lib)(options "")(descr ""))
