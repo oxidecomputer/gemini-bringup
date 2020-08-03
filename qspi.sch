@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_Flash:AT25SF081-SSHD-X U?
+U 1 1 5F3AFA7D
+P 5650 3300
+F 0 "U?" H 5600 3350 50  0000 L CNN
+F 1 "AT25SF081-SSHD-X" H 5700 2900 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5650 2700 50  0001 C CNN
+F 3 "https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf" H 5650 3300 50  0001 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3B01D5
+P 5650 2800
+F 0 "#PWR?" H 5650 2650 50  0001 C CNN
+F 1 "+3V3" H 5665 2973 50  0000 C CNN
+F 2 "" H 5650 2800 50  0001 C CNN
+F 3 "" H 5650 2800 50  0001 C CNN
+	1    5650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3B036B
+P 5650 3800
+F 0 "#PWR?" H 5650 3550 50  0001 C CNN
+F 1 "GND" H 5655 3627 50  0000 C CNN
+F 2 "" H 5650 3800 50  0001 C CNN
+F 3 "" H 5650 3800 50  0001 C CNN
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3300 4950 3300
+Wire Wire Line
+	4950 3300 4950 2900
+$Comp
+L Device:R R?
+U 1 1 5F3B0578
+P 4950 2750
+F 0 "R?" H 4850 2900 50  0000 L CNN
+F 1 "10k" V 4950 2700 50  0000 L CNN
+F 2 "" V 4880 2750 50  0001 C CNN
+F 3 "~" H 4950 2750 50  0001 C CNN
+	1    4950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F3B0864
+P 4800 2750
+F 0 "R?" H 4700 2900 50  0000 L CNN
+F 1 "10k" V 4800 2700 50  0000 L CNN
+F 2 "" V 4730 2750 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3500 4800 3500
+Wire Wire Line
+	4800 3500 4800 2900
+Wire Wire Line
+	4800 2600 4800 2550
+Wire Wire Line
+	4800 2550 4900 2550
+Wire Wire Line
+	4950 2550 4950 2600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3B0E34
+P 4900 2550
+F 0 "#PWR?" H 4900 2400 50  0001 C CNN
+F 1 "+3V3" H 4915 2723 50  0000 C CNN
+F 2 "" H 4900 2550 50  0001 C CNN
+F 3 "" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 2550
+Wire Wire Line
+	4900 2550 4950 2550
+Wire Wire Line
+	5050 3200 4600 3200
+Wire Wire Line
+	4950 3300 4600 3300
+Connection ~ 4950 3300
+Connection ~ 4800 3500
+Text HLabel 4600 3200 0    50   Input ~ 0
+SCK
+Text HLabel 4600 3300 0    50   Input ~ 0
+~CS
+Text Notes 5750 3850 0    50   ~ 0
+NOTE: should be socketed
+Wire Wire Line
+	4300 3100 5050 3100
+Entry Wire Line
+	4200 3000 4300 3100
+Entry Wire Line
+	4200 3300 4300 3400
+Entry Wire Line
+	4200 3400 4300 3500
+Wire Wire Line
+	4300 3400 5050 3400
+Wire Wire Line
+	4300 3500 4800 3500
+Wire Bus Line
+	4200 2250 6350 2250
+Entry Wire Line
+	6250 3100 6350 3200
+Wire Bus Line
+	6350 2250 6350 3200
+Wire Bus Line
+	4200 2250 4100 2250
+Wire Bus Line
+	4200 2250 4200 3400
+Connection ~ 4200 2250
+Text HLabel 4100 2250 0    50   BiDi ~ 0
+D[0..3]
+$Comp
+L Device:C_Small C?
+U 1 1 5F3B7D89
+P 6850 3350
+F 0 "C?" H 6942 3396 50  0000 L CNN
+F 1 "0µ1" H 6942 3305 50  0000 L CNN
+F 2 "" H 6850 3350 50  0001 C CNN
+F 3 "~" H 6850 3350 50  0001 C CNN
+	1    6850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3B7FA5
+P 6850 3250
+F 0 "#PWR?" H 6850 3100 50  0001 C CNN
+F 1 "+3V3" H 6865 3423 50  0000 C CNN
+F 2 "" H 6850 3250 50  0001 C CNN
+F 3 "" H 6850 3250 50  0001 C CNN
+	1    6850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3B8191
+P 6850 3450
+F 0 "#PWR?" H 6850 3200 50  0001 C CNN
+F 1 "GND" H 6855 3277 50  0000 C CNN
+F 2 "" H 6850 3450 50  0001 C CNN
+F 3 "" H 6850 3450 50  0001 C CNN
+	1    6850 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

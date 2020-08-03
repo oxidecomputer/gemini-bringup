@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title "Service Processor"
 Date ""
 Rev ""
@@ -2061,12 +2061,12 @@ F 3 "" H 3300 4600 50  0001 C CNN
 $EndComp
 Text Label 2350 4600 2    50   ~ 0
 LED3
+Text Notes 2600 4800 0    50   ~ 0
+Debug LEDs
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
-Text Notes 2600 4800 0    50   ~ 0
-Debug LEDs
 $EndSCHEMATC

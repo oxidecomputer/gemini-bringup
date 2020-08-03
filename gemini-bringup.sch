@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "Gemini Bringup Top"
 Date ""
 Rev ""
@@ -225,4 +225,19 @@ Wire Wire Line
 Connection ~ 9800 2200
 Wire Wire Line
 	9650 2200 9800 2200
+$Sheet
+S 6150 4200 550  350 
+U 5F3AF44F
+F0 "qspi" 50
+F1 "qspi.sch" 50
+F2 "SCK" I R 6700 4350 50 
+F3 "~CS" I R 6700 4450 50 
+F4 "D[0..3]" B R 6700 4250 50 
+$EndSheet
+Wire Bus Line
+	7300 4250 6700 4250
+Wire Wire Line
+	6700 4350 7300 4350
+Wire Wire Line
+	7300 4450 6700 4450
 $EndSCHEMATC
