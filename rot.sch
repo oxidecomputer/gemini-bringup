@@ -163,12 +163,12 @@ Crystals
 $Comp
 L power:GND #PWR?
 U 1 1 5F2BA776
-P 11600 8150
-F 0 "#PWR?" H 11600 7900 50  0001 C CNN
-F 1 "GND" H 11650 7950 50  0000 C CNN
-F 2 "" H 11600 8150 50  0001 C CNN
-F 3 "" H 11600 8150 50  0001 C CNN
-	1    11600 8150
+P 11550 8150
+F 0 "#PWR?" H 11550 7900 50  0001 C CNN
+F 1 "GND" H 11600 7950 50  0000 C CNN
+F 2 "" H 11550 8150 50  0001 C CNN
+F 3 "" H 11550 8150 50  0001 C CNN
+	1    11550 8150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -176,22 +176,14 @@ Wire Wire Line
 Wire Wire Line
 	11400 8100 11550 8100
 Wire Wire Line
-	11600 8100 11600 8150
+	11550 8100 11550 8150
 Wire Wire Line
-	11600 8100 11700 8100
-Wire Wire Line
-	11800 8100 11800 7950
-Connection ~ 11600 8100
-Wire Wire Line
-	11700 7950 11700 8100
-Connection ~ 11700 8100
-Wire Wire Line
-	11700 8100 11800 8100
-Wire Wire Line
-	11550 7950 11550 8100
+	11550 8100 11700 8100
 Connection ~ 11550 8100
 Wire Wire Line
-	11550 8100 11600 8100
+	11700 7950 11700 8100
+Wire Wire Line
+	11550 7950 11550 8100
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 5F2BEBF8
@@ -378,44 +370,6 @@ F 3 "" H 12100 2450 50  0001 C CNN
 $EndComp
 Text Label 12950 2050 0    50   ~ 0
 Vcore
-$Comp
-L power:GND #PWR?
-U 1 1 5F2F5316
-P 9950 7900
-F 0 "#PWR?" H 9950 7650 50  0001 C CNN
-F 1 "GND" H 10000 7700 50  0000 C CNN
-F 2 "" H 9950 7900 50  0001 C CNN
-F 3 "" H 9950 7900 50  0001 C CNN
-	1    9950 7900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 7450 9950 7450
-Wire Wire Line
-	9950 7450 9950 7850
-$Comp
-L Device:C C?
-U 1 1 5F2F6C7F
-P 9550 7650
-F 0 "C?" H 9700 7700 50  0000 L CNN
-F 1 "10nF" H 9700 7650 50  0000 L CNN
-F 2 "" H 9588 7500 50  0001 C CNN
-F 3 "~" H 9550 7650 50  0001 C CNN
-	1    9550 7650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 7500 9550 7450
-Wire Wire Line
-	9550 7450 9950 7450
-Connection ~ 9950 7450
-Wire Wire Line
-	9550 7800 9550 7850
-Wire Wire Line
-	9550 7850 9950 7850
-Connection ~ 9950 7850
-Wire Wire Line
-	9950 7850 9950 7900
 Text Label 10050 7350 2    50   ~ 0
 VDDA_FILTERED
 Text Label 11750 2550 1    50   ~ 0
@@ -425,32 +379,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 2500 10750 2500
 Wire Wire Line
-	11450 2500 11450 2550
-Wire Wire Line
-	11350 2550 11350 2500
-Connection ~ 11350 2500
-Wire Wire Line
-	11350 2500 11450 2500
-Wire Wire Line
-	11250 2500 11250 2550
-Connection ~ 11250 2500
-Wire Wire Line
-	11250 2500 11350 2500
-Wire Wire Line
-	11150 2550 11150 2500
-Connection ~ 11150 2500
-Wire Wire Line
-	11150 2500 11250 2500
-Wire Wire Line
-	11050 2500 11050 2550
-Connection ~ 11050 2500
-Wire Wire Line
-	11050 2500 11150 2500
-Wire Wire Line
 	10950 2550 10950 2500
-Connection ~ 10950 2500
-Wire Wire Line
-	10950 2500 11050 2500
 Wire Wire Line
 	10850 2500 10850 2550
 Connection ~ 10850 2500
@@ -461,9 +390,7 @@ Wire Wire Line
 Connection ~ 10750 2500
 Wire Wire Line
 	10750 2500 10850 2500
-Wire Wire Line
-	11050 2500 11050 2350
-Text Label 11050 2350 1    50   ~ 0
+Text Label 10850 2450 1    50   ~ 0
 VDD_FILTERED
 $Comp
 L power:+3V3 #PWR?
@@ -838,17 +765,6 @@ F 3 "" H 13400 7050 50  0001 C CNN
 	1    13400 7050
 	0    -1   -1   0   
 $EndComp
-$Comp
-L lpc55:LPC55S28JBD100 U?
-U 1 1 5F296A52
-P 11600 5400
-F 0 "U?" H 11600 5550 50  0000 C CNN
-F 1 "LPC55S28JBD100" H 11600 5400 50  0000 C CNN
-F 2 "" H 11600 5400 50  0001 C CNN
-F 3 "" H 11600 5400 50  0001 C CNN
-	1    11600 5400
-	1    0    0    -1  
-$EndComp
 NoConn ~ 13150 6850
 NoConn ~ 13150 6950
 Wire Wire Line
@@ -1022,7 +938,7 @@ Text Label 13150 3750 0    50   ~ 0
 HS_SPI_MISO
 Text Label 13150 3550 0    50   ~ 0
 ~HS_SPI_SSEL1
-Text Label 13150 5250 0    50   ~ 0
+Text Label 10050 5250 2    50   ~ 0
 ~HS_SPI_IRQ
 Text HLabel 21300 2250 2    50   Input ~ 0
 ~SP_IRQ
@@ -1274,7 +1190,7 @@ Wire Notes Line
 	5800 10250 5800 7500
 Wire Notes Line
 	5800 7500 1200 7500
-Text Label 13150 6450 0    50   ~ 0
+Text Label 10050 4350 2    50   ~ 0
 ~SP_RESET
 Text HLabel 21300 2350 2    50   Output ~ 0
 ~SP_RESET
@@ -1398,8 +1314,8 @@ Wire Notes Line
 	19000 950  19000 2600
 Wire Wire Line
 	19600 2350 21300 2350
-Text Notes 13650 6450 0    50   ~ 0
-Must emulate open-drain by being either Hi-Z or driving LOW only.
+Text Notes 7900 4350 0    50   ~ 0
+~SP_RESET~ must emulate open-drain by\nbeing either Hi-Z or driving LOW only.
 Text Label 10050 6450 2    50   ~ 0
 FC0_TXD
 Text Label 10050 6350 2    50   ~ 0
@@ -1594,4 +1510,17 @@ Wire Wire Line
 	9450 3650 10050 3650
 Text Notes 8100 3450 0    50   ~ 0
 CHECK VALUES\nONCE LED SELECTED
+$Comp
+L lpc55:LPC55S28JBD64 U?
+U 1 1 5F4361D7
+P 11600 5400
+F 0 "U?" H 11600 5500 50  0000 C CNN
+F 1 "LPC55S28JBD64" H 11600 5400 50  0000 C CNN
+F 2 "" H 11600 5400 50  0001 C CNN
+F 3 "" H 11600 5400 50  0001 C CNN
+	1    11600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2500 10850 2450
 $EndSCHEMATC
