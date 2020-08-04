@@ -1023,7 +1023,7 @@ HS_SPI_MISO
 Text Label 13150 3550 0    50   ~ 0
 ~HS_SPI_SSEL1
 Text Label 13150 5250 0    50   ~ 0
-HS_SPI_IRQ
+~HS_SPI_IRQ
 Text HLabel 21300 2250 2    50   Input ~ 0
 ~SP_IRQ
 Text HLabel 21300 2150 2    50   Input ~ 0
