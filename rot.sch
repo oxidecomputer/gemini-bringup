@@ -369,11 +369,11 @@ F 3 "" H 12100 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 12950 2050 0    50   ~ 0
-Vcore
+VDD_PMU
 Text Label 10050 7350 2    50   ~ 0
-VDDA_FILTERED
+VDDA
 Text Label 11750 2550 1    50   ~ 0
-VDDA_FILTERED
+VDDA
 Wire Wire Line
 	10650 2550 10650 2500
 Wire Wire Line
@@ -391,7 +391,7 @@ Connection ~ 10750 2500
 Wire Wire Line
 	10750 2500 10850 2500
 Text Label 10850 2450 1    50   ~ 0
-VDD_FILTERED
+VDD
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F312505
@@ -637,7 +637,7 @@ Connection ~ 2700 1750
 Wire Wire Line
 	2700 1750 3150 1750
 Text Label 4200 1750 0    50   ~ 0
-VDD_FILTERED
+VDD
 $Comp
 L Device:Ferrite_Bead FB?
 U 1 1 5F378364
@@ -728,7 +728,7 @@ Connection ~ 2250 2800
 Wire Wire Line
 	2250 2800 2700 2800
 Text Label 2500 2800 0    50   ~ 0
-VDDA_FILTERED
+VDDA
 Text Notes 4700 2300 0    50   ~ 0
 Place 4.7uF near ferrite bead.  Others near LPC55 VDD pins.
 Text Notes 3000 3350 0    50   ~ 0
