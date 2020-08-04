@@ -1699,7 +1699,7 @@ PIO0_13
 Text Label 20150 7900 2    50   ~ 0
 PIO0_14
 Text Label 20150 8000 2    50   ~ 0
-PIO0_28
+PIO0_20
 Text Label 20150 8250 2    50   ~ 0
 PIO0_29
 Text Label 20150 8350 2    50   ~ 0
