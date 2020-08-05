@@ -1,0 +1,39 @@
+name: KiCAD Schematic Outputs
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  render-gemini-bringup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: 'Render: gemini-bringup'
+      uses: ./.github/actions/kicad-schematic-pdf
+      with:
+        schematic: gemini-bringup.sch
+        output_directory: tmp/rendered
+    - uses: actions/upload-artifact@v2
+      with:
+        name: schematics
+        path: tmp/rendered/gemini-bringup.pdf
+        if-no-files-found: error
+  render-lpc55-carrier:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: 'Render: lpc55_carrier'
+      uses: ./.github/actions/kicad-schematic-pdf
+      with:
+        schematic: lpc55_carrier.sch
+        output_directory: tmp/rendered
+    - uses: actions/upload-artifact@v2
+      with:
+        name: schematics
+        path: tmp/rendered/lpc55_carrier.pdf
+        if-no-files-found: error
