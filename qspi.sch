@@ -121,15 +121,13 @@ Wire Wire Line
 Wire Wire Line
 	4300 3500 4800 3500
 Wire Bus Line
-	4200 2250 6350 2250
+	4200 2250 6450 2250
 Entry Wire Line
-	6250 3100 6350 3200
+	6350 3100 6450 3200
 Wire Bus Line
-	6350 2250 6350 3200
+	6450 2250 6450 3200
 Wire Bus Line
 	4200 2250 4100 2250
-Wire Bus Line
-	4200 2250 4200 3400
 Connection ~ 4200 2250
 Text HLabel 4100 2250 0    50   BiDi ~ 0
 D[0..3]
@@ -166,4 +164,8 @@ F 3 "" H 6850 3450 50  0001 C CNN
 	1    6850 3450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6250 3100 6350 3100
+Wire Bus Line
+	4200 2250 4200 3400
 $EndSCHEMATC
