@@ -252,4 +252,23 @@ Wire Wire Line
 	6400 4600 7300 4600
 Wire Wire Line
 	7300 4700 6400 4700
+$Sheet
+S 5700 5000 600  500 
+U 5F2C887E
+F0 "sdcard" 50
+F1 "sdcard.sch" 50
+F2 "CLK" I R 6300 5300 50 
+F3 "CMD" I R 6300 5200 50 
+F4 "D[0..3]" B R 6300 5100 50 
+$EndSheet
+Wire Bus Line
+	6300 5100 7300 5100
+Wire Wire Line
+	7300 5200 6300 5200
+Wire Wire Line
+	6300 5300 7300 5300
+Text Label 6300 5100 0    50   ~ 0
+D[0..3]
+Text Label 7300 5100 2    50   ~ 0
+SDMMC1_D[0..3]
 $EndSCHEMATC

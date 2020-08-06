@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name tqfn28)(type KiCad)(uri ${KIPRJMOD}/lib/tqfn28.pretty)(options "")(descr ""))
   (lib (name yamaichi-sockets)(type KiCad)(uri ${KIPRJMOD}/lib/yamaichi-sockets.pretty)(options "")(descr ""))
+  (lib (name micro-qfn16-narrow)(type KiCad)(uri ${KIPRJMOD}/lib/micro-qfn16-narrow.pretty)(options "")(descr ""))
 )
