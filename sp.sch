@@ -1217,8 +1217,8 @@ F7 "CRS_DV" O L 20350 6700 50
 F8 "MDIO" B L 20350 7000 50 
 F9 "MDC" I L 20350 7100 50 
 F10 "REF_CLK" O L 20350 6800 50 
-F11 "NRST" I L 20350 7300 50 
-F12 "NINTR" I L 20350 7450 50 
+F11 "~INTR" O L 20350 7450 50 
+F12 "~RESET" I L 20350 7300 50 
 $EndSheet
 Text Label 19500 6000 2    50   ~ 0
 RMII_TXD0
@@ -1247,7 +1247,7 @@ RMII_MDC
 Text Label 13000 3150 0    50   ~ 0
 RMII_MDIO
 Text Label 20350 7300 2    50   ~ 0
-NRST
+~RESET
 Text Notes 21150 7400 0    50   ~ 0
 Note: stm32h7 actively pulls NRST to\nensure minimum pulse width, so we can\njust reuse it here.
 $Comp
@@ -1328,9 +1328,7 @@ Wire Wire Line
 Text Notes 19400 5900 0    50   ~ 0
 Series drive resistors as\nrecommended by datasheet;\nplace close to CPU
 Text Label 20350 7450 2    50   ~ 0
-ETH_IRQ
-Text Notes 19800 7800 0    50   ~ 0
-NOT ROUTED\nFigure out if\nwe need the\nirq
+~ETH_IRQ
 Text Label 13000 3050 0    50   ~ 0
 RMII_REF_CLK
 Text Label 13000 3650 0    50   ~ 0
@@ -2063,12 +2061,6 @@ Text Label 2350 4600 2    50   ~ 0
 LED3
 Text Notes 2600 4800 0    50   ~ 0
 Debug LEDs
-Wire Bus Line
-	1900 11250 1900 11650
-Wire Bus Line
-	1900 10400 1900 10800
-Wire Bus Line
-	1900 8500 1900 10100
 Text Label 13000 11950 0    50   ~ 0
 ~QSPI_RESET
 Text Label 13000 11850 0    50   ~ 0
@@ -2081,4 +2073,12 @@ Text Label 2400 10850 2    50   ~ 0
 ~QSPI_RESET
 Text Label 2400 11000 2    50   ~ 0
 ~QSPI_HOST_ACCESS
+Wire Bus Line
+	1900 11250 1900 11650
+Wire Bus Line
+	1900 10400 1900 10800
+Wire Bus Line
+	1900 8500 1900 10100
+Text Label 13000 6350 0    50   ~ 0
+~ETH_IRQ
 $EndSCHEMATC

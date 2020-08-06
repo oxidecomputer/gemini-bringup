@@ -1315,9 +1315,9 @@ Wire Wire Line
 Wire Wire Line
 	6000 2400 6650 2400
 Text HLabel 1000 3400 0    50   Input ~ 0
-NRST
-Text HLabel 1000 3000 0    50   Input ~ 0
-NINTR
+~RESET
+Text HLabel 1000 3000 0    50   Output ~ 0
+~INTR
 Text Notes 8400 5800 0    50   ~ 0
 LED pins are active low\nand expect to sink
 Text Notes 8450 3100 0    50   ~ 0
