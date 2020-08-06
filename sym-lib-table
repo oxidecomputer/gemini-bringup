@@ -10,4 +10,5 @@
   (lib (name ltc4306)(type Legacy)(uri ${KIPRJMOD}/lib/ltc4306.lib)(options "")(descr ""))
   (lib (name lpc55)(type Legacy)(uri ${KIPRJMOD}/lib/lpc55.lib)(options "")(descr ""))
   (lib (name max31790)(type Legacy)(uri ${KIPRJMOD}/lib/max31790.lib)(options "")(descr ""))
+  (lib (name txb01xx)(type Legacy)(uri ${KIPRJMOD}/lib/txb01xx.lib)(options "")(descr ""))
 )
