@@ -953,7 +953,7 @@ $EndComp
 Wire Wire Line
 	10600 2250 10600 2450
 $Comp
-L Switch:SW_SPST SW?
+L Switch:SW_Push_Open SW?
 U 1 1 5F2000A4
 P 9850 2250
 F 0 "SW?" H 9850 2485 50  0000 C CNN
