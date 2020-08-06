@@ -1457,14 +1457,8 @@ Text Label 10000 10850 2    50   ~ 0
 I2C4_H_SCL
 Text Label 10000 10950 2    50   ~ 0
 I2C4_H_SDA
-Text Label 10000 12050 2    50   ~ 0
-~QSPI_CS
 Text Label 13000 5250 0    50   ~ 0
 ~QSPI_CS
-Text Notes 13400 5250 0    50   ~ 0
-<-- option
-Text Notes 9600 12050 2    50   ~ 0
-option -->
 Text Label 13000 5450 0    50   ~ 0
 I2C1_B_SCL
 Text Label 13000 3850 0    50   ~ 0
@@ -2073,12 +2067,12 @@ Text Label 2400 10850 2    50   ~ 0
 ~QSPI_RESET
 Text Label 2400 11000 2    50   ~ 0
 ~QSPI_HOST_ACCESS
+Text Label 13000 6350 0    50   ~ 0
+~ETH_IRQ
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
-Text Label 13000 6350 0    50   ~ 0
-~ETH_IRQ
 $EndSCHEMATC
