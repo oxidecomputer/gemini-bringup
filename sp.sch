@@ -1478,7 +1478,7 @@ SPI5_SCK
 Text Label 10000 5550 2    50   ~ 0
 ~SPI5_CS
 Text Label 10000 8050 2    50   ~ 0
-~SPI2_CS
+~SPI2_CS0
 Text Label 10000 8150 2    50   ~ 0
 SPI2_SCK
 Text Label 10000 8250 2    50   ~ 0
@@ -2069,10 +2069,66 @@ Text Label 2400 11000 2    50   ~ 0
 ~QSPI_HOST_ACCESS
 Text Label 13000 6350 0    50   ~ 0
 ~ETH_IRQ
+Text Label 13000 8650 0    50   ~ 0
+~FPGA_IRQ
+Text HLabel 2400 9450 2    50   Input ~ 0
+~FPGA_IRQ
+Text Label 2400 9450 2    50   ~ 0
+~FPGA_IRQ
+Text Label 10000 11250 2    50   ~ 0
+~SPI2_CS1
+Text HLabel 4300 14650 2    50   Output ~ 0
+FPGA_SCK
+Text HLabel 4300 14750 2    50   Input ~ 0
+FPGA_MISO
+Text HLabel 4300 14850 2    50   Output ~ 0
+FPGA_MOSI
+Text HLabel 4300 14950 2    50   Output ~ 0
+~FPGA_CS0
+Text HLabel 4300 14550 2    50   Output ~ 0
+~FPGA_RESET
+Text Label 3750 14550 2    50   ~ 0
+~FPGA_RESET
+Text Label 3750 14650 2    50   ~ 0
+SPI2_SCK
+Text Label 3750 14750 2    50   ~ 0
+SPI2_MISO
+Text Label 3750 14850 2    50   ~ 0
+SPI2_MOSI
+Text Label 3750 14950 2    50   ~ 0
+~SPI2_CS0
+Wire Wire Line
+	4300 14950 3750 14950
+Wire Wire Line
+	3750 14850 4300 14850
+Wire Wire Line
+	4300 14750 3750 14750
+Wire Wire Line
+	3750 14650 4300 14650
+Wire Wire Line
+	4300 14550 3750 14550
+Text Notes 3100 15200 0    50   ~ 0
+FPGA SPI egress
+Wire Notes Line
+	3050 15250 3050 14350
+Wire Notes Line
+	3050 14350 4900 14350
+Wire Notes Line
+	4900 14350 4900 15250
+Wire Notes Line
+	4900 15250 3050 15250
+Text HLabel 4300 15050 2    50   Output ~ 0
+~FPGA_CS1
+Text Label 3750 15050 2    50   ~ 0
+~SPI2_CS1
+Wire Wire Line
+	4300 15050 3750 15050
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
+Text Label 10000 12450 2    50   ~ 0
+~FPGA_RESET
 $EndSCHEMATC
