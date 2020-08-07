@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 8
+Sheet 3 13
 Title "Service Processor"
 Date ""
 Rev ""
@@ -29,7 +29,7 @@ Text Label 10000 2950 2    50   ~ 0
 Text Label 10000 3250 2    50   ~ 0
 BOOT0
 Text Label 13000 4250 0    50   ~ 0
-SWD_DATA
+SWD_IO
 Text Label 13000 4350 0    50   ~ 0
 SWD_CLK
 $Comp
