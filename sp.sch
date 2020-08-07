@@ -2131,4 +2131,10 @@ Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
+Text Label 2400 8500 2    50   ~ 0
+FPGA_DA[0..15]
+Text Label 2350 10400 2    50   ~ 0
+QSPI_IO[0..3]
+Text Label 2500 11250 2    50   ~ 0
+SDMMC1_D[0..3]
 $EndSCHEMATC
