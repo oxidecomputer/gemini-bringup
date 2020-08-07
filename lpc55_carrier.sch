@@ -90,10 +90,6 @@ Text Label 4450 2800 2    50   ~ 0
 PIO0_9
 Text Label 4450 2900 2    50   ~ 0
 PIO0_10
-Text Label 4450 3000 2    50   ~ 0
-PIO0_11
-Text Label 4450 3100 2    50   ~ 0
-PIO0_12
 Text Label 4450 3200 2    50   ~ 0
 PIO0_13
 Text Label 4450 3300 2    50   ~ 0
@@ -139,7 +135,7 @@ XTAL32K_N
 Text Label 4450 5500 2    50   ~ 0
 XTAL32M_P
 Text Label 4450 5600 2    50   ~ 0
-XTAL32M_P
+XTAL32M_N
 Text Label 4450 5800 2    50   ~ 0
 VREFP
 Text Label 5800 6400 3    50   ~ 0
@@ -168,14 +164,14 @@ Text Label 7550 6100 0    50   ~ 0
 USB1_VSS
 Text Label 7550 6200 0    50   ~ 0
 USB1_VSS
-Text Label 7550 1900 0    50   ~ 0
-PIO1_1
 Text Label 7550 2000 0    50   ~ 0
-PIO1_2
+PIO1_1
 Text Label 7550 2100 0    50   ~ 0
-PIO1_3
+PIO1_2
 Text Label 7550 2200 0    50   ~ 0
-PIO1_4
+PIO1_3
+Text Label 7550 1900 0    50   ~ 0
+PIO1_0
 Text Label 7550 1350 0    50   ~ 0
 LX
 Text Label 7550 1250 0    50   ~ 0
@@ -214,10 +210,6 @@ Text Label 1400 1300 0    50   ~ 0
 PIO0_17
 Text Label 1400 1400 0    50   ~ 0
 PIO1_0
-Text Label 1400 1500 0    50   ~ 0
-SWD_IO
-Text Label 1400 1600 0    50   ~ 0
-SWD_CLK
 Text Label 1400 1700 0    50   ~ 0
 PIO0_16
 Text Label 1400 1800 0    50   ~ 0
@@ -231,7 +223,7 @@ GND
 Text Label 1400 2200 0    50   ~ 0
 PIO0_23
 Text Label 1400 2300 0    50   ~ 0
-TRACESWO
+PIO0_10
 Text Label 1400 2400 0    50   ~ 0
 PIO0_15
 Text Label 1400 2500 0    50   ~ 0
@@ -303,7 +295,7 @@ PIO0_14
 Text Label 2800 2600 0    50   ~ 0
 PIO0_20
 Text Label 2800 3050 0    50   ~ 0
-PIO0_29
+PIO0_21
 Text Label 2800 3150 0    50   ~ 0
 PIO0_22
 Text Label 2800 3250 0    50   ~ 0
@@ -334,4 +326,155 @@ Text Label 2800 4450 0    50   ~ 0
 USB0_DM
 Text Label 2800 4550 0    50   ~ 0
 USB0_VSS
+Text Label 4450 3100 2    50   ~ 0
+PIO0_12
+Text Label 4450 3000 2    50   ~ 0
+PIO0_11
+Text Label 1400 1500 0    50   ~ 0
+PIO0_12
+Text Label 1400 1600 0    50   ~ 0
+PIO0_11
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DD934
+P 9050 1250
+F 0 "#FLG?" H 9050 1325 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 1377 50  0000 L CNN
+F 2 "" H 9050 1250 50  0001 C CNN
+F 3 "~" H 9050 1250 50  0001 C CNN
+	1    9050 1250
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 1250 0    50   ~ 0
+VDD
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DE44D
+P 9050 1400
+F 0 "#FLG?" H 9050 1475 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 1527 50  0000 L CNN
+F 2 "" H 9050 1400 50  0001 C CNN
+F 3 "~" H 9050 1400 50  0001 C CNN
+	1    9050 1400
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 1400 0    50   ~ 0
+VDDA
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DE51B
+P 9050 1550
+F 0 "#FLG?" H 9050 1625 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 1677 50  0000 L CNN
+F 2 "" H 9050 1550 50  0001 C CNN
+F 3 "~" H 9050 1550 50  0001 C CNN
+	1    9050 1550
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 1550 0    50   ~ 0
+USB0_3V3
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DF00E
+P 9050 1700
+F 0 "#FLG?" H 9050 1775 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 1827 50  0000 L CNN
+F 2 "" H 9050 1700 50  0001 C CNN
+F 3 "~" H 9050 1700 50  0001 C CNN
+	1    9050 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 1700 0    50   ~ 0
+USB1_3V3
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DFC73
+P 10000 1550
+F 0 "#FLG?" H 10000 1625 50  0001 C CNN
+F 1 "PWR_FLAG" V 10000 1677 50  0000 L CNN
+F 2 "" H 10000 1550 50  0001 C CNN
+F 3 "~" H 10000 1550 50  0001 C CNN
+	1    10000 1550
+	0    -1   -1   0   
+$EndComp
+Text Label 10000 1550 0    50   ~ 0
+USB0_VSS
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DFC7A
+P 10000 1700
+F 0 "#FLG?" H 10000 1775 50  0001 C CNN
+F 1 "PWR_FLAG" V 10000 1827 50  0000 L CNN
+F 2 "" H 10000 1700 50  0001 C CNN
+F 3 "~" H 10000 1700 50  0001 C CNN
+	1    10000 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 10000 1700 0    50   ~ 0
+USB1_VSS
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601DFFF2
+P 9050 1850
+F 0 "#FLG?" H 9050 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 1977 50  0000 L CNN
+F 2 "" H 9050 1850 50  0001 C CNN
+F 3 "~" H 9050 1850 50  0001 C CNN
+	1    9050 1850
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 1850 0    50   ~ 0
+VREFP
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601E04BE
+P 9050 2450
+F 0 "#FLG?" H 9050 2525 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 2577 50  0000 L CNN
+F 2 "" H 9050 2450 50  0001 C CNN
+F 3 "~" H 9050 2450 50  0001 C CNN
+	1    9050 2450
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 2450 0    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601E0DA9
+P 9050 2000
+F 0 "#FLG?" H 9050 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 2127 50  0000 L CNN
+F 2 "" H 9050 2000 50  0001 C CNN
+F 3 "~" H 9050 2000 50  0001 C CNN
+	1    9050 2000
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 2000 0    50   ~ 0
+VBAT_DCDC
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601E1388
+P 9050 2150
+F 0 "#FLG?" H 9050 2225 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 2277 50  0000 L CNN
+F 2 "" H 9050 2150 50  0001 C CNN
+F 3 "~" H 9050 2150 50  0001 C CNN
+	1    9050 2150
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 2150 0    50   ~ 0
+VBAT_PMU
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 601E1487
+P 9050 2300
+F 0 "#FLG?" H 9050 2375 50  0001 C CNN
+F 1 "PWR_FLAG" V 9050 2427 50  0000 L CNN
+F 2 "" H 9050 2300 50  0001 C CNN
+F 3 "~" H 9050 2300 50  0001 C CNN
+	1    9050 2300
+	0    -1   -1   0   
+$EndComp
+Text Label 9050 2300 0    50   ~ 0
+VDD_PMU
 $EndSCHEMATC
