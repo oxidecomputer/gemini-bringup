@@ -414,8 +414,21 @@ F 3 "" H 2850 5300 50  0001 C CNN
 	1    2850 5300
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	6350 2550 6350 4900
 Text Notes 1700 4950 0    50   ~ 0
 Interleaved\nsignal/ground\non cable for\nintegrity
+Wire Wire Line
+	2850 4500 2850 4200
+Wire Bus Line
+	6350 2550 6350 4900
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60106F7A
+P 2850 4200
+F 0 "#FLG?" H 2850 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 4373 50  0000 C CNN
+F 2 "" H 2850 4200 50  0001 C CNN
+F 3 "~" H 2850 4200 50  0001 C CNN
+	1    2850 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

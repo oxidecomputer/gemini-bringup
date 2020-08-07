@@ -231,8 +231,6 @@ F 3 "~" H 13500 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	13150 2800 13950 2800
-Wire Wire Line
 	13950 2800 13950 2900
 Wire Wire Line
 	13950 2900 13650 2900
@@ -600,7 +598,7 @@ Wire Wire Line
 	4050 1800 4050 1750
 Connection ~ 4050 1750
 Wire Wire Line
-	4050 1750 4550 1750
+	4050 1750 4450 1750
 Wire Wire Line
 	4050 2100 4050 2150
 Connection ~ 4050 2150
@@ -1700,8 +1698,6 @@ Text Label 20150 7900 2    50   ~ 0
 PIO0_14
 Text Label 20150 8000 2    50   ~ 0
 PIO0_20
-Text Label 20150 8250 2    50   ~ 0
-PIO0_29
 Text Label 20150 8350 2    50   ~ 0
 PIO0_22
 Text Label 20150 8450 2    50   ~ 0
@@ -1881,4 +1877,42 @@ Wire Wire Line
 	13500 6750 13500 6700
 Wire Wire Line
 	13500 7050 13500 7100
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60159E34
+P 4450 1750
+F 0 "#FLG?" H 4450 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 1923 50  0000 C CNN
+F 2 "" H 4450 1750 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 1750
+Wire Wire Line
+	4450 1750 4550 1750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 6015AAE3
+P 13400 2800
+F 0 "#FLG?" H 13400 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 13400 2973 50  0000 C CNN
+F 2 "" H 13400 2800 50  0001 C CNN
+F 3 "~" H 13400 2800 50  0001 C CNN
+	1    13400 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 13400 2800
+Wire Wire Line
+	13400 2800 13950 2800
+Wire Wire Line
+	13150 2800 13400 2800
+Text Label 20150 8250 2    50   ~ 0
+PIO0_21
+Text Label 13200 2900 0    50   ~ 0
+LX
+Text Label 13200 2800 0    50   ~ 0
+FB
+Text Label 13150 3450 0    50   ~ 0
+PIO1_0
 $EndSCHEMATC

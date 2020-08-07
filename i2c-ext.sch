@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 13 13
 Title "Offboard I2C connector (one bus)"
 Date ""
 Rev ""
@@ -76,7 +76,7 @@ $EndComp
 Wire Wire Line
 	7150 3400 7150 3150
 Wire Wire Line
-	7150 3150 5700 3150
+	7150 3150 6300 3150
 Wire Wire Line
 	7150 3600 7050 3600
 Wire Wire Line
@@ -182,4 +182,44 @@ Wire Wire Line
 	5000 2950 4900 2950
 Text Notes 6050 3400 0    50   ~ 0
 NO PULLUPS THIS SIDE\nTCA9802 handles it
+$Comp
+L Device:R R?
+U 1 1 600BC5DC
+P 5050 3750
+AR Path="/5F2F1B47/600BC5DC" Ref="R?"  Part="1" 
+AR Path="/5F2F7878/600BC5DC" Ref="R?"  Part="1" 
+AR Path="/5F2FE5B6/600BC5DC" Ref="R?"  Part="1" 
+AR Path="/5F3042B8/600BC5DC" Ref="R?"  Part="1" 
+F 0 "R?" V 5000 3850 50  0000 L CNN
+F 1 "10k" V 5050 3700 50  0000 L CNN
+F 2 "" V 4980 3750 50  0001 C CNN
+F 3 "~" H 5050 3750 50  0001 C CNN
+	1    5050 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600BD49C
+P 4900 3750
+F 0 "#PWR?" H 4900 3600 50  0001 C CNN
+F 1 "+3V3" V 4915 3878 50  0000 L CNN
+F 2 "" H 4900 3750 50  0001 C CNN
+F 3 "" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60108223
+P 6300 3150
+F 0 "#FLG?" H 6300 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 3323 50  0000 C CNN
+F 2 "" H 6300 3150 50  0001 C CNN
+F 3 "~" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 3150
+Wire Wire Line
+	6300 3150 5700 3150
 $EndSCHEMATC

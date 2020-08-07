@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 13
+Sheet 4 13
 Title "Ethernet switch and jacks"
 Date ""
 Rev ""
@@ -1275,7 +1275,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 1750 9200 1750
 Wire Wire Line
-	4750 1750 5300 1750
+	4750 1750 5000 1750
 Wire Wire Line
 	5050 4400 5250 4400
 Wire Wire Line
@@ -1336,4 +1336,33 @@ $EndComp
 Connection ~ 2000 1550
 Wire Wire Line
 	2000 1550 1900 1550
+NoConn ~ 5050 4100
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 600FBC80
+P 5000 1750
+F 0 "#FLG?" H 5000 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 1923 50  0000 C CNN
+F 2 "" H 5000 1750 50  0001 C CNN
+F 3 "~" H 5000 1750 50  0001 C CNN
+	1    5000 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 1750
+Wire Wire Line
+	5000 1750 5300 1750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 600FBCD3
+P 5400 1100
+F 0 "#FLG?" H 5400 1175 50  0001 C CNN
+F 1 "PWR_FLAG" V 5400 1228 50  0000 L CNN
+F 2 "" H 5400 1100 50  0001 C CNN
+F 3 "~" H 5400 1100 50  0001 C CNN
+	1    5400 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 1100 5100 1100
+Connection ~ 5100 1100
 $EndSCHEMATC
