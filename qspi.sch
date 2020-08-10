@@ -121,17 +121,6 @@ F 3 "" H 4800 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R801
-U 1 1 5F376F98
-P 4050 5200
-F 0 "R801" V 3950 5200 50  0000 C CNN
-F 1 "10k" V 4050 5200 50  0000 C CNN
-F 2 "" V 3980 5200 50  0001 C CNN
-F 3 "~" H 4050 5200 50  0001 C CNN
-	1    4050 5200
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x08_Odd_Even J801
 U 1 1 5F378801
 P 2600 4800
@@ -144,8 +133,6 @@ F 3 "~" H 2600 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 4400 2800 4400
-Wire Wire Line
-	4250 4500 3800 4500
 Wire Wire Line
 	4250 4600 2800 4600
 Wire Wire Line
@@ -198,21 +185,7 @@ $EndComp
 Wire Wire Line
 	2800 5000 4250 5000
 Wire Wire Line
-	4250 5100 4250 5200
-Wire Wire Line
-	4250 5200 4200 5200
-Wire Wire Line
-	3800 5200 3800 4500
-Wire Wire Line
-	3900 5200 3800 5200
-Connection ~ 3800 4500
-Wire Wire Line
-	3800 4500 2850 4500
-Wire Wire Line
-	4250 5200 4250 5250
-Wire Wire Line
 	4250 5250 5550 5250
-Connection ~ 4250 5200
 Wire Wire Line
 	5350 4600 5700 4600
 Wire Wire Line
@@ -281,11 +254,11 @@ Wire Wire Line
 Wire Wire Line
 	6750 3600 6850 3600
 Text HLabel 6250 5250 2    50   Input ~ 0
-~HOST_ACCESS
+HOST_ACCESS
 Text Notes 4150 4300 2    50   ~ 0
 Host Side\nPowered by remote system\n1.2 - 3.6 V
 Text Notes 3700 5600 0    50   ~ 0
-OE is sampled relative to Vcca;\npull it up when Vcca is powered.\nWhen Vcca unpowered the chip\nignores it. SP access is open drain.
+OE is sampled relative to Vcca;\nkeep it pulled down until SP\ndrives it.
 $Comp
 L Device:D_Small D802
 U 1 1 5F3AC322
@@ -418,8 +391,6 @@ Text Notes 1700 4950 0    50   ~ 0
 Interleaved\nsignal/ground\non cable for\nintegrity
 Wire Wire Line
 	2850 4500 2850 4200
-Wire Bus Line
-	6350 2550 6350 4900
 $Comp
 L power:PWR_FLAG #FLG0801
 U 1 1 60106F7A
@@ -430,5 +401,40 @@ F 2 "" H 2850 4200 50  0001 C CNN
 F 3 "~" H 2850 4200 50  0001 C CNN
 	1    2850 4200
 	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	6350 2550 6350 4900
+Wire Wire Line
+	4250 5200 4250 5250
+Wire Wire Line
+	4250 5100 4250 5200
+Connection ~ 4250 5200
+Wire Wire Line
+	4250 5200 4200 5200
+Wire Wire Line
+	3900 5200 3800 5200
+$Comp
+L Device:R R801
+U 1 1 5F376F98
+P 4050 5200
+F 0 "R801" V 3950 5200 50  0000 C CNN
+F 1 "10k" V 4050 5200 50  0000 C CNN
+F 2 "" V 3980 5200 50  0001 C CNN
+F 3 "~" H 4050 5200 50  0001 C CNN
+	1    4050 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4500 4250 4500
+$Comp
+L power:GND #PWR0810
+U 1 1 5F41A0A1
+P 3800 5200
+F 0 "#PWR0810" H 3800 4950 50  0001 C CNN
+F 1 "GND" V 3805 5072 50  0000 R CNN
+F 2 "" H 3800 5200 50  0001 C CNN
+F 3 "" H 3800 5200 50  0001 C CNN
+	1    3800 5200
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
