@@ -97,76 +97,14 @@ F 3 "~" H 7300 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 2800 6950 2800
-$Comp
-L Device:R R504
-U 1 1 5F31392D
-P 6700 2600
-F 0 "R504" V 6600 2600 50  0000 C CNN
-F 1 "3k" V 6700 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 2600 50  0001 C CNN
-F 3 "~" H 6700 2600 50  0001 C CNN
-	1    6700 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R505
-U 1 1 5F314870
-P 6700 2800
-F 0 "R505" V 6600 2800 50  0000 C CNN
-F 1 "3k" V 6700 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 2800 50  0001 C CNN
-F 3 "~" H 6700 2800 50  0001 C CNN
-	1    6700 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7100 2700 6550 2700
-Wire Wire Line
-	6550 2700 6550 2600
-Wire Wire Line
-	7100 2900 6550 2900
-Wire Wire Line
-	6550 2900 6550 2800
-Wire Wire Line
-	6850 2800 6850 2600
-Connection ~ 6850 2600
-Wire Wire Line
-	6550 2900 5000 2900
 Wire Wire Line
 	5000 2900 5000 3300
 Wire Wire Line
 	5000 3300 4900 3300
-Connection ~ 6550 2900
 Wire Wire Line
 	4900 3200 4900 2700
 Wire Wire Line
-	4900 2700 6550 2700
-Connection ~ 6550 2700
-Wire Wire Line
-	6850 2600 7100 2600
-$Comp
-L Device:R R506
-U 1 1 5F316606
-P 6700 3100
-F 0 "R506" V 6600 3100 50  0000 C CNN
-F 1 "3k" V 6700 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 3100 50  0001 C CNN
-F 3 "~" H 6700 3100 50  0001 C CNN
-	1    6700 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 2800 6850 3100
-Connection ~ 6850 2800
-Wire Wire Line
-	7100 3000 6550 3000
-Wire Wire Line
-	6550 3000 6550 3100
-Wire Wire Line
-	6550 3000 5100 3000
-Wire Wire Line
 	5100 3000 5100 3400
-Connection ~ 6550 3000
 $Comp
 L Connector_Generic:Conn_01x05 J502
 U 1 1 5F31ACF0
@@ -181,59 +119,6 @@ $EndComp
 Wire Wire Line
 	7100 3500 6950 3500
 $Comp
-L Device:R R507
-U 1 1 5F31ACF8
-P 6700 3300
-F 0 "R507" V 6600 3300 50  0000 C CNN
-F 1 "3k" V 6700 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 3300 50  0001 C CNN
-F 3 "~" H 6700 3300 50  0001 C CNN
-	1    6700 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R508
-U 1 1 5F31ACFE
-P 6700 3500
-F 0 "R508" V 6600 3500 50  0000 C CNN
-F 1 "3k" V 6700 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 3500 50  0001 C CNN
-F 3 "~" H 6700 3500 50  0001 C CNN
-	1    6700 3500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7100 3400 6550 3400
-Wire Wire Line
-	6550 3400 6550 3300
-Wire Wire Line
-	7100 3600 6550 3600
-Wire Wire Line
-	6550 3600 6550 3500
-Wire Wire Line
-	6850 3500 6850 3300
-Connection ~ 6850 3300
-Wire Wire Line
-	6850 3300 7100 3300
-$Comp
-L Device:R R509
-U 1 1 5F31AD0F
-P 6700 3800
-F 0 "R509" V 6600 3800 50  0000 C CNN
-F 1 "3k" V 6700 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 3800 50  0001 C CNN
-F 3 "~" H 6700 3800 50  0001 C CNN
-	1    6700 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 3500 6850 3800
-Connection ~ 6850 3500
-Wire Wire Line
-	7100 3700 6550 3700
-Wire Wire Line
-	6550 3700 6550 3800
-$Comp
 L Connector_Generic:Conn_01x05 J503
 U 1 1 5F31DFF7
 P 7300 4200
@@ -246,59 +131,10 @@ F 3 "~" H 7300 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 4200 6950 4200
-$Comp
-L Device:R R510
-U 1 1 5F31DFFF
-P 6700 4000
-F 0 "R510" V 6600 4000 50  0000 C CNN
-F 1 "3k" V 6700 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 4000 50  0001 C CNN
-F 3 "~" H 6700 4000 50  0001 C CNN
-	1    6700 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R511
-U 1 1 5F31E005
-P 6700 4200
-F 0 "R511" V 6600 4200 50  0000 C CNN
-F 1 "3k" V 6700 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 4200 50  0001 C CNN
-F 3 "~" H 6700 4200 50  0001 C CNN
-	1    6700 4200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7100 4100 6550 4100
-Wire Wire Line
-	6550 4100 6550 4000
 Wire Wire Line
 	7100 4300 6550 4300
 Wire Wire Line
 	6550 4300 6550 4200
-Wire Wire Line
-	6850 4200 6850 4000
-Connection ~ 6850 4000
-Wire Wire Line
-	6850 4000 7100 4000
-$Comp
-L Device:R R512
-U 1 1 5F31E016
-P 6700 4500
-F 0 "R512" V 6600 4500 50  0000 C CNN
-F 1 "3k" V 6700 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 4500 50  0001 C CNN
-F 3 "~" H 6700 4500 50  0001 C CNN
-	1    6700 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 4200 6850 4500
-Connection ~ 6850 4200
-Wire Wire Line
-	7100 4400 6550 4400
-Wire Wire Line
-	6550 4400 6550 4500
 $Comp
 L Connector_Generic:Conn_01x05 J504
 U 1 1 5F3236BF
@@ -312,122 +148,44 @@ F 3 "~" H 7300 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 4900 6950 4900
-$Comp
-L Device:R R513
-U 1 1 5F3236C7
-P 6700 4700
-F 0 "R513" V 6600 4700 50  0000 C CNN
-F 1 "3k" V 6700 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 4700 50  0001 C CNN
-F 3 "~" H 6700 4700 50  0001 C CNN
-	1    6700 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R514
-U 1 1 5F3236CD
-P 6700 4900
-F 0 "R514" V 6600 4900 50  0000 C CNN
-F 1 "3k" V 6700 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 4900 50  0001 C CNN
-F 3 "~" H 6700 4900 50  0001 C CNN
-	1    6700 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7100 4800 6550 4800
-Wire Wire Line
-	6550 4800 6550 4700
-Wire Wire Line
-	7100 5000 6550 5000
-Wire Wire Line
-	6550 5000 6550 4900
-Wire Wire Line
-	6850 4900 6850 4700
-Connection ~ 6850 4700
-Wire Wire Line
-	6850 4700 7100 4700
-$Comp
-L Device:R R515
-U 1 1 5F3236DE
-P 6700 5200
-F 0 "R515" V 6600 5200 50  0000 C CNN
-F 1 "3k" V 6700 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 5200 50  0001 C CNN
-F 3 "~" H 6700 5200 50  0001 C CNN
-	1    6700 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 4900 6850 5200
-Connection ~ 6850 4900
-Wire Wire Line
-	7100 5100 6550 5100
-Wire Wire Line
-	6550 5100 6550 5200
 Wire Wire Line
 	4900 3400 5100 3400
-Wire Wire Line
-	6550 3400 5200 3400
 Wire Wire Line
 	5200 3400 5200 3550
 Wire Wire Line
 	5200 3550 4900 3550
-Connection ~ 6550 3400
-Wire Wire Line
-	6550 3600 5300 3600
 Wire Wire Line
 	5300 3600 5300 3650
 Wire Wire Line
 	5300 3650 4900 3650
-Connection ~ 6550 3600
-Wire Wire Line
-	6550 3700 5400 3700
 Wire Wire Line
 	5400 3700 5400 3750
 Wire Wire Line
 	5400 3750 4900 3750
-Connection ~ 6550 3700
-Wire Wire Line
-	6550 5100 4900 5100
 Wire Wire Line
 	4900 5100 4900 4450
-Connection ~ 6550 5100
 Wire Wire Line
 	4900 4350 5000 4350
 Wire Wire Line
 	5000 4350 5000 5000
 Wire Wire Line
-	5000 5000 6550 5000
-Connection ~ 6550 5000
-Wire Wire Line
 	4900 4250 5100 4250
 Wire Wire Line
 	5100 4250 5100 4800
 Wire Wire Line
-	5100 4800 6550 4800
-Connection ~ 6550 4800
-Wire Wire Line
-	6550 4400 5250 4400
-Wire Wire Line
 	5250 4400 5250 4100
 Wire Wire Line
 	5250 4100 4900 4100
-Connection ~ 6550 4400
 Wire Wire Line
 	4900 4000 5350 4000
 Wire Wire Line
 	5350 4000 5350 4200
 Wire Wire Line
 	5350 4200 6550 4200
-Connection ~ 6550 4200
-Wire Wire Line
-	6550 4100 5450 4100
 Wire Wire Line
 	5450 4100 5450 3900
 Wire Wire Line
 	5450 3900 4900 3900
-Connection ~ 6550 4100
 Wire Wire Line
 	6950 2800 6950 3500
 Connection ~ 6950 3500
@@ -534,4 +292,149 @@ Text Label 7100 3000 2    50   ~ 0
 ~RSMBA
 Text Notes 6900 2500 0    50   ~ 0
 Pinout:
+$Comp
+L Device:R_Pack04 RN501
+U 1 1 5F3B21D6
+P 7900 2900
+F 0 "RN501" V 7483 2900 50  0000 C CNN
+F 1 "3k3" V 7574 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 8175 2900 50  0001 C CNN
+F 3 "~" H 7900 2900 50  0001 C CNN
+	1    7900 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 2700 7700 2700
+Connection ~ 7100 2700
+Wire Wire Line
+	7100 2900 7700 2900
+Connection ~ 7100 2900
+Wire Wire Line
+	7100 3000 7700 3000
+Connection ~ 7100 3000
+Wire Wire Line
+	8100 3000 8100 2900
+Connection ~ 8100 2700
+Wire Wire Line
+	8100 2700 8100 2600
+Connection ~ 8100 2800
+Wire Wire Line
+	8100 2800 8100 2700
+Connection ~ 8100 2900
+Wire Wire Line
+	8100 2900 8100 2800
+Wire Wire Line
+	7100 2600 8100 2600
+$Comp
+L Device:R_Pack04 RN502
+U 1 1 5F3C5A9E
+P 7900 3600
+F 0 "RN502" V 7483 3600 50  0000 C CNN
+F 1 "3k3" V 7574 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 8175 3600 50  0001 C CNN
+F 3 "~" H 7900 3600 50  0001 C CNN
+	1    7900 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 3400 7700 3400
+Wire Wire Line
+	7100 3600 7700 3600
+Wire Wire Line
+	7100 3700 7700 3700
+Wire Wire Line
+	8100 3700 8100 3600
+Connection ~ 8100 3400
+Wire Wire Line
+	8100 3400 8100 3300
+Connection ~ 8100 3500
+Wire Wire Line
+	8100 3500 8100 3400
+Connection ~ 8100 3600
+Wire Wire Line
+	8100 3600 8100 3500
+Wire Wire Line
+	7100 3300 8100 3300
+$Comp
+L Device:R_Pack04 RN503
+U 1 1 5F3C9313
+P 7900 4300
+F 0 "RN503" V 7483 4300 50  0000 C CNN
+F 1 "3k3" V 7574 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 8175 4300 50  0001 C CNN
+F 3 "~" H 7900 4300 50  0001 C CNN
+	1    7900 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 4100 7700 4100
+Wire Wire Line
+	7100 4300 7700 4300
+Wire Wire Line
+	7100 4400 7700 4400
+Wire Wire Line
+	8100 4400 8100 4300
+Connection ~ 8100 4100
+Wire Wire Line
+	8100 4100 8100 4000
+Connection ~ 8100 4200
+Wire Wire Line
+	8100 4200 8100 4100
+Connection ~ 8100 4300
+Wire Wire Line
+	8100 4300 8100 4200
+Wire Wire Line
+	7100 4000 8100 4000
+$Comp
+L Device:R_Pack04 RN504
+U 1 1 5F3CD1F7
+P 7900 5000
+F 0 "RN504" V 7483 5000 50  0000 C CNN
+F 1 "3k3" V 7574 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 8175 5000 50  0001 C CNN
+F 3 "~" H 7900 5000 50  0001 C CNN
+	1    7900 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 4800 7700 4800
+Wire Wire Line
+	7100 5000 7700 5000
+Wire Wire Line
+	7100 5100 7700 5100
+Wire Wire Line
+	8100 5100 8100 5000
+Connection ~ 8100 4800
+Wire Wire Line
+	8100 4800 8100 4700
+Connection ~ 8100 4900
+Wire Wire Line
+	8100 4900 8100 4800
+Connection ~ 8100 5000
+Wire Wire Line
+	8100 5000 8100 4900
+Wire Wire Line
+	7100 4700 8100 4700
+Wire Wire Line
+	4900 2700 7100 2700
+Wire Wire Line
+	5000 2900 7100 2900
+Wire Wire Line
+	5100 3000 7100 3000
+Wire Wire Line
+	5200 3400 7100 3400
+Wire Wire Line
+	5300 3600 7100 3600
+Wire Wire Line
+	5400 3700 7100 3700
+Wire Wire Line
+	5450 4100 7100 4100
+Wire Wire Line
+	5250 4400 7100 4400
+Wire Wire Line
+	5100 4800 7100 4800
+Wire Wire Line
+	5000 5000 7100 5000
+Wire Wire Line
+	4900 5100 7100 5100
 $EndSCHEMATC

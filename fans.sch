@@ -141,7 +141,7 @@ F 3 "" H 7400 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 2100 5850 2100
+	7550 2100 6050 2100
 Wire Wire Line
 	5850 2100 5850 2850
 Wire Wire Line
@@ -161,7 +161,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 2500 7550 2500
 Wire Wire Line
-	7550 3100 6250 3100
+	7550 3100 6600 3100
 Wire Wire Line
 	6250 3100 6250 3250
 Wire Wire Line
@@ -171,9 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 3350 6350 3000
 Wire Wire Line
-	6350 3000 7550 3000
-Wire Wire Line
-	7550 3600 6450 3600
+	6350 3000 6500 3000
 Wire Wire Line
 	6350 3600 6350 3450
 Wire Wire Line
@@ -181,31 +179,21 @@ Wire Wire Line
 Wire Wire Line
 	7550 3550 7550 3500
 Wire Wire Line
-	5850 3550 6550 3550
-Wire Wire Line
 	5850 3650 6250 3650
 Wire Wire Line
 	6250 3650 6250 4100
-Wire Wire Line
-	6250 4100 6650 4100
 Wire Wire Line
 	5850 3750 6350 3750
 Wire Wire Line
 	6350 3750 6350 4000
 Wire Wire Line
-	6350 4000 6750 4000
-Wire Wire Line
 	5850 3850 6150 3850
 Wire Wire Line
 	6150 3850 6150 4600
 Wire Wire Line
-	6150 4600 6850 4600
-Wire Wire Line
 	5850 3950 6050 3950
 Wire Wire Line
 	6050 3950 6050 4500
-Wire Wire Line
-	6050 4500 6950 4500
 Wire Wire Line
 	7550 2700 7400 2700
 Connection ~ 7400 2700
@@ -342,78 +330,155 @@ F 3 "" H 5100 2450 50  0001 C CNN
 	1    5100 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Network12 RN701
-U 1 1 5F26ACB1
-P 6450 1400
-F 0 "RN701" H 7038 1446 50  0000 L CNN
-F 1 "R_Network12" H 7038 1355 50  0000 L CNN
-F 2 "" V 7125 1400 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6450 1400 50  0001 C CNN
-	1    6450 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5850 2100 5850 1600
-Connection ~ 5850 2100
-Wire Wire Line
-	5950 1600 5950 2000
-Connection ~ 5950 2000
-Wire Wire Line
-	7550 2600 6050 2600
-Wire Wire Line
-	6050 2600 6050 1600
-Connection ~ 6050 2600
-Wire Wire Line
-	6150 1600 6150 2500
-Connection ~ 6150 2500
-Wire Wire Line
-	6250 1600 6250 3100
-Connection ~ 6250 3100
-Wire Wire Line
-	6350 1600 6350 3000
-Connection ~ 6350 3000
-Wire Wire Line
-	6450 1600 6450 3600
-Connection ~ 6450 3600
-Wire Wire Line
-	6450 3600 6350 3600
-Wire Wire Line
-	6550 1600 6550 3550
-Connection ~ 6550 3550
-Wire Wire Line
-	6550 3550 7550 3550
-Wire Wire Line
-	6650 1600 6650 4100
-Connection ~ 6650 4100
-Wire Wire Line
-	6650 4100 7550 4100
-Wire Wire Line
-	6750 1600 6750 4000
-Connection ~ 6750 4000
-Wire Wire Line
-	6750 4000 7550 4000
-Wire Wire Line
-	6850 1600 6850 4600
-Connection ~ 6850 4600
-Wire Wire Line
-	6850 4600 7550 4600
-Wire Wire Line
-	6950 1600 6950 4500
-Connection ~ 6950 4500
-Wire Wire Line
-	6950 4500 7550 4500
+	7550 2600 6250 2600
 $Comp
 L power:+3V3 #PWR0708
 U 1 1 5F280D2E
-P 5850 1200
-F 0 "#PWR0708" H 5850 1050 50  0001 C CNN
-F 1 "+3V3" H 5865 1373 50  0000 C CNN
-F 2 "" H 5850 1200 50  0001 C CNN
-F 3 "" H 5850 1200 50  0001 C CNN
-	1    5850 1200
+P 5750 1200
+F 0 "#PWR0708" H 5750 1050 50  0001 C CNN
+F 1 "+3V3" H 5765 1373 50  0000 C CNN
+F 2 "" H 5750 1200 50  0001 C CNN
+F 3 "" H 5750 1200 50  0001 C CNN
+	1    5750 1200
 	1    0    0    -1  
 $EndComp
 Text Notes 5950 1150 0    50   ~ 0
 NOTE: assumes fans will accept 3V3 PWM
+$Comp
+L Device:R_Pack04 RN702
+U 1 1 5F381500
+P 6700 1400
+F 0 "RN702" V 6400 1150 50  0000 L CNN
+F 1 "3k3" V 6400 1450 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7375 1400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6700 1400 50  0001 C CNN
+	1    6700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN703
+U 1 1 5F382413
+P 7200 1400
+F 0 "RN703" V 6900 1150 50  0000 L CNN
+F 1 "3k3" V 6900 1450 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7875 1400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7200 1400 50  0001 C CNN
+	1    7200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3550 6700 3550
+Wire Wire Line
+	6250 4100 7100 4100
+Wire Wire Line
+	6350 4000 7000 4000
+Wire Wire Line
+	6150 4600 7300 4600
+Wire Wire Line
+	6050 4500 7200 4500
+$Comp
+L Device:R_Pack04 RN701
+U 1 1 5F26ACB1
+P 6150 1400
+F 0 "RN701" V 5850 1150 50  0000 L CNN
+F 1 "3k3" V 5850 1450 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 6825 1400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6150 1400 50  0001 C CNN
+	1    6150 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2000 5950 1600
+Connection ~ 5950 2000
+Wire Wire Line
+	6050 1600 6050 2100
+Connection ~ 6050 2100
+Wire Wire Line
+	6050 2100 5850 2100
+Wire Wire Line
+	6150 1600 6150 2500
+Connection ~ 6150 2500
+Wire Wire Line
+	6250 1600 6250 2600
+Connection ~ 6250 2600
+Wire Wire Line
+	6250 2600 6050 2600
+Wire Wire Line
+	6500 1600 6500 3000
+Connection ~ 6500 3000
+Wire Wire Line
+	6500 3000 7550 3000
+Wire Wire Line
+	6600 1600 6600 3100
+Connection ~ 6600 3100
+Wire Wire Line
+	6600 3100 6250 3100
+Wire Wire Line
+	6700 1600 6700 3550
+Connection ~ 6700 3550
+Wire Wire Line
+	6700 3550 7550 3550
+Wire Wire Line
+	6800 1600 6800 3600
+Wire Wire Line
+	6350 3600 6800 3600
+Connection ~ 6800 3600
+Wire Wire Line
+	6800 3600 7550 3600
+Wire Wire Line
+	7000 1600 7000 4000
+Connection ~ 7000 4000
+Wire Wire Line
+	7200 1600 7200 4500
+Connection ~ 7200 4500
+Wire Wire Line
+	7200 4500 7550 4500
+Wire Wire Line
+	7000 4000 7550 4000
+Wire Wire Line
+	7100 1600 7100 4100
+Connection ~ 7100 4100
+Wire Wire Line
+	7100 4100 7550 4100
+Wire Wire Line
+	7300 1600 7300 4600
+Connection ~ 7300 4600
+Wire Wire Line
+	7300 4600 7550 4600
+Wire Wire Line
+	5950 1200 6050 1200
+Connection ~ 6050 1200
+Wire Wire Line
+	6050 1200 6150 1200
+Connection ~ 6150 1200
+Wire Wire Line
+	6150 1200 6250 1200
+Connection ~ 6250 1200
+Wire Wire Line
+	6250 1200 6500 1200
+Connection ~ 6500 1200
+Wire Wire Line
+	6500 1200 6600 1200
+Connection ~ 6600 1200
+Wire Wire Line
+	6600 1200 6700 1200
+Connection ~ 6700 1200
+Wire Wire Line
+	6700 1200 6800 1200
+Connection ~ 6800 1200
+Wire Wire Line
+	6800 1200 7000 1200
+Connection ~ 7000 1200
+Wire Wire Line
+	7000 1200 7100 1200
+Connection ~ 7100 1200
+Wire Wire Line
+	7100 1200 7200 1200
+Connection ~ 7200 1200
+Wire Wire Line
+	7200 1200 7300 1200
+Wire Wire Line
+	5950 1200 5750 1200
+Connection ~ 5950 1200
 $EndSCHEMATC
