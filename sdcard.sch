@@ -27,7 +27,7 @@ U 1 1 5F2CB8E1
 P 5550 3500
 F 0 "U901" H 5575 4115 50  0000 C CNN
 F 1 "EMIF06-MSD02N16" H 5575 4024 50  0000 C CNN
-F 2 "" H 5650 3500 50  0001 C CNN
+F 2 "micro-qfn16-narrow:DFN-16-1EP_1.2x3.5mm_P0.4mm_EP0.3x2.8mm" H 5650 3500 50  0001 C CNN
 F 3 "" H 5650 3500 50  0001 C CNN
 	1    5550 3500
 	1    0    0    -1  
@@ -162,8 +162,6 @@ Text Label 4350 3850 0    50   ~ 0
 D1
 Wire Bus Line
 	4000 3200 4250 3200
-Wire Bus Line
-	4250 3200 4250 3750
 Text Label 4000 3200 0    50   ~ 0
 D[0..3]
 Text HLabel 4000 3200 0    50   BiDi ~ 0
@@ -181,4 +179,6 @@ F 3 "" H 8900 4050 50  0001 C CNN
 	1    8900 4050
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	4250 3200 4250 3750
 $EndSCHEMATC
