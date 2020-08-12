@@ -251,8 +251,6 @@ Wire Wire Line
 	5950 4650 6850 4650
 Wire Wire Line
 	6850 4750 5950 4750
-Text Label 5950 4550 0    50   ~ 0
-D[0..3]
 Text Label 6850 4550 2    50   ~ 0
 QSPI_IO[0..3]
 Wire Wire Line
@@ -274,8 +272,6 @@ Wire Wire Line
 	6850 5500 5850 5500
 Wire Wire Line
 	5850 5600 6850 5600
-Text Label 5850 5400 0    50   ~ 0
-D[0..3]
 Text Label 6850 5400 2    50   ~ 0
 SDMMC1_D[0..3]
 $Sheet
