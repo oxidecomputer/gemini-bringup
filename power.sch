@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Barrel_Jack J601
+L Connector:Barrel_Jack_Switch_Pin3Ring J601
 U 1 1 5F3C5136
 P 1350 2200
 F 0 "J601" H 1407 2525 50  0000 C CNN
 F 1 "Barrel_Jack" H 1407 2434 50  0000 C CNN
-F 2 "" H 1400 2160 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal" H 1400 2160 50  0001 C CNN
 F 3 "~" H 1400 2160 50  0001 C CNN
 	1    1350 2200
 	1    0    0    -1  
@@ -385,7 +385,7 @@ U 1 1 5F3ED84F
 P 2250 2100
 F 0 "F601" V 2045 2100 50  0000 C CNN
 F 1 "Polyfuse_Small" V 2136 2100 50  0000 C CNN
-F 2 "" H 2300 1900 50  0001 L CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 2300 1900 50  0001 L CNN
 F 3 "~" H 2250 2100 50  0001 C CNN
 	1    2250 2100
 	0    1    1    0   
@@ -461,4 +461,5 @@ Connection ~ 2900 4400
 Wire Wire Line
 	3400 4300 3400 4400
 Connection ~ 3400 4400
+NoConn ~ 1650 2200
 $EndSCHEMATC

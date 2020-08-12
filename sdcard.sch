@@ -38,7 +38,7 @@ U 1 1 5F2CD2A2
 P 8100 3450
 F 0 "J901" H 8050 4167 50  0000 C CNN
 F 1 "Micro_SD_Card" H 8050 4076 50  0000 C CNN
-F 2 "" H 9250 3750 50  0001 C CNN
+F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 9250 3750 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 8100 3450 50  0001 C CNN
 	1    8100 3450
 	1    0    0    -1  
