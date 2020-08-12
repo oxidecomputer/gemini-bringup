@@ -366,8 +366,8 @@ F 3 "" H 5900 2450 50  0001 C CNN
 	1    5900 2450
 	0    -1   -1   0   
 $EndComp
-Wire Bus Line
-	7850 2800 7850 4300
 Text Notes 4950 5150 0    50   ~ 0
 Notes:\n- Return paths near all fast signals (which is nearly everything).\n- 12V available in case we need 5V or something\n- A/D muxed because demuxing in FPGA is free\n- Two SPI selects to address (e.g.) both FPGA and bitstream ROM\n- I2C because why not\n- Only one CE routed (of 2 avail) because what is CE1 for anyway
+Wire Bus Line
+	7850 2800 7850 4300
 $EndSCHEMATC

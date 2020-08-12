@@ -27,18 +27,16 @@ $EndComp
 Text Notes 900  2550 0    50   ~ 0
 12V wall wart input: 2A
 $Comp
-L Device:R R603
+L Device:R_Shunt R603
 U 1 1 5F3C5E64
 P 3150 2100
 F 0 "R603" V 2943 2100 50  0000 C CNN
 F 1 "20m 1% 1/8W" V 3034 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0815_2038Metric" V 3080 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK12" V 3080 2100 50  0001 C CNN
 F 3 "~" H 3150 2100 50  0001 C CNN
 	1    3150 2100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3300 2100 3400 2100
 Wire Wire Line
 	1650 2300 1900 2300
 Wire Wire Line
@@ -68,59 +66,54 @@ $EndComp
 $Comp
 L Device:R R601
 U 1 1 5F3C7840
-P 2900 2250
-F 0 "R601" H 2970 2296 50  0000 L CNN
-F 1 "0" H 2970 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 2250 50  0001 C CNN
-F 3 "~" H 2900 2250 50  0001 C CNN
-	1    2900 2250
+P 2900 2400
+F 0 "R601" H 2970 2446 50  0000 L CNN
+F 1 "0" H 2970 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 2400 50  0001 C CNN
+F 3 "~" H 2900 2400 50  0001 C CNN
+	1    2900 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 2100 3000 2100
 $Comp
 L Device:R R605
 U 1 1 5F3C7C25
-P 3400 2250
-F 0 "R605" H 3470 2296 50  0000 L CNN
-F 1 "0" H 3470 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 2250 50  0001 C CNN
-F 3 "~" H 3400 2250 50  0001 C CNN
-	1    3400 2250
+P 3400 2400
+F 0 "R605" H 3470 2446 50  0000 L CNN
+F 1 "0" H 3470 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 2400 50  0001 C CNN
+F 3 "~" H 3400 2400 50  0001 C CNN
+	1    3400 2400
 	1    0    0    -1  
 $EndComp
-Connection ~ 3400 2100
-Wire Wire Line
-	3400 2100 3500 2100
 $Comp
 L Device:C_Small C601
 U 1 1 5F3C7FF5
-P 3150 2550
-F 0 "C601" V 2921 2550 50  0000 C CNN
-F 1 "DNP" V 3012 2550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 2550 50  0001 C CNN
-F 3 "~" H 3150 2550 50  0001 C CNN
-	1    3150 2550
+P 3150 2650
+F 0 "C601" V 2921 2650 50  0000 C CNN
+F 1 "DNP" V 3012 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 2650 50  0001 C CNN
+F 3 "~" H 3150 2650 50  0001 C CNN
+	1    3150 2650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2900 2400 2900 2550
+	2900 2550 2900 2650
 Wire Wire Line
-	2900 2550 3050 2550
+	2900 2650 3050 2650
 Wire Wire Line
-	3250 2550 3400 2550
+	3250 2650 3400 2650
 Wire Wire Line
-	3400 2550 3400 2400
+	3400 2650 3400 2550
 Wire Wire Line
 	3550 3000 2900 3000
 Wire Wire Line
-	2900 3000 2900 2550
-Connection ~ 2900 2550
+	2900 3000 2900 2650
+Connection ~ 2900 2650
 Wire Wire Line
 	3550 3200 3400 3200
 Wire Wire Line
-	3400 3200 3400 2550
-Connection ~ 3400 2550
+	3400 3200 3400 2650
+Connection ~ 3400 2650
 $Comp
 L Device:C_Small C603
 U 1 1 5F3C8662
@@ -170,7 +163,7 @@ Wire Wire Line
 	4350 2500 4450 2500
 Text Notes 2850 3550 0    50   ~ 0
 Nominal load: 1A\nMax load: 2A\nVshunt: 40mV\nCurrent LSB: 500µA
-Text Notes 2950 2850 0    50   ~ 0
+Text Notes 2950 2950 0    50   ~ 0
 Filter;\nprobably\nnot needed
 Wire Wire Line
 	4350 3200 4350 3300
@@ -238,18 +231,16 @@ F 3 "" H 2250 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R604
+L Device:R_Shunt R604
 U 1 1 5F3D83DF
 P 3150 3850
 F 0 "R604" V 2943 3850 50  0000 C CNN
 F 1 "40m 1% 1/8W" V 3034 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0815_2038Metric" V 3080 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK12" V 3080 3850 50  0001 C CNN
 F 3 "~" H 3150 3850 50  0001 C CNN
 	1    3150 3850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3300 3850 3400 3850
 $Comp
 L Analog_ADC:INA219AxDCN U603
 U 1 1 5F3D83E7
@@ -264,60 +255,37 @@ $EndComp
 $Comp
 L Device:R R602
 U 1 1 5F3D83ED
-P 2900 4000
-F 0 "R602" H 2970 4046 50  0000 L CNN
-F 1 "0" H 2970 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4000 50  0001 C CNN
-F 3 "~" H 2900 4000 50  0001 C CNN
-	1    2900 4000
+P 2900 4150
+F 0 "R602" H 2970 4196 50  0000 L CNN
+F 1 "0" H 2970 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4150 50  0001 C CNN
+F 3 "~" H 2900 4150 50  0001 C CNN
+	1    2900 4150
 	1    0    0    -1  
 $EndComp
-Connection ~ 2900 3850
-Wire Wire Line
-	2900 3850 3000 3850
 $Comp
 L Device:R R606
 U 1 1 5F3D83F5
-P 3400 4000
-F 0 "R606" H 3470 4046 50  0000 L CNN
-F 1 "0" H 3470 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 4000 50  0001 C CNN
-F 3 "~" H 3400 4000 50  0001 C CNN
-	1    3400 4000
+P 3400 4150
+F 0 "R606" H 3470 4196 50  0000 L CNN
+F 1 "0" H 3470 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 4150 50  0001 C CNN
+F 3 "~" H 3400 4150 50  0001 C CNN
+	1    3400 4150
 	1    0    0    -1  
 $EndComp
-Connection ~ 3400 3850
 Wire Wire Line
-	3400 3850 3500 3850
-$Comp
-L Device:C_Small C602
-U 1 1 5F3D83FD
-P 3150 4300
-F 0 "C602" V 2921 4300 50  0000 C CNN
-F 1 "DNP" V 3012 4300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 4300 50  0001 C CNN
-F 3 "~" H 3150 4300 50  0001 C CNN
-	1    3150 4300
-	0    1    1    0   
-$EndComp
+	2900 4400 3050 4400
 Wire Wire Line
-	2900 4150 2900 4300
-Wire Wire Line
-	2900 4300 3050 4300
-Wire Wire Line
-	3250 4300 3400 4300
-Wire Wire Line
-	3400 4300 3400 4150
+	3250 4400 3400 4400
 Wire Wire Line
 	3550 4750 2900 4750
 Wire Wire Line
-	2900 4750 2900 4300
-Connection ~ 2900 4300
+	2900 4750 2900 4400
 Wire Wire Line
 	3550 4950 3400 4950
 Wire Wire Line
-	3400 4950 3400 4300
-Connection ~ 3400 4300
+	3400 4950 3400 4400
 $Comp
 L Device:C_Small C604
 U 1 1 5F3D840D
@@ -365,12 +333,10 @@ Wire Wire Line
 	4350 4250 4450 4250
 Text Notes 2750 5300 0    50   ~ 0
 Nominal load: 100mA\nMax load: 1A\nVshunt: 40mV\nCurrent LSB: 250µA
-Text Notes 2950 4600 0    50   ~ 0
+Text Notes 2950 4700 0    50   ~ 0
 Filter;\nprobably\nnot needed
 Text Notes 4500 5200 0    50   ~ 0
 i2c addr 1000 001
-Wire Wire Line
-	2550 3850 2900 3850
 Wire Wire Line
 	3950 5250 4450 5250
 Wire Wire Line
@@ -426,9 +392,6 @@ F 3 "~" H 2250 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 2100 2150 2100
-Wire Wire Line
-	2350 2100 2900 2100
-Connection ~ 2900 2100
 $Comp
 L power:PWR_FLAG #FLG0602
 U 1 1 600BF38A
@@ -440,7 +403,6 @@ F 3 "~" H 3500 2100 50  0001 C CNN
 	1    3500 2100
 	0    1    1    0   
 $EndComp
-Connection ~ 3500 2100
 $Comp
 L power:PWR_FLAG #FLG0603
 U 1 1 600BF66D
@@ -465,4 +427,38 @@ F 3 "~" H 1900 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 1900 2300
+Wire Wire Line
+	2950 2100 2350 2100
+Wire Wire Line
+	3050 2250 2900 2250
+Wire Wire Line
+	3350 2100 3500 2100
+Connection ~ 3500 2100
+Wire Wire Line
+	3250 2250 3400 2250
+$Comp
+L Device:C_Small C602
+U 1 1 5F3D83FD
+P 3150 4400
+F 0 "C602" V 2921 4400 50  0000 C CNN
+F 1 "DNP" V 3012 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 4400 50  0001 C CNN
+F 3 "~" H 3150 4400 50  0001 C CNN
+	1    3150 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 3850 2950 3850
+Wire Wire Line
+	3350 3850 3500 3850
+Wire Wire Line
+	3400 4000 3250 4000
+Wire Wire Line
+	2900 4000 3050 4000
+Wire Wire Line
+	2900 4400 2900 4300
+Connection ~ 2900 4400
+Wire Wire Line
+	3400 4300 3400 4400
+Connection ~ 3400 4400
 $EndSCHEMATC
