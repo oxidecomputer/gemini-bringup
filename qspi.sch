@@ -185,8 +185,6 @@ $EndComp
 Wire Wire Line
 	2800 5000 4250 5000
 Wire Wire Line
-	4250 5250 5550 5250
-Wire Wire Line
 	5350 4600 5700 4600
 Wire Wire Line
 	5350 4700 6250 4700
@@ -198,8 +196,6 @@ Wire Wire Line
 	5350 5000 6250 5000
 Wire Wire Line
 	5350 5100 5400 5100
-Wire Wire Line
-	5400 5100 5400 5600
 $Comp
 L power:GND #PWR0804
 U 1 1 5F385C9A
@@ -257,44 +253,8 @@ Text HLabel 6250 5250 2    50   Input ~ 0
 HOST_ACCESS
 Text Notes 4150 4300 2    50   ~ 0
 Host Side\nPowered by remote system\n1.2 - 3.6 V
-Text Notes 3700 5600 0    50   ~ 0
-OE is sampled relative to Vcca;\nkeep it pulled down until SP\ndrives it.
-$Comp
-L Device:D_Small D802
-U 1 1 5F3AC322
-P 6000 5250
-F 0 "D802" H 6000 5043 50  0000 C CNN
-F 1 "1N4148" H 6000 5134 50  0000 C CNN
-F 2 "" V 6000 5250 50  0001 C CNN
-F 3 "~" V 6000 5250 50  0001 C CNN
-	1    6000 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6100 5250 6250 5250
-Text Notes 5850 5500 0    50   ~ 0
-Avoid backpowering host\n1V8 from SP 3V3
-$Comp
-L Device:D_TVS D801
-U 1 1 5F3AD847
-P 5550 5450
-F 0 "D801" V 5596 5370 50  0000 R CNN
-F 1 "D_TVS" V 5505 5370 50  0000 R CNN
-F 2 "" H 5550 5450 50  0001 C CNN
-F 3 "~" H 5550 5450 50  0001 C CNN
-	1    5550 5450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5550 5300 5550 5250
-Connection ~ 5550 5250
-Wire Wire Line
-	5550 5250 5900 5250
-Wire Wire Line
-	5550 5600 5400 5600
-Connection ~ 5400 5600
-Wire Wire Line
-	5400 5600 5400 5850
+Text Notes 3600 5800 0    50   ~ 0
+OE is sampled relative to Vcca.\nVcca and Vccb share GND.\nPull it down to keep buffer\ndisabled until SP drives high.\nInput appears to be 3V3 tolerant\neven for 1V8 Vcca.
 Text Label 2800 4400 0    50   ~ 0
 ~HOST_CE
 Text Label 2800 4500 0    50   ~ 0
@@ -402,8 +362,6 @@ F 3 "~" H 2850 4200 50  0001 C CNN
 	1    2850 4200
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	6350 2550 6350 4900
 Wire Wire Line
 	4250 5200 4250 5250
 Wire Wire Line
@@ -437,4 +395,10 @@ F 3 "" H 3800 5200 50  0001 C CNN
 	1    3800 5200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	4250 5250 6250 5250
+Wire Wire Line
+	5400 5100 5400 5850
+Wire Bus Line
+	6350 2550 6350 4900
 $EndSCHEMATC
