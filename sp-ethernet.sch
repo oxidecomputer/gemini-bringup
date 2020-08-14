@@ -577,7 +577,7 @@ Wire Wire Line
 Connection ~ 5700 2300
 Connection ~ 6000 2400
 Wire Wire Line
-	6300 2550 6700 2550
+	6300 2550 6800 2550
 Connection ~ 6300 2550
 Connection ~ 6600 2650
 Connection ~ 6900 2800
@@ -637,19 +637,19 @@ Wire Wire Line
 Wire Wire Line
 	6600 1900 6600 2300
 Wire Wire Line
-	9300 2100 6650 2100
+	9300 2100 6700 2100
 Wire Wire Line
-	6650 2100 6650 2400
+	6700 2100 6700 2400
 Wire Wire Line
-	9300 2200 6700 2200
+	9300 2200 6800 2200
 Wire Wire Line
-	6700 2200 6700 2550
+	6800 2200 6800 2550
 Wire Wire Line
-	9300 2400 6750 2400
+	9300 2400 6900 2400
 Wire Wire Line
-	6750 2400 6750 2650
+	6900 2400 6900 2650
 Wire Wire Line
-	6600 2650 6750 2650
+	6600 2650 6900 2650
 Text Notes 7300 2050 0    50   ~ 0
 Diff pair 100ohm
 Text Notes 7800 2350 0    50   ~ 0
@@ -1293,7 +1293,7 @@ TXD1
 Text HLabel 1000 2000 0    50   Input ~ 0
 TXD0
 Wire Wire Line
-	6000 2400 6650 2400
+	6000 2400 6700 2400
 Text HLabel 1000 3400 0    50   Input ~ 0
 ~RESET
 Text HLabel 1000 3000 0    50   Output ~ 0
