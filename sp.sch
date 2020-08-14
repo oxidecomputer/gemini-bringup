@@ -2578,4 +2578,15 @@ Text Label 13000 3750 0    50   ~ 0
 ~RS232_SHDN
 Text Notes 17700 9950 0    50   ~ 0
 ON/OFF sequencing circuit\nfrom data sheet.
+$Comp
+L power:GND #PWR?
+U 1 1 5F86CBF0
+P 21350 10100
+F 0 "#PWR?" H 21350 9850 50  0001 C CNN
+F 1 "GND" V 21355 9972 50  0000 R CNN
+F 2 "" H 21350 10100 50  0001 C CNN
+F 3 "" H 21350 10100 50  0001 C CNN
+	1    21350 10100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
