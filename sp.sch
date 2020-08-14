@@ -13,6 +13,23 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 20350 5900 750  1650
+U 5F29584B
+F0 "sp-ethernet" 50
+F1 "sp-ethernet.sch" 50
+F2 "TXD0" I L 20350 6000 50 
+F3 "TXD1" I L 20350 6100 50 
+F4 "RXD0" O L 20350 6400 50 
+F5 "RXD1" O L 20350 6500 50 
+F6 "TXEN" I L 20350 6200 50 
+F7 "CRS_DV" O L 20350 6700 50 
+F8 "MDIO" B L 20350 7000 50 
+F9 "MDC" I L 20350 7100 50 
+F10 "REF_CLK" O L 20350 6800 50 
+F11 "~INTR" O L 20350 7450 50 
+F12 "~RESET" I L 20350 7300 50 
+$EndSheet
 $Comp
 L MCU_ST_STM32H7:STM32H753BITx U301
 U 1 1 5F192C5B
@@ -24,14 +41,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    11500 7950
 	1    0    0    -1  
 $EndComp
-Text Label 10000 2950 2    50   ~ 0
-~RESET
-Text Label 10000 3250 2    50   ~ 0
-BOOT0
-Text Label 13000 4250 0    50   ~ 0
-SWD_IO
-Text Label 13000 4350 0    50   ~ 0
-SWD_CLK
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J301
 U 1 1 5F197A06
@@ -76,26 +85,6 @@ F 3 "~" H 3250 2500 50  0001 C CNN
 	1    3250 2500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2800 2300 3100 2300
-Wire Wire Line
-	2800 2400 3350 2400
-Wire Wire Line
-	2800 2500 3100 2500
-Wire Wire Line
-	3400 2300 3700 2300
-Wire Wire Line
-	3650 2400 3700 2400
-Wire Wire Line
-	3400 2500 3700 2500
-Text Label 3700 2300 0    50   ~ 0
-SWD_CLK
-Text Label 3700 2400 0    50   ~ 0
-SWD_IO
-Text Label 3700 2500 0    50   ~ 0
-TRACESWO
-Text Notes 4150 2350 0    50   ~ 0
-Note: STM32H7 has internal pull\nresistors on SWD lines and reset\nso we don't need to add them here.
 $Comp
 L Device:C_Small C301
 U 1 1 5F19C2DA
@@ -107,17 +96,6 @@ F 3 "~" H 3000 2850 50  0001 C CNN
 	1    3000 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 2100 3000 2100
-Wire Wire Line
-	3000 2100 3000 2750
-Wire Wire Line
-	3000 2100 3700 2100
-Connection ~ 3000 2100
-Text Label 3700 2100 0    50   ~ 0
-~RESET
-Wire Wire Line
-	2200 3000 2300 3000
 $Comp
 L power:GND #PWR0302
 U 1 1 5F19E3B7
@@ -140,11 +118,6 @@ F 3 "" H 2300 1800 50  0001 C CNN
 	1    2300 1800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2800 2600
-Text Notes 3050 3000 0    50   ~ 0
-(near CPU)
-Text Label 13000 4950 0    50   ~ 0
-TRACESWO
 $Comp
 L Switch:SW_SPST SW301
 U 1 1 5F19FD56
@@ -156,22 +129,6 @@ F 3 "~" H 3550 2950 50  0001 C CNN
 	1    3550 2950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2300 3000 2300 3150
-Wire Wire Line
-	2300 3150 2650 3150
-Connection ~ 2300 3000
-Wire Wire Line
-	2650 3150 3000 3150
-Connection ~ 2650 3150
-Wire Wire Line
-	3000 2950 3000 3150
-Connection ~ 3000 3150
-Wire Wire Line
-	3000 3150 3550 3150
-Wire Wire Line
-	3550 2750 3000 2750
-Connection ~ 3000 2750
 $Comp
 L Switch:SW_SPDT SW302
 U 1 1 5F1A4001
@@ -194,8 +151,6 @@ F 3 "~" H 4500 2950 50  0001 C CNN
 	1    4500 2950
 	0    1    1    0   
 $EndComp
-Text Label 4350 2950 2    50   ~ 0
-BOOT0
 $Comp
 L power:+3V3 #PWR0307
 U 1 1 5F1A61C5
@@ -218,22 +173,6 @@ F 3 "" H 5050 3050 50  0001 C CNN
 	1    5050 3050
 	0    -1   -1   0   
 $EndComp
-Text Notes 5000 2800 0    50   ~ 0
-ROM
-Text Notes 5000 3200 0    50   ~ 0
-FLASH
-Text Notes 4100 3450 0    50   ~ 0
-BOOT0 has internal pulldown,\nbut this switch permits recovery\nfrom bad flashing.
-Wire Notes Line
-	1750 1550 5600 1550
-Wire Notes Line
-	5600 1550 5600 3600
-Wire Notes Line
-	5600 3600 1750 3600
-Wire Notes Line
-	1750 3600 1750 1550
-Text Notes 1800 3550 0    50   ~ 0
-Debug, Reset, Recovery
 $Comp
 L Device:C_Small C302
 U 1 1 5F1A9081
@@ -256,20 +195,6 @@ F 3 "~" H 8750 3700 50  0001 C CNN
 	1    8750 3700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10000 3450 9400 3450
-Wire Wire Line
-	8950 3450 8950 3550
-Wire Wire Line
-	8850 3400 8950 3400
-Wire Wire Line
-	8950 3400 8950 3450
-Connection ~ 8950 3450
-Wire Wire Line
-	8950 3550 8950 3700
-Wire Wire Line
-	8950 3700 8850 3700
-Connection ~ 8950 3550
 $Comp
 L power:GND #PWR0309
 U 1 1 5F1ADA7D
@@ -314,55 +239,6 @@ F 3 "" H 12400 2200 50  0001 C CNN
 	1    12400 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12400 2650 12400 2300
-Wire Wire Line
-	10700 2650 10800 2650
-Connection ~ 10800 2650
-Wire Wire Line
-	10800 2650 10900 2650
-Connection ~ 10900 2650
-Wire Wire Line
-	10900 2650 11000 2650
-Connection ~ 11000 2650
-Wire Wire Line
-	11000 2650 11100 2650
-Connection ~ 11100 2650
-Wire Wire Line
-	11100 2650 11200 2650
-Connection ~ 11200 2650
-Wire Wire Line
-	11200 2650 11300 2650
-Connection ~ 11300 2650
-Wire Wire Line
-	11300 2650 11350 2650
-Connection ~ 11400 2650
-Wire Wire Line
-	11400 2650 11500 2650
-Connection ~ 11500 2650
-Wire Wire Line
-	11500 2650 11600 2650
-Connection ~ 11600 2650
-Wire Wire Line
-	11600 2650 11700 2650
-Connection ~ 11700 2650
-Wire Wire Line
-	11700 2650 11800 2650
-Connection ~ 11800 2650
-Wire Wire Line
-	11800 2650 11900 2650
-Connection ~ 11900 2650
-Wire Wire Line
-	11900 2650 12000 2650
-Connection ~ 12000 2650
-Wire Wire Line
-	12000 2650 12100 2650
-Connection ~ 12100 2650
-Wire Wire Line
-	12100 2650 12200 2650
-Connection ~ 12200 2650
-Wire Wire Line
-	12200 2650 12300 2650
 $Comp
 L power:+3V3 #PWR0314
 U 1 1 5F1B23B4
@@ -374,11 +250,6 @@ F 3 "" H 11350 2200 50  0001 C CNN
 	1    11350 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11350 2200 11350 2300
-Connection ~ 11350 2650
-Wire Wire Line
-	11350 2650 11400 2650
 $Comp
 L Device:Ferrite_Bead_Small FB301
 U 1 1 5F1B33B5
@@ -390,63 +261,6 @@ F 3 "~" H 11850 2300 50  0001 C CNN
 	1    11850 2300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	11750 2300 11350 2300
-Connection ~ 11350 2300
-Wire Wire Line
-	11350 2300 11350 2450
-Wire Wire Line
-	11950 2300 12150 2300
-Connection ~ 12400 2300
-Wire Wire Line
-	12400 2300 12400 2200
-Wire Wire Line
-	10800 13250 10900 13250
-Connection ~ 10900 13250
-Wire Wire Line
-	10900 13250 11000 13250
-Connection ~ 11000 13250
-Wire Wire Line
-	11000 13250 11100 13250
-Connection ~ 11100 13250
-Wire Wire Line
-	11100 13250 11200 13250
-Connection ~ 11200 13250
-Wire Wire Line
-	11200 13250 11300 13250
-Connection ~ 11300 13250
-Wire Wire Line
-	11300 13250 11400 13250
-Connection ~ 11400 13250
-Wire Wire Line
-	11400 13250 11450 13250
-Connection ~ 11500 13250
-Wire Wire Line
-	11500 13250 11600 13250
-Connection ~ 11600 13250
-Wire Wire Line
-	11600 13250 11700 13250
-Connection ~ 11700 13250
-Wire Wire Line
-	11700 13250 11800 13250
-Connection ~ 11800 13250
-Wire Wire Line
-	11800 13250 11900 13250
-Connection ~ 11900 13250
-Wire Wire Line
-	11900 13250 12000 13250
-Connection ~ 12000 13250
-Wire Wire Line
-	12000 13250 12100 13250
-Wire Wire Line
-	12200 13250 12200 13400
-Wire Wire Line
-	12200 13400 11450 13400
-Wire Wire Line
-	11450 13400 11450 13250
-Connection ~ 11450 13250
-Wire Wire Line
-	11450 13250 11500 13250
 $Comp
 L power:GND #PWR0315
 U 1 1 5F1B85B2
@@ -458,11 +272,6 @@ F 3 "" H 11450 13400 50  0001 C CNN
 	1    11450 13400
 	1    0    0    -1  
 $EndComp
-Connection ~ 11450 13400
-Text Notes 12250 13300 0    50   ~ 0
-Isolating VSSA would improve\nanalog performance.
-Text Notes 12450 2750 0    50   ~ 0
-Design assumes we're not\nusing USB.
 $Comp
 L Device:R R309
 U 1 1 5F1BB0B6
@@ -474,8 +283,6 @@ F 3 "~" H 9650 3050 50  0001 C CNN
 	1    9650 3050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10000 3050 9800 3050
 $Comp
 L power:+3V3 #PWR0311
 U 1 1 5F1BD020
@@ -509,10 +316,6 @@ F 3 "~" H 21550 2600 50  0001 C CNN
 	1    21550 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	21250 2500 21400 2500
-Wire Wire Line
-	21550 2700 21400 2700
 $Comp
 L power:GND #PWR0326
 U 1 1 5F1C1549
@@ -524,9 +327,6 @@ F 3 "" H 21400 2700 50  0001 C CNN
 	1    21400 2700
 	1    0    0    -1  
 $EndComp
-Connection ~ 21400 2700
-Wire Wire Line
-	21400 2700 21250 2700
 $Comp
 L power:VDDA #PWR0325
 U 1 1 5F1C1A33
@@ -538,9 +338,6 @@ F 3 "" H 21400 2500 50  0001 C CNN
 	1    21400 2500
 	1    0    0    -1  
 $EndComp
-Connection ~ 21400 2500
-Wire Wire Line
-	21400 2500 21550 2500
 $Comp
 L Device:CP_Small C304
 U 1 1 5F1C1EEE
@@ -575,6 +372,17 @@ F 3 "" H 18800 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:R R311
+U 1 1 5F1C317F
+P 19800 6000
+F 0 "R311" V 19750 5850 50  0000 C CNN
+F 1 "22" V 19800 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 6000 50  0001 C CNN
+F 3 "~" H 19800 6000 50  0001 C CNN
+	1    19800 6000
+	0    1    1    0   
+$EndComp
+$Comp
 L power:GND #PWR0318
 U 1 1 5F1C34D4
 P 18800 1700
@@ -585,12 +393,28 @@ F 3 "" H 18800 1700 50  0001 C CNN
 	1    18800 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	18800 1500 19150 1500
-Connection ~ 18800 1500
-Wire Wire Line
-	19150 1700 18800 1700
-Connection ~ 18800 1700
+$Comp
+L Device:R R312
+U 1 1 5F1C38F7
+P 19800 6100
+F 0 "R312" V 19750 5950 50  0000 C CNN
+F 1 "22" V 19800 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 6100 50  0001 C CNN
+F 3 "~" H 19800 6100 50  0001 C CNN
+	1    19800 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R313
+U 1 1 5F1C3CA3
+P 19800 6200
+F 0 "R313" V 19750 6050 50  0000 C CNN
+F 1 "22" V 19800 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 6200 50  0001 C CNN
+F 3 "~" H 19800 6200 50  0001 C CNN
+	1    19800 6200
+	0    1    1    0   
+$EndComp
 $Comp
 L Device:C_Small C308
 U 1 1 5F1C71FF
@@ -800,132 +624,28 @@ F 3 "~" H 19450 2550 50  0001 C CNN
 	1    19450 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	19150 1500 19450 1500
-Connection ~ 19150 1500
-Connection ~ 19450 1500
-Wire Wire Line
-	19450 1500 19750 1500
-Connection ~ 19750 1500
-Wire Wire Line
-	19750 1500 20050 1500
-Connection ~ 20050 1500
-Wire Wire Line
-	20050 1500 20350 1500
-Connection ~ 20350 1500
-Wire Wire Line
-	20350 1500 20650 1500
-Connection ~ 20650 1500
-Wire Wire Line
-	20650 1500 20950 1500
-Connection ~ 20950 1500
-Wire Wire Line
-	20950 1500 21250 1500
-Connection ~ 21250 1500
-Wire Wire Line
-	21250 1500 21550 1500
-Wire Wire Line
-	19150 1700 19450 1700
-Connection ~ 19150 1700
-Connection ~ 19450 1700
-Wire Wire Line
-	19450 1700 19750 1700
-Connection ~ 19750 1700
-Wire Wire Line
-	19750 1700 20050 1700
-Connection ~ 20050 1700
-Wire Wire Line
-	20050 1700 20350 1700
-Connection ~ 20350 1700
-Wire Wire Line
-	20350 1700 20650 1700
-Connection ~ 20650 1700
-Wire Wire Line
-	20650 1700 20950 1700
-Connection ~ 20950 1700
-Wire Wire Line
-	20950 1700 21250 1700
-Connection ~ 21250 1700
-Wire Wire Line
-	21250 1700 21550 1700
-Wire Wire Line
-	19150 1950 19450 1950
-Connection ~ 19450 1950
-Wire Wire Line
-	19450 1950 19750 1950
-Connection ~ 19750 1950
-Wire Wire Line
-	19750 1950 20050 1950
-Connection ~ 20050 1950
-Wire Wire Line
-	20050 1950 20350 1950
-Connection ~ 20350 1950
-Wire Wire Line
-	20350 1950 20650 1950
-Connection ~ 20650 1950
-Wire Wire Line
-	20650 1950 20950 1950
-Connection ~ 20950 1950
-Wire Wire Line
-	20950 1950 21250 1950
-Connection ~ 21250 1950
-Wire Wire Line
-	21250 1950 21550 1950
-Wire Wire Line
-	21550 2150 21250 2150
-Connection ~ 19450 2150
-Wire Wire Line
-	19450 2150 19150 2150
-Connection ~ 19750 2150
-Wire Wire Line
-	19750 2150 19450 2150
-Connection ~ 20050 2150
-Wire Wire Line
-	20050 2150 19750 2150
-Connection ~ 20350 2150
-Wire Wire Line
-	20350 2150 20050 2150
-Connection ~ 20650 2150
-Wire Wire Line
-	20650 2150 20350 2150
-Connection ~ 20950 2150
-Wire Wire Line
-	20950 2150 20650 2150
-Connection ~ 21250 2150
-Wire Wire Line
-	21250 2150 20950 2150
-Wire Wire Line
-	19150 2450 19450 2450
-Wire Wire Line
-	19450 2650 19150 2650
-Wire Wire Line
-	19150 1950 18650 1950
-Wire Wire Line
-	18650 1950 18650 1500
-Wire Wire Line
-	18650 1500 18800 1500
-Connection ~ 19150 1950
-Wire Wire Line
-	19150 2450 18650 2450
-Wire Wire Line
-	18650 2450 18650 1950
-Connection ~ 19150 2450
-Connection ~ 18650 1950
-Wire Wire Line
-	19150 2150 18700 2150
-Wire Wire Line
-	18700 2150 18700 1700
-Wire Wire Line
-	18700 1700 18800 1700
-Connection ~ 19150 2150
-Wire Wire Line
-	19150 2650 18700 2650
-Wire Wire Line
-	18700 2650 18700 2150
-Connection ~ 19150 2650
-Connection ~ 18700 2150
-Text Notes 20750 1850 2    50   ~ 0
-uC logic supply decoupling
+$Comp
+L Device:R R315
+U 1 1 5F1EA258
+P 19800 7100
+F 0 "R315" V 19750 6950 50  0000 C CNN
+F 1 "22" V 19800 7100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 7100 50  0001 C CNN
+F 3 "~" H 19800 7100 50  0001 C CNN
+	1    19800 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R314
+U 1 1 5F1EAD63
+P 19800 7000
+F 0 "R314" V 19750 6850 50  0000 C CNN
+F 1 "22" V 19800 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 7000 50  0001 C CNN
+F 3 "~" H 19800 7000 50  0001 C CNN
+	1    19800 7000
+	0    1    1    0   
+$EndComp
 $Comp
 L Device:Battery_Cell BT301
 U 1 1 5F1F0C42
@@ -948,8 +668,6 @@ F 3 "" H 9600 2550 50  0001 C CNN
 	1    9600 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10600 2250 10600 2450
 $Comp
 L Switch:SW_Push_Open SW303
 U 1 1 5F2000A4
@@ -961,28 +679,6 @@ F 3 "~" H 9850 2250 50  0001 C CNN
 	1    9850 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 2250 9650 2250
-Text Notes 8900 2250 0    50   ~ 0
-Use MOMENTARY NC\nMust be closed when\npower is on!
-Text Label 13000 7750 0    50   ~ 0
-OSC32_IN
-Text Label 13000 7850 0    50   ~ 0
-OSC32_OUT
-Text Label 10000 9750 2    50   ~ 0
-OSC_IN
-Text Label 10000 9850 2    50   ~ 0
-OSC_OUT
-Wire Notes Line
-	18550 1200 21850 1200
-Wire Notes Line
-	21850 1200 21850 3000
-Wire Notes Line
-	21850 3000 18550 3000
-Wire Notes Line
-	18550 3000 18550 1200
-Text Notes 18600 2950 0    50   ~ 0
-Decouple all the things
 $Comp
 L Device:Crystal_GND24 Y301
 U 1 1 5F22694B
@@ -1027,14 +723,6 @@ F 3 "~" H 20800 4650 50  0001 C CNN
 	1    20800 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	20800 4550 20800 4450
-Wire Wire Line
-	20800 4450 20900 4450
-Wire Wire Line
-	21100 4450 21200 4450
-Wire Wire Line
-	21200 4450 21200 4550
 $Comp
 L power:GND #PWR0320
 U 1 1 5F2336A8
@@ -1057,16 +745,6 @@ F 3 "" H 21200 4750 50  0001 C CNN
 	1    21200 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	20800 4450 20750 4450
-Connection ~ 20800 4450
-Wire Wire Line
-	21200 4450 21250 4450
-Connection ~ 21200 4450
-Text Label 21250 4450 0    50   ~ 0
-OSC32_IN
-Text Label 20750 4450 2    50   ~ 0
-OSC32_OUT
 $Comp
 L Device:C_Small C319
 U 1 1 5F23EFE3
@@ -1078,8 +756,6 @@ F 3 "~" H 20650 3900 50  0001 C CNN
 	1    20650 3900
 	1    0    0    -1  
 $EndComp
-Text Notes 20700 4750 2    50   ~ 0
-CHECK VALUES\nFOR CRYSTAL
 $Comp
 L Device:C_Small C327
 U 1 1 5F23FCB8
@@ -1091,14 +767,6 @@ F 3 "~" H 21350 3900 50  0001 C CNN
 	1    21350 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	20800 3650 20650 3650
-Wire Wire Line
-	20650 3650 20650 3800
-Wire Wire Line
-	21100 3650 21350 3650
-Wire Wire Line
-	21350 3650 21350 3800
 $Comp
 L power:GND #PWR0319
 U 1 1 5F24B7AA
@@ -1143,28 +811,6 @@ F 3 "" H 20950 3450 50  0001 C CNN
 	1    20950 3450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	20650 3650 20600 3650
-Connection ~ 20650 3650
-Wire Wire Line
-	21350 3650 21400 3650
-Connection ~ 21350 3650
-Text Label 20600 3650 2    50   ~ 0
-OSC_OUT
-Text Label 21400 3650 0    50   ~ 0
-OSC_IN
-Text Notes 20550 4000 2    50   ~ 0
-CHECK VALUES\nFOR CRYSTAL
-Wire Notes Line
-	19950 3200 21750 3200
-Wire Notes Line
-	21750 3200 21750 5200
-Wire Notes Line
-	21750 5200 19950 5200
-Wire Notes Line
-	19950 5200 19950 3200
-Text Notes 20000 5150 0    50   ~ 0
-Crystals
 $Comp
 L Jumper:SolderJumper_2_Open JP302
 U 1 1 5F26F72B
@@ -1176,16 +822,6 @@ F 3 "~" H 10950 2450 50  0001 C CNN
 	1    10950 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10800 2450 10600 2450
-Connection ~ 10600 2450
-Wire Wire Line
-	10600 2450 10600 2650
-Wire Wire Line
-	11100 2450 11350 2450
-Connection ~ 11350 2450
-Wire Wire Line
-	11350 2450 11350 2650
 $Comp
 L Jumper:SolderJumper_2_Bridged JP301
 U 1 1 5F288517
@@ -1197,704 +833,6 @@ F 3 "~" H 10300 2250 50  0001 C CNN
 	1    10300 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10450 2250 10600 2250
-Wire Wire Line
-	10150 2250 10050 2250
-$Sheet
-S 20350 5900 750  1650
-U 5F29584B
-F0 "sp-ethernet" 50
-F1 "sp-ethernet.sch" 50
-F2 "TXD0" I L 20350 6000 50 
-F3 "TXD1" I L 20350 6100 50 
-F4 "RXD0" O L 20350 6400 50 
-F5 "RXD1" O L 20350 6500 50 
-F6 "TXEN" I L 20350 6200 50 
-F7 "CRS_DV" O L 20350 6700 50 
-F8 "MDIO" B L 20350 7000 50 
-F9 "MDC" I L 20350 7100 50 
-F10 "REF_CLK" O L 20350 6800 50 
-F11 "~INTR" O L 20350 7450 50 
-F12 "~RESET" I L 20350 7300 50 
-$EndSheet
-Text Label 19500 6000 2    50   ~ 0
-RMII_TXD0
-Text Label 19500 6100 2    50   ~ 0
-RMII_TXD1
-Text Label 19500 6200 2    50   ~ 0
-RMII_TXEN
-Text Label 20350 6400 2    50   ~ 0
-RMII_RXD0
-Text Label 20350 6500 2    50   ~ 0
-RMII_RXD1
-Text Label 20350 6700 2    50   ~ 0
-RMII_CRS_DV
-Text Label 20350 6800 2    50   ~ 0
-RMII_REF_CLK
-Text Label 19500 7000 2    50   ~ 0
-RMII_MDIO
-Text Label 19500 7100 2    50   ~ 0
-RMII_MDC
-Text Label 13000 6850 0    50   ~ 0
-RMII_RXD1
-Text Label 13000 6750 0    50   ~ 0
-RMII_RXD0
-Text Label 13000 6450 0    50   ~ 0
-RMII_MDC
-Text Label 13000 3150 0    50   ~ 0
-RMII_MDIO
-Text Label 20350 7300 2    50   ~ 0
-~RESET
-Text Notes 21150 7400 0    50   ~ 0
-Note: stm32h7 actively pulls NRST to\nensure minimum pulse width, so we can\njust reuse it here.
-$Comp
-L Device:R R311
-U 1 1 5F1C317F
-P 19800 6000
-F 0 "R311" V 19750 5850 50  0000 C CNN
-F 1 "22" V 19800 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 6000 50  0001 C CNN
-F 3 "~" H 19800 6000 50  0001 C CNN
-	1    19800 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R312
-U 1 1 5F1C38F7
-P 19800 6100
-F 0 "R312" V 19750 5950 50  0000 C CNN
-F 1 "22" V 19800 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 6100 50  0001 C CNN
-F 3 "~" H 19800 6100 50  0001 C CNN
-	1    19800 6100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R313
-U 1 1 5F1C3CA3
-P 19800 6200
-F 0 "R313" V 19750 6050 50  0000 C CNN
-F 1 "22" V 19800 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 6200 50  0001 C CNN
-F 3 "~" H 19800 6200 50  0001 C CNN
-	1    19800 6200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	19950 6000 20350 6000
-Wire Wire Line
-	20350 6100 19950 6100
-Wire Wire Line
-	20350 6200 19950 6200
-Wire Wire Line
-	19650 6000 19500 6000
-Wire Wire Line
-	19650 6100 19500 6100
-Wire Wire Line
-	19650 6200 19500 6200
-$Comp
-L Device:R R315
-U 1 1 5F1EA258
-P 19800 7100
-F 0 "R315" V 19750 6950 50  0000 C CNN
-F 1 "22" V 19800 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 7100 50  0001 C CNN
-F 3 "~" H 19800 7100 50  0001 C CNN
-	1    19800 7100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R314
-U 1 1 5F1EAD63
-P 19800 7000
-F 0 "R314" V 19750 6850 50  0000 C CNN
-F 1 "22" V 19800 7000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 19730 7000 50  0001 C CNN
-F 3 "~" H 19800 7000 50  0001 C CNN
-	1    19800 7000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	19500 7000 19650 7000
-Wire Wire Line
-	19500 7100 19650 7100
-Wire Wire Line
-	19950 7000 20350 7000
-Wire Wire Line
-	19950 7100 20350 7100
-Text Notes 19400 5900 0    50   ~ 0
-Series drive resistors as\nrecommended by datasheet;\nplace close to CPU
-Text Label 20350 7450 2    50   ~ 0
-~ETH_IRQ
-Text Label 13000 3050 0    50   ~ 0
-RMII_REF_CLK
-Text Label 13000 3650 0    50   ~ 0
-RMII_CRS_DV
-Text Label 13000 5150 0    50   ~ 0
-~I2C1_B_SMBA
-Text Label 13000 5350 0    50   ~ 0
-~FPGA_LE
-Text Label 13000 5550 0    50   ~ 0
-I2C1_B_SDA
-Text Label 13000 5650 0    50   ~ 0
-I2C2_B_SCL
-Text Label 13000 5750 0    50   ~ 0
-I2C2_B_SDA
-Text Label 13000 5850 0    50   ~ 0
-~I2C2_B_SMBA
-Text Label 13000 7150 0    50   ~ 0
-SDMMC1_D0
-Text Label 13000 7250 0    50   ~ 0
-SDMMC1_D1
-Text Label 13000 7350 0    50   ~ 0
-SDMMC1_D2
-Text Label 13000 7450 0    50   ~ 0
-SDMMC1_D3
-Text Label 13000 7550 0    50   ~ 0
-SDMMC1_CLK
-Text Label 13000 8050 0    50   ~ 0
-FPGA_DA2
-Text Label 13000 8150 0    50   ~ 0
-FPGA_DA3
-Text Label 13000 8250 0    50   ~ 0
-SDMMC1_CMD
-Text Label 13000 8350 0    50   ~ 0
-FPGA_CLK
-Text Label 13000 8450 0    50   ~ 0
-~FPGA_OE
-Text Label 13000 8750 0    50   ~ 0
-~FPGA_CE1
-Text Label 13000 8850 0    50   ~ 0
-FPGA_DA13
-Text Label 13000 8950 0    50   ~ 0
-FPGA_DA14
-Text Label 13000 9050 0    50   ~ 0
-FPGA_DA15
-Text Label 13000 9150 0    50   ~ 0
-~I2C4_D_SMBA
-Text Label 13000 9250 0    50   ~ 0
-I2C4_D_SCL
-Text Label 13000 9350 0    50   ~ 0
-I2C4_D_SDA
-Text Label 13000 9450 0    50   ~ 0
-FPGA_DA0
-Text Label 13000 9550 0    50   ~ 0
-FPGA_DA1
-Text Label 13000 9750 0    50   ~ 0
-~FPGA_BL0
-Text Label 13000 9850 0    50   ~ 0
-~FPGA_BL1
-Text Label 13000 10450 0    50   ~ 0
-FPGA_DA4
-Text Label 13000 10550 0    50   ~ 0
-FPGA_DA5
-Text Label 13000 10650 0    50   ~ 0
-FPGA_DA6
-Text Label 13000 10750 0    50   ~ 0
-FPGA_DA7
-Text Label 13000 10850 0    50   ~ 0
-FPGA_DA8
-Text Label 13000 10950 0    50   ~ 0
-FPGA_DA9
-Text Label 13000 11050 0    50   ~ 0
-FPGA_DA10
-Text Label 13000 11150 0    50   ~ 0
-FPGA_DA11
-Text Label 13000 11250 0    50   ~ 0
-FPGA_DA12
-Text Label 13000 11450 0    50   ~ 0
-I2C2_F_SDA
-Text Label 13000 11550 0    50   ~ 0
-I2C2_F_SCL
-Text Label 13000 11650 0    50   ~ 0
-~I2C2_F_SMBA
-Text Label 13000 12050 0    50   ~ 0
-QSPI_IO3
-Text Label 13000 12150 0    50   ~ 0
-QSPI_IO2
-Text Label 13000 12250 0    50   ~ 0
-QSPI_IO0
-Text Label 13000 12350 0    50   ~ 0
-QSPI_IO1
-Text Label 13000 12450 0    50   ~ 0
-QSPI_CLK
-Text Label 13000 12750 0    50   ~ 0
-~I2C4_F_SMBA
-Text Label 13000 12850 0    50   ~ 0
-I2C4_F_SCL
-Text Label 13000 12950 0    50   ~ 0
-I2C4_F_SDA
-Text Label 10000 12350 2    50   ~ 0
-~FPGA_CE2
-Text Label 10000 12550 2    50   ~ 0
-RMII_TXEN
-Text Label 10000 12650 2    50   ~ 0
-RMII_TXD1
-Text Label 10000 12850 2    50   ~ 0
-RMII_TXD1
-Text Label 10000 12750 2    50   ~ 0
-RMII_TXD0
-Text Notes 9600 12700 2    50   ~ 0
-(choose one TXD1 option)
-Text Label 10000 10150 2    50   ~ 0
-I2C2_H_SCL
-Text Label 10000 10250 2    50   ~ 0
-I2C2_H_SDA
-Text Label 10000 10350 2    50   ~ 0
-~I2C2_H_SMBA
-Text Label 10000 10450 2    50   ~ 0
-I2C3_H_SCL
-Text Label 10000 10550 2    50   ~ 0
-I2C3_H_SDA
-Text Label 10000 10650 2    50   ~ 0
-~I2C3_H_SMBA
-Text Label 10000 10750 2    50   ~ 0
-~I2C4_H_SMBA
-Text Label 10000 10850 2    50   ~ 0
-I2C4_H_SCL
-Text Label 10000 10950 2    50   ~ 0
-I2C4_H_SDA
-Text Label 13000 5250 0    50   ~ 0
-~QSPI_CS
-Text Label 13000 5450 0    50   ~ 0
-I2C1_B_SCL
-Text Label 13000 3850 0    50   ~ 0
-USART1_TX
-Text Label 13000 3950 0    50   ~ 0
-USART1_RX
-Text Label 10000 7150 2    50   ~ 0
-UART8_TX
-Text Label 10000 7250 2    50   ~ 0
-UART8_RX
-Text Label 10000 7350 2    50   ~ 0
-SPI5_MOSI
-Text Label 10000 7450 2    50   ~ 0
-SPI5_MISO
-Text Label 10000 5450 2    50   ~ 0
-SPI5_SCK
-Text Label 10000 5550 2    50   ~ 0
-~SPI5_CS
-Text Label 10000 8050 2    50   ~ 0
-~SPI2_CS0
-Text Label 10000 8150 2    50   ~ 0
-SPI2_SCK
-Text Label 10000 8250 2    50   ~ 0
-SPI2_MISO
-Text Label 10000 8350 2    50   ~ 0
-SPI2_MOSI
-Text Label 10000 11050 2    50   ~ 0
-UART4_TX
-Text Label 10000 11150 2    50   ~ 0
-UART4_RX
-Text Label 13000 9950 0    50   ~ 0
-ROT_SPI4_SCK
-Text Label 13000 10250 0    50   ~ 0
-ROT_SPI4_MISO
-Text Label 13000 10350 0    50   ~ 0
-ROT_SPI4_MOSI
-Text Label 13000 6950 0    50   ~ 0
-USART6_TX
-Text Label 13000 7050 0    50   ~ 0
-USART6_RX
-Text Label 13000 3750 0    50   ~ 0
-UART7_RX
-Text Label 13000 4450 0    50   ~ 0
-UART7_TX
-Text HLabel 2400 8500 2    50   BiDi ~ 0
-FPGA_DA[0..15]
-Entry Wire Line
-	1800 8600 1900 8700
-Entry Wire Line
-	1800 8700 1900 8800
-Entry Wire Line
-	1800 8800 1900 8900
-Entry Wire Line
-	1800 8900 1900 9000
-Entry Wire Line
-	1800 9000 1900 9100
-Entry Wire Line
-	1800 9100 1900 9200
-Entry Wire Line
-	1800 9200 1900 9300
-Entry Wire Line
-	1800 9300 1900 9400
-Entry Wire Line
-	1800 9400 1900 9500
-Entry Wire Line
-	1800 9500 1900 9600
-Entry Wire Line
-	1800 9600 1900 9700
-Entry Wire Line
-	1800 9700 1900 9800
-Entry Wire Line
-	1800 9800 1900 9900
-Entry Wire Line
-	1800 9900 1900 10000
-Entry Wire Line
-	1800 10000 1900 10100
-Entry Wire Line
-	1800 8500 1900 8600
-Wire Wire Line
-	1800 8500 1700 8500
-Wire Wire Line
-	1800 8600 1700 8600
-Wire Wire Line
-	1800 8700 1700 8700
-Wire Wire Line
-	1800 8800 1700 8800
-Wire Wire Line
-	1800 8900 1700 8900
-Wire Wire Line
-	1800 9000 1700 9000
-Wire Wire Line
-	1800 9100 1700 9100
-Wire Wire Line
-	1800 9200 1700 9200
-Wire Wire Line
-	1800 9300 1700 9300
-Wire Wire Line
-	1800 9400 1700 9400
-Wire Wire Line
-	1800 9500 1700 9500
-Wire Wire Line
-	1800 9600 1700 9600
-Wire Wire Line
-	1800 9700 1700 9700
-Wire Wire Line
-	1800 9800 1700 9800
-Wire Wire Line
-	1800 9900 1700 9900
-Wire Wire Line
-	1800 10000 1700 10000
-Wire Bus Line
-	1900 8500 2400 8500
-Text Label 1700 8500 2    50   ~ 0
-FPGA_DA0
-Text Label 1700 8600 2    50   ~ 0
-FPGA_DA1
-Text Label 1700 8700 2    50   ~ 0
-FPGA_DA2
-Text Label 1700 8800 2    50   ~ 0
-FPGA_DA3
-Text Label 1700 8900 2    50   ~ 0
-FPGA_DA4
-Text Label 1700 9000 2    50   ~ 0
-FPGA_DA5
-Text Label 1700 9100 2    50   ~ 0
-FPGA_DA6
-Text Label 1700 9200 2    50   ~ 0
-FPGA_DA7
-Text Label 1700 9300 2    50   ~ 0
-FPGA_DA8
-Text Label 1700 9400 2    50   ~ 0
-FPGA_DA9
-Text Label 1700 9500 2    50   ~ 0
-FPGA_DA10
-Text Label 1700 9600 2    50   ~ 0
-FPGA_DA11
-Text Label 1700 9700 2    50   ~ 0
-FPGA_DA12
-Text Label 1700 9800 2    50   ~ 0
-FPGA_DA13
-Text Label 1700 9900 2    50   ~ 0
-FPGA_DA14
-Text Label 1700 10000 2    50   ~ 0
-FPGA_DA15
-Text HLabel 2400 8650 2    50   Output ~ 0
-~FPGA_OE
-Text HLabel 2400 8750 2    50   Output ~ 0
-FPGA_CLK
-Text HLabel 2400 8850 2    50   Output ~ 0
-~FPGA_LE
-Text HLabel 2400 8950 2    50   Output ~ 0
-~FPGA_CE1
-Text HLabel 2400 9050 2    50   Output ~ 0
-~FPGA_CE2
-Text HLabel 2400 9150 2    50   Output ~ 0
-~FPGA_BL0
-Text HLabel 2400 9250 2    50   Output ~ 0
-~FPGA_BL1
-Text Label 13000 8550 0    50   ~ 0
-~FPGA_WE
-Text HLabel 2400 9350 2    50   Output ~ 0
-~FPGA_WE
-Text Label 2400 8650 2    50   ~ 0
-~FPGA_OE
-Text Label 2400 8750 2    50   ~ 0
-FPGA_CLK
-Text Label 2400 8850 2    50   ~ 0
-~FPGA_LE
-Text Label 2400 8950 2    50   ~ 0
-~FPGA_CE1
-Text Label 2400 9050 2    50   ~ 0
-~FPGA_CE2
-Text Label 2400 9150 2    50   ~ 0
-~FPGA_BL0
-Text Label 2400 9250 2    50   ~ 0
-~FPGA_BL1
-Text Label 2400 9350 2    50   ~ 0
-~FPGA_WE
-Text HLabel 2400 10400 2    50   BiDi ~ 0
-QSPI_IO[0..3]
-Text HLabel 2400 10550 2    50   Output ~ 0
-QSPI_CLK
-Text HLabel 2400 10700 2    50   Output ~ 0
-~QSPI_CS
-Text Label 2400 10550 2    50   ~ 0
-QSPI_CLK
-Text Label 2400 10700 2    50   ~ 0
-~QSPI_CS
-Wire Bus Line
-	2400 10400 1900 10400
-Entry Wire Line
-	1800 10400 1900 10500
-Entry Wire Line
-	1800 10500 1900 10600
-Entry Wire Line
-	1800 10600 1900 10700
-Entry Wire Line
-	1800 10700 1900 10800
-Text Label 1750 10400 2    50   ~ 0
-QSPI_IO0
-Text Label 1750 10500 2    50   ~ 0
-QSPI_IO1
-Text Label 1750 10600 2    50   ~ 0
-QSPI_IO2
-Text Label 1750 10700 2    50   ~ 0
-QSPI_IO3
-Wire Wire Line
-	1750 10400 1800 10400
-Wire Wire Line
-	1750 10500 1800 10500
-Wire Wire Line
-	1750 10600 1800 10600
-Wire Wire Line
-	1750 10700 1800 10700
-Text HLabel 2550 11250 2    50   BiDi ~ 0
-SDMMC1_D[0..3]
-Text HLabel 2550 11400 2    50   Output ~ 0
-SDMMC1_CMD
-Text HLabel 2550 11550 2    50   Output ~ 0
-SDMMC1_CLK
-Text Label 2550 11400 2    50   ~ 0
-SDMMC1_CMD
-Text Label 2550 11550 2    50   ~ 0
-SDMMC1_CLK
-Wire Bus Line
-	2550 11250 1900 11250
-Entry Wire Line
-	1800 11250 1900 11350
-Entry Wire Line
-	1800 11350 1900 11450
-Entry Wire Line
-	1800 11450 1900 11550
-Entry Wire Line
-	1800 11550 1900 11650
-Text Label 1750 11250 2    50   ~ 0
-SDMMC1_D0
-Wire Wire Line
-	1750 11250 1800 11250
-Wire Wire Line
-	1750 11350 1800 11350
-Wire Wire Line
-	1750 11450 1800 11450
-Wire Wire Line
-	1750 11550 1800 11550
-Text Label 1750 11350 2    50   ~ 0
-SDMMC1_D1
-Text Label 1750 11450 2    50   ~ 0
-SDMMC1_D2
-Text Label 1750 11550 2    50   ~ 0
-SDMMC1_D3
-Text HLabel 2250 12050 2    50   BiDi ~ 0
-I2C1_B_SDA
-Text HLabel 2250 12150 2    50   BiDi ~ 0
-I2C1_B_SCL
-Text HLabel 2250 12250 2    50   BiDi ~ 0
-~I2C1_B_SMBA
-Text HLabel 2250 12850 2    50   BiDi ~ 0
-I2C2_F_SDA
-Text HLabel 2250 12950 2    50   BiDi ~ 0
-I2C2_F_SCL
-Text HLabel 2250 13050 2    50   BiDi ~ 0
-~I2C2_F_SMBA
-Text HLabel 2250 13850 2    50   BiDi ~ 0
-~I2C4_D_SMBA
-Text HLabel 2250 13750 2    50   BiDi ~ 0
-I2C4_D_SCL
-Text HLabel 2250 13650 2    50   BiDi ~ 0
-I2C4_D_SDA
-Text HLabel 3900 12850 2    50   BiDi ~ 0
-I2C2_H_SDA
-Text HLabel 3900 12950 2    50   BiDi ~ 0
-I2C2_H_SCL
-Text HLabel 3900 13050 2    50   BiDi ~ 0
-~I2C2_H_SMBA
-Text HLabel 3950 13700 2    50   BiDi ~ 0
-I2C4_H_SDA
-Text HLabel 3950 13800 2    50   BiDi ~ 0
-I2C4_H_SCL
-Text HLabel 3950 13900 2    50   BiDi ~ 0
-~I2C4_H_SMBA
-Text Label 1700 12150 2    50   ~ 0
-I2C1_B_SCL
-Text Label 1700 12250 2    50   ~ 0
-~I2C1_B_SMBA
-Text Label 1700 12850 2    50   ~ 0
-I2C2_F_SDA
-Text Label 1700 12950 2    50   ~ 0
-I2C2_F_SCL
-Text Label 1700 13050 2    50   ~ 0
-~I2C2_F_SMBA
-Text Label 3350 12850 2    50   ~ 0
-I2C2_H_SDA
-Text Label 3350 12950 2    50   ~ 0
-I2C2_H_SCL
-Text Label 3350 13050 2    50   ~ 0
-~I2C2_H_SMBA
-Text Label 1700 13650 2    50   ~ 0
-I2C4_D_SDA
-Text Label 1700 13750 2    50   ~ 0
-I2C4_D_SCL
-Text Label 1700 13850 2    50   ~ 0
-~I2C4_D_SMBA
-Text Label 3400 13700 2    50   ~ 0
-I2C4_H_SDA
-Text Label 3400 13800 2    50   ~ 0
-I2C4_H_SCL
-Text Label 3400 13900 2    50   ~ 0
-~I2C4_H_SMBA
-Wire Notes Line
-	1150 11900 4600 11900
-Text Notes 1200 14150 0    50   ~ 0
-I2C egress
-Text Notes 2100 14050 0    50   ~ 0
-Pullups left to external devices
-Wire Notes Line
-	1150 8350 3300 8350
-Wire Notes Line
-	3300 8350 3300 11800
-Wire Notes Line
-	3300 11800 1150 11800
-Wire Notes Line
-	1150 11800 1150 8350
-Text Notes 1200 11750 0    50   ~ 0
-Parallel bus egress
-Wire Notes Line
-	18950 5600 22800 5600
-Wire Notes Line
-	22800 5600 22800 8000
-Wire Notes Line
-	22800 8000 18950 8000
-Wire Notes Line
-	18950 8000 18950 5600
-Text Notes 19000 7950 0    50   ~ 0
-RMII to ethernet switch
-Text Label 1700 12050 2    50   ~ 0
-I2C1_B_SDA
-Wire Wire Line
-	1700 12250 2250 12250
-Wire Wire Line
-	1700 12150 2250 12150
-Wire Wire Line
-	1700 12050 2250 12050
-Wire Wire Line
-	1700 12850 2250 12850
-Wire Wire Line
-	1700 12950 2250 12950
-Wire Wire Line
-	1700 13050 2250 13050
-Wire Wire Line
-	3350 12850 3900 12850
-Wire Wire Line
-	3350 12950 3900 12950
-Wire Wire Line
-	3350 13050 3900 13050
-Wire Wire Line
-	1700 13650 2250 13650
-Wire Wire Line
-	1700 13750 2250 13750
-Wire Wire Line
-	1700 13850 2250 13850
-Wire Wire Line
-	3400 13700 3950 13700
-Wire Wire Line
-	3400 13800 3950 13800
-Wire Wire Line
-	3400 13900 3950 13900
-Wire Notes Line
-	1150 14200 4600 14200
-Wire Notes Line
-	1150 14200 1150 11900
-Wire Notes Line
-	4600 11900 4600 14200
-Text Label 10000 6850 2    50   ~ 0
-I2C2_H_ENABLE
-Text HLabel 3900 13150 2    50   Output ~ 0
-I2C2_H_ENABLE
-Wire Wire Line
-	3350 13150 3900 13150
-Text Label 13000 10050 0    50   ~ 0
-~ROT_IRQ
-Text Label 13000 10150 0    50   ~ 0
-~ROT_SPI4_CS
-Text HLabel 2400 14650 2    50   Output ~ 0
-ROT_SCK
-Text HLabel 2400 14750 2    50   Input ~ 0
-ROT_MISO
-Text HLabel 2400 14850 2    50   Output ~ 0
-ROT_MOSI
-Text HLabel 2400 15050 2    50   Output ~ 0
-~ROT_IRQ
-Text HLabel 2400 14950 2    50   Output ~ 0
-~ROT_CS
-Text HLabel 2400 14550 2    50   Output ~ 0
-~RESET
-Text Label 1850 14550 2    50   ~ 0
-~RESET
-Text Label 1850 14650 2    50   ~ 0
-ROT_SPI4_SCK
-Text Label 1850 14750 2    50   ~ 0
-ROT_SPI4_MISO
-Text Label 1850 14850 2    50   ~ 0
-ROT_SPI4_MOSI
-Text Label 1850 14950 2    50   ~ 0
-~ROT_SPI4_CS
-Text Label 1850 15050 2    50   ~ 0
-~ROT_IRQ
-Wire Wire Line
-	1850 15050 2400 15050
-Wire Wire Line
-	2400 14950 1850 14950
-Wire Wire Line
-	1850 14850 2400 14850
-Wire Wire Line
-	2400 14750 1850 14750
-Wire Wire Line
-	1850 14650 2400 14650
-Wire Wire Line
-	2400 14550 1850 14550
-Text Notes 1200 15200 0    50   ~ 0
-RoT egress
-Wire Notes Line
-	1150 15250 1150 14350
-Wire Notes Line
-	1150 14350 3000 14350
-Wire Notes Line
-	3000 14350 3000 15250
-Wire Notes Line
-	3000 15250 1150 15250
-Text Label 3350 13150 2    50   ~ 0
-I2C2_H_ENABLE
-Text Label 10000 5750 2    50   ~ 0
-LED0
-Text Label 10000 5850 2    50   ~ 0
-LED1
-Text Label 10000 5950 2    50   ~ 0
-LED2
-Text Label 10000 6050 2    50   ~ 0
-LED3
 $Comp
 L Device:LED D301
 U 1 1 5F2CF167
@@ -1917,10 +855,6 @@ F 3 "~" H 3150 4000 50  0001 C CNN
 	1    3150 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2800 4000 3000 4000
-Wire Wire Line
-	2500 4000 2350 4000
 $Comp
 L power:GND #PWR0303
 U 1 1 5F2F2013
@@ -1932,12 +866,6 @@ F 3 "" H 3300 4000 50  0001 C CNN
 	1    3300 4000
 	0    -1   -1   0   
 $EndComp
-Text Label 2350 4000 2    50   ~ 0
-LED0
-Text Label 2350 4200 2    50   ~ 0
-LED1
-Text Label 2350 4400 2    50   ~ 0
-LED2
 $Comp
 L Device:LED D302
 U 1 1 5F34FAC8
@@ -1960,10 +888,6 @@ F 3 "~" H 3150 4200 50  0001 C CNN
 	1    3150 4200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2800 4200 3000 4200
-Wire Wire Line
-	2500 4200 2350 4200
 $Comp
 L power:GND #PWR0304
 U 1 1 5F34FAD6
@@ -1997,10 +921,6 @@ F 3 "~" H 3150 4400 50  0001 C CNN
 	1    3150 4400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2800 4400 3000 4400
-Wire Wire Line
-	2500 4400 2350 4400
 $Comp
 L power:GND #PWR0305
 U 1 1 5F361331
@@ -2034,10 +954,6 @@ F 3 "~" H 3150 4600 50  0001 C CNN
 	1    3150 4600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2800 4600 3000 4600
-Wire Wire Line
-	2500 4600 2350 4600
 $Comp
 L power:GND #PWR0306
 U 1 1 5F37315C
@@ -2049,97 +965,6 @@ F 3 "" H 3300 4600 50  0001 C CNN
 	1    3300 4600
 	0    -1   -1   0   
 $EndComp
-Text Label 2350 4600 2    50   ~ 0
-LED3
-Text Notes 2600 4800 0    50   ~ 0
-Debug LEDs
-Text Label 13000 11950 0    50   ~ 0
-~QSPI_RESET
-Text Label 13000 11850 0    50   ~ 0
-QSPI_HOST_ACCESS
-Text HLabel 2400 10850 2    50   Output ~ 0
-~QSPI_RESET
-Text HLabel 2400 11000 2    50   Output ~ 0
-QSPI_HOST_ACCESS
-Text Label 2400 10850 2    50   ~ 0
-~QSPI_RESET
-Text Label 2400 11000 2    50   ~ 0
-QSPI_HOST_ACCESS
-Text Label 13000 6350 0    50   ~ 0
-~ETH_IRQ
-Text Label 13000 8650 0    50   ~ 0
-~FPGA_IRQ
-Text HLabel 2400 9450 2    50   Input ~ 0
-~FPGA_IRQ
-Text Label 2400 9450 2    50   ~ 0
-~FPGA_IRQ
-Text Label 10000 11250 2    50   ~ 0
-~SPI2_CS1
-Text HLabel 4300 14650 2    50   Output ~ 0
-FPGA_SCK
-Text HLabel 4300 14750 2    50   Input ~ 0
-FPGA_MISO
-Text HLabel 4300 14850 2    50   Output ~ 0
-FPGA_MOSI
-Text HLabel 4300 14950 2    50   Output ~ 0
-~FPGA_CS0
-Text HLabel 4300 14550 2    50   Output ~ 0
-~FPGA_RESET
-Text Label 3750 14550 2    50   ~ 0
-~FPGA_RESET
-Text Label 3750 14650 2    50   ~ 0
-SPI2_SCK
-Text Label 3750 14750 2    50   ~ 0
-SPI2_MISO
-Text Label 3750 14850 2    50   ~ 0
-SPI2_MOSI
-Text Label 3750 14950 2    50   ~ 0
-~SPI2_CS0
-Wire Wire Line
-	4300 14950 3750 14950
-Wire Wire Line
-	3750 14850 4300 14850
-Wire Wire Line
-	4300 14750 3750 14750
-Wire Wire Line
-	3750 14650 4300 14650
-Wire Wire Line
-	4300 14550 3750 14550
-Text Notes 3100 15200 0    50   ~ 0
-FPGA SPI egress
-Wire Notes Line
-	3050 15250 3050 14350
-Wire Notes Line
-	3050 14350 4900 14350
-Wire Notes Line
-	4900 14350 4900 15250
-Wire Notes Line
-	4900 15250 3050 15250
-Text HLabel 4300 15050 2    50   Output ~ 0
-~FPGA_CS1
-Text Label 3750 15050 2    50   ~ 0
-~SPI2_CS1
-Wire Wire Line
-	4300 15050 3750 15050
-Text Label 10000 12450 2    50   ~ 0
-~FPGA_RESET
-Text Label 2400 8500 2    50   ~ 0
-FPGA_DA[0..15]
-Text Label 2350 10400 2    50   ~ 0
-QSPI_IO[0..3]
-Text Label 2500 11250 2    50   ~ 0
-SDMMC1_D[0..3]
-NoConn ~ 10000 5450
-NoConn ~ 10000 5550
-NoConn ~ 10000 5650
-NoConn ~ 10000 6150
-NoConn ~ 10000 6350
-NoConn ~ 10000 6450
-NoConn ~ 10000 6550
-NoConn ~ 10000 6650
-NoConn ~ 10000 6750
-NoConn ~ 10000 6950
-NoConn ~ 10000 7050
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J302
 U 1 1 5FB7A1C1
@@ -2151,6 +976,1192 @@ F 3 "~" H 21600 8650 50  0001 C CNN
 	1    21600 8650
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG0303
+U 1 1 600C0EC1
+P 12150 2300
+F 0 "#FLG0303" H 12150 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 12150 2473 50  0000 C CNN
+F 2 "" H 12150 2300 50  0001 C CNN
+F 3 "~" H 12150 2300 50  0001 C CNN
+	1    12150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0302
+U 1 1 600C183C
+P 10600 2250
+F 0 "#FLG0302" H 10600 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 10600 2423 50  0000 C CNN
+F 2 "" H 10600 2250 50  0001 C CNN
+F 3 "~" H 10600 2250 50  0001 C CNN
+	1    10600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0301
+U 1 1 600DC188
+P 9400 3450
+F 0 "#FLG0301" H 9400 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 9400 3623 50  0000 C CNN
+F 2 "" H 9400 3450 50  0001 C CNN
+F 3 "~" H 9400 3450 50  0001 C CNN
+	1    9400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R310
+U 1 1 6014214C
+P 9800 3650
+F 0 "R310" V 9900 3600 50  0000 L CNN
+F 1 "0" V 9800 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9730 3650 50  0001 C CNN
+F 3 "~" H 9800 3650 50  0001 C CNN
+	1    9800 3650
+	0    1    1    0   
+$EndComp
+Text Notes 9600 12700 2 50 ~ 0
+(choose one TXD1 option)
+Text Notes 3050 3000 0 50 ~ 0
+(near CPU)
+Text Label 4350 2950 2 50 ~ 0
+BOOT0
+Text Label 10000 3250 2 50 ~ 0
+BOOT0
+Text Notes 4100 3450 0 50 ~ 0
+BOOT0 has internal pulldown,\nbut this switch permits recovery\nfrom bad flashing.
+Text Notes 20550 4000 2 50 ~ 0
+CHECK VALUES\nFOR CRYSTAL
+Text Notes 20700 4750 2 50 ~ 0
+CHECK VALUES\nFOR CRYSTAL
+Text Notes 20000 5150 0 50 ~ 0
+Crystals
+Text Notes 2600 4800 0 50 ~ 0
+Debug LEDs
+Text Notes 1800 3550 0 50 ~ 0
+Debug, Reset, Recovery
+Text Notes 18600 2950 0 50 ~ 0
+Decouple all the things
+Text Notes 12450 2750 0 50 ~ 0
+Design assumes we're not\nusing USB.
+Text Notes 5000 3200 0 50 ~ 0
+FLASH
+Text Notes 3100 15200 0 50 ~ 0
+FPGA SPI egress
+Text HLabel 2400 8750 2 50 Output ~ 0
+FPGA_CLK
+Text Label 2400 8750 2 50 ~ 0
+FPGA_CLK
+Text Label 13000 8350 0 50 ~ 0
+FPGA_CLK
+Text Label 1700 8500 2 50 ~ 0
+FPGA_DA0
+Text Label 13000 9450 0 50 ~ 0
+FPGA_DA0
+Text Label 1700 8600 2 50 ~ 0
+FPGA_DA1
+Text Label 13000 9550 0 50 ~ 0
+FPGA_DA1
+Text Label 1700 9500 2 50 ~ 0
+FPGA_DA10
+Text Label 13000 11050 0 50 ~ 0
+FPGA_DA10
+Text Label 1700 9600 2 50 ~ 0
+FPGA_DA11
+Text Label 13000 11150 0 50 ~ 0
+FPGA_DA11
+Text Label 1700 9700 2 50 ~ 0
+FPGA_DA12
+Text Label 13000 11250 0 50 ~ 0
+FPGA_DA12
+Text Label 1700 9800 2 50 ~ 0
+FPGA_DA13
+Text Label 13000 8850 0 50 ~ 0
+FPGA_DA13
+Text Label 1700 9900 2 50 ~ 0
+FPGA_DA14
+Text Label 13000 8950 0 50 ~ 0
+FPGA_DA14
+Text Label 1700 10000 2 50 ~ 0
+FPGA_DA15
+Text Label 13000 9050 0 50 ~ 0
+FPGA_DA15
+Text Label 1700 8700 2 50 ~ 0
+FPGA_DA2
+Text Label 13000 8050 0 50 ~ 0
+FPGA_DA2
+Text Label 1700 8800 2 50 ~ 0
+FPGA_DA3
+Text Label 13000 8150 0 50 ~ 0
+FPGA_DA3
+Text Label 1700 8900 2 50 ~ 0
+FPGA_DA4
+Text Label 13000 10450 0 50 ~ 0
+FPGA_DA4
+Text Label 1700 9000 2 50 ~ 0
+FPGA_DA5
+Text Label 13000 10550 0 50 ~ 0
+FPGA_DA5
+Text Label 1700 9100 2 50 ~ 0
+FPGA_DA6
+Text Label 13000 10650 0 50 ~ 0
+FPGA_DA6
+Text Label 1700 9200 2 50 ~ 0
+FPGA_DA7
+Text Label 13000 10750 0 50 ~ 0
+FPGA_DA7
+Text Label 1700 9300 2 50 ~ 0
+FPGA_DA8
+Text Label 13000 10850 0 50 ~ 0
+FPGA_DA8
+Text Label 1700 9400 2 50 ~ 0
+FPGA_DA9
+Text Label 13000 10950 0 50 ~ 0
+FPGA_DA9
+Text HLabel 2400 8500 2 50 BiDi ~ 0
+FPGA_DA[0..15]
+Text Label 2400 8500 2 50 ~ 0
+FPGA_DA[0..15]
+Text HLabel 4300 14750 2 50 Input ~ 0
+FPGA_MISO
+Text HLabel 4300 14850 2 50 Output ~ 0
+FPGA_MOSI
+Text HLabel 4300 14650 2 50 Output ~ 0
+FPGA_SCK
+Text Notes 1200 14150 0 50 ~ 0
+I2C egress
+Text HLabel 2250 12150 2 50 BiDi ~ 0
+I2C1_B_SCL
+Text Label 1700 12150 2 50 ~ 0
+I2C1_B_SCL
+Text Label 13000 5450 0 50 ~ 0
+I2C1_B_SCL
+Text HLabel 2250 12050 2 50 BiDi ~ 0
+I2C1_B_SDA
+Text Label 1700 12050 2 50 ~ 0
+I2C1_B_SDA
+Text Label 13000 5550 0 50 ~ 0
+I2C1_B_SDA
+Text Label 13000 5650 0 50 ~ 0
+I2C2_B_SCL
+Text Label 13000 5750 0 50 ~ 0
+I2C2_B_SDA
+Text HLabel 2250 12950 2 50 BiDi ~ 0
+I2C2_F_SCL
+Text Label 1700 12950 2 50 ~ 0
+I2C2_F_SCL
+Text Label 13000 11550 0 50 ~ 0
+I2C2_F_SCL
+Text HLabel 2250 12850 2 50 BiDi ~ 0
+I2C2_F_SDA
+Text Label 1700 12850 2 50 ~ 0
+I2C2_F_SDA
+Text Label 13000 11450 0 50 ~ 0
+I2C2_F_SDA
+Text HLabel 3900 13150 2 50 Output ~ 0
+I2C2_H_ENABLE
+Text Label 3350 13150 2 50 ~ 0
+I2C2_H_ENABLE
+Text Label 10000 6850 2 50 ~ 0
+I2C2_H_ENABLE
+Text HLabel 3900 12950 2 50 BiDi ~ 0
+I2C2_H_SCL
+Text Label 3350 12950 2 50 ~ 0
+I2C2_H_SCL
+Text Label 10000 10150 2 50 ~ 0
+I2C2_H_SCL
+Text HLabel 3900 12850 2 50 BiDi ~ 0
+I2C2_H_SDA
+Text Label 3350 12850 2 50 ~ 0
+I2C2_H_SDA
+Text Label 10000 10250 2 50 ~ 0
+I2C2_H_SDA
+Text Label 10000 10450 2 50 ~ 0
+I2C3_H_SCL
+Text Label 10000 10550 2 50 ~ 0
+I2C3_H_SDA
+Text HLabel 2250 13750 2 50 BiDi ~ 0
+I2C4_D_SCL
+Text Label 1700 13750 2 50 ~ 0
+I2C4_D_SCL
+Text Label 13000 9250 0 50 ~ 0
+I2C4_D_SCL
+Text HLabel 2250 13650 2 50 BiDi ~ 0
+I2C4_D_SDA
+Text Label 1700 13650 2 50 ~ 0
+I2C4_D_SDA
+Text Label 13000 9350 0 50 ~ 0
+I2C4_D_SDA
+Text Label 13000 12850 0 50 ~ 0
+I2C4_F_SCL
+Text Label 13000 12950 0 50 ~ 0
+I2C4_F_SDA
+Text HLabel 3950 13800 2 50 BiDi ~ 0
+I2C4_H_SCL
+Text Label 3400 13800 2 50 ~ 0
+I2C4_H_SCL
+Text Label 10000 10850 2 50 ~ 0
+I2C4_H_SCL
+Text HLabel 3950 13700 2 50 BiDi ~ 0
+I2C4_H_SDA
+Text Label 3400 13700 2 50 ~ 0
+I2C4_H_SDA
+Text Label 10000 10950 2 50 ~ 0
+I2C4_H_SDA
+Text Notes 12250 13300 0 50 ~ 0
+Isolating VSSA would improve\nanalog performance.
+Text Label 2350 4000 2 50 ~ 0
+LED0
+Text Label 10000 5750 2 50 ~ 0
+LED0
+Text Label 2350 4200 2 50 ~ 0
+LED1
+Text Label 10000 5850 2 50 ~ 0
+LED1
+Text Label 2350 4400 2 50 ~ 0
+LED2
+Text Label 10000 5950 2 50 ~ 0
+LED2
+Text Label 2350 4600 2 50 ~ 0
+LED3
+Text Label 10000 6050 2 50 ~ 0
+LED3
+Text Notes 4150 2350 0 50 ~ 0
+Note: STM32H7 has internal pull\nresistors on SWD lines and reset\nso we don't need to add them here.
+Text Notes 21150 7400 0 50 ~ 0
+Note: stm32h7 actively pulls NRST to\nensure minimum pulse width, so we can\njust reuse it here.
+Text Label 13000 7750 0 50 ~ 0
+OSC32_IN
+Text Label 21250 4450 0 50 ~ 0
+OSC32_IN
+Text Label 13000 7850 0 50 ~ 0
+OSC32_OUT
+Text Label 20750 4450 2 50 ~ 0
+OSC32_OUT
+Text Label 10000 9750 2 50 ~ 0
+OSC_IN
+Text Label 21400 3650 0 50 ~ 0
+OSC_IN
+Text Label 10000 9850 2 50 ~ 0
+OSC_OUT
+Text Label 20600 3650 2 50 ~ 0
+OSC_OUT
+Text Notes 1200 11750 0 50 ~ 0
+Parallel bus egress
+Text Notes 2100 14050 0 50 ~ 0
+Pullups left to external devices
+Text HLabel 2400 10550 2 50 Output ~ 0
+QSPI_CLK
+Text Label 2400 10550 2 50 ~ 0
+QSPI_CLK
+Text Label 13000 12450 0 50 ~ 0
+QSPI_CLK
+Text HLabel 2400 11000 2 50 Output ~ 0
+QSPI_HOST_ACCESS
+Text Label 2400 11000 2 50 ~ 0
+QSPI_HOST_ACCESS
+Text Label 13000 11850 0 50 ~ 0
+QSPI_HOST_ACCESS
+Text Label 1750 10400 2 50 ~ 0
+QSPI_IO0
+Text Label 13000 12250 0 50 ~ 0
+QSPI_IO0
+Text Label 1750 10500 2 50 ~ 0
+QSPI_IO1
+Text Label 13000 12350 0 50 ~ 0
+QSPI_IO1
+Text Label 1750 10600 2 50 ~ 0
+QSPI_IO2
+Text Label 13000 12150 0 50 ~ 0
+QSPI_IO2
+Text Label 1750 10700 2 50 ~ 0
+QSPI_IO3
+Text Label 13000 12050 0 50 ~ 0
+QSPI_IO3
+Text HLabel 2400 10400 2 50 BiDi ~ 0
+QSPI_IO[0..3]
+Text Label 2350 10400 2 50 ~ 0
+QSPI_IO[0..3]
+Text Notes 19000 7950 0 50 ~ 0
+RMII to ethernet switch
+Text Label 13000 3650 0 50 ~ 0
+RMII_CRS_DV
+Text Label 20350 6700 2 50 ~ 0
+RMII_CRS_DV
+Text Label 13000 6450 0 50 ~ 0
+RMII_MDC
+Text Label 19500 7100 2 50 ~ 0
+RMII_MDC
+Text Label 13000 3150 0 50 ~ 0
+RMII_MDIO
+Text Label 19500 7000 2 50 ~ 0
+RMII_MDIO
+Text Label 13000 3050 0 50 ~ 0
+RMII_REF_CLK
+Text Label 20350 6800 2 50 ~ 0
+RMII_REF_CLK
+Text Label 13000 6750 0 50 ~ 0
+RMII_RXD0
+Text Label 20350 6400 2 50 ~ 0
+RMII_RXD0
+Text Label 13000 6850 0 50 ~ 0
+RMII_RXD1
+Text Label 20350 6500 2 50 ~ 0
+RMII_RXD1
+Text Label 10000 12750 2 50 ~ 0
+RMII_TXD0
+Text Label 19500 6000 2 50 ~ 0
+RMII_TXD0
+Text Label 10000 12650 2 50 ~ 0
+RMII_TXD1
+Text Label 10000 12850 2 50 ~ 0
+RMII_TXD1
+Text Label 19500 6100 2 50 ~ 0
+RMII_TXD1
+Text Label 10000 12550 2 50 ~ 0
+RMII_TXEN
+Text Label 19500 6200 2 50 ~ 0
+RMII_TXEN
+Text Notes 5000 2800 0 50 ~ 0
+ROM
+Text HLabel 2400 14750 2 50 Input ~ 0
+ROT_MISO
+Text HLabel 2400 14850 2 50 Output ~ 0
+ROT_MOSI
+Text HLabel 2400 14650 2 50 Output ~ 0
+ROT_SCK
+Text Label 1850 14750 2 50 ~ 0
+ROT_SPI4_MISO
+Text Label 13000 10250 0 50 ~ 0
+ROT_SPI4_MISO
+Text Label 1850 14850 2 50 ~ 0
+ROT_SPI4_MOSI
+Text Label 13000 10350 0 50 ~ 0
+ROT_SPI4_MOSI
+Text Label 1850 14650 2 50 ~ 0
+ROT_SPI4_SCK
+Text Label 13000 9950 0 50 ~ 0
+ROT_SPI4_SCK
+Text Notes 1200 15200 0 50 ~ 0
+RoT egress
+Text HLabel 2550 11550 2 50 Output ~ 0
+SDMMC1_CLK
+Text Label 2550 11550 2 50 ~ 0
+SDMMC1_CLK
+Text Label 13000 7550 0 50 ~ 0
+SDMMC1_CLK
+Text HLabel 2550 11400 2 50 Output ~ 0
+SDMMC1_CMD
+Text Label 2550 11400 2 50 ~ 0
+SDMMC1_CMD
+Text Label 13000 8250 0 50 ~ 0
+SDMMC1_CMD
+Text Label 1750 11250 2 50 ~ 0
+SDMMC1_D0
+Text Label 13000 7150 0 50 ~ 0
+SDMMC1_D0
+Text Label 1750 11350 2 50 ~ 0
+SDMMC1_D1
+Text Label 13000 7250 0 50 ~ 0
+SDMMC1_D1
+Text Label 1750 11450 2 50 ~ 0
+SDMMC1_D2
+Text Label 13000 7350 0 50 ~ 0
+SDMMC1_D2
+Text Label 1750 11550 2 50 ~ 0
+SDMMC1_D3
+Text Label 13000 7450 0 50 ~ 0
+SDMMC1_D3
+Text HLabel 2550 11250 2 50 BiDi ~ 0
+SDMMC1_D[0..3]
+Text Label 2500 11250 2 50 ~ 0
+SDMMC1_D[0..3]
+Text Label 3750 14750 2 50 ~ 0
+SPI2_MISO
+Text Label 10000 8250 2 50 ~ 0
+SPI2_MISO
+Text Label 3750 14850 2 50 ~ 0
+SPI2_MOSI
+Text Label 10000 8350 2 50 ~ 0
+SPI2_MOSI
+Text Label 3750 14650 2 50 ~ 0
+SPI2_SCK
+Text Label 10000 8150 2 50 ~ 0
+SPI2_SCK
+Text Label 10000 7450 2 50 ~ 0
+SPI5_MISO
+Text Label 10000 7350 2 50 ~ 0
+SPI5_MOSI
+Text Label 10000 5450 2 50 ~ 0
+SPI5_SCK
+Text Label 3700 2300 0 50 ~ 0
+SWD_CLK
+Text Label 13000 4350 0 50 ~ 0
+SWD_CLK
+Text Label 3700 2400 0 50 ~ 0
+SWD_IO
+Text Label 13000 4250 0 50 ~ 0
+SWD_IO
+Text Notes 19400 5900 0 50 ~ 0
+Series drive resistors as\nrecommended by datasheet;\nplace close to CPU
+Text Label 3700 2500 0 50 ~ 0
+TRACESWO
+Text Label 13000 4950 0 50 ~ 0
+TRACESWO
+Text Notes 20900 9450 0 50 ~ 0
+This is a DCE-side version of the old\nPC internal serial port connector,\nwhich is still used on EthanolX. We\nimplement the DCE side so that the\ntwo machines can be connected by\na 10-pin ribbon cable.
+Text Label 10000 11150 2 50 ~ 0
+UART4_RX
+Text Label 10000 11050 2 50 ~ 0
+UART4_TX
+Text Label 13000 3750 0 50 ~ 0
+UART7_RX
+Text Label 13000 4450 0 50 ~ 0
+UART7_TX
+Text Label 10000 7250 2 50 ~ 0
+UART8_RX
+Text Label 10000 7150 2 50 ~ 0
+UART8_TX
+Text Label 13000 4050 0 50 ~ 0
+USART1_CTS
+Text Label 21900 8550 0 50 ~ 0
+USART1_CTS
+Text Label 13000 4150 0 50 ~ 0
+USART1_RTS
+Text Label 21900 8650 0 50 ~ 0
+USART1_RTS
+Text Label 13000 3950 0 50 ~ 0
+USART1_RX
+Text Label 21400 8650 2 50 ~ 0
+USART1_RX
+Text Label 13000 3850 0 50 ~ 0
+USART1_TX
+Text Label 21400 8550 2 50 ~ 0
+USART1_TX
+Text Label 13000 7050 0 50 ~ 0
+USART6_RX
+Text Label 13000 6950 0 50 ~ 0
+USART6_TX
+Text Notes 8900 2250 0 50 ~ 0
+Use MOMENTARY NC\nMust be closed when\npower is on!
+Text Notes 20750 1850 2 50 ~ 0
+uC logic supply decoupling
+Text Label 13000 6350 0 50 ~ 0
+~ETH_IRQ
+Text Label 20350 7450 2 50 ~ 0
+~ETH_IRQ
+Text HLabel 2400 9150 2 50 Output ~ 0
+~FPGA_BL0
+Text Label 2400 9150 2 50 ~ 0
+~FPGA_BL0
+Text Label 13000 9750 0 50 ~ 0
+~FPGA_BL0
+Text HLabel 2400 9250 2 50 Output ~ 0
+~FPGA_BL1
+Text Label 2400 9250 2 50 ~ 0
+~FPGA_BL1
+Text Label 13000 9850 0 50 ~ 0
+~FPGA_BL1
+Text HLabel 2400 8950 2 50 Output ~ 0
+~FPGA_CE1
+Text Label 2400 8950 2 50 ~ 0
+~FPGA_CE1
+Text Label 13000 8750 0 50 ~ 0
+~FPGA_CE1
+Text HLabel 2400 9050 2 50 Output ~ 0
+~FPGA_CE2
+Text Label 2400 9050 2 50 ~ 0
+~FPGA_CE2
+Text Label 10000 12350 2 50 ~ 0
+~FPGA_CE2
+Text HLabel 4300 14950 2 50 Output ~ 0
+~FPGA_CS0
+Text HLabel 4300 15050 2 50 Output ~ 0
+~FPGA_CS1
+Text HLabel 2400 9450 2 50 Input ~ 0
+~FPGA_IRQ
+Text Label 2400 9450 2 50 ~ 0
+~FPGA_IRQ
+Text Label 13000 8650 0 50 ~ 0
+~FPGA_IRQ
+Text HLabel 2400 8850 2 50 Output ~ 0
+~FPGA_LE
+Text Label 2400 8850 2 50 ~ 0
+~FPGA_LE
+Text Label 13000 5350 0 50 ~ 0
+~FPGA_LE
+Text HLabel 2400 8650 2 50 Output ~ 0
+~FPGA_OE
+Text Label 2400 8650 2 50 ~ 0
+~FPGA_OE
+Text Label 13000 8450 0 50 ~ 0
+~FPGA_OE
+Text HLabel 4300 14550 2 50 Output ~ 0
+~FPGA_RESET
+Text Label 3750 14550 2 50 ~ 0
+~FPGA_RESET
+Text Label 10000 12450 2 50 ~ 0
+~FPGA_RESET
+Text HLabel 2400 9350 2 50 Output ~ 0
+~FPGA_WE
+Text Label 2400 9350 2 50 ~ 0
+~FPGA_WE
+Text Label 13000 8550 0 50 ~ 0
+~FPGA_WE
+Text HLabel 2250 12250 2 50 BiDi ~ 0
+~I2C1_B_SMBA
+Text Label 1700 12250 2 50 ~ 0
+~I2C1_B_SMBA
+Text Label 13000 5150 0 50 ~ 0
+~I2C1_B_SMBA
+Text Label 13000 5850 0 50 ~ 0
+~I2C2_B_SMBA
+Text HLabel 2250 13050 2 50 BiDi ~ 0
+~I2C2_F_SMBA
+Text Label 1700 13050 2 50 ~ 0
+~I2C2_F_SMBA
+Text Label 13000 11650 0 50 ~ 0
+~I2C2_F_SMBA
+Text HLabel 3900 13050 2 50 BiDi ~ 0
+~I2C2_H_SMBA
+Text Label 3350 13050 2 50 ~ 0
+~I2C2_H_SMBA
+Text Label 10000 10350 2 50 ~ 0
+~I2C2_H_SMBA
+Text Label 10000 10650 2 50 ~ 0
+~I2C3_H_SMBA
+Text HLabel 2250 13850 2 50 BiDi ~ 0
+~I2C4_D_SMBA
+Text Label 1700 13850 2 50 ~ 0
+~I2C4_D_SMBA
+Text Label 13000 9150 0 50 ~ 0
+~I2C4_D_SMBA
+Text Label 13000 12750 0 50 ~ 0
+~I2C4_F_SMBA
+Text HLabel 3950 13900 2 50 BiDi ~ 0
+~I2C4_H_SMBA
+Text Label 3400 13900 2 50 ~ 0
+~I2C4_H_SMBA
+Text Label 10000 10750 2 50 ~ 0
+~I2C4_H_SMBA
+Text HLabel 2400 10700 2 50 Output ~ 0
+~QSPI_CS
+Text Label 2400 10700 2 50 ~ 0
+~QSPI_CS
+Text Label 13000 5250 0 50 ~ 0
+~QSPI_CS
+Text HLabel 2400 10850 2 50 Output ~ 0
+~QSPI_RESET
+Text Label 2400 10850 2 50 ~ 0
+~QSPI_RESET
+Text Label 13000 11950 0 50 ~ 0
+~QSPI_RESET
+Text HLabel 2400 14550 2 50 Output ~ 0
+~RESET
+Text Label 1850 14550 2 50 ~ 0
+~RESET
+Text Label 3700 2100 0 50 ~ 0
+~RESET
+Text Label 10000 2950 2 50 ~ 0
+~RESET
+Text Label 20350 7300 2 50 ~ 0
+~RESET
+Text HLabel 2400 14950 2 50 Output ~ 0
+~ROT_CS
+Text HLabel 2400 15050 2 50 Output ~ 0
+~ROT_IRQ
+Text Label 1850 15050 2 50 ~ 0
+~ROT_IRQ
+Text Label 13000 10050 0 50 ~ 0
+~ROT_IRQ
+Text Label 1850 14950 2 50 ~ 0
+~ROT_SPI4_CS
+Text Label 13000 10150 0 50 ~ 0
+~ROT_SPI4_CS
+Text Label 3750 14950 2 50 ~ 0
+~SPI2_CS0
+Text Label 10000 8050 2 50 ~ 0
+~SPI2_CS0
+Text Label 3750 15050 2 50 ~ 0
+~SPI2_CS1
+Text Label 10000 11250 2 50 ~ 0
+~SPI2_CS1
+Text Label 10000 5550 2 50 ~ 0
+~SPI5_CS
+Wire Wire Line
+    1700 12050 2250 12050
+Wire Wire Line
+    1700 12150 2250 12150
+Wire Wire Line
+    1700 12250 2250 12250
+Wire Wire Line
+    1700 12850 2250 12850
+Wire Wire Line
+    1700 12950 2250 12950
+Wire Wire Line
+    1700 13050 2250 13050
+Wire Wire Line
+    1700 13650 2250 13650
+Wire Wire Line
+    1700 13750 2250 13750
+Wire Wire Line
+    1700 13850 2250 13850
+Wire Wire Line
+    1750 10400 1800 10400
+Wire Wire Line
+    1750 10500 1800 10500
+Wire Wire Line
+    1750 10600 1800 10600
+Wire Wire Line
+    1750 10700 1800 10700
+Wire Wire Line
+    1750 11250 1800 11250
+Wire Wire Line
+    1750 11350 1800 11350
+Wire Wire Line
+    1750 11450 1800 11450
+Wire Wire Line
+    1750 11550 1800 11550
+Wire Wire Line
+    1800 8500 1700 8500
+Wire Wire Line
+    1800 8600 1700 8600
+Wire Wire Line
+    1800 8700 1700 8700
+Wire Wire Line
+    1800 8800 1700 8800
+Wire Wire Line
+    1800 8900 1700 8900
+Wire Wire Line
+    1800 9000 1700 9000
+Wire Wire Line
+    1800 9100 1700 9100
+Wire Wire Line
+    1800 9200 1700 9200
+Wire Wire Line
+    1800 9300 1700 9300
+Wire Wire Line
+    1800 9400 1700 9400
+Wire Wire Line
+    1800 9500 1700 9500
+Wire Wire Line
+    1800 9600 1700 9600
+Wire Wire Line
+    1800 9700 1700 9700
+Wire Wire Line
+    1800 9800 1700 9800
+Wire Wire Line
+    1800 9900 1700 9900
+Wire Wire Line
+    1800 10000 1700 10000
+Wire Wire Line
+    1850 14650 2400 14650
+Wire Wire Line
+    1850 14850 2400 14850
+Wire Wire Line
+    1850 15050 2400 15050
+Wire Wire Line
+    2200 3000 2300 3000
+Wire Wire Line
+    2300 3000 2300 3150
+Wire Wire Line
+    2300 3150 2650 3150
+Wire Wire Line
+    2400 14550 1850 14550
+Wire Wire Line
+    2400 14750 1850 14750
+Wire Wire Line
+    2400 14950 1850 14950
+Wire Wire Line
+    2500 4000 2350 4000
+Wire Wire Line
+    2500 4200 2350 4200
+Wire Wire Line
+    2500 4400 2350 4400
+Wire Wire Line
+    2500 4600 2350 4600
+Wire Wire Line
+    2650 3150 3000 3150
+Wire Wire Line
+    2800 2100 3000 2100
+Wire Wire Line
+    2800 2300 3100 2300
+Wire Wire Line
+    2800 2400 3350 2400
+Wire Wire Line
+    2800 2500 3100 2500
+Wire Wire Line
+    2800 4000 3000 4000
+Wire Wire Line
+    2800 4200 3000 4200
+Wire Wire Line
+    2800 4400 3000 4400
+Wire Wire Line
+    2800 4600 3000 4600
+Wire Wire Line
+    3000 2100 3000 2750
+Wire Wire Line
+    3000 2100 3700 2100
+Wire Wire Line
+    3000 2950 3000 3150
+Wire Wire Line
+    3000 3150 3550 3150
+Wire Wire Line
+    3350 12850 3900 12850
+Wire Wire Line
+    3350 12950 3900 12950
+Wire Wire Line
+    3350 13050 3900 13050
+Wire Wire Line
+    3350 13150 3900 13150
+Wire Wire Line
+    3400 2300 3700 2300
+Wire Wire Line
+    3400 2500 3700 2500
+Wire Wire Line
+    3400 13700 3950 13700
+Wire Wire Line
+    3400 13800 3950 13800
+Wire Wire Line
+    3400 13900 3950 13900
+Wire Wire Line
+    3550 2750 3000 2750
+Wire Wire Line
+    3650 2400 3700 2400
+Wire Wire Line
+    3750 14650 4300 14650
+Wire Wire Line
+    3750 14850 4300 14850
+Wire Wire Line
+    4300 14550 3750 14550
+Wire Wire Line
+    4300 14750 3750 14750
+Wire Wire Line
+    4300 14950 3750 14950
+Wire Wire Line
+    4300 15050 3750 15050
+Wire Wire Line
+    8850 3400 8950 3400
+Wire Wire Line
+    8950 3400 8950 3450
+Wire Wire Line
+    8950 3450 8950 3550
+Wire Wire Line
+    8950 3550 8950 3700
+Wire Wire Line
+    8950 3550 10000 3550
+Wire Wire Line
+    8950 3700 8850 3700
+Wire Wire Line
+    9400 3450 8950 3450
+Wire Wire Line
+    9600 2250 9650 2250
+Wire Wire Line
+    9950 3650 10000 3650
+Wire Wire Line
+    10000 3050 9800 3050
+Wire Wire Line
+    10000 3450 9400 3450
+Wire Wire Line
+    10150 2250 10050 2250
+Wire Wire Line
+    10450 2250 10600 2250
+Wire Wire Line
+    10600 2250 10600 2450
+Wire Wire Line
+    10600 2450 10600 2650
+Wire Wire Line
+    10700 2650 10800 2650
+Wire Wire Line
+    10800 2450 10600 2450
+Wire Wire Line
+    10800 2650 10900 2650
+Wire Wire Line
+    10800 13250 10900 13250
+Wire Wire Line
+    10900 2650 11000 2650
+Wire Wire Line
+    10900 13250 11000 13250
+Wire Wire Line
+    11000 2650 11100 2650
+Wire Wire Line
+    11000 13250 11100 13250
+Wire Wire Line
+    11100 2450 11350 2450
+Wire Wire Line
+    11100 2650 11200 2650
+Wire Wire Line
+    11100 13250 11200 13250
+Wire Wire Line
+    11200 2650 11300 2650
+Wire Wire Line
+    11200 13250 11300 13250
+Wire Wire Line
+    11300 2650 11350 2650
+Wire Wire Line
+    11300 13250 11400 13250
+Wire Wire Line
+    11350 2200 11350 2300
+Wire Wire Line
+    11350 2300 11350 2450
+Wire Wire Line
+    11350 2450 11350 2650
+Wire Wire Line
+    11350 2650 11400 2650
+Wire Wire Line
+    11400 2650 11500 2650
+Wire Wire Line
+    11400 13250 11450 13250
+Wire Wire Line
+    11450 13250 11500 13250
+Wire Wire Line
+    11450 13400 11450 13250
+Wire Wire Line
+    11500 2650 11600 2650
+Wire Wire Line
+    11500 13250 11600 13250
+Wire Wire Line
+    11600 2650 11700 2650
+Wire Wire Line
+    11600 13250 11700 13250
+Wire Wire Line
+    11700 2650 11800 2650
+Wire Wire Line
+    11700 13250 11800 13250
+Wire Wire Line
+    11750 2300 11350 2300
+Wire Wire Line
+    11800 2650 11900 2650
+Wire Wire Line
+    11800 13250 11900 13250
+Wire Wire Line
+    11900 2650 12000 2650
+Wire Wire Line
+    11900 13250 12000 13250
+Wire Wire Line
+    11950 2300 12150 2300
+Wire Wire Line
+    12000 2650 12100 2650
+Wire Wire Line
+    12000 13250 12100 13250
+Wire Wire Line
+    12100 2650 12200 2650
+Wire Wire Line
+    12150 2300 12400 2300
+Wire Wire Line
+    12200 2650 12300 2650
+Wire Wire Line
+    12200 13250 12200 13400
+Wire Wire Line
+    12200 13400 11450 13400
+Wire Wire Line
+    12400 2300 12400 2200
+Wire Wire Line
+    12400 2650 12400 2300
+Wire Wire Line
+    18650 1500 18800 1500
+Wire Wire Line
+    18650 1950 18650 1500
+Wire Wire Line
+    18650 2450 18650 1950
+Wire Wire Line
+    18700 1700 18800 1700
+Wire Wire Line
+    18700 2150 18700 1700
+Wire Wire Line
+    18700 2650 18700 2150
+Wire Wire Line
+    18800 1500 19150 1500
+Wire Wire Line
+    19150 1500 19450 1500
+Wire Wire Line
+    19150 1700 18800 1700
+Wire Wire Line
+    19150 1700 19450 1700
+Wire Wire Line
+    19150 1950 18650 1950
+Wire Wire Line
+    19150 1950 19450 1950
+Wire Wire Line
+    19150 2150 18700 2150
+Wire Wire Line
+    19150 2450 18650 2450
+Wire Wire Line
+    19150 2450 19450 2450
+Wire Wire Line
+    19150 2650 18700 2650
+Wire Wire Line
+    19450 1500 19750 1500
+Wire Wire Line
+    19450 1700 19750 1700
+Wire Wire Line
+    19450 1950 19750 1950
+Wire Wire Line
+    19450 2150 19150 2150
+Wire Wire Line
+    19450 2650 19150 2650
+Wire Wire Line
+    19500 7000 19650 7000
+Wire Wire Line
+    19500 7100 19650 7100
+Wire Wire Line
+    19650 6000 19500 6000
+Wire Wire Line
+    19650 6100 19500 6100
+Wire Wire Line
+    19650 6200 19500 6200
+Wire Wire Line
+    19750 1500 20050 1500
+Wire Wire Line
+    19750 1700 20050 1700
+Wire Wire Line
+    19750 1950 20050 1950
+Wire Wire Line
+    19750 2150 19450 2150
+Wire Wire Line
+    19950 6000 20350 6000
+Wire Wire Line
+    19950 7000 20350 7000
+Wire Wire Line
+    19950 7100 20350 7100
+Wire Wire Line
+    20050 1500 20350 1500
+Wire Wire Line
+    20050 1700 20350 1700
+Wire Wire Line
+    20050 1950 20350 1950
+Wire Wire Line
+    20050 2150 19750 2150
+Wire Wire Line
+    20350 1500 20650 1500
+Wire Wire Line
+    20350 1700 20650 1700
+Wire Wire Line
+    20350 1950 20650 1950
+Wire Wire Line
+    20350 2150 20050 2150
+Wire Wire Line
+    20350 6100 19950 6100
+Wire Wire Line
+    20350 6200 19950 6200
+Wire Wire Line
+    20650 1500 20950 1500
+Wire Wire Line
+    20650 1700 20950 1700
+Wire Wire Line
+    20650 1950 20950 1950
+Wire Wire Line
+    20650 2150 20350 2150
+Wire Wire Line
+    20650 3650 20600 3650
+Wire Wire Line
+    20650 3650 20650 3800
+Wire Wire Line
+    20800 3650 20650 3650
+Wire Wire Line
+    20800 4450 20750 4450
+Wire Wire Line
+    20800 4450 20900 4450
+Wire Wire Line
+    20800 4550 20800 4450
+Wire Wire Line
+    20950 1500 21250 1500
+Wire Wire Line
+    20950 1700 21250 1700
+Wire Wire Line
+    20950 1950 21250 1950
+Wire Wire Line
+    20950 2150 20650 2150
+Wire Wire Line
+    21100 3650 21350 3650
+Wire Wire Line
+    21100 4450 21200 4450
+Wire Wire Line
+    21200 4450 21200 4550
+Wire Wire Line
+    21200 4450 21250 4450
+Wire Wire Line
+    21250 1500 21550 1500
+Wire Wire Line
+    21250 1700 21550 1700
+Wire Wire Line
+    21250 1950 21550 1950
+Wire Wire Line
+    21250 2150 20950 2150
+Wire Wire Line
+    21250 2500 21400 2500
+Wire Wire Line
+    21350 3650 21350 3800
+Wire Wire Line
+    21350 3650 21400 3650
+Wire Wire Line
+    21400 2500 21550 2500
+Wire Wire Line
+    21400 2700 21250 2700
+Wire Wire Line
+    21550 2150 21250 2150
+Wire Wire Line
+    21550 2700 21400 2700
+Wire Bus Line
+    1900 8500 1900 10100
+Wire Bus Line
+    1900 8500 2400 8500
+Wire Bus Line
+    1900 10400 1900 10800
+Wire Bus Line
+    1900 11250 1900 11650
+Wire Bus Line
+    2400 10400 1900 10400
+Wire Bus Line
+    2550 11250 1900 11250
+Entry Wire Line
+    1800 8500 1900 8600
+Entry Wire Line
+    1800 8600 1900 8700
+Entry Wire Line
+    1800 8700 1900 8800
+Entry Wire Line
+    1800 8800 1900 8900
+Entry Wire Line
+    1800 8900 1900 9000
+Entry Wire Line
+    1800 9000 1900 9100
+Entry Wire Line
+    1800 9100 1900 9200
+Entry Wire Line
+    1800 9200 1900 9300
+Entry Wire Line
+    1800 9300 1900 9400
+Entry Wire Line
+    1800 9400 1900 9500
+Entry Wire Line
+    1800 9500 1900 9600
+Entry Wire Line
+    1800 9600 1900 9700
+Entry Wire Line
+    1800 9700 1900 9800
+Entry Wire Line
+    1800 9800 1900 9900
+Entry Wire Line
+    1800 9900 1900 10000
+Entry Wire Line
+    1800 10000 1900 10100
+Entry Wire Line
+    1800 10400 1900 10500
+Entry Wire Line
+    1800 10500 1900 10600
+Entry Wire Line
+    1800 10600 1900 10700
+Entry Wire Line
+    1800 10700 1900 10800
+Entry Wire Line
+    1800 11250 1900 11350
+Entry Wire Line
+    1800 11350 1900 11450
+Entry Wire Line
+    1800 11450 1900 11550
+Entry Wire Line
+    1800 11550 1900 11650
+Connection ~ 2300 3000
+Connection ~ 2650 3150
+Connection ~ 3000 2100
+Connection ~ 3000 2750
+Connection ~ 3000 3150
+Connection ~ 8950 3450
+Connection ~ 8950 3550
+Connection ~ 9400 3450
+Connection ~ 10600 2250
+Connection ~ 10600 2450
+Connection ~ 10800 2650
+Connection ~ 10900 2650
+Connection ~ 10900 13250
+Connection ~ 11000 2650
+Connection ~ 11000 13250
+Connection ~ 11100 2650
+Connection ~ 11100 13250
+Connection ~ 11200 2650
+Connection ~ 11200 13250
+Connection ~ 11300 2650
+Connection ~ 11300 13250
+Connection ~ 11350 2300
+Connection ~ 11350 2450
+Connection ~ 11350 2650
+Connection ~ 11400 2650
+Connection ~ 11400 13250
+Connection ~ 11450 13250
+Connection ~ 11450 13400
+Connection ~ 11500 2650
+Connection ~ 11500 13250
+Connection ~ 11600 2650
+Connection ~ 11600 13250
+Connection ~ 11700 2650
+Connection ~ 11700 13250
+Connection ~ 11800 2650
+Connection ~ 11800 13250
+Connection ~ 11900 2650
+Connection ~ 11900 13250
+Connection ~ 12000 2650
+Connection ~ 12000 13250
+Connection ~ 12100 2650
+Connection ~ 12150 2300
+Connection ~ 12200 2650
+Connection ~ 12400 2300
+Connection ~ 18650 1950
+Connection ~ 18700 2150
+Connection ~ 18800 1500
+Connection ~ 18800 1700
+Connection ~ 19150 1500
+Connection ~ 19150 1700
+Connection ~ 19150 1950
+Connection ~ 19150 2150
+Connection ~ 19150 2450
+Connection ~ 19150 2650
+Connection ~ 19450 1500
+Connection ~ 19450 1700
+Connection ~ 19450 1950
+Connection ~ 19450 2150
+Connection ~ 19750 1500
+Connection ~ 19750 1700
+Connection ~ 19750 1950
+Connection ~ 19750 2150
+Connection ~ 20050 1500
+Connection ~ 20050 1700
+Connection ~ 20050 1950
+Connection ~ 20050 2150
+Connection ~ 20350 1500
+Connection ~ 20350 1700
+Connection ~ 20350 1950
+Connection ~ 20350 2150
+Connection ~ 20650 1500
+Connection ~ 20650 1700
+Connection ~ 20650 1950
+Connection ~ 20650 2150
+Connection ~ 20650 3650
+Connection ~ 20800 4450
+Connection ~ 20950 1500
+Connection ~ 20950 1700
+Connection ~ 20950 1950
+Connection ~ 20950 2150
+Connection ~ 21200 4450
+Connection ~ 21250 1500
+Connection ~ 21250 1700
+Connection ~ 21250 1950
+Connection ~ 21250 2150
+Connection ~ 21350 3650
+Connection ~ 21400 2500
+Connection ~ 21400 2700
+NoConn ~ 2800 2600
+NoConn ~ 10000 5450
+NoConn ~ 10000 5550
+NoConn ~ 10000 5650
+NoConn ~ 10000 6150
+NoConn ~ 10000 6350
+NoConn ~ 10000 6450
+NoConn ~ 10000 6550
+NoConn ~ 10000 6650
+NoConn ~ 10000 6750
+NoConn ~ 10000 6950
+NoConn ~ 10000 7050
 NoConn ~ 10000 7150
 NoConn ~ 10000 7250
 NoConn ~ 10000 7350
@@ -2173,11 +2184,11 @@ NoConn ~ 10000 9450
 NoConn ~ 10000 9550
 NoConn ~ 10000 9950
 NoConn ~ 10000 10050
+NoConn ~ 10000 10450
+NoConn ~ 10000 10550
+NoConn ~ 10000 10650
 NoConn ~ 10000 11050
 NoConn ~ 10000 11150
-NoConn ~ 10000 10550
-NoConn ~ 10000 10450
-NoConn ~ 10000 10650
 NoConn ~ 10000 11450
 NoConn ~ 10000 11550
 NoConn ~ 10000 11650
@@ -2188,9 +2199,6 @@ NoConn ~ 10000 12050
 NoConn ~ 10000 12150
 NoConn ~ 10000 12250
 NoConn ~ 10000 12950
-NoConn ~ 13000 12550
-NoConn ~ 13000 12650
-NoConn ~ 13000 11750
 NoConn ~ 13000 2950
 NoConn ~ 13000 3250
 NoConn ~ 13000 3350
@@ -2202,98 +2210,90 @@ NoConn ~ 13000 4650
 NoConn ~ 13000 4750
 NoConn ~ 13000 4850
 NoConn ~ 13000 5050
+NoConn ~ 13000 5650
+NoConn ~ 13000 5750
+NoConn ~ 13000 5850
 NoConn ~ 13000 5950
 NoConn ~ 13000 6050
 NoConn ~ 13000 6150
 NoConn ~ 13000 6550
 NoConn ~ 13000 6650
-NoConn ~ 13000 7650
 NoConn ~ 13000 6950
 NoConn ~ 13000 7050
-NoConn ~ 13000 5650
-NoConn ~ 13000 5750
-NoConn ~ 13000 5850
+NoConn ~ 13000 7650
+NoConn ~ 13000 11750
+NoConn ~ 13000 12550
+NoConn ~ 13000 12650
 NoConn ~ 13000 12750
 NoConn ~ 13000 12850
 NoConn ~ 13000 12950
-$Comp
-L power:PWR_FLAG #FLG0303
-U 1 1 600C0EC1
-P 12150 2300
-F 0 "#FLG0303" H 12150 2375 50  0001 C CNN
-F 1 "PWR_FLAG" H 12150 2473 50  0000 C CNN
-F 2 "" H 12150 2300 50  0001 C CNN
-F 3 "~" H 12150 2300 50  0001 C CNN
-	1    12150 2300
-	1    0    0    -1  
-$EndComp
-Connection ~ 12150 2300
-Wire Wire Line
-	12150 2300 12400 2300
-$Comp
-L power:PWR_FLAG #FLG0302
-U 1 1 600C183C
-P 10600 2250
-F 0 "#FLG0302" H 10600 2325 50  0001 C CNN
-F 1 "PWR_FLAG" H 10600 2423 50  0000 C CNN
-F 2 "" H 10600 2250 50  0001 C CNN
-F 3 "~" H 10600 2250 50  0001 C CNN
-	1    10600 2250
-	1    0    0    -1  
-$EndComp
-Connection ~ 10600 2250
-$Comp
-L power:PWR_FLAG #FLG0301
-U 1 1 600DC188
-P 9400 3450
-F 0 "#FLG0301" H 9400 3525 50  0001 C CNN
-F 1 "PWR_FLAG" H 9400 3623 50  0000 C CNN
-F 2 "" H 9400 3450 50  0001 C CNN
-F 3 "~" H 9400 3450 50  0001 C CNN
-	1    9400 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 9400 3450
-Wire Wire Line
-	9400 3450 8950 3450
-Wire Wire Line
-	9950 3650 10000 3650
-$Comp
-L Device:R R310
-U 1 1 6014214C
-P 9800 3650
-F 0 "R310" V 9900 3600 50  0000 L CNN
-F 1 "0" V 9800 3650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9730 3650 50  0001 C CNN
-F 3 "~" H 9800 3650 50  0001 C CNN
-	1    9800 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8950 3550 10000 3550
-Text Label 13000 4150 0    50   ~ 0
-USART1_RTS
-Text Label 13000 4050 0    50   ~ 0
-USART1_CTS
 NoConn ~ 21400 8450
-NoConn ~ 21900 8450
 NoConn ~ 21400 8750
+NoConn ~ 21900 8450
 NoConn ~ 21900 8750
 NoConn ~ 21900 8850
-Wire Bus Line
-	1900 11250 1900 11650
-Wire Bus Line
-	1900 10400 1900 10800
-Wire Bus Line
-	1900 8500 1900 10100
-Text Label 21400 8550 2    50   ~ 0
-USART1_TX
-Text Label 21400 8650 2    50   ~ 0
-USART1_RX
-Text Label 21900 8650 0    50   ~ 0
-USART1_RTS
-Text Label 21900 8550 0    50   ~ 0
-USART1_CTS
-Text Notes 20900 9450 0    50   ~ 0
-This is a DCE-side version of the old\nPC internal serial port connector,\nwhich is still used on EthanolX. We\nimplement the DCE side so that the\ntwo machines can be connected by\na 10-pin ribbon cable.
+Wire Notes Line
+    1150 8350 3300 8350
+Wire Notes Line
+    1150 11800 1150 8350
+Wire Notes Line
+    1150 11900 4600 11900
+Wire Notes Line
+    1150 14200 1150 11900
+Wire Notes Line
+    1150 14200 4600 14200
+Wire Notes Line
+    1150 14350 3000 14350
+Wire Notes Line
+    1150 15250 1150 14350
+Wire Notes Line
+    1750 1550 5600 1550
+Wire Notes Line
+    1750 3600 1750 1550
+Wire Notes Line
+    3000 14350 3000 15250
+Wire Notes Line
+    3000 15250 1150 15250
+Wire Notes Line
+    3050 14350 4900 14350
+Wire Notes Line
+    3050 15250 3050 14350
+Wire Notes Line
+    3300 8350 3300 11800
+Wire Notes Line
+    3300 11800 1150 11800
+Wire Notes Line
+    4600 11900 4600 14200
+Wire Notes Line
+    4900 14350 4900 15250
+Wire Notes Line
+    4900 15250 3050 15250
+Wire Notes Line
+    5600 1550 5600 3600
+Wire Notes Line
+    5600 3600 1750 3600
+Wire Notes Line
+    18550 1200 21850 1200
+Wire Notes Line
+    18550 3000 18550 1200
+Wire Notes Line
+    18950 5600 22800 5600
+Wire Notes Line
+    18950 8000 18950 5600
+Wire Notes Line
+    19950 3200 21750 3200
+Wire Notes Line
+    19950 5200 19950 3200
+Wire Notes Line
+    21750 3200 21750 5200
+Wire Notes Line
+    21750 5200 19950 5200
+Wire Notes Line
+    21850 1200 21850 3000
+Wire Notes Line
+    21850 3000 18550 3000
+Wire Notes Line
+    22800 5600 22800 8000
+Wire Notes Line
+    22800 8000 18950 8000
 $EndSCHEMATC
