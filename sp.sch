@@ -2141,42 +2141,16 @@ NoConn ~ 10000 6750
 NoConn ~ 10000 6950
 NoConn ~ 10000 7050
 $Comp
-L Connector_Generic:Conn_01x04 J302
+L Connector_Generic:Conn_02x05_Odd_Even J302
 U 1 1 5FB7A1C1
 P 21600 8650
-F 0 "J302" H 21680 8642 50  0000 L CNN
-F 1 "HOST_UART" H 21680 8551 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 21600 8650 50  0001 C CNN
+F 0 "J302" H 21650 9067 50  0000 C CNN
+F 1 "HOST_UART" H 21650 8976 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 21600 8650 50  0001 C CNN
 F 3 "~" H 21600 8650 50  0001 C CNN
 	1    21600 8650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0328
-U 1 1 5FB7B585
-P 21400 8850
-F 0 "#PWR0328" H 21400 8600 50  0001 C CNN
-F 1 "GND" H 21405 8677 50  0000 C CNN
-F 2 "" H 21400 8850 50  0001 C CNN
-F 3 "" H 21400 8850 50  0001 C CNN
-	1    21400 8850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0327
-U 1 1 5FB7BE68
-P 21400 8550
-F 0 "#PWR0327" H 21400 8400 50  0001 C CNN
-F 1 "+3V3" V 21415 8678 50  0000 L CNN
-F 2 "" H 21400 8550 50  0001 C CNN
-F 3 "" H 21400 8550 50  0001 C CNN
-	1    21400 8550
-	0    -1   -1   0   
-$EndComp
-Text Label 21400 8750 2    50   ~ 0
-USART1_RX
-Text Label 21400 8650 2    50   ~ 0
-USART1_TX
 NoConn ~ 10000 7150
 NoConn ~ 10000 7250
 NoConn ~ 10000 7350
@@ -2223,8 +2197,6 @@ NoConn ~ 13000 3350
 NoConn ~ 13000 3450
 NoConn ~ 13000 3550
 NoConn ~ 13000 3750
-NoConn ~ 13000 4050
-NoConn ~ 13000 4150
 NoConn ~ 13000 4450
 NoConn ~ 13000 4650
 NoConn ~ 13000 4750
@@ -2299,10 +2271,29 @@ F 3 "~" H 9800 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 3550 10000 3550
+Text Label 13000 4150 0    50   ~ 0
+USART1_RTS
+Text Label 13000 4050 0    50   ~ 0
+USART1_CTS
+NoConn ~ 21400 8450
+NoConn ~ 21900 8450
+NoConn ~ 21400 8750
+NoConn ~ 21900 8750
+NoConn ~ 21900 8850
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
+Text Label 21400 8550 2    50   ~ 0
+USART1_TX
+Text Label 21400 8650 2    50   ~ 0
+USART1_RX
+Text Label 21900 8650 0    50   ~ 0
+USART1_RTS
+Text Label 21900 8550 0    50   ~ 0
+USART1_CTS
+Text Notes 20900 9450 0    50   ~ 0
+This is a DCE-side version of the old\nPC internal serial port connector,\nwhich is still used on EthanolX. We\nimplement the DCE side so that the\ntwo machines can be connected by\na 10-pin ribbon cable.
 $EndSCHEMATC
