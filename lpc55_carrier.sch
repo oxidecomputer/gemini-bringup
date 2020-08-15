@@ -334,32 +334,12 @@ Connection ~ 13950 2800
 Wire Wire Line
 	12000 2550 12000 2500
 Wire Wire Line
-	12000 2500 12100 2500
-Wire Wire Line
 	12200 2500 12200 2550
-Wire Wire Line
-	12100 2550 12100 2500
-Connection ~ 12100 2500
-Wire Wire Line
-	12100 2500 12200 2500
-Wire Wire Line
-	12100 2500 12100 2450
-$Comp
-L power:+3V3 #PWR0216
-U 1 1 5F2F3588
-P 12100 2450
-F 0 "#PWR0216" H 12100 2300 50  0001 C CNN
-F 1 "+3V3" H 12150 2650 50  0000 C CNN
-F 2 "" H 12100 2450 50  0001 C CNN
-F 3 "" H 12100 2450 50  0001 C CNN
-	1    12100 2450
-	1    0    0    -1  
-$EndComp
 Text Label 12950 2050 0    50   ~ 0
 VDD_PMU
 Text Label 10050 7350 2    50   ~ 0
 VDDA
-Text Label 11750 2550 1    50   ~ 0
+Text Label 12000 2450 1    50   ~ 0
 VDDA
 Wire Wire Line
 	10650 2550 10650 2500
@@ -718,8 +698,8 @@ Text Label 2500 2800 0    50   ~ 0
 VDDA
 Text Notes 4700 2300 0    50   ~ 0
 Place 4.7uF near ferrite bead.  Others near LPC55 VDD pins.
-Text Notes 3000 3350 0    50   ~ 0
-Place near LPC55 VDDA and VREFP pins
+Text Notes 3000 3500 0    50   ~ 0
+Place 47pF and 0.1uF near LPC55 VDDA\nPlace 10nF near LPC55 VREFP\nPlace 22uF, 100nF, and 47pF near LPC55 VBAT_DCDC and VBAT_PMU
 Wire Notes Line
 	1200 1350 1200 3550
 Wire Notes Line
@@ -1629,4 +1609,76 @@ Wire Notes Line
 	20300 2700 20300 6850
 Wire Notes Line
 	20300 6850 17500 6850
+$Comp
+L Device:C C?
+U 1 1 5F382DA2
+P 3700 3000
+F 0 "C?" H 3850 3050 50  0000 L CNN
+F 1 "22uF" H 3850 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 2850 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F3830C2
+P 4200 3000
+F 0 "C?" H 4350 3050 50  0000 L CNN
+F 1 "100nF" H 4350 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 2850 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F3834EB
+P 4750 3000
+F 0 "C?" H 4900 3050 50  0000 L CNN
+F 1 "47pF" H 4900 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 2850 50  0001 C CNN
+F 3 "~" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3200 3700 3200
+Wire Wire Line
+	4750 3200 4750 3150
+Connection ~ 3200 3200
+Wire Wire Line
+	4200 3200 4200 3150
+Connection ~ 4200 3200
+Wire Wire Line
+	4200 3200 4750 3200
+Wire Wire Line
+	3700 3150 3700 3200
+Connection ~ 3700 3200
+Wire Wire Line
+	3700 3200 4200 3200
+Wire Wire Line
+	3200 2800 3700 2800
+Wire Wire Line
+	4750 2800 4750 2850
+Connection ~ 3200 2800
+Wire Wire Line
+	4200 2800 4200 2850
+Connection ~ 4200 2800
+Wire Wire Line
+	4200 2800 4750 2800
+Wire Wire Line
+	3700 2800 3700 2850
+Connection ~ 3700 2800
+Wire Wire Line
+	3700 2800 4200 2800
+Wire Wire Line
+	12000 2500 12200 2500
+Wire Wire Line
+	11750 2550 11750 2500
+Wire Wire Line
+	11750 2500 12000 2500
+Connection ~ 12000 2500
+Wire Wire Line
+	12000 2500 12000 2450
 $EndSCHEMATC
