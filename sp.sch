@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 13
+Sheet 3 14
 Title "Service Processor"
 Date ""
 Rev ""
@@ -1359,6 +1359,8 @@ Text HLabel 5100 14850 2 50 Output ~ 0
 FPGA_MOSI
 Text HLabel 5100 14650 2 50 Output ~ 0
 FPGA_SCK
+Text Notes 3900 16000 0 50 ~ 0
+Host 1SPI ROM egress
 Text Notes 1200 14150 0 50 ~ 0
 I2C egress
 Text HLabel 2250 12150 2 50 BiDi ~ 0
@@ -1629,12 +1631,24 @@ Text Label 4550 14650 2 50 ~ 0
 SPI2_SCK
 Text Label 10000 8150 2 50 ~ 0
 SPI2_SCK
+Text Label 4450 15650 2 50 ~ 0
+SPI5_MISO
 Text Label 10000 7450 2 50 ~ 0
 SPI5_MISO
+Text Label 4450 15750 2 50 ~ 0
+SPI5_MOSI
 Text Label 10000 7350 2 50 ~ 0
 SPI5_MOSI
+Text Label 4450 15550 2 50 ~ 0
+SPI5_SCK
 Text Label 10000 5450 2 50 ~ 0
 SPI5_SCK
+Text HLabel 5000 15650 2 50 Input ~ 0
+SPI_ROM_MISO
+Text HLabel 5000 15750 2 50 Output ~ 0
+SPI_ROM_MOSI
+Text HLabel 5000 15550 2 50 Output ~ 0
+SPI_ROM_SCK
 Text Label 3700 2300 0 50 ~ 0
 SWD_CLK
 Text Label 13000 4350 0 50 ~ 0
@@ -1829,8 +1843,18 @@ Text Label 4550 15050 2 50 ~ 0
 ~SPI2_CS1
 Text Label 10000 11250 2 50 ~ 0
 ~SPI2_CS1
+Text Label 4450 15850 2 50 ~ 0
+~SPI5_CS
 Text Label 10000 5550 2 50 ~ 0
 ~SPI5_CS
+Text HLabel 5000 15850 2 50 Output ~ 0
+~SPI_ROM_CS
+Text HLabel 5000 15450 2 50 Output ~ 0
+~SPI_ROM_PROG
+Text Label 4450 15450 2 50 ~ 0
+~SPI_ROM_PROG
+Text Label 10000 5650 2 50 ~ 0
+~SPI_ROM_PROG
 Wire Wire Line
     1700 12050 2250 12050
 Wire Wire Line
@@ -1996,9 +2020,19 @@ Wire Wire Line
 Wire Wire Line
     3650 2400 3700 2400
 Wire Wire Line
+    4450 15550 5000 15550
+Wire Wire Line
+    4450 15750 5000 15750
+Wire Wire Line
     4550 14650 5100 14650
 Wire Wire Line
     4550 14850 5100 14850
+Wire Wire Line
+    5000 15450 4450 15450
+Wire Wire Line
+    5000 15650 4450 15650
+Wire Wire Line
+    5000 15850 4450 15850
 Wire Wire Line
     5100 14550 4550 14550
 Wire Wire Line
@@ -2530,9 +2564,6 @@ Connection ~ 21350 3650
 Connection ~ 21400 2500
 Connection ~ 21400 2700
 NoConn ~ 2800 2600
-NoConn ~ 10000 5450
-NoConn ~ 10000 5550
-NoConn ~ 10000 5650
 NoConn ~ 10000 6150
 NoConn ~ 10000 6350
 NoConn ~ 10000 6450
@@ -2543,8 +2574,6 @@ NoConn ~ 10000 6950
 NoConn ~ 10000 7050
 NoConn ~ 10000 7150
 NoConn ~ 10000 7250
-NoConn ~ 10000 7350
-NoConn ~ 10000 7450
 NoConn ~ 10000 7550
 NoConn ~ 10000 7650
 NoConn ~ 10000 7750
@@ -2638,9 +2667,13 @@ Wire Notes Line
 Wire Notes Line
     3750 15750 1150 15750
 Wire Notes Line
+    3850 14350 3850 16050
+Wire Notes Line
     3850 14350 5700 14350
 Wire Notes Line
-    3850 15250 3850 14350
+    3850 15250 5700 15250
+Wire Notes Line
+    3850 16050 5700 16050
 Wire Notes Line
     4600 11900 4600 14200
 Wire Notes Line
@@ -2648,9 +2681,7 @@ Wire Notes Line
 Wire Notes Line
     5600 3600 1750 3600
 Wire Notes Line
-    5700 14350 5700 15250
-Wire Notes Line
-    5700 15250 3850 15250
+    5700 14350 5700 16050
 Wire Notes Line
     18550 1200 21850 1200
 Wire Notes Line
