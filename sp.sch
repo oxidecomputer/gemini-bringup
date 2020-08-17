@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 13
+Sheet 3 14
 Title "Service Processor"
 Date ""
 Rev ""
@@ -2005,14 +2005,6 @@ Wire Wire Line
 	5100 14550 4550 14550
 Text Notes 3900 15200 0    50   ~ 0
 FPGA SPI egress
-Wire Notes Line
-	3850 15250 3850 14350
-Wire Notes Line
-	3850 14350 5700 14350
-Wire Notes Line
-	5700 14350 5700 15250
-Wire Notes Line
-	5700 15250 3850 15250
 Text HLabel 5100 15050 2    50   Output ~ 0
 ~FPGA_CS1
 Text Label 4550 15050 2    50   ~ 0
@@ -2027,9 +2019,6 @@ Text Label 2350 10400 2    50   ~ 0
 QSPI_IO[0..3]
 Text Label 2500 11250 2    50   ~ 0
 SDMMC1_D[0..3]
-NoConn ~ 10000 5450
-NoConn ~ 10000 5550
-NoConn ~ 10000 5650
 NoConn ~ 10000 6150
 NoConn ~ 10000 6350
 NoConn ~ 10000 6450
@@ -2040,8 +2029,6 @@ NoConn ~ 10000 6950
 NoConn ~ 10000 7050
 NoConn ~ 10000 7150
 NoConn ~ 10000 7250
-NoConn ~ 10000 7350
-NoConn ~ 10000 7450
 NoConn ~ 10000 7550
 NoConn ~ 10000 7650
 NoConn ~ 10000 7750
@@ -2666,13 +2653,57 @@ Wire Wire Line
 	2350 15450 1800 15450
 Wire Wire Line
 	2550 14900 2550 15550
+Text HLabel 5000 15550 2    50   Output ~ 0
+SPI_ROM_SCK
+Text HLabel 5000 15650 2    50   Input ~ 0
+SPI_ROM_MISO
+Text HLabel 5000 15750 2    50   Output ~ 0
+SPI_ROM_MOSI
+Text HLabel 5000 15850 2    50   Output ~ 0
+~SPI_ROM_CS
+Text HLabel 5000 15450 2    50   Output ~ 0
+~SPI_ROM_PROG
+Text Label 4450 15450 2    50   ~ 0
+~SPI_ROM_PROG
+Text Label 4450 15550 2    50   ~ 0
+SPI5_SCK
+Text Label 4450 15650 2    50   ~ 0
+SPI5_MISO
+Text Label 4450 15850 2    50   ~ 0
+~SPI5_CS
+Wire Wire Line
+	5000 15850 4450 15850
+Wire Wire Line
+	4450 15750 5000 15750
+Wire Wire Line
+	5000 15650 4450 15650
+Wire Wire Line
+	4450 15550 5000 15550
+Wire Wire Line
+	5000 15450 4450 15450
+Text Notes 3900 16000 0    50   ~ 0
+Host 1SPI ROM egress
+Text Label 4450 15750 2    50   ~ 0
+SPI5_MOSI
+Connection ~ 2550 15550
+Wire Wire Line
+	2550 15550 2750 15550
+Text Label 10000 5650 2    50   ~ 0
+~SPI_ROM_PROG
+Wire Notes Line
+	3850 15250 5700 15250
+Wire Notes Line
+	3850 16050 5700 16050
+Wire Notes Line
+	3850 14350 5700 14350
+Wire Notes Line
+	3850 14350 3850 16050
+Wire Notes Line
+	5700 14350 5700 16050
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
-Connection ~ 2550 15550
-Wire Wire Line
-	2550 15550 2750 15550
 $EndSCHEMATC

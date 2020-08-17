@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title "Gemini Bringup Top"
 Date ""
 Rev ""
@@ -76,6 +76,11 @@ F44 "~FPGA_CS0" O L 6850 4250 50
 F45 "~FPGA_RESET" O L 6850 3800 50 
 F46 "~FPGA_CS1" O L 6850 4350 50 
 F47 "QSPI_HOST_ACCESS" O L 6850 5000 50 
+F48 "SPI_ROM_SCK" O R 8850 5300 50 
+F49 "SPI_ROM_MISO" I R 8850 5400 50 
+F50 "SPI_ROM_MOSI" O R 8850 5500 50 
+F51 "~SPI_ROM_CS" O R 8850 5200 50 
+F52 "~SPI_ROM_PROG" O R 8850 5600 50 
 $EndSheet
 $Sheet
 S 9400 3150 800  450 
@@ -391,4 +396,25 @@ Text Notes 9600 1800 0    50   ~ 0
 Pullups for onboard SMBus,\nsince we know its voltage
 Text Notes 1550 5250 0    50   ~ 0
 Sensors etc. on the onboard SMBus
+$Sheet
+S 10100 5100 600  600 
+U 5F40F867
+F0 "spi-to-ethanol" 50
+F1 "spi-to-ethanol.sch" 50
+F2 "~SPI_ROM_CS" I L 10100 5200 50 
+F3 "SPI_ROM_MISO" O L 10100 5400 50 
+F4 "SPI_ROM_MOSI" I L 10100 5500 50 
+F5 "SPI_ROM_SCK" I L 10100 5300 50 
+F6 "~SPI_ROM_PROG" I L 10100 5600 50 
+$EndSheet
+Wire Wire Line
+	8850 5200 10100 5200
+Wire Wire Line
+	8850 5300 10100 5300
+Wire Wire Line
+	8850 5400 10100 5400
+Wire Wire Line
+	8850 5500 10100 5500
+Wire Wire Line
+	8850 5600 10100 5600
 $EndSCHEMATC
