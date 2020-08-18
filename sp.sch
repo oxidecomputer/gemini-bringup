@@ -1340,6 +1340,28 @@ F 3 "~" H 9100 6550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
+L Device:D_Small D305
+U 1 1 5F95D875
+P 3000 1900
+F 0 "D305" V 2954 1970 50  0000 L CNN
+F 1 "D_Small" V 3045 1970 50  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 3000 1900 50  0001 C CNN
+F 3 "~" V 3000 1900 50  0001 C CNN
+	1    3000 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0339
+U 1 1 5F988B5A
+P 3000 1800
+F 0 "#PWR0339" H 3000 1650 50  0001 C CNN
+F 1 "+3V3" H 3015 1973 50  0000 C CNN
+F 2 "" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J302
 U 1 1 5FB7A1C1
 P 21550 9900
@@ -1462,6 +1484,8 @@ Text Notes 18600 2950 0 50 ~ 0
 Decouple all the things
 Text Notes 12450 2750 0 50 ~ 0
 Design assumes we're not\nusing USB.
+Text Notes 3100 1800 0 50 ~ 0
+Diode promptly drains reset cap at powerdown.
 Text Notes 5000 3200 0 50 ~ 0
 FLASH
 Text Notes 3900 15200 0 50 ~ 0
@@ -2220,6 +2244,8 @@ Wire Wire Line
     2900 14600 3100 14600
 Wire Wire Line
     2900 14900 2900 15450
+Wire Wire Line
+    3000 2100 3000 2000
 Wire Wire Line
     3000 2100 3000 2750
 Wire Wire Line
