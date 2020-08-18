@@ -1238,7 +1238,6 @@ Wire Wire Line
 Text Notes 5000 3750 0    50   ~ 0
 SMI mode:\npulled up by LEDs
 NoConn ~ 2750 3550
-NoConn ~ 2750 3650
 Text Notes 2700 3600 2    50   ~ 0
 SPI interface unused
 $Comp
@@ -1369,4 +1368,22 @@ Wire Wire Line
 Connection ~ 5000 1750
 Wire Wire Line
 	5600 1750 5950 1750
+$Comp
+L Device:R R423
+U 1 1 5F9CC659
+P 2500 1700
+F 0 "R423" V 2400 1650 50  0000 L CNN
+F 1 "10k" V 2500 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 1700 50  0001 C CNN
+F 3 "~" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 1550 2500 1550
+Connection ~ 2300 1550
+Wire Wire Line
+	2500 1850 2500 3650
+Wire Wire Line
+	2500 3650 2750 3650
 $EndSCHEMATC
