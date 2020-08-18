@@ -2971,10 +2971,36 @@ F 3 "~" H 2550 11550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 11550 2750 11550
+$Comp
+L Device:D_Small D305
+U 1 1 5F95D875
+P 3000 1900
+F 0 "D305" V 2954 1970 50  0000 L CNN
+F 1 "D_Small" V 3045 1970 50  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 3000 1900 50  0001 C CNN
+F 3 "~" V 3000 1900 50  0001 C CNN
+	1    3000 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 2100 3000 2000
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
 	1900 10400 1900 10800
 Wire Bus Line
 	1900 8500 1900 10100
+$Comp
+L power:+3V3 #PWR0339
+U 1 1 5F988B5A
+P 3000 1800
+F 0 "#PWR0339" H 3000 1650 50  0001 C CNN
+F 1 "+3V3" H 3015 1973 50  0000 C CNN
+F 2 "" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
+Text Notes 3100 1800 0    50   ~ 0
+Diode promptly drains reset cap at powerdown.
 $EndSCHEMATC
