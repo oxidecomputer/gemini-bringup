@@ -2022,9 +2022,6 @@ NoConn ~ 10000 9950
 NoConn ~ 10000 10050
 NoConn ~ 10000 11050
 NoConn ~ 10000 11150
-NoConn ~ 10000 10550
-NoConn ~ 10000 10450
-NoConn ~ 10000 10650
 NoConn ~ 10000 11950
 NoConn ~ 10000 12050
 NoConn ~ 10000 12150
@@ -2997,6 +2994,24 @@ F 3 "" H 3000 1800 50  0001 C CNN
 $EndComp
 Text Notes 3100 1800 0    50   ~ 0
 Diode promptly drains reset cap at powerdown.
+Text HLabel 4000 12050 2    50   BiDi ~ 0
+I2C3_H_SDA
+Text HLabel 4000 12150 2    50   BiDi ~ 0
+I2C3_H_SCL
+Text HLabel 4000 12250 2    50   BiDi ~ 0
+~I2C3_H_SMBA
+Text Label 3450 12150 2    50   ~ 0
+I2C3_H_SCL
+Text Label 3450 12250 2    50   ~ 0
+~I2C3_H_SMBA
+Text Label 3450 12050 2    50   ~ 0
+I2C3_H_SDA
+Wire Wire Line
+	3450 12250 4000 12250
+Wire Wire Line
+	3450 12150 4000 12150
+Wire Wire Line
+	3450 12050 4000 12050
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
