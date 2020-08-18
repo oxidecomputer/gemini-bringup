@@ -148,7 +148,6 @@ F 3 "~" H 20200 1600 50  0001 C CNN
 	1    20200 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 20200 2050
 Wire Wire Line
 	20200 1750 20200 2050
 Wire Wire Line
@@ -511,8 +510,6 @@ NoConn ~ 2800 4400
 Text Notes 20100 2500 0    50   ~ 0
 ~SP_RESET~ is open-drain
 Wire Wire Line
-	19600 2050 20200 2050
-Wire Wire Line
 	19600 2250 21300 2250
 Wire Wire Line
 	19600 2150 21300 2150
@@ -583,4 +580,20 @@ Wire Notes Line
 	21900 2850 21900 4650
 Wire Notes Line
 	21900 4650 19000 4650
+$Comp
+L Device:R R201
+U 1 1 5F8EF0A5
+P 19900 2050
+F 0 "R201" V 19850 2200 50  0000 C CNN
+F 1 "22" V 19900 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19830 2050 50  0001 C CNN
+F 3 "~" H 19900 2050 50  0001 C CNN
+	1    19900 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19600 2050 19750 2050
+Wire Wire Line
+	20050 2050 20200 2050
+Connection ~ 20200 2050
 $EndSCHEMATC
