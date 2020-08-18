@@ -2984,12 +2984,6 @@ F 3 "~" V 3000 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 2100 3000 2000
-Wire Bus Line
-	1900 11250 1900 11650
-Wire Bus Line
-	1900 10400 1900 10800
-Wire Bus Line
-	1900 8500 1900 10100
 $Comp
 L power:+3V3 #PWR0339
 U 1 1 5F988B5A
@@ -3003,4 +2997,10 @@ F 3 "" H 3000 1800 50  0001 C CNN
 $EndComp
 Text Notes 3100 1800 0    50   ~ 0
 Diode promptly drains reset cap at powerdown.
+Wire Bus Line
+	1900 11250 1900 11650
+Wire Bus Line
+	1900 10400 1900 10800
+Wire Bus Line
+	1900 8500 1900 10100
 $EndSCHEMATC
