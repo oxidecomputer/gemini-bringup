@@ -63,10 +63,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 3950 4900 3600
 Wire Wire Line
-	4900 3600 4200 3600
-Wire Wire Line
-	4200 3700 4800 3700
-Wire Wire Line
 	4800 3700 4800 4050
 Wire Wire Line
 	4800 4050 6350 4050
@@ -132,27 +128,19 @@ Wire Wire Line
 	3000 2900 3000 3400
 Wire Wire Line
 	3000 3400 3100 3400
-Text HLabel 2550 3300 0    50   Input ~ 0
+Text HLabel 2250 3300 0    50   Input ~ 0
 ~SPI_ROM_CS
-Text HLabel 2550 3500 0    50   Output ~ 0
+Text HLabel 2250 3500 0    50   Output ~ 0
 SPI_ROM_MISO
-Text HLabel 2550 3600 0    50   Input ~ 0
+Text HLabel 2250 3600 0    50   Input ~ 0
 SPI_ROM_MOSI
-Text HLabel 2550 3700 0    50   Input ~ 0
+Text HLabel 2250 3700 0    50   Input ~ 0
 SPI_ROM_SCK
-Text HLabel 2550 3800 0    50   Input ~ 0
+Text HLabel 2250 3800 0    50   Input ~ 0
 ~SPI_ROM_PROG
 NoConn ~ 3100 3900
 Wire Wire Line
 	3100 3300 2650 3300
-Wire Wire Line
-	2550 3500 3100 3500
-Wire Wire Line
-	2550 3600 3100 3600
-Wire Wire Line
-	2550 3700 3100 3700
-Wire Wire Line
-	2550 3800 2850 3800
 Wire Wire Line
 	3100 4000 3100 4200
 $Comp
@@ -192,8 +180,6 @@ Wire Wire Line
 	2650 3000 2650 3300
 Connection ~ 2650 3300
 Wire Wire Line
-	2650 3300 2550 3300
-Wire Wire Line
 	2850 3000 2850 3800
 Connection ~ 2850 3800
 Wire Wire Line
@@ -226,4 +212,57 @@ F 3 "~" H 5450 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5450 3400
+Wire Wire Line
+	2250 3300 2650 3300
+Wire Wire Line
+	2250 3600 3100 3600
+Wire Wire Line
+	2250 3700 3100 3700
+Wire Wire Line
+	2250 3800 2850 3800
+$Comp
+L Device:R R1403
+U 1 1 5F683FBE
+P 2650 3500
+F 0 "R1403" V 2600 3650 50  0000 C CNN
+F 1 "22" V 2650 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 3500 50  0001 C CNN
+F 3 "~" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3500 2800 3500
+Wire Wire Line
+	2500 3500 2250 3500
+$Comp
+L Device:R R1404
+U 1 1 5F686598
+P 4550 3600
+F 0 "R1404" V 4500 3750 50  0000 C CNN
+F 1 "22" V 4550 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 3600 50  0001 C CNN
+F 3 "~" H 4550 3600 50  0001 C CNN
+	1    4550 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1405
+U 1 1 5F686B24
+P 4550 3700
+F 0 "R1405" V 4500 3850 50  0000 C CNN
+F 1 "22" V 4550 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 3700 50  0001 C CNN
+F 3 "~" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3600 4200 3600
+Wire Wire Line
+	4400 3700 4200 3700
+Wire Wire Line
+	4700 3600 4900 3600
+Wire Wire Line
+	4800 3700 4700 3700
 $EndSCHEMATC

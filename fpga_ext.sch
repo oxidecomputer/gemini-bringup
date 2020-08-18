@@ -185,7 +185,7 @@ Text HLabel 6400 2850 2    50   Output ~ 0
 ~IRQ
 Text HLabel 5900 2650 0    50   Input ~ 0
 SPI_CLK
-Text HLabel 6400 2750 2    50   Output ~ 0
+Text HLabel 6900 2750 2    50   Output ~ 0
 SPI_MISO
 $Comp
 L power:GND #PWR01009
@@ -368,6 +368,21 @@ F 3 "" H 5900 2450 50  0001 C CNN
 $EndComp
 Text Notes 4950 5150 0    50   ~ 0
 Notes:\n- Return paths near all fast signals (which is nearly everything).\n- 12V available in case we need 5V or something\n- A/D muxed because demuxing in FPGA is free\n- Two SPI selects to address (e.g.) both FPGA and bitstream ROM\n- I2C because why not\n- Only one CE routed (of 2 avail) because what is CE1 for anyway
+$Comp
+L Device:R R1001
+U 1 1 5F68AF0C
+P 6650 2750
+F 0 "R1001" V 6600 2900 50  0000 C CNN
+F 1 "22" V 6650 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 2750 50  0001 C CNN
+F 3 "~" H 6650 2750 50  0001 C CNN
+	1    6650 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2750 6400 2750
+Wire Wire Line
+	6800 2750 6900 2750
 Wire Bus Line
 	7850 2800 7850 4300
 $EndSCHEMATC
