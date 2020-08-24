@@ -799,21 +799,6 @@ F 3 "" H 6400 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R409
-U 1 1 5F3F8A7B
-P 2300 1700
-F 0 "R409" V 2200 1650 50  0000 L CNN
-F 1 "10k" V 2300 1650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2230 1700 50  0001 C CNN
-F 3 "~" H 2300 1700 50  0001 C CNN
-	1    2300 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 2600 2300 2600
-Wire Wire Line
-	2300 2600 2300 1850
-$Comp
 L Device:R R402
 U 1 1 5F41B66D
 P 1250 2600
@@ -824,9 +809,6 @@ F 3 "~" H 1250 2600 50  0001 C CNN
 	1    1250 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2300 2600 1400 2600
-Connection ~ 2300 2600
 $Comp
 L Device:R R408
 U 1 1 5F43F3F9
@@ -978,8 +960,6 @@ Connection ~ 1900 1550
 Connection ~ 2100 1550
 Wire Wire Line
 	2100 1550 2000 1550
-Wire Wire Line
-	2300 1550 2100 1550
 $Comp
 L Device:R R410
 U 1 1 5F708AF7
@@ -1380,10 +1360,11 @@ F 3 "~" H 2500 1700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2300 1550 2500 1550
-Connection ~ 2300 1550
-Wire Wire Line
 	2500 1850 2500 3650
 Wire Wire Line
 	2500 3650 2750 3650
+Wire Wire Line
+	1400 2600 2750 2600
+Wire Wire Line
+	2100 1550 2500 1550
 $EndSCHEMATC
