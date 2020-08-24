@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title "Gemini Bringup Top"
 Date ""
 Rev ""
@@ -479,4 +479,22 @@ Wire Wire Line
 Connection ~ 4400 3450
 Wire Wire Line
 	4400 3450 4550 3450
+$Sheet
+S 1500 7100 850  550 
+U 5F46DB54
+F0 "i2c-gpio" 50
+F1 "i2c-gpio.sch" 50
+F2 "SCL" I R 2350 7350 50 
+F3 "SDA" B R 2350 7250 50 
+$EndSheet
+Wire Wire Line
+	2450 6400 2450 7250
+Wire Wire Line
+	2450 7250 2350 7250
+Connection ~ 2450 6400
+Wire Wire Line
+	2550 6500 2550 7350
+Wire Wire Line
+	2550 7350 2350 7350
+Connection ~ 2550 6500
 $EndSCHEMATC
