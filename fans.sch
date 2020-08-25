@@ -617,4 +617,20 @@ Text Label 2900 2200 0    50   ~ 0
 FAN5V
 Text Notes 2850 3100 0    50   ~ 0
 ~ALERT is  O.D.\nand so 3v3 is ok
+Text Label 3200 2650 0    50   ~ 0
+5VSDA
+Text Label 3250 2750 0    50   ~ 0
+5VSCL
+$Comp
+L power:GND #PWR?
+U 1 1 5F507941
+P 7500 4800
+F 0 "#PWR?" H 7500 4550 50  0001 C CNN
+F 1 "GND" H 7505 4627 50  0000 C CNN
+F 2 "" H 7500 4800 50  0001 C CNN
+F 3 "" H 7500 4800 50  0001 C CNN
+	1    7500 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 4800
 $EndSCHEMATC
