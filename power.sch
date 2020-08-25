@@ -32,10 +32,10 @@ U 1 1 5F3C5E64
 P 3150 2100
 F 0 "R603" V 2943 2100 50  0000 C CNN
 F 1 "20m 1% 1/8W" V 3034 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK12" V 3080 2100 50  0001 C CNN
+F 2 "passives:R_Shunt_Ohmite_LVK12_CW_Pinout" V 3080 2100 50  0001 C CNN
 F 3 "~" H 3150 2100 50  0001 C CNN
 	1    3150 2100
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	1650 2300 1900 2300
@@ -236,10 +236,10 @@ U 1 1 5F3D83DF
 P 3150 3850
 F 0 "R604" V 2943 3850 50  0000 C CNN
 F 1 "40m 1% 1/8W" V 3034 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK12" V 3080 3850 50  0001 C CNN
+F 2 "passives:R_Shunt_Ohmite_LVK12_CW_Pinout" V 3080 3850 50  0001 C CNN
 F 3 "~" H 3150 3850 50  0001 C CNN
 	1    3150 3850
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Analog_ADC:INA219AxDCN U603
@@ -385,7 +385,7 @@ U 1 1 5F3ED84F
 P 2250 2100
 F 0 "F601" V 2045 2100 50  0000 C CNN
 F 1 "Polyfuse_Small" V 2136 2100 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 2300 1900 50  0001 L CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 2300 1900 50  0001 L CNN
 F 3 "~" H 2250 2100 50  0001 C CNN
 	1    2250 2100
 	0    1    1    0   
