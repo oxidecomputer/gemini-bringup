@@ -14,10 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	3800 2650 3350 2650
-Wire Wire Line
-	3800 2750 3350 2750
-Wire Wire Line
 	3800 2850 3350 2850
 $Comp
 L power:GND #PWR0707
@@ -127,8 +123,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 2950 5650 2000
 Wire Wire Line
-	5650 2000 6050 2000
-Wire Wire Line
 	5750 2600 5750 3050
 Wire Wire Line
 	5750 3050 5300 3050
@@ -137,7 +131,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 3150 5850 2500
 Wire Wire Line
-	5850 2500 6250 2500
+	5850 2500 5950 2500
 Wire Wire Line
 	5950 3100 5950 3250
 Wire Wire Line
@@ -208,28 +202,6 @@ Wire Wire Line
 Connection ~ 7400 3200
 Wire Wire Line
 	7400 3200 7400 3700
-$Comp
-L power:+3V3 #PWR0702
-U 1 1 5F25ECEB
-P 3800 3450
-F 0 "#PWR0702" H 3800 3300 50  0001 C CNN
-F 1 "+3V3" V 3815 3578 50  0000 L CNN
-F 2 "" H 3800 3450 50  0001 C CNN
-F 3 "" H 3800 3450 50  0001 C CNN
-	1    3800 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0704
-U 1 1 5F25F052
-P 3800 3850
-F 0 "#PWR0704" H 3800 3700 50  0001 C CNN
-F 1 "+3V3" V 3815 3978 50  0000 L CNN
-F 2 "" H 3800 3850 50  0001 C CNN
-F 3 "" H 3800 3850 50  0001 C CNN
-	1    3800 3850
-	0    -1   -1   0   
-$EndComp
 Text Notes 2650 3450 0    50   ~ 0
 Start PWM @ 25kHz
 Text Notes 2150 3850 0    50   ~ 0
@@ -237,22 +209,6 @@ Enable I2C watchdog at poweron
 NoConn ~ 3800 3550
 Text Notes 3000 3550 0    50   ~ 0
 Spin-up for 0.5s
-Wire Wire Line
-	3800 3950 3800 4000
-$Comp
-L power:+3V3 #PWR0705
-U 1 1 5F261C33
-P 3800 4000
-F 0 "#PWR0705" H 3800 3850 50  0001 C CNN
-F 1 "+3V3" V 3815 4128 50  0000 L CNN
-F 2 "" H 3800 4000 50  0001 C CNN
-F 3 "" H 3800 4000 50  0001 C CNN
-	1    3800 4000
-	0    -1   -1   0   
-$EndComp
-Connection ~ 3800 4000
-Wire Wire Line
-	3800 4000 3800 4050
 Text Notes 2600 4000 0    50   ~ 0
 100% PWM at startup
 Wire Wire Line
@@ -286,37 +242,13 @@ F 3 "" H 3800 3250 50  0001 C CNN
 	1    3800 3250
 	0    1    1    0   
 $EndComp
-Text HLabel 3350 2650 0    50   BiDi ~ 0
+Text HLabel 1200 2850 0    50   BiDi ~ 0
 SDA
-Text HLabel 3350 2750 0    50   BiDi ~ 0
+Text HLabel 1200 2750 0    50   BiDi ~ 0
 SCL
 Text HLabel 3350 2850 0    50   Output ~ 0
 ~ALERT
 NoConn ~ 3800 2950
-$Comp
-L power:+3V3 #PWR0706
-U 1 1 5F268E69
-P 4550 2450
-F 0 "#PWR0706" H 4550 2300 50  0001 C CNN
-F 1 "+3V3" H 4565 2623 50  0000 C CNN
-F 2 "" H 4550 2450 50  0001 C CNN
-F 3 "" H 4550 2450 50  0001 C CNN
-	1    4550 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0708
-U 1 1 5F280D2E
-P 5750 1200
-F 0 "#PWR0708" H 5750 1050 50  0001 C CNN
-F 1 "+3V3" H 5765 1373 50  0000 C CNN
-F 2 "" H 5750 1200 50  0001 C CNN
-F 3 "" H 5750 1200 50  0001 C CNN
-	1    5750 1200
-	1    0    0    -1  
-$EndComp
-Text Notes 5950 1150 0    50   ~ 0
-NOTE: assumes fans will accept 3V3 PWM
 $Comp
 L Device:R_Pack04 RN702
 U 1 1 5F381500
@@ -340,11 +272,9 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7200 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 4100 7000 4100
+	5650 4600 7100 4600
 Wire Wire Line
-	5650 4600 7200 4600
-Wire Wire Line
-	5950 3600 6700 3600
+	5950 3600 6600 3600
 Connection ~ 6050 1200
 Wire Wire Line
 	6050 1200 6150 1200
@@ -414,77 +344,277 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6150 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 1600 5950 2100
-Connection ~ 5950 2100
+	5300 3550 6500 3550
 Wire Wire Line
-	5950 2100 5550 2100
+	5550 4500 7000 4500
 Wire Wire Line
-	5950 2100 7550 2100
+	5650 2000 6150 2000
 Wire Wire Line
-	6050 2000 6050 1600
-Connection ~ 6050 2000
+	6050 1600 6050 2600
+Connection ~ 6050 2600
 Wire Wire Line
-	6050 2000 7550 2000
+	6050 2600 5750 2600
 Wire Wire Line
-	6150 1600 6150 2600
-Connection ~ 6150 2600
+	5550 2100 6250 2100
 Wire Wire Line
-	6150 2600 5750 2600
+	5950 1600 5950 2500
+Connection ~ 5950 2500
 Wire Wire Line
-	6150 2600 7550 2600
+	6050 2600 7550 2600
 Wire Wire Line
-	6250 2500 6250 1600
-Connection ~ 6250 2500
+	6150 1600 6150 2000
+Connection ~ 6150 2000
 Wire Wire Line
-	6250 2500 7550 2500
+	6150 2000 7550 2000
 Wire Wire Line
-	5950 3100 6500 3100
+	5950 2500 7550 2500
 Wire Wire Line
-	6600 3000 6600 1600
-Connection ~ 6600 3000
+	6250 1600 6250 2100
+Connection ~ 6250 2100
 Wire Wire Line
-	6600 3000 7550 3000
+	6250 2100 7550 2100
 Wire Wire Line
-	6050 3000 6600 3000
+	5950 3100 6800 3100
 Wire Wire Line
-	6500 1600 6500 3100
-Connection ~ 6500 3100
+	6500 1600 6500 3550
+Connection ~ 6500 3550
 Wire Wire Line
-	6500 3100 7550 3100
+	6050 3000 6700 3000
 Wire Wire Line
-	5300 3550 6800 3550
+	6600 1600 6600 3600
+Connection ~ 6600 3600
 Wire Wire Line
-	6700 3600 6700 1600
-Connection ~ 6700 3600
+	6600 3600 7550 3600
 Wire Wire Line
-	6700 3600 7550 3600
+	6700 1600 6700 3000
+Connection ~ 6700 3000
 Wire Wire Line
-	6800 1600 6800 3550
-Connection ~ 6800 3550
+	6700 3000 7550 3000
 Wire Wire Line
-	6800 3550 7550 3550
+	6500 3550 7550 3550
 Wire Wire Line
-	5850 4000 7100 4000
+	6800 1600 6800 3100
+Connection ~ 6800 3100
 Wire Wire Line
-	7000 4100 7000 1600
-Connection ~ 7000 4100
+	6800 3100 7550 3100
 Wire Wire Line
-	7000 4100 7550 4100
+	5750 4100 7300 4100
 Wire Wire Line
-	7100 1600 7100 4000
-Connection ~ 7100 4000
+	7000 1600 7000 4500
+Connection ~ 7000 4500
 Wire Wire Line
-	7100 4000 7550 4000
+	5850 4000 7200 4000
 Wire Wire Line
-	5550 4500 7300 4500
+	7100 1600 7100 4600
+Connection ~ 7100 4600
 Wire Wire Line
-	7200 4600 7200 1600
-Connection ~ 7200 4600
+	7100 4600 7550 4600
 Wire Wire Line
-	7200 4600 7550 4600
+	7200 1600 7200 4000
+Connection ~ 7200 4000
 Wire Wire Line
-	7300 1600 7300 4500
-Connection ~ 7300 4500
+	7200 4000 7550 4000
 Wire Wire Line
-	7300 4500 7550 4500
+	7000 4500 7550 4500
+Wire Wire Line
+	7300 1600 7300 4100
+Connection ~ 7300 4100
+Wire Wire Line
+	7300 4100 7550 4100
+$Comp
+L Regulator_Linear:MCP1703A-5002_SOT89 U702
+U 1 1 5F4888C8
+P 3150 1400
+F 0 "U702" H 3150 1642 50  0000 C CNN
+F 1 "MCP1703A-5002_SOT89" H 3150 1551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3150 1600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 3150 1350 50  0001 C CNN
+	1    3150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C701
+U 1 1 5F48A9CC
+P 2450 1600
+F 0 "C701" H 2542 1646 50  0000 L CNN
+F 1 "1µ" H 2542 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 1600 50  0001 C CNN
+F 3 "~" H 2450 1600 50  0001 C CNN
+	1    2450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C702
+U 1 1 5F48ADE0
+P 3600 1600
+F 0 "C702" H 3692 1646 50  0000 L CNN
+F 1 "1µ" H 3692 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 1600 50  0001 C CNN
+F 3 "~" H 3600 1600 50  0001 C CNN
+	1    3600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1400 3600 1400
+Wire Wire Line
+	3600 1400 3600 1500
+Wire Wire Line
+	3600 1700 3150 1700
+Connection ~ 3150 1700
+Wire Wire Line
+	3150 1700 2450 1700
+Wire Wire Line
+	2450 1500 2450 1400
+Wire Wire Line
+	2450 1400 2850 1400
+$Comp
+L power:+12V #PWR0706
+U 1 1 5F495AE2
+P 2450 1400
+F 0 "#PWR0706" H 2450 1250 50  0001 C CNN
+F 1 "+12V" H 2465 1573 50  0000 C CNN
+F 2 "" H 2450 1400 50  0001 C CNN
+F 3 "" H 2450 1400 50  0001 C CNN
+	1    2450 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 1400
+Wire Wire Line
+	3600 1400 3950 1400
+Connection ~ 3600 1400
+Text Label 3950 1400 0    50   ~ 0
+FAN5V
+Text Label 5750 1200 2    50   ~ 0
+FAN5V
+Text Label 4550 2450 1    50   ~ 0
+FAN5V
+$Comp
+L power:GND #PWR0708
+U 1 1 5F49B33E
+P 3150 1700
+F 0 "#PWR0708" H 3150 1450 50  0001 C CNN
+F 1 "GND" H 3155 1527 50  0000 C CNN
+F 2 "" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3950 3800 4050
+Text Label 3800 3450 2    50   ~ 0
+FAN5V
+Text Label 3800 3850 2    50   ~ 0
+FAN5V
+Text Label 3800 3950 2    50   ~ 0
+FAN5V
+$Comp
+L Interface:PCA9306DP U703
+U 1 1 5F4BCC08
+P 1800 2750
+F 0 "U703" H 2000 3200 50  0000 C CNN
+F 1 "PCA9306DP" H 2050 2300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 1800 2300 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9306.pdf" H 1500 3200 50  0001 C CNN
+	1    1800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R701
+U 1 1 5F4BDB11
+P 2200 2000
+F 0 "R701" H 2270 2046 50  0000 L CNN
+F 1 "200k" V 2200 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 2000 50  0001 C CNN
+F 3 "~" H 2200 2000 50  0001 C CNN
+	1    2200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2250 1900 2150
+Wire Wire Line
+	1900 2150 2200 2150
+Wire Wire Line
+	2200 2150 2200 2650
+Connection ~ 2200 2150
+Text Label 2200 1850 2    50   ~ 0
+FAN5V
+Text Notes 1400 2050 0    50   ~ 0
+Weird power circuit\nfrom datasheet.
+$Comp
+L power:+3V3 #PWR0702
+U 1 1 5F4CA40A
+P 1700 2250
+F 0 "#PWR0702" H 1700 2100 50  0001 C CNN
+F 1 "+3V3" H 1715 2423 50  0000 C CNN
+F 2 "" H 1700 2250 50  0001 C CNN
+F 3 "" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2750 1400 2750
+Wire Wire Line
+	1200 2850 1400 2850
+$Comp
+L power:GND #PWR0704
+U 1 1 5F4D65E1
+P 1800 3250
+F 0 "#PWR0704" H 1800 3000 50  0001 C CNN
+F 1 "GND" H 1805 3077 50  0000 C CNN
+F 2 "" H 1800 3250 50  0001 C CNN
+F 3 "" H 1800 3250 50  0001 C CNN
+	1    1800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2750 3000 2750
+Wire Wire Line
+	2600 2650 2600 2850
+Wire Wire Line
+	2600 2850 2200 2850
+Wire Wire Line
+	2600 2650 2750 2650
+$Comp
+L Device:R R702
+U 1 1 5F4E01D9
+P 2750 2400
+F 0 "R702" H 2820 2446 50  0000 L CNN
+F 1 "3k3" V 2750 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 2400 50  0001 C CNN
+F 3 "~" H 2750 2400 50  0001 C CNN
+	1    2750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R703
+U 1 1 5F4E073B
+P 3000 2400
+F 0 "R703" H 3070 2446 50  0000 L CNN
+F 1 "3k3" V 3000 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 2400 50  0001 C CNN
+F 3 "~" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2550 2750 2650
+Connection ~ 2750 2650
+Wire Wire Line
+	2750 2650 3800 2650
+Wire Wire Line
+	3000 2550 3000 2750
+Connection ~ 3000 2750
+Wire Wire Line
+	3000 2750 3800 2750
+Wire Wire Line
+	2750 2250 2900 2250
+Wire Wire Line
+	2900 2250 2900 2200
+Connection ~ 2900 2250
+Wire Wire Line
+	2900 2250 3000 2250
+Text Label 2900 2200 0    50   ~ 0
+FAN5V
+Text Notes 2850 3100 0    50   ~ 0
+~ALERT is  O.D.\nand so 3v3 is ok
 $EndSCHEMATC
