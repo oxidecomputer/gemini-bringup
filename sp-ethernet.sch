@@ -1393,4 +1393,20 @@ $EndComp
 Connection ~ 1250 3700
 Wire Wire Line
 	1250 3700 1150 3700
+Text Label 5100 2300 0    50   ~ 0
+TX1+
+Text Label 5100 2400 0    50   ~ 0
+TX1-
+Text Label 5100 2800 0    50   ~ 0
+TX2+
+Text Label 5100 2900 0    50   ~ 0
+TX2-
+Text Label 5100 2550 0    50   ~ 0
+RX1+
+Text Label 5100 2650 0    50   ~ 0
+RX1-
+Text Label 5100 3050 0    50   ~ 0
+RX2+
+Text Label 5100 3150 0    50   ~ 0
+RX2-
 $EndSCHEMATC
