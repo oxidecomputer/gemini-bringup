@@ -4,4 +4,5 @@
   (lib (name micro-qfn16-narrow)(type KiCad)(uri ${KIPRJMOD}/lib/micro-qfn16-narrow.pretty)(options "")(descr ""))
   (lib (name lpc55)(type KiCad)(uri ${KIPRJMOD}/lib/lpc55.pretty)(options "")(descr ""))
   (lib (name passives)(type KiCad)(uri ${KIPRJMOD}/lib/passives.pretty)(options "")(descr ""))
+  (lib (name magjack)(type KiCad)(uri ${KIPRJMOD}/lib/magjack.pretty)(options "")(descr ""))
 )

@@ -587,13 +587,13 @@ Wire Wire Line
 	7800 3150 7950 3150
 Connection ~ 7800 3150
 $Comp
-L Connector:RJ45_Amphenol_RJMG1BD3B8K1ANR J401
+L magjack:RJ45_Würth_74980111211 J401
 U 1 1 5F2FACCC
 P 10200 2400
 F 0 "J401" H 10200 3125 50  0000 C CNN
-F 1 "RJ45_Amphenol_RJMG1BD3B8K1ANR" H 10200 3034 50  0000 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR" H 10200 3100 50  0001 C CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 10200 3200 50  0001 C CNN
+F 1 "RJ45_Würth_74980111211" H 10200 3034 50  0000 C CNN
+F 2 "magjack:Würth_100BT_Magjack" H 10200 3100 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/74980111211.pdf" H 10200 3200 50  0001 C CNN
 	1    10200 2400
 	1    0    0    -1  
 $EndComp
@@ -989,25 +989,19 @@ Wire Wire Line
 Wire Wire Line
 	9300 2800 9200 2800
 Wire Wire Line
-	9200 2800 9200 2600
-Wire Wire Line
 	9200 2600 9300 2600
-Wire Wire Line
-	9200 2600 9200 2300
-Connection ~ 9200 2600
-Connection ~ 9200 2300
 Text Label 8750 2700 2    50   ~ 0
 P1LEDS
 Text Label 8750 2900 2    50   ~ 0
 P1LEDA
 $Comp
-L Connector:RJ45_Amphenol_RJMG1BD3B8K1ANR J402
+L magjack:RJ45_Würth_74980111211 J402
 U 1 1 5F78C158
 P 10200 5100
 F 0 "J402" H 10200 5825 50  0000 C CNN
-F 1 "RJ45_Amphenol_RJMG1BD3B8K1ANR" H 10200 5734 50  0000 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR" H 10200 5800 50  0001 C CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 10200 5900 50  0001 C CNN
+F 1 "RJ45_Würth_74980111211" H 10200 5734 50  0000 C CNN
+F 2 "magjack:Würth_100BT_Magjack" H 10200 5800 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/74980111211.pdf" H 10200 5900 50  0001 C CNN
 	1    10200 5100
 	1    0    0    -1  
 $EndComp
@@ -1106,21 +1100,11 @@ Wire Wire Line
 Wire Wire Line
 	9300 5500 9200 5500
 Wire Wire Line
-	9200 5500 9200 5300
-Wire Wire Line
 	9200 5300 9300 5300
-Wire Wire Line
-	9200 5300 9200 5000
-Connection ~ 9200 5300
-Connection ~ 9200 5000
 Text Label 8750 5400 2    50   ~ 0
 P2LEDS
 Text Label 8750 5600 2    50   ~ 0
 P2LEDA
-Wire Wire Line
-	9200 4300 9200 2800
-Connection ~ 9200 4300
-Connection ~ 9200 2800
 Wire Wire Line
 	9200 4300 9200 4700
 Wire Wire Line
@@ -1212,7 +1196,7 @@ $EndComp
 Text Notes 1850 4400 2    50   ~ 0
 This PU req'd for\nour clock mode\n("mode 5")
 Wire Wire Line
-	6300 1750 9200 1750
+	6300 1750 9100 1750
 Wire Wire Line
 	4750 1750 5000 1750
 Wire Wire Line
@@ -1346,20 +1330,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 1550 2500 1550
 $Comp
-L Device:R R409
-U 1 1 5F492454
-P 1150 3550
-F 0 "R409" V 1050 3500 50  0000 L CNN
-F 1 "10k" V 1150 3500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1080 3550 50  0001 C CNN
-F 3 "~" H 1150 3550 50  0001 C CNN
-	1    1150 3550
-	1    0    0    -1  
-$EndComp
-Connection ~ 1150 3400
-Wire Wire Line
-	1150 3400 1000 3400
-$Comp
 L Device:D_Small D401
 U 1 1 5F4936FF
 P 1300 3550
@@ -1374,25 +1344,18 @@ Wire Wire Line
 	1300 3450 1300 3400
 Connection ~ 1300 3400
 Wire Wire Line
-	1300 3400 1150 3400
-Wire Wire Line
 	1300 3650 1300 3700
-Wire Wire Line
-	1300 3700 1250 3700
 $Comp
 L power:+3V3 #PWR0429
 U 1 1 5F4A41AA
-P 1250 3700
-F 0 "#PWR0429" H 1250 3550 50  0001 C CNN
-F 1 "+3V3" H 1265 3873 50  0000 C CNN
-F 2 "" H 1250 3700 50  0001 C CNN
-F 3 "" H 1250 3700 50  0001 C CNN
-	1    1250 3700
+P 1300 3700
+F 0 "#PWR0429" H 1300 3550 50  0001 C CNN
+F 1 "+3V3" H 1315 3873 50  0000 C CNN
+F 2 "" H 1300 3700 50  0001 C CNN
+F 3 "" H 1300 3700 50  0001 C CNN
+	1    1300 3700
 	-1   0    0    1   
 $EndComp
-Connection ~ 1250 3700
-Wire Wire Line
-	1250 3700 1150 3700
 Text Label 5100 2300 0    50   ~ 0
 TX1+
 Text Label 5100 2400 0    50   ~ 0
@@ -1409,4 +1372,42 @@ Text Label 5100 3050 0    50   ~ 0
 RX2+
 Text Label 5100 3150 0    50   ~ 0
 RX2-
+Wire Wire Line
+	9200 5500 9200 5300
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5F54BD6B
+P 9200 5300
+F 0 "#PWR0108" H 9200 5150 50  0001 C CNN
+F 1 "+3V3" H 9215 5473 50  0000 C CNN
+F 2 "" H 9200 5300 50  0001 C CNN
+F 3 "" H 9200 5300 50  0001 C CNN
+	1    9200 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 5300
+Wire Wire Line
+	9200 2600 9200 2800
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 5F5544DB
+P 9200 2600
+F 0 "#PWR0109" H 9200 2450 50  0001 C CNN
+F 1 "+3V3" H 9215 2773 50  0000 C CNN
+F 2 "" H 9200 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 2600
+Wire Wire Line
+	9100 1750 9100 4300
+Wire Wire Line
+	9100 4300 9200 4300
+Connection ~ 9100 1750
+Wire Wire Line
+	9100 1750 9200 1750
+Connection ~ 9200 4300
+Wire Wire Line
+	1000 3400 1300 3400
 $EndSCHEMATC

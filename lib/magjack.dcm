@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RJ45_Würth_74980111211
+D 1 Port RJ45 Magjack Connector SMD 10/100 Base-T, AutoMDIX
+K RJ45 Magjack
+F https://www.we-online.de/katalog/datasheet/74980111211.pdf
+$ENDCMP
+#
+#End Doc Library

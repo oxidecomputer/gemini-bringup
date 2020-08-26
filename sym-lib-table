@@ -13,4 +13,5 @@
   (lib (name txb01xx)(type Legacy)(uri ${KIPRJMOD}/lib/txb01xx.lib)(options "")(descr ""))
   (lib (name emif06-msdn02-n16)(type Legacy)(uri ${KIPRJMOD}/lib/emif06-msdn02-n16.lib)(options "")(descr ""))
   (lib (name max13235)(type Legacy)(uri ${KIPRJMOD}/lib/max13235.lib)(options "")(descr ""))
+  (lib (name magjack)(type Legacy)(uri ${KIPRJMOD}/lib/magjack.lib)(options "")(descr ""))
 )
