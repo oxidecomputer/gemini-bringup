@@ -126,7 +126,7 @@ U 1 1 5F378801
 P 2600 4800
 F 0 "J801" H 2650 4175 50  0000 C CNN
 F 1 "IDC" H 2650 4266 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical_SMD" H 2600 4800 50  0001 C CNN
+F 2 "idc-smd:IDC-Header_02x08_2.54mm_Vertical_SMD" H 2600 4800 50  0001 C CNN
 F 3 "~" H 2600 4800 50  0001 C CNN
 	1    2600 4800
 	-1   0    0    1   
