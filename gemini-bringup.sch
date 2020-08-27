@@ -497,4 +497,114 @@ Wire Wire Line
 Wire Wire Line
 	2550 7350 2350 7350
 Connection ~ 2550 6500
+$Comp
+L Mechanical:MountingHole H101
+U 1 1 5F8B5846
+P 1300 950
+F 0 "H101" H 1400 996 50  0000 L CNN
+F 1 "M3" H 1400 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1300 950 50  0001 C CNN
+F 3 "~" H 1300 950 50  0001 C CNN
+	1    1300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H104
+U 1 1 5F8B599D
+P 1650 950
+F 0 "H104" H 1750 996 50  0000 L CNN
+F 1 "M3" H 1750 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 950 50  0001 C CNN
+F 3 "~" H 1650 950 50  0001 C CNN
+	1    1650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H107
+U 1 1 5F8B5C3B
+P 2000 950
+F 0 "H107" H 2100 996 50  0000 L CNN
+F 1 "M3" H 2100 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 950 50  0001 C CNN
+F 3 "~" H 2000 950 50  0001 C CNN
+	1    2000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H109
+U 1 1 5F8B5ECC
+P 2350 950
+F 0 "H109" H 2450 996 50  0000 L CNN
+F 1 "M3" H 2450 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2350 950 50  0001 C CNN
+F 3 "~" H 2350 950 50  0001 C CNN
+	1    2350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H102
+U 1 1 5F8B6164
+P 1300 1200
+F 0 "H102" H 1400 1246 50  0000 L CNN
+F 1 "M3" H 1400 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1300 1200 50  0001 C CNN
+F 3 "~" H 1300 1200 50  0001 C CNN
+	1    1300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H105
+U 1 1 5F8B6547
+P 1650 1200
+F 0 "H105" H 1750 1246 50  0000 L CNN
+F 1 "M3" H 1750 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 1200 50  0001 C CNN
+F 3 "~" H 1650 1200 50  0001 C CNN
+	1    1650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H108
+U 1 1 5F8B6759
+P 2000 1200
+F 0 "H108" H 2100 1246 50  0000 L CNN
+F 1 "M3" H 2100 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 1200 50  0001 C CNN
+F 3 "~" H 2000 1200 50  0001 C CNN
+	1    2000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H110
+U 1 1 5F8B691D
+P 2350 1200
+F 0 "H110" H 2450 1246 50  0000 L CNN
+F 1 "M3" H 2450 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2350 1200 50  0001 C CNN
+F 3 "~" H 2350 1200 50  0001 C CNN
+	1    2350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H103
+U 1 1 5F8B6B59
+P 1300 1450
+F 0 "H103" H 1400 1496 50  0000 L CNN
+F 1 "M3" H 1400 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1300 1450 50  0001 C CNN
+F 3 "~" H 1300 1450 50  0001 C CNN
+	1    1300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H106
+U 1 1 5F8B6E32
+P 1650 1450
+F 0 "H106" H 1750 1496 50  0000 L CNN
+F 1 "M3" H 1750 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 1450 50  0001 C CNN
+F 3 "~" H 1650 1450 50  0001 C CNN
+	1    1650 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
