@@ -1,0 +1,9 @@
+[submodule "lib/kicad/kicad-symbols"]
+	path = lib/kicad/kicad-symbols
+	url = https://github.com/KiCad/kicad-symbols
+[submodule "lib/kicad/kicad-footprints"]
+	path = lib/kicad/kicad-footprints
+	url = https://github.com/KiCad/kicad-footprints
+[submodule "lib/kicad/kicad-packages3D"]
+	path = lib/kicad/kicad-packages3D
+	url = https://github.com/KiCad/kicad-packages3D
