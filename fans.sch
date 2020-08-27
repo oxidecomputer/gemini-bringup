@@ -255,7 +255,7 @@ U 1 1 5F381500
 P 6700 1400
 F 0 "RN702" V 6400 1150 50  0000 L CNN
 F 1 "3k3" V 6400 1450 50  0000 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7375 1400 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7375 1400 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6700 1400 50  0001 C CNN
 	1    6700 1400
 	1    0    0    -1  
@@ -266,7 +266,7 @@ U 1 1 5F382413
 P 7200 1400
 F 0 "RN703" V 6900 1150 50  0000 L CNN
 F 1 "3k3" V 6900 1450 50  0000 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7875 1400 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7875 1400 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7200 1400 50  0001 C CNN
 	1    7200 1400
 	1    0    0    -1  
@@ -338,7 +338,7 @@ U 1 1 5F26ACB1
 P 6150 1400
 F 0 "RN701" V 5850 1150 50  0000 L CNN
 F 1 "3k3" V 5850 1450 50  0000 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 6825 1400 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 6825 1400 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6150 1400 50  0001 C CNN
 	1    6150 1400
 	1    0    0    -1  
