@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: recursive
     - name: 'Render: gemini-bringup'
       uses: ./.github/actions/kicad-schematic-pdf
       with:
@@ -27,6 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: recursive
     - name: 'Render: lpc55_carrier'
       uses: ./.github/actions/kicad-schematic-pdf
       with:
