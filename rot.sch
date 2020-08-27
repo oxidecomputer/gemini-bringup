@@ -253,17 +253,6 @@ Wire Notes Line
 	3600 3850 950  3850
 Wire Notes Line
 	950  3850 950  5250
-$Comp
-L Connector_Generic:Conn_02x25_Odd_Even J203
-U 1 1 5F3E55C2
-P 11600 5900
-F 0 "J203" H 11650 7350 50  0000 C CNN
-F 1 "Conn_02x25_Odd_Even" H 11650 7250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_2x25_P2.00mm_Vertical_SMD" H 11600 5900 50  0001 C CNN
-F 3 "~" H 11600 5900 50  0001 C CNN
-	1    11600 5900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11400 4900 10650 4900
 Wire Wire Line
@@ -423,7 +412,7 @@ Wire Wire Line
 	11400 7000 10650 7000
 Connection ~ 10650 7000
 Wire Wire Line
-	10650 7000 10650 7400
+	10650 7000 10650 7200
 Wire Wire Line
 	11400 6800 10650 6800
 Connection ~ 10650 6800
@@ -596,4 +585,22 @@ Wire Wire Line
 Wire Wire Line
 	20050 2050 20200 2050
 Connection ~ 20200 2050
+$Comp
+L Connector_Generic:Conn_2Rows-51Pins J?
+U 1 1 5F47B535
+P 11600 5900
+F 0 "J?" H 11650 7350 50  0000 C CNN
+F 1 "Conn_2Rows-51Pins" H 11650 7250 50  0000 C CNN
+F 2 "" H 11600 5900 50  0001 C CNN
+F 3 "~" H 11600 5900 50  0001 C CNN
+F 4 "Hirose" H 11600 5900 50  0001 C CNN "Mfg"
+F 5 "DF9-51P-1V(69)" H 11600 5900 50  0001 C CNN "Mfg Part Num"
+	1    11600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 7200 10650 7200
+Connection ~ 10650 7200
+Wire Wire Line
+	10650 7200 10650 7400
 $EndSCHEMATC

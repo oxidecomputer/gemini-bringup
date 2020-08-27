@@ -445,17 +445,19 @@ X Pin_9 9 -200 700 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_02x25_Odd_Even
+# Connector_Generic_Conn_2Rows-51Pins
 #
-DEF Connector_Generic_Conn_02x25_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_2Rows-51Pins J 0 40 Y N 1 F N
 F0 "J" 50 1300 50 H V C CNN
-F1 "Connector_Generic_Conn_02x25_Odd_Even" 50 -1300 50 H V C CNN
+F1 "Connector_Generic_Conn_2Rows-51Pins" 50 -1400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_2x??_*
+ Connector*:*2Rows*Pins__*
+ *FCC*2Rows*Pins__*
 $ENDFPLIST
 DRAW
+S -50 -1295 0 -1305 1 1 6 N
 S -50 -1195 0 -1205 1 1 6 N
 S -50 -1095 0 -1105 1 1 6 N
 S -50 -995 0 -1005 1 1 6 N
@@ -481,7 +483,7 @@ S -50 905 0 895 1 1 6 N
 S -50 1005 0 995 1 1 6 N
 S -50 1105 0 1095 1 1 6 N
 S -50 1205 0 1195 1 1 6 N
-S -50 1250 150 -1250 1 1 10 f
+S -50 1250 150 -1350 1 1 10 f
 S 150 -1195 100 -1205 1 1 6 N
 S 150 -1095 100 -1105 1 1 6 N
 S 150 -995 100 -1005 1 1 6 N
@@ -553,6 +555,7 @@ X Pin_48 48 300 -1100 150 L 50 50 1 1 P
 X Pin_49 49 -200 -1200 150 R 50 50 1 1 P
 X Pin_5 5 -200 1000 150 R 50 50 1 1 P
 X Pin_50 50 300 -1200 150 L 50 50 1 1 P
+X Pin_51 51 -200 -1300 150 R 50 50 1 1 P
 X Pin_6 6 300 1000 150 L 50 50 1 1 P
 X Pin_7 7 -200 900 150 R 50 50 1 1 P
 X Pin_8 8 300 900 150 L 50 50 1 1 P

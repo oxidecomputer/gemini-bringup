@@ -1403,17 +1403,6 @@ NoConn ~ 10050 5750
 NoConn ~ 10050 5850
 NoConn ~ 10050 6150
 NoConn ~ 10050 6250
-$Comp
-L Connector_Generic:Conn_02x25_Odd_Even J?
-U 1 1 5F4A299E
-P 18750 4350
-F 0 "J?" H 18800 5800 50  0000 C CNN
-F 1 "Conn_02x25_Odd_Even" H 18800 5700 50  0000 C CNN
-F 2 "" H 18750 4350 50  0001 C CNN
-F 3 "~" H 18750 4350 50  0001 C CNN
-	1    18750 4350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18550 3350 17800 3350
 Wire Wire Line
@@ -1519,7 +1508,7 @@ Wire Wire Line
 	18550 5450 17800 5450
 Connection ~ 17800 5450
 Wire Wire Line
-	17800 5450 17800 6150
+	17800 5450 17800 5650
 Wire Wire Line
 	19050 5550 20000 5550
 Connection ~ 20000 5550
@@ -1681,4 +1670,22 @@ Wire Wire Line
 Connection ~ 12000 2500
 Wire Wire Line
 	12000 2500 12000 2450
+$Comp
+L Connector_Generic:Conn_2Rows-51Pins J?
+U 1 1 5F48204E
+P 18750 4350
+F 0 "J?" H 18800 5800 50  0000 C CNN
+F 1 "Conn_2Rows-51Pins" H 18800 5700 50  0000 C CNN
+F 2 "" H 18750 4350 50  0001 C CNN
+F 3 "~" H 18750 4350 50  0001 C CNN
+F 4 "Hirose" H 18750 4350 50  0001 C CNN "Mfg"
+F 5 "DF9-51S-1V(69)" H 18750 4350 50  0001 C CNN "Mfg Part Num"
+	1    18750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 5650 17800 5650
+Connection ~ 17800 5650
+Wire Wire Line
+	17800 5650 17800 6150
 $EndSCHEMATC
