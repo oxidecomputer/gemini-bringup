@@ -532,13 +532,13 @@ $EndComp
 Wire Wire Line
 	1900 2250 1900 2150
 Wire Wire Line
-	1900 2150 2200 2150
+	1900 2150 1950 2150
 Wire Wire Line
 	2200 2150 2200 2650
 Connection ~ 2200 2150
 Text Label 2200 1850 2    50   ~ 0
 FAN5V
-Text Notes 1400 2050 0    50   ~ 0
+Text Notes 1200 1950 0    50   ~ 0
 Weird power circuit\nfrom datasheet.
 $Comp
 L power:+3V3 #PWR0702
@@ -633,4 +633,18 @@ F 3 "" H 7500 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7500 4800
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F48CA09
+P 1950 2150
+F 0 "#FLG?" H 1950 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 2323 50  0000 C CNN
+F 2 "" H 1950 2150 50  0001 C CNN
+F 3 "~" H 1950 2150 50  0001 C CNN
+	1    1950 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2150
+Wire Wire Line
+	1950 2150 2200 2150
 $EndSCHEMATC
