@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 8)
     (tracks 3977)
     (zones 0)
     (modules 252)
@@ -12668,6 +12668,9 @@
     )
   )
 
+  (gr_line (start 109.2 35.6) (end 109.2 16) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 67.4 35.6) (end 109.2 35.6) (layer Dwgs.User) (width 0.15) (tstamp 5F4EEF41))
+  (gr_line (start 67.4 16.2) (end 67.4 35.6) (layer Dwgs.User) (width 0.15))
   (gr_text "GEMINI BRINGUP" (at 89.6 117.8) (layer F.SilkS)
     (effects (font (size 5 5) (thickness 0.15)))
   )
