@@ -94,7 +94,7 @@ U 1 1 5F4765BB
 P 7300 2850
 F 0 "J1502" H 7380 2842 50  0000 L CNN
 F 1 "I2CGPIO0" H 7380 2751 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 7300 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 7300 2850 50  0001 C CNN
 F 3 "~" H 7300 2850 50  0001 C CNN
 	1    7300 2850
 	1    0    0    -1  
@@ -143,7 +143,7 @@ U 1 1 5F477ECC
 P 6800 3750
 F 0 "J1501" H 6880 3742 50  0000 L CNN
 F 1 "I2CGPIO1" H 6880 3651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6800 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 6800 3750 50  0001 C CNN
 F 3 "~" H 6800 3750 50  0001 C CNN
 	1    6800 3750
 	1    0    0    -1  
