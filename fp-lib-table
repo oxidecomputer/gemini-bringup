@@ -138,4 +138,5 @@
   (lib (name Valve)(type KiCad)(uri ${KIPRJMOD}/lib/kicad/kicad-footprints/Valve.pretty)(options "")(descr Valve))
   (lib (name Varistor)(type KiCad)(uri ${KIPRJMOD}/lib/kicad/kicad-footprints/Varistor.pretty)(options "")(descr Varistor))
   (lib (name molex-sl)(type KiCad)(uri ${KIPRJMOD}/lib/molex-sl.pretty)(options "")(descr ""))
+  (lib (name hirose-df9)(type KiCad)(uri ${KIPRJMOD}/lib/hirose-df9.pretty)(options "")(descr ""))
 )
