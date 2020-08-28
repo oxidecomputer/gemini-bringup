@@ -1,4 +1,4 @@
-(module "Hirose_DF9-51x-1V(69)_2Rows_51Pin-2MP_P1.0mm_Vertical" (layer F.Cu) (tedit 5F485A19)
+(module "Hirose_DF9-51x-1V(69)_2Rows_51Pin-2MP_P1.0mm_Vertical" (layer F.Cu) (tedit 5F4954C0)
   (attr smd)
   (fp_text reference REF** (at 0 -17.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -147,6 +147,20 @@
   (pad 1 smd rect (at -2.25 -12.5 270) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask))
   (pad "" np_thru_hole circle (at 0 14.05 270) (size 1.3 1.3) (drill 1.3) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 0 -14.05 270) (size 1.3 1.3) (drill 1.3) (layers *.Cu *.Mask))
-  (pad MP smd rect (at 0 -15.35 270) (size 1.3 3.4) (layers F.Cu F.Paste F.Mask))
-  (pad MP smd rect (at 0 15.35 270) (size 1.3 3.4) (layers F.Cu F.Paste F.Mask))
+  (pad MP smd custom (at 0 -15.5) (size 1 1) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 1.7 0.8) (xy 0 0.4) (xy -1.7 0.8) (xy -1.7 -0.5) (xy 1.7 -0.5)
+) (width 0))
+    ))
+  (pad MP smd custom (at 0 15.5 180) (size 1 1) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 1.7 0.8) (xy 0 0.4) (xy -1.7 0.8) (xy -1.7 -0.5) (xy 1.7 -0.5)
+) (width 0))
+    ))
 )
