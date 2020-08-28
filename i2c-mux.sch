@@ -85,12 +85,12 @@ I2C addr 1000 100
 Text Notes 3350 5150 0    50   ~ 0
 Notes:\n- PUs provided\n- 2.2V-5.5V OK\n- NOT ISOLATED - common ground req'd
 $Comp
-L Connector_Generic:Conn_01x05 J501
+L Connector_Generic:Conn_01x06 J501
 U 1 1 5F30BFFF
 P 7300 2800
 F 0 "J501" H 7380 2842 50  0000 L CNN
 F 1 "SMBUS" H 7380 2751 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7300 2800 50  0001 C CNN
+F 2 "molex-sl:SL_1x06_Vertical_SMD" H 7300 2800 50  0001 C CNN
 F 3 "~" H 7300 2800 50  0001 C CNN
 	1    7300 2800
 	1    0    0    -1  
@@ -106,12 +106,12 @@ Wire Wire Line
 Wire Wire Line
 	5100 3000 5100 3400
 $Comp
-L Connector_Generic:Conn_01x05 J502
+L Connector_Generic:Conn_01x06 J502
 U 1 1 5F31ACF0
 P 7300 3500
 F 0 "J502" H 7380 3542 50  0000 L CNN
 F 1 "SMBUS" H 7380 3451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7300 3500 50  0001 C CNN
+F 2 "molex-sl:SL_1x06_Vertical_SMD" H 7300 3500 50  0001 C CNN
 F 3 "~" H 7300 3500 50  0001 C CNN
 	1    7300 3500
 	1    0    0    -1  
@@ -119,12 +119,12 @@ $EndComp
 Wire Wire Line
 	7100 3500 6950 3500
 $Comp
-L Connector_Generic:Conn_01x05 J503
+L Connector_Generic:Conn_01x06 J503
 U 1 1 5F31DFF7
 P 7300 4200
 F 0 "J503" H 7380 4242 50  0000 L CNN
 F 1 "SMBUS" H 7380 4151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7300 4200 50  0001 C CNN
+F 2 "molex-sl:SL_1x06_Vertical_SMD" H 7300 4200 50  0001 C CNN
 F 3 "~" H 7300 4200 50  0001 C CNN
 	1    7300 4200
 	1    0    0    -1  
@@ -136,12 +136,12 @@ Wire Wire Line
 Wire Wire Line
 	6550 4300 6550 4200
 $Comp
-L Connector_Generic:Conn_01x05 J504
+L Connector_Generic:Conn_01x06 J504
 U 1 1 5F3236BF
 P 7300 4900
 F 0 "J504" H 7380 4942 50  0000 L CNN
 F 1 "SMBUS" H 7380 4851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7300 4900 50  0001 C CNN
+F 2 "molex-sl:SL_1x06_Vertical_SMD" H 7300 4900 50  0001 C CNN
 F 3 "~" H 7300 4900 50  0001 C CNN
 	1    7300 4900
 	1    0    0    -1  
@@ -187,15 +187,15 @@ Wire Wire Line
 Wire Wire Line
 	5450 3900 4900 3900
 Wire Wire Line
-	6950 2800 6950 3500
+	6950 2800 6950 3100
 Connection ~ 6950 3500
 Wire Wire Line
-	6950 3500 6950 4200
+	6950 3500 6950 3800
 Connection ~ 6950 4200
 Wire Wire Line
-	6950 4200 6950 4900
+	6950 4200 6950 4500
 Wire Wire Line
-	6950 4900 6950 5250
+	6950 4900 6950 5200
 Connection ~ 6950 4900
 $Comp
 L power:GND #PWR0505
@@ -441,4 +441,24 @@ NoConn ~ 7700 4900
 NoConn ~ 7700 4200
 NoConn ~ 7700 3500
 NoConn ~ 7700 2800
+Wire Wire Line
+	7100 3100 6950 3100
+Connection ~ 6950 3100
+Wire Wire Line
+	6950 3100 6950 3500
+Wire Wire Line
+	7100 3800 6950 3800
+Connection ~ 6950 3800
+Wire Wire Line
+	6950 3800 6950 4200
+Wire Wire Line
+	7100 4500 6950 4500
+Connection ~ 6950 4500
+Wire Wire Line
+	6950 4500 6950 4900
+Wire Wire Line
+	7100 5200 6950 5200
+Connection ~ 6950 5200
+Wire Wire Line
+	6950 5200 6950 5250
 $EndSCHEMATC
