@@ -139,4 +139,6 @@
   (lib (name Varistor)(type KiCad)(uri ${KIPRJMOD}/lib/kicad/kicad-footprints/Varistor.pretty)(options "")(descr Varistor))
   (lib (name molex-sl)(type KiCad)(uri ${KIPRJMOD}/lib/molex-sl.pretty)(options "")(descr ""))
   (lib (name hirose-df9)(type KiCad)(uri ${KIPRJMOD}/lib/hirose-df9.pretty)(options "")(descr ""))
+  (lib (name c-and-k-ats-series)(type KiCad)(uri ${KIPRJMOD}/lib/c-and-k-ats-series.pretty)(options "")(descr ""))
+  (lib (name c-and-k-pts851)(type KiCad)(uri ${KIPRJMOD}/lib/c-and-k-pts851.pretty)(options "")(descr ""))
 )

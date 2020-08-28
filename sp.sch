@@ -124,7 +124,7 @@ U 1 1 5F19FD56
 P 3550 2950
 F 0 "SW301" V 3504 3048 50  0000 L CNN
 F 1 "RESET" V 3595 3048 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816" H 3550 2950 50  0001 C CNN
+F 2 "c-and-k-pts851:PTS815" H 3550 2950 50  0001 C CNN
 F 3 "~" H 3550 2950 50  0001 C CNN
 	1    3550 2950
 	0    1    1    0   
@@ -673,8 +673,8 @@ L Switch:SW_Push_Open SW303
 U 1 1 5F2000A4
 P 9850 2250
 F 0 "SW303" H 9850 2485 50  0000 C CNN
-F 1 "CLEAR" H 9850 2394 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 9850 2250 50  0001 C CNN
+F 1 "C&K ATS2D1G NC LFS" H 9850 2394 50  0000 C CNN
+F 2 "c-and-k-ats-series:ATS" H 9850 2250 50  0001 C CNN
 F 3 "~" H 9850 2250 50  0001 C CNN
 	1    9850 2250
 	1    0    0    -1  
@@ -1833,7 +1833,7 @@ Text Label 13000 7050 0    50   ~ 0
 USART6_RX
 Text Label 13000 6950 0    50   ~ 0
 USART6_TX
-Text Notes 8900 2250 0    50   ~ 0
+Text Notes 8850 2100 0    50   ~ 0
 Use MOMENTARY NC\nMust be closed when\npower is on!
 Text Notes 20750 1850 2    50   ~ 0
 uC logic supply decoupling
