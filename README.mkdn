@@ -5,3 +5,16 @@ board. This board contains some of the moving parts of the final Gemini system,
 but laid out in a way that is easier to probe and test.
 
 This is a KiCad project; you will need KiCad (preferably 5.1.2) to participate.
+Additionally, you will need the symbol and footprint libraries in the
+submodules; you can obtain these by doing either of:
+
+	`$ git clone --recursive`
+
+when your first clone this repository, or
+
+	`$ git submodule update --init`
+
+after cloning or syncing up.  If you leave out this step, KiCad will complain
+loudly about missing symbols and/or footprints and attemot to "rescue" them,
+which will create spurious changes to your copy of the repo and prevent
+subsequent pull/rebase/merge/push operations from working as desired.
