@@ -1081,17 +1081,6 @@ F 3 "" H 2400 10900 50  0001 C CNN
 	1    2400 10900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5F3FC767
-P 2400 11450
-F 0 "#PWR0105" H 2400 11200 50  0001 C CNN
-F 1 "GND" H 2450 11250 50  0000 C CNN
-F 2 "" H 2400 11450 50  0001 C CNN
-F 3 "" H 2400 11450 50  0001 C CNN
-	1    2400 11450
-	1    0    0    -1  
-$EndComp
 Text Notes 2750 11600 0    50   ~ 0
 Default to Passive Boot.\nPull LOW for ISP boot.
 Text Notes 1350 11800 0    50   ~ 10
@@ -1173,9 +1162,6 @@ Wire Wire Line
 	2400 10950 2400 10900
 Wire Wire Line
 	2400 11350 3050 11350
-Connection ~ 2400 11350
-Wire Wire Line
-	2400 11350 2400 11450
 Wire Wire Line
 	3750 9750 4700 9750
 Wire Wire Line
