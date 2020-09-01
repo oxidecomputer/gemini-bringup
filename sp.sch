@@ -640,7 +640,7 @@ F 1 "CR1220" H 9718 2455 50  0000 L CNN
 F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" V 9600 2510 50  0001 C CNN
 F 3 "~" V 9600 2510 50  0001 C CNN
 F 4 "Keystone Electronics" H 9600 2450 50  0001 C CNN "Mfg"
-F 5 "generic" H 9600 2450 50  0001 C CNN "Mfg Part Num"
+F 5 "3000 TR" H 9600 2450 50  0001 C CNN "Mfg Part Num"
 	1    9600 2450
 	1    0    0    -1  
 $EndComp
