@@ -200,7 +200,7 @@ U 1 1 5F41D4C5
 P 1350 4350
 F 0 "J201" H 1250 4700 50  0000 C CNN
 F 1 "Conn_01x04" H 1250 4600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1350 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 1350 4350 50  0001 C CNN
 F 3 "~" H 1350 4350 50  0001 C CNN
 	1    1350 4350
 	-1   0    0    -1  
@@ -524,7 +524,7 @@ U 1 1 5F495C07
 P 21100 3700
 F 0 "J204" H 21200 3700 50  0000 L CNN
 F 1 "Conn_01x10" H 21200 3600 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 21100 3700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical_SMD_Pin1Left" H 21100 3700 50  0001 C CNN
 F 3 "~" H 21100 3700 50  0001 C CNN
 	1    21100 3700
 	1    0    0    -1  
