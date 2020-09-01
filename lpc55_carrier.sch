@@ -876,7 +876,6 @@ F 3 "~" H 3100 9400 50  0001 C CNN
 	1    3100 9400
 	0    1    1    0   
 $EndComp
-NoConn ~ 2600 9550
 $Comp
 L power:GND #PWR0108
 U 1 1 5F7272E3
