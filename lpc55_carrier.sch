@@ -185,17 +185,6 @@ Wire Wire Line
 Wire Wire Line
 	11550 7950 11550 8100
 $Comp
-L power:+3V3 #PWR0107
-U 1 1 5F2BFE4C
-P 4550 7800
-F 0 "#PWR0107" H 4550 7650 50  0001 C CNN
-F 1 "+3V3" H 4600 8000 50  0000 C CNN
-F 2 "" H 4550 7800 50  0001 C CNN
-F 3 "" H 4550 7800 50  0001 C CNN
-	1    4550 7800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C109
 U 1 1 5F2C0956
 P 4550 8550
@@ -1034,17 +1023,6 @@ Text Label 10050 3950 2    50   ~ 0
 ISP0
 Text Label 3050 11350 0    50   ~ 0
 ISP0
-$Comp
-L power:+3.3V #PWR0104
-U 1 1 5F3FBDE0
-P 2400 10900
-F 0 "#PWR0104" H 2400 10750 50  0001 C CNN
-F 1 "+3.3V" H 2450 11100 50  0000 C CNN
-F 2 "" H 2400 10900 50  0001 C CNN
-F 3 "" H 2400 10900 50  0001 C CNN
-	1    2400 10900
-	1    0    0    -1  
-$EndComp
 Text Notes 2750 11600 0    50   ~ 0
 Default to Passive Boot.\nPull LOW for ISP boot.
 Text Notes 1350 11800 0    50   ~ 10
@@ -1141,17 +1119,6 @@ Wire Wire Line
 	4300 8000 4300 7900
 Wire Wire Line
 	4300 7900 4550 7900
-$Comp
-L power:+3V3 #PWR0109
-U 1 1 5F4CE778
-P 3950 8900
-F 0 "#PWR0109" H 3950 8750 50  0001 C CNN
-F 1 "+3V3" H 4000 9100 50  0000 C CNN
-F 2 "" H 3950 8900 50  0001 C CNN
-F 3 "" H 3950 8900 50  0001 C CNN
-	1    3950 8900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3950 8950 3950 8900
 Wire Wire Line
@@ -1248,17 +1215,6 @@ Wire Wire Line
 	8500 4350 8500 4400
 Wire Wire Line
 	8100 4350 8100 4400
-$Comp
-L power:+3.3V #PWR0113
-U 1 1 5F3C203C
-P 8300 3950
-F 0 "#PWR0113" H 8300 3800 50  0001 C CNN
-F 1 "+3.3V" H 8350 4150 50  0000 C CNN
-F 2 "" H 8300 3950 50  0001 C CNN
-F 3 "" H 8300 3950 50  0001 C CNN
-	1    8300 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 4050 8100 4000
 Wire Wire Line
@@ -1658,4 +1614,12 @@ Wire Wire Line
 Connection ~ 13250 7400
 Wire Wire Line
 	13250 7400 13250 7250
+Text Label 4550 7800 1    50   ~ 0
+VDD
+Text Label 3950 8900 1    50   ~ 0
+VDD
+Text Label 2400 10900 1    50   ~ 0
+VDD
+Text Label 8300 3950 1    50   ~ 0
+VDD
 $EndSCHEMATC
