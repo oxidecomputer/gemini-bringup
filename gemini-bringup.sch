@@ -135,6 +135,7 @@ F 0 "R101" V 9150 2000 50  0000 L CNN
 F 1 "3k" V 9200 1850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 1900 50  0001 C CNN
 F 3 "~" H 9200 1900 50  0001 C CNN
+F 4 "generic" H 9200 1900 50  0001 C CNN "Mfg Part Num"
 	1    9200 1900
 	1    0    0    -1  
 $EndComp
@@ -146,6 +147,7 @@ F 0 "R102" V 9300 2000 50  0000 L CNN
 F 1 "3k" V 9350 1850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9280 1900 50  0001 C CNN
 F 3 "~" H 9350 1900 50  0001 C CNN
+F 4 "generic" H 9350 1900 50  0001 C CNN "Mfg Part Num"
 	1    9350 1900
 	1    0    0    -1  
 $EndComp
@@ -223,6 +225,7 @@ F 0 "R103" V 9450 2000 50  0000 L CNN
 F 1 "3k" V 9500 1850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9430 1900 50  0001 C CNN
 F 3 "~" H 9500 1900 50  0001 C CNN
+F 4 "generic" H 9500 1900 50  0001 C CNN "Mfg Part Num"
 	1    9500 1900
 	1    0    0    -1  
 $EndComp
@@ -437,6 +440,7 @@ F 0 "R104" V 4200 3250 50  0000 L CNN
 F 1 "3k" V 4250 3100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 3150 50  0001 C CNN
 F 3 "~" H 4250 3150 50  0001 C CNN
+F 4 "generic" H 4250 3150 50  0001 C CNN "Mfg Part Num"
 	1    4250 3150
 	1    0    0    -1  
 $EndComp
@@ -448,6 +452,7 @@ F 0 "R105" V 4350 3250 50  0000 L CNN
 F 1 "3k" V 4400 3100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 3150 50  0001 C CNN
 F 3 "~" H 4400 3150 50  0001 C CNN
+F 4 "generic" H 4400 3150 50  0001 C CNN "Mfg Part Num"
 	1    4400 3150
 	1    0    0    -1  
 $EndComp

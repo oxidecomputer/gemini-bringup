@@ -29,6 +29,8 @@ F 0 "U901" H 5575 4115 50  0000 C CNN
 F 1 "EMIF06-MSD02N16" H 5575 4024 50  0000 C CNN
 F 2 "micro-qfn16-narrow:DFN-16-1EP_1.2x3.5mm_P0.4mm_EP0.3x2.8mm" H 5650 3500 50  0001 C CNN
 F 3 "" H 5650 3500 50  0001 C CNN
+F 4 "ST" H 5550 3500 50  0001 C CNN "Mfg"
+F 5 "EMIF06-MSD02N16" H 5550 3500 50  0001 C CNN "Mfg Part Num"
 	1    5550 3500
 	1    0    0    -1  
 $EndComp
@@ -40,6 +42,8 @@ F 0 "J901" H 8050 4167 50  0000 C CNN
 F 1 "Micro_SD_Card" H 8050 4076 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 9250 3750 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 8100 3450 50  0001 C CNN
+F 4 "Würth Elektronik" H 8100 3450 50  0001 C CNN "Mfg"
+F 5 "693072010801" H 8100 3450 50  0001 C CNN "Mfg Part Num"
 	1    8100 3450
 	1    0    0    -1  
 $EndComp

@@ -25,6 +25,8 @@ F 0 "U1201" H 5600 3550 50  0000 C CNN
 F 1 "TCA9802" H 5800 3200 50  0000 C CNN
 F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6500 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9802.pdf" H 5300 4100 50  0001 C CNN
+F 4 "Texas Instruments" H 5600 3650 50  0001 C CNN "Mfg"
+F 5 "TCA9802" H 5600 3650 50  0001 C CNN "Mfg Part Num"
 	1    5600 3650
 	1    0    0    -1  
 $EndComp
@@ -70,6 +72,8 @@ F 0 "J1201" H 7430 3642 50  0000 L CNN
 F 1 "SMBUS" H 7430 3551 50  0000 L CNN
 F 2 "molex-sl:SL_1x06_Vertical_SMD" H 7350 3600 50  0001 C CNN
 F 3 "~" H 7350 3600 50  0001 C CNN
+F 4 "Molex" H 7350 3600 50  0001 C CNN "Mfg"
+F 5 "0740991006" H 7350 3600 50  0001 C CNN "Mfg Part Num"
 	1    7350 3600
 	1    0    0    -1  
 $EndComp
@@ -128,6 +132,7 @@ F 0 "R1201" V 4850 3300 50  0000 L CNN
 F 1 "3k" V 4900 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3200 50  0001 C CNN
 F 3 "~" H 4900 3200 50  0001 C CNN
+F 4 "generic" H 4900 3200 50  0001 C CNN "Mfg Part Num"
 	1    4900 3200
 	1    0    0    -1  
 $EndComp
@@ -148,6 +153,7 @@ F 0 "R1202" V 5000 3300 50  0000 L CNN
 F 1 "3k" V 5050 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3200 50  0001 C CNN
 F 3 "~" H 5050 3200 50  0001 C CNN
+F 4 "generic" H 5050 3200 50  0001 C CNN "Mfg Part Num"
 	1    5050 3200
 	1    0    0    -1  
 $EndComp
@@ -194,6 +200,7 @@ F 0 "R1203" V 5000 3850 50  0000 L CNN
 F 1 "10k" V 5050 3700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3750 50  0001 C CNN
 F 3 "~" H 5050 3750 50  0001 C CNN
+F 4 "generic" H 5050 3750 50  0001 C CNN "Mfg Part Num"
 	1    5050 3750
 	0    -1   -1   0   
 $EndComp

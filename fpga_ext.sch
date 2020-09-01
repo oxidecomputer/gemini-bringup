@@ -21,6 +21,8 @@ F 0 "J1001" H 6150 4667 50  0000 C CNN
 F 1 "EXPANSION" H 6150 4576 50  0000 C CNN
 F 2 "Connector_PinSocket_2.00mm:PinSocket_2x24_P2.00mm_Vertical_SMD" H 6100 3350 50  0001 C CNN
 F 3 "~" H 6100 3350 50  0001 C CNN
+F 4 "Samtec" H 6100 3350 50  0001 C CNN "Mfg"
+F 5 "TMM-124-01-L-D-SM" H 6100 3350 50  0001 C CNN "Mfg Part Num"
 	1    6100 3350
 	1    0    0    -1  
 $EndComp
@@ -376,6 +378,7 @@ F 0 "R1001" V 6600 2900 50  0000 C CNN
 F 1 "22" V 6650 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 2750 50  0001 C CNN
 F 3 "~" H 6650 2750 50  0001 C CNN
+F 4 "generic" H 6650 2750 50  0001 C CNN "Mfg Part Num"
 	1    6650 2750
 	0    1    1    0   
 $EndComp

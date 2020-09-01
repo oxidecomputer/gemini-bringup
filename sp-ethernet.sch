@@ -21,6 +21,8 @@ F 0 "U401" H 3900 1861 50  0000 C CNN
 F 1 "KSZ8863RLL" H 3900 1770 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4250 3400 50  0001 C CNN
 F 3 "" H 4250 3400 50  0001 C CNN
+F 4 "Microchip" H 3900 3350 50  0001 C CNN "Mfg"
+F 5 "KSZ8863RLL" H 3900 3350 50  0001 C CNN "Mfg Part Num"
 	1    3900 3350
 	1    0    0    -1  
 $EndComp
@@ -66,6 +68,7 @@ F 0 "C407" H 6042 1896 50  0000 L CNN
 F 1 "0µ1" H 6042 1805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5950 1850 50  0001 C CNN
 F 3 "~" H 5950 1850 50  0001 C CNN
+F 4 "generic" H 5950 1850 50  0001 C CNN "Mfg Part Num"
 	1    5950 1850
 	1    0    0    -1  
 $EndComp
@@ -95,6 +98,7 @@ F 0 "C408" H 6392 1896 50  0000 L CNN
 F 1 "22µ" H 6392 1805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6300 1850 50  0001 C CNN
 F 3 "~" H 6300 1850 50  0001 C CNN
+F 4 "generic" H 6300 1850 50  0001 C CNN "Mfg Part Num"
 	1    6300 1850
 	1    0    0    -1  
 $EndComp
@@ -119,6 +123,7 @@ F 0 "C405" H 4842 1246 50  0000 L CNN
 F 1 "0µ1" H 4842 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4750 1200 50  0001 C CNN
 F 3 "~" H 4750 1200 50  0001 C CNN
+F 4 "generic" H 4750 1200 50  0001 C CNN "Mfg Part Num"
 	1    4750 1200
 	1    0    0    -1  
 $EndComp
@@ -130,6 +135,7 @@ F 0 "C406" H 5192 1246 50  0000 L CNN
 F 1 "22µ" H 5192 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5100 1200 50  0001 C CNN
 F 3 "~" H 5100 1200 50  0001 C CNN
+F 4 "generic" H 5100 1200 50  0001 C CNN "Mfg Part Num"
 	1    5100 1200
 	1    0    0    -1  
 $EndComp
@@ -170,6 +176,7 @@ F 0 "FB401" H 4700 1046 50  0000 L CNN
 F 1 "tbd" H 4700 955 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 4530 1000 50  0001 C CNN
 F 3 "~" H 4600 1000 50  0001 C CNN
+F 4 "generic" H 4600 1000 50  0001 C CNN "Mfg Part Num"
 	1    4600 1000
 	1    0    0    -1  
 $EndComp
@@ -186,6 +193,7 @@ F 0 "C404" H 4042 1196 50  0000 L CNN
 F 1 "22µ" H 4042 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3950 1150 50  0001 C CNN
 F 3 "~" H 3950 1150 50  0001 C CNN
+F 4 "generic" H 3950 1150 50  0001 C CNN "Mfg Part Num"
 	1    3950 1150
 	1    0    0    -1  
 $EndComp
@@ -197,6 +205,7 @@ F 0 "C403" H 3742 1196 50  0000 L CNN
 F 1 "0µ1" H 3742 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3650 1150 50  0001 C CNN
 F 3 "~" H 3650 1150 50  0001 C CNN
+F 4 "generic" H 3650 1150 50  0001 C CNN "Mfg Part Num"
 	1    3650 1150
 	1    0    0    -1  
 $EndComp
@@ -208,6 +217,7 @@ F 0 "C402" H 3442 1196 50  0000 L CNN
 F 1 "0µ1" H 3442 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 1150 50  0001 C CNN
 F 3 "~" H 3350 1150 50  0001 C CNN
+F 4 "generic" H 3350 1150 50  0001 C CNN "Mfg Part Num"
 	1    3350 1150
 	1    0    0    -1  
 $EndComp
@@ -263,6 +273,7 @@ F 0 "C416" H 7292 1346 50  0000 L CNN
 F 1 "22µ" H 7292 1255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7200 1300 50  0001 C CNN
 F 3 "~" H 7200 1300 50  0001 C CNN
+F 4 "generic" H 7200 1300 50  0001 C CNN "Mfg Part Num"
 	1    7200 1300
 	1    0    0    -1  
 $EndComp
@@ -274,6 +285,7 @@ F 0 "C414" H 6992 1346 50  0000 L CNN
 F 1 "0µ1" H 6992 1255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 1300 50  0001 C CNN
 F 3 "~" H 6900 1300 50  0001 C CNN
+F 4 "generic" H 6900 1300 50  0001 C CNN "Mfg Part Num"
 	1    6900 1300
 	1    0    0    -1  
 $EndComp
@@ -285,6 +297,7 @@ F 0 "C413" H 6692 1346 50  0000 L CNN
 F 1 "0µ1" H 6692 1255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 1300 50  0001 C CNN
 F 3 "~" H 6600 1300 50  0001 C CNN
+F 4 "generic" H 6600 1300 50  0001 C CNN "Mfg Part Num"
 	1    6600 1300
 	1    0    0    -1  
 $EndComp
@@ -336,6 +349,7 @@ F 0 "R411" V 5800 3450 50  0000 L CNN
 F 1 "49R9 1%" V 5600 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5630 3500 50  0001 C CNN
 F 3 "~" H 5700 3500 50  0001 C CNN
+F 4 "generic" H 5700 3500 50  0001 C CNN "Mfg Part Num"
 	1    5700 3500
 	1    0    0    -1  
 $EndComp
@@ -347,6 +361,7 @@ F 0 "R412" V 6100 3450 50  0000 L CNN
 F 1 "49R9 1%" V 5900 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 3500 50  0001 C CNN
 F 3 "~" H 6000 3500 50  0001 C CNN
+F 4 "generic" H 6000 3500 50  0001 C CNN "Mfg Part Num"
 	1    6000 3500
 	1    0    0    -1  
 $EndComp
@@ -358,6 +373,7 @@ F 0 "R413" V 6400 3450 50  0000 L CNN
 F 1 "49R9 1%" V 6200 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 3500 50  0001 C CNN
 F 3 "~" H 6300 3500 50  0001 C CNN
+F 4 "generic" H 6300 3500 50  0001 C CNN "Mfg Part Num"
 	1    6300 3500
 	1    0    0    -1  
 $EndComp
@@ -369,6 +385,7 @@ F 0 "R414" V 6700 3450 50  0000 L CNN
 F 1 "49R9 1%" V 6500 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 3500 50  0001 C CNN
 F 3 "~" H 6600 3500 50  0001 C CNN
+F 4 "generic" H 6600 3500 50  0001 C CNN "Mfg Part Num"
 	1    6600 3500
 	1    0    0    -1  
 $EndComp
@@ -380,6 +397,7 @@ F 0 "C409" H 5942 3896 50  0000 L CNN
 F 1 "0µ1" H 5942 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 3850 50  0001 C CNN
 F 3 "~" H 5850 3850 50  0001 C CNN
+F 4 "generic" H 5850 3850 50  0001 C CNN "Mfg Part Num"
 	1    5850 3850
 	1    0    0    -1  
 $EndComp
@@ -391,6 +409,7 @@ F 0 "C412" H 6542 3896 50  0000 L CNN
 F 1 "0µ1" H 6542 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6450 3850 50  0001 C CNN
 F 3 "~" H 6450 3850 50  0001 C CNN
+F 4 "generic" H 6450 3850 50  0001 C CNN "Mfg Part Num"
 	1    6450 3850
 	1    0    0    -1  
 $EndComp
@@ -428,6 +447,7 @@ F 0 "R415" V 7000 3450 50  0000 L CNN
 F 1 "49R9 1%" V 6800 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6830 3500 50  0001 C CNN
 F 3 "~" H 6900 3500 50  0001 C CNN
+F 4 "generic" H 6900 3500 50  0001 C CNN "Mfg Part Num"
 	1    6900 3500
 	1    0    0    -1  
 $EndComp
@@ -439,6 +459,7 @@ F 0 "R416" V 7300 3450 50  0000 L CNN
 F 1 "49R9 1%" V 7100 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7130 3500 50  0001 C CNN
 F 3 "~" H 7200 3500 50  0001 C CNN
+F 4 "generic" H 7200 3500 50  0001 C CNN "Mfg Part Num"
 	1    7200 3500
 	1    0    0    -1  
 $EndComp
@@ -450,6 +471,7 @@ F 0 "R417" V 7600 3450 50  0000 L CNN
 F 1 "49R9 1%" V 7400 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 3500 50  0001 C CNN
 F 3 "~" H 7500 3500 50  0001 C CNN
+F 4 "generic" H 7500 3500 50  0001 C CNN "Mfg Part Num"
 	1    7500 3500
 	1    0    0    -1  
 $EndComp
@@ -461,6 +483,7 @@ F 0 "R418" V 7900 3450 50  0000 L CNN
 F 1 "49R9 1%" V 7700 3350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 3500 50  0001 C CNN
 F 3 "~" H 7800 3500 50  0001 C CNN
+F 4 "generic" H 7800 3500 50  0001 C CNN "Mfg Part Num"
 	1    7800 3500
 	1    0    0    -1  
 $EndComp
@@ -472,6 +495,7 @@ F 0 "C415" H 7142 3896 50  0000 L CNN
 F 1 "0µ1" H 7142 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 3850 50  0001 C CNN
 F 3 "~" H 7050 3850 50  0001 C CNN
+F 4 "generic" H 7050 3850 50  0001 C CNN "Mfg Part Num"
 	1    7050 3850
 	1    0    0    -1  
 $EndComp
@@ -483,6 +507,7 @@ F 0 "C417" H 7742 3896 50  0000 L CNN
 F 1 "0µ1" H 7742 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 3850 50  0001 C CNN
 F 3 "~" H 7650 3850 50  0001 C CNN
+F 4 "generic" H 7650 3850 50  0001 C CNN "Mfg Part Num"
 	1    7650 3850
 	1    0    0    -1  
 $EndComp
@@ -594,6 +619,8 @@ F 0 "J401" H 10200 3125 50  0000 C CNN
 F 1 "RJ45_Würth_74980111211" H 10200 3034 50  0000 C CNN
 F 2 "magjack:Würth_100BT_Magjack" H 10200 3100 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/74980111211.pdf" H 10200 3200 50  0001 C CNN
+F 4 "Würth Elektronik" H 10200 2400 50  0001 C CNN "Mfg"
+F 5 "74980111211" H 10200 2400 50  0001 C CNN "Mfg Part Num"
 	1    10200 2400
 	1    0    0    -1  
 $EndComp
@@ -612,6 +639,7 @@ F 0 "C418" V 9071 1600 50  0000 C CNN
 F 1 "10µ" V 9162 1600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9300 1600 50  0001 C CNN
 F 3 "~" H 9300 1600 50  0001 C CNN
+F 4 "generic" H 9300 1600 50  0001 C CNN "Mfg Part Num"
 	1    9300 1600
 	0    1    1    0   
 $EndComp
@@ -684,6 +712,7 @@ F 0 "C420" V 10471 3250 50  0000 C CNN
 F 1 "1000p 2kV" V 10562 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10700 3250 50  0001 C CNN
 F 3 "~" H 10700 3250 50  0001 C CNN
+F 4 "generic" H 10700 3250 50  0001 C CNN "Mfg Part Num"
 	1    10700 3250
 	0    1    1    0   
 $EndComp
@@ -715,6 +744,8 @@ F 0 "Y401" H 6344 5546 50  0000 L CNN
 F 1 "25MHz ±50ppm / H130A-25.000-18-F-2030" H 6344 5455 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 6200 5500 50  0001 C CNN
 F 3 "~" H 6200 5500 50  0001 C CNN
+F 4 "Raltron Electronics" H 6200 5500 50  0001 C CNN "Mfg"
+F 5 "H130A-25.000-18-F-2030" H 6200 5500 50  0001 C CNN "Mfg Part Num"
 	1    6200 5500
 	1    0    0    -1  
 $EndComp
@@ -730,6 +761,7 @@ F 0 "C410" H 5808 5854 50  0000 R CNN
 F 1 "18p" H 5808 5945 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 5900 50  0001 C CNN
 F 3 "~" H 5900 5900 50  0001 C CNN
+F 4 "generic" H 5900 5900 50  0001 C CNN "Mfg Part Num"
 	1    5900 5900
 	-1   0    0    1   
 $EndComp
@@ -741,6 +773,7 @@ F 0 "C411" H 6308 5854 50  0000 R CNN
 F 1 "18p" H 6308 5945 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 5900 50  0001 C CNN
 F 3 "~" H 6400 5900 50  0001 C CNN
+F 4 "generic" H 6400 5900 50  0001 C CNN "Mfg Part Num"
 	1    6400 5900
 	-1   0    0    1   
 $EndComp
@@ -784,6 +817,7 @@ F 0 "R402" V 1150 2550 50  0000 L CNN
 F 1 "22" V 1250 2550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1180 2600 50  0001 C CNN
 F 3 "~" H 1250 2600 50  0001 C CNN
+F 4 "generic" H 1250 2600 50  0001 C CNN "Mfg Part Num"
 	1    1250 2600
 	0    1    1    0   
 $EndComp
@@ -795,6 +829,7 @@ F 0 "R408" V 2000 1650 50  0000 L CNN
 F 1 "4k7" V 2100 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2030 1700 50  0001 C CNN
 F 3 "~" H 2100 1700 50  0001 C CNN
+F 4 "generic" H 2100 1700 50  0001 C CNN "Mfg Part Num"
 	1    2100 1700
 	1    0    0    -1  
 $EndComp
@@ -810,6 +845,7 @@ F 0 "R407" V 1800 1650 50  0000 L CNN
 F 1 "4k7" V 1900 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 1700 50  0001 C CNN
 F 3 "~" H 1900 1700 50  0001 C CNN
+F 4 "generic" H 1900 1700 50  0001 C CNN "Mfg Part Num"
 	1    1900 1700
 	1    0    0    -1  
 $EndComp
@@ -825,6 +861,7 @@ F 0 "R405" V 1400 4050 50  0000 L CNN
 F 1 "10k" V 1500 4050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1430 4100 50  0001 C CNN
 F 3 "~" H 1500 4100 50  0001 C CNN
+F 4 "generic" H 1500 4100 50  0001 C CNN "Mfg Part Num"
 	1    1500 4100
 	0    1    1    0   
 $EndComp
@@ -836,6 +873,7 @@ F 0 "R404" V 1350 2350 50  0000 L CNN
 F 1 "22" V 1450 2350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1380 2400 50  0001 C CNN
 F 3 "~" H 1450 2400 50  0001 C CNN
+F 4 "generic" H 1450 2400 50  0001 C CNN "Mfg Part Num"
 	1    1450 2400
 	0    1    1    0   
 $EndComp
@@ -847,6 +885,7 @@ F 0 "R401" V 1150 2200 50  0000 L CNN
 F 1 "22" V 1250 2200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1180 2250 50  0001 C CNN
 F 3 "~" H 1250 2250 50  0001 C CNN
+F 4 "generic" H 1250 2250 50  0001 C CNN "Mfg Part Num"
 	1    1250 2250
 	0    1    1    0   
 $EndComp
@@ -858,6 +897,7 @@ F 0 "R403" V 1350 2100 50  0000 L CNN
 F 1 "22" V 1450 2100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1380 2150 50  0001 C CNN
 F 3 "~" H 1450 2150 50  0001 C CNN
+F 4 "generic" H 1450 2150 50  0001 C CNN "Mfg Part Num"
 	1    1450 2150
 	0    1    1    0   
 $EndComp
@@ -899,6 +939,7 @@ F 0 "R406" V 1600 1650 50  0000 L CNN
 F 1 "10k" V 1700 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 1700 50  0001 C CNN
 F 3 "~" H 1700 1700 50  0001 C CNN
+F 4 "generic" H 1700 1700 50  0001 C CNN "Mfg Part Num"
 	1    1700 1700
 	1    0    0    -1  
 $EndComp
@@ -915,6 +956,7 @@ F 0 "C401" H 1642 3546 50  0000 L CNN
 F 1 "10µ" H 1642 3455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1550 3500 50  0001 C CNN
 F 3 "~" H 1550 3500 50  0001 C CNN
+F 4 "generic" H 1550 3500 50  0001 C CNN "Mfg Part Num"
 	1    1550 3500
 	1    0    0    -1  
 $EndComp
@@ -946,6 +988,7 @@ F 0 "R410" H 5320 4796 50  0000 L CNN
 F 1 "11k8 1%" H 5320 4705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 4750 50  0001 C CNN
 F 3 "~" H 5250 4750 50  0001 C CNN
+F 4 "generic" H 5250 4750 50  0001 C CNN "Mfg Part Num"
 	1    5250 4750
 	1    0    0    -1  
 $EndComp
@@ -968,6 +1011,7 @@ F 0 "R419" V 8800 2700 50  0000 C CNN
 F 1 "180" V 8900 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 2700 50  0001 C CNN
 F 3 "~" H 8900 2700 50  0001 C CNN
+F 4 "generic" H 8900 2700 50  0001 C CNN "Mfg Part Num"
 	1    8900 2700
 	0    1    1    0   
 $EndComp
@@ -979,6 +1023,7 @@ F 0 "R420" V 8800 2900 50  0000 C CNN
 F 1 "180" V 8900 2900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 2900 50  0001 C CNN
 F 3 "~" H 8900 2900 50  0001 C CNN
+F 4 "generic" H 8900 2900 50  0001 C CNN "Mfg Part Num"
 	1    8900 2900
 	0    1    1    0   
 $EndComp
@@ -1002,6 +1047,8 @@ F 0 "J402" H 10200 5825 50  0000 C CNN
 F 1 "RJ45_Würth_74980111211" H 10200 5734 50  0000 C CNN
 F 2 "magjack:Würth_100BT_Magjack" H 10200 5800 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/74980111211.pdf" H 10200 5900 50  0001 C CNN
+F 4 "Würth Elektronik" H 10200 5100 50  0001 C CNN "Mfg"
+F 5 "74980111211" H 10200 5100 50  0001 C CNN "Mfg Part Num"
 	1    10200 5100
 	1    0    0    -1  
 $EndComp
@@ -1020,6 +1067,7 @@ F 0 "C419" V 9071 4300 50  0000 C CNN
 F 1 "10µ" V 9162 4300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9300 4300 50  0001 C CNN
 F 3 "~" H 9300 4300 50  0001 C CNN
+F 4 "generic" H 9300 4300 50  0001 C CNN "Mfg Part Num"
 	1    9300 4300
 	0    1    1    0   
 $EndComp
@@ -1048,6 +1096,7 @@ F 0 "C421" V 10471 5950 50  0000 C CNN
 F 1 "1000p 2kV" V 10562 5950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10700 5950 50  0001 C CNN
 F 3 "~" H 10700 5950 50  0001 C CNN
+F 4 "generic" H 10700 5950 50  0001 C CNN "Mfg Part Num"
 	1    10700 5950
 	0    1    1    0   
 $EndComp
@@ -1079,6 +1128,7 @@ F 0 "R421" V 8800 5400 50  0000 C CNN
 F 1 "180" V 8900 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 5400 50  0001 C CNN
 F 3 "~" H 8900 5400 50  0001 C CNN
+F 4 "generic" H 8900 5400 50  0001 C CNN "Mfg Part Num"
 	1    8900 5400
 	0    1    1    0   
 $EndComp
@@ -1090,6 +1140,7 @@ F 0 "R422" V 8800 5600 50  0000 C CNN
 F 1 "180" V 8900 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 5600 50  0001 C CNN
 F 3 "~" H 8900 5600 50  0001 C CNN
+F 4 "generic" H 8900 5600 50  0001 C CNN "Mfg Part Num"
 	1    8900 5600
 	0    1    1    0   
 $EndComp
@@ -1291,6 +1342,7 @@ F 0 "FB402" H 6050 1696 50  0000 L CNN
 F 1 "tbd" H 6050 1605 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 5880 1650 50  0001 C CNN
 F 3 "~" H 5950 1650 50  0001 C CNN
+F 4 "generic" H 5950 1650 50  0001 C CNN "Mfg Part Num"
 	1    5950 1650
 	1    0    0    -1  
 $EndComp
@@ -1302,6 +1354,7 @@ F 0 "C422" V 5271 1750 50  0000 C CNN
 F 1 "0" V 5362 1750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 1750 50  0001 C CNN
 F 3 "~" H 5500 1750 50  0001 C CNN
+F 4 "generic" H 5500 1750 50  0001 C CNN "Mfg Part Num"
 	1    5500 1750
 	0    1    1    0   
 $EndComp
@@ -1318,6 +1371,7 @@ F 0 "R423" V 2400 1650 50  0000 L CNN
 F 1 "10k" V 2500 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 1700 50  0001 C CNN
 F 3 "~" H 2500 1700 50  0001 C CNN
+F 4 "generic" H 2500 1700 50  0001 C CNN "Mfg Part Num"
 	1    2500 1700
 	-1   0    0    1   
 $EndComp
@@ -1337,6 +1391,7 @@ F 0 "D401" V 1346 3480 50  0000 R CNN
 F 1 "1N4148" V 1255 3480 50  0000 R CNN
 F 2 "Diode_SMD:D_0603_1608Metric" V 1300 3550 50  0001 C CNN
 F 3 "~" V 1300 3550 50  0001 C CNN
+F 4 "generic" H 1300 3550 50  0001 C CNN "Mfg Part Num"
 	1    1300 3550
 	0    -1   -1   0   
 $EndComp

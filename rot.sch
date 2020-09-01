@@ -21,6 +21,8 @@ F 0 "SW202" V 2850 2800 50  0000 L CNN
 F 1 "SW_SPST" V 2900 2800 50  0000 L CNN
 F 2 "c-and-k-pts851:PTS815" H 2900 2700 50  0001 C CNN
 F 3 "~" H 2900 2700 50  0001 C CNN
+F 4 "C&K" H 2900 2700 50  0001 C CNN "Mfg"
+F 5 "PTS815 SJM 250 SMTR LFS" H 2900 2700 50  0001 C CNN "Mfg Part Num"
 	1    2900 2700
 	0    1    1    0   
 $EndComp
@@ -63,6 +65,8 @@ F 0 "J202" H 1850 2050 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 1850 2000 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2300 2000 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1950 750 50  0001 C CNN
+F 4 "Samtec Inc" H 2300 2000 50  0001 C CNN "Mfg"
+F 5 "FTSH-105-01-F-DV-K" H 2300 2000 50  0001 C CNN "Mfg Part Num"
 	1    2300 2000
 	1    0    0    -1  
 $EndComp
@@ -145,6 +149,7 @@ F 0 "R212" H 20300 1650 50  0000 L CNN
 F 1 "100kR" H 20300 1600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 20130 1600 50  0001 C CNN
 F 3 "~" H 20200 1600 50  0001 C CNN
+F 4 "generic" H 20200 1600 50  0001 C CNN "Mfg Part Num"
 	1    20200 1600
 	1    0    0    -1  
 $EndComp
@@ -170,6 +175,8 @@ F 0 "SW201" H 3150 4800 50  0000 C CNN
 F 1 "SW_SPDT" H 3150 4700 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 3150 4500 50  0001 C CNN
 F 3 "~" H 3150 4500 50  0001 C CNN
+F 4 "C&K" H 3150 4500 50  0001 C CNN "Mfg"
+F 5 "JS102011SAQN" H 3150 4500 50  0001 C CNN "Mfg Part Num"
 	1    3150 4500
 	-1   0    0    -1  
 $EndComp
@@ -202,6 +209,8 @@ F 0 "J201" H 1250 4700 50  0000 C CNN
 F 1 "Conn_01x04" H 1250 4600 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 1350 4350 50  0001 C CNN
 F 3 "~" H 1350 4350 50  0001 C CNN
+F 4 "METZ CONNECT USA" H 1350 4350 50  0001 C CNN "Mfg"
+F 5 "PM20204VBNN" H 1350 4350 50  0001 C CNN "Mfg Part Num"
 	1    1350 4350
 	-1   0    0    -1  
 $EndComp
@@ -524,8 +533,10 @@ U 1 1 5F495C07
 P 21100 3700
 F 0 "J204" H 21200 3700 50  0000 L CNN
 F 1 "Conn_01x10" H 21200 3600 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical_SMD_Pin1Left" H 21100 3700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical_SMD_Pin1Right" H 21100 3700 50  0001 C CNN
 F 3 "~" H 21100 3700 50  0001 C CNN
+F 4 "Amphenol ICC" H 21100 3700 50  0001 C CNN "Mfg"
+F 5 "10129380-910001ALF" H 21100 3700 50  0001 C CNN "Mfg Part Num"
 	1    21100 3700
 	1    0    0    -1  
 $EndComp
@@ -577,6 +588,7 @@ F 0 "R201" V 19850 2200 50  0000 C CNN
 F 1 "22" V 19900 2050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 19830 2050 50  0001 C CNN
 F 3 "~" H 19900 2050 50  0001 C CNN
+F 4 "generic" H 19900 2050 50  0001 C CNN "Mfg Part Num"
 	1    19900 2050
 	0    1    1    0   
 $EndComp

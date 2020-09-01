@@ -21,6 +21,8 @@ F 0 "J601" H 1407 2525 50  0000 C CNN
 F 1 "Barrel_Jack" H 1407 2434 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal" H 1400 2160 50  0001 C CNN
 F 3 "~" H 1400 2160 50  0001 C CNN
+F 4 "Cliff Electronic Components" H 1350 2200 50  0001 C CNN "Mfg"
+F 5 "FC681465S" H 1350 2200 50  0001 C CNN "Mfg Part Num"
 	1    1350 2200
 	1    0    0    -1  
 $EndComp
@@ -34,6 +36,8 @@ F 0 "R603" V 2943 2100 50  0000 C CNN
 F 1 "20m 1% 1/8W" V 3034 2100 50  0000 C CNN
 F 2 "passives:R_Shunt_Ohmite_LVK12_CW_Pinout" V 3080 2100 50  0001 C CNN
 F 3 "~" H 3150 2100 50  0001 C CNN
+F 4 "Ohmite" H 3150 2100 50  0001 C CNN "Mfg"
+F 5 "LVK12R020FER" H 3150 2100 50  0001 C CNN "Mfg Part Num"
 	1    3150 2100
 	0    -1   1    0   
 $EndComp
@@ -60,6 +64,8 @@ F 0 "U602" H 3950 3681 50  0000 C CNN
 F 1 "INA219AxDCN" H 3950 3590 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-8" H 4600 2750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina219.pdf" H 4300 3000 50  0001 C CNN
+F 4 "Texas Instruments" H 3950 3100 50  0001 C CNN "Mfg"
+F 5 "INA219AIDCNT" H 3950 3100 50  0001 C CNN "Mfg Part Num"
 	1    3950 3100
 	1    0    0    -1  
 $EndComp
@@ -71,6 +77,7 @@ F 0 "R601" H 2970 2446 50  0000 L CNN
 F 1 "0" H 2970 2355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 2400 50  0001 C CNN
 F 3 "~" H 2900 2400 50  0001 C CNN
+F 4 "generic" H 2900 2400 50  0001 C CNN "Mfg Part Num"
 	1    2900 2400
 	1    0    0    -1  
 $EndComp
@@ -82,6 +89,7 @@ F 0 "R605" H 3470 2446 50  0000 L CNN
 F 1 "0" H 3470 2355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 2400 50  0001 C CNN
 F 3 "~" H 3400 2400 50  0001 C CNN
+F 4 "generic" H 3400 2400 50  0001 C CNN "Mfg Part Num"
 	1    3400 2400
 	1    0    0    -1  
 $EndComp
@@ -93,6 +101,7 @@ F 0 "C601" V 2921 2650 50  0000 C CNN
 F 1 "DNP" V 3012 2650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 2650 50  0001 C CNN
 F 3 "~" H 3150 2650 50  0001 C CNN
+F 4 "generic" H 3150 2650 50  0001 C CNN "Mfg Part Num"
 	1    3150 2650
 	0    1    1    0   
 $EndComp
@@ -122,6 +131,7 @@ F 0 "C603" H 4358 2654 50  0000 R CNN
 F 1 "0µ1" H 4358 2745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 2700 50  0001 C CNN
 F 3 "~" H 4450 2700 50  0001 C CNN
+F 4 "generic" H 4450 2700 50  0001 C CNN "Mfg Part Num"
 	1    4450 2700
 	-1   0    0    1   
 $EndComp
@@ -194,6 +204,8 @@ F 0 "U601" H 1900 4092 50  0000 C CNN
 F 1 "OKI-78SR-3.3_1.5-W36-C" H 1900 4001 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 1950 3600 50  0001 L CIN
 F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 1900 3850 50  0001 C CNN
+F 4 "Murata" H 1900 3850 50  0001 C CNN "Mfg"
+F 5 "OKI-78SR-3.3_1.5-W36-C" H 1900 3850 50  0001 C CNN "Mfg Part Num"
 	1    1900 3850
 	1    0    0    -1  
 $EndComp
@@ -238,6 +250,8 @@ F 0 "R604" V 2943 3850 50  0000 C CNN
 F 1 "40m 1% 1/8W" V 3034 3850 50  0000 C CNN
 F 2 "passives:R_Shunt_Ohmite_LVK12_CW_Pinout" V 3080 3850 50  0001 C CNN
 F 3 "~" H 3150 3850 50  0001 C CNN
+F 4 "Ohmite" H 3150 3850 50  0001 C CNN "Mfg"
+F 5 "LVK12R040FER" H 3150 3850 50  0001 C CNN "Mfg Part Num"
 	1    3150 3850
 	0    -1   1    0   
 $EndComp
@@ -249,6 +263,8 @@ F 0 "U603" H 3950 5431 50  0000 C CNN
 F 1 "INA219AxDCN" H 3950 5340 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-8" H 4600 4500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina219.pdf" H 4300 4750 50  0001 C CNN
+F 4 "Texas Instruments" H 3950 4850 50  0001 C CNN "Mfg"
+F 5 "INA219AIDCNT" H 3950 4850 50  0001 C CNN "Mfg Part Num"
 	1    3950 4850
 	1    0    0    -1  
 $EndComp
@@ -260,6 +276,7 @@ F 0 "R602" H 2970 4196 50  0000 L CNN
 F 1 "0" H 2970 4105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4150 50  0001 C CNN
 F 3 "~" H 2900 4150 50  0001 C CNN
+F 4 "generic" H 2900 4150 50  0001 C CNN "Mfg Part Num"
 	1    2900 4150
 	1    0    0    -1  
 $EndComp
@@ -271,6 +288,7 @@ F 0 "R606" H 3470 4196 50  0000 L CNN
 F 1 "0" H 3470 4105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 4150 50  0001 C CNN
 F 3 "~" H 3400 4150 50  0001 C CNN
+F 4 "generic" H 3400 4150 50  0001 C CNN "Mfg Part Num"
 	1    3400 4150
 	1    0    0    -1  
 $EndComp
@@ -294,6 +312,7 @@ F 0 "C604" H 4358 4404 50  0000 R CNN
 F 1 "0µ1" H 4358 4495 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 4450 50  0001 C CNN
 F 3 "~" H 4450 4450 50  0001 C CNN
+F 4 "generic" H 4450 4450 50  0001 C CNN "Mfg Part Num"
 	1    4450 4450
 	-1   0    0    1   
 $EndComp
@@ -384,9 +403,10 @@ L Device:Polyfuse_Small F601
 U 1 1 5F3ED84F
 P 2250 2100
 F 0 "F601" V 2045 2100 50  0000 C CNN
-F 1 "Polyfuse_Small" V 2136 2100 50  0000 C CNN
+F 1 "TBD" V 2136 2100 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric" H 2300 1900 50  0001 L CNN
 F 3 "~" H 2250 2100 50  0001 C CNN
+F 4 "generic" H 2250 2100 50  0001 C CNN "Mfg Part Num"
 	1    2250 2100
 	0    1    1    0   
 $EndComp
@@ -442,6 +462,7 @@ F 0 "C602" V 2921 4400 50  0000 C CNN
 F 1 "DNP" V 3012 4400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 4400 50  0001 C CNN
 F 3 "~" H 3150 4400 50  0001 C CNN
+F 4 "generic" H 3150 4400 50  0001 C CNN "Mfg Part Num"
 	1    3150 4400
 	0    1    1    0   
 $EndComp
@@ -466,6 +487,7 @@ F 0 "C606" H 2542 2246 50  0000 L CNN
 F 1 "22µ 16V" H 2542 2155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2450 2200 50  0001 C CNN
 F 3 "~" H 2450 2200 50  0001 C CNN
+F 4 "generic" H 2450 2200 50  0001 C CNN "Mfg Part Num"
 	1    2450 2200
 	1    0    0    -1  
 $EndComp
@@ -488,6 +510,7 @@ F 0 "C605" H 2392 3996 50  0000 L CNN
 F 1 "22µ 16V" H 2392 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 3950 50  0001 C CNN
 F 3 "~" H 2300 3950 50  0001 C CNN
+F 4 "generic" H 2300 3950 50  0001 C CNN "Mfg Part Num"
 	1    2300 3950
 	1    0    0    -1  
 $EndComp
