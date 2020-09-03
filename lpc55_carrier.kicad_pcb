@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 2563)
     (zones 0)
     (modules 46)
@@ -12,14 +12,9 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (1 In1.Cu power hide)
-    (2 In2.Cu power hide)
-    (31 B.Cu signal)
-    (32 B.Adhes user hide)
+    (31 B.Cu signal hide)
     (33 F.Adhes user hide)
-    (34 B.Paste user hide)
     (35 F.Paste user)
-    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user)
@@ -31,12 +26,11 @@
     (45 Margin user hide)
     (46 B.CrtYd user hide)
     (47 F.CrtYd user)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
-    (last_trace_width 0.2)
+    (last_trace_width 0.3)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
@@ -2221,6 +2215,11 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_line (start 65.405 50.038) (end 116.84 50.038) (layer Edge.Cuts) (width 0.12) (tstamp 5F5389D2))
+  (gr_line (start 65.405 87.122) (end 65.405 50.038) (layer Edge.Cuts) (width 0.12) (tstamp 5F5389D9))
+  (gr_line (start 116.84 87.122) (end 65.405 87.122) (layer Edge.Cuts) (width 0.12))
+  (gr_line (start 116.84 50.038) (end 116.84 87.122) (layer Edge.Cuts) (width 0.12))
 
   (segment (start 84.5565 70.1635) (end 84.5565 74.93) (width 0.2) (layer F.Cu) (net 1))
   (segment (start 84.57 70.15) (end 84.5565 70.1635) (width 0.2) (layer F.Cu) (net 1))
