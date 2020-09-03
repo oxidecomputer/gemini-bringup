@@ -131,7 +131,8 @@ F 0 "C603" H 4358 2654 50  0000 R CNN
 F 1 "0µ1" H 4358 2745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 2700 50  0001 C CNN
 F 3 "~" H 4450 2700 50  0001 C CNN
-F 4 "generic" H 4450 2700 50  0001 C CNN "Mfg Part Num"
+F 4 "CL10B104KB8NNWC" H 4450 2700 50  0001 C CNN "Mfg Part Num"
+F 5 "Samsung Electro-Mechanics" H 4450 2700 50  0001 C CNN "Mfg"
 	1    4450 2700
 	-1   0    0    1   
 $EndComp
@@ -312,7 +313,8 @@ F 0 "C604" H 4358 4404 50  0000 R CNN
 F 1 "0µ1" H 4358 4495 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 4450 50  0001 C CNN
 F 3 "~" H 4450 4450 50  0001 C CNN
-F 4 "generic" H 4450 4450 50  0001 C CNN "Mfg Part Num"
+F 4 "CL10B104KB8NNWC" H 4450 4450 50  0001 C CNN "Mfg Part Num"
+F 5 "Samsung Electro-Mechanics" H 4450 4450 50  0001 C CNN "Mfg"
 	1    4450 4450
 	-1   0    0    1   
 $EndComp
@@ -487,7 +489,8 @@ F 0 "C606" H 2542 2246 50  0000 L CNN
 F 1 "22µ 16V" H 2542 2155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2450 2200 50  0001 C CNN
 F 3 "~" H 2450 2200 50  0001 C CNN
-F 4 "generic" H 2450 2200 50  0001 C CNN "Mfg Part Num"
+F 4 "CL10A226MO7JZNC" H 2450 2200 50  0001 C CNN "Mfg Part Num"
+F 5 "Samsung Electro-Mechanics" H 2450 2200 50  0001 C CNN "Mfg"
 	1    2450 2200
 	1    0    0    -1  
 $EndComp
@@ -510,7 +513,8 @@ F 0 "C605" H 2392 3996 50  0000 L CNN
 F 1 "22µ 16V" H 2392 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 3950 50  0001 C CNN
 F 3 "~" H 2300 3950 50  0001 C CNN
-F 4 "generic" H 2300 3950 50  0001 C CNN "Mfg Part Num"
+F 4 "CL10A226MO7JZNC" H 2300 3950 50  0001 C CNN "Mfg Part Num"
+F 5 "Samsung Electro-Mechanics" H 2300 3950 50  0001 C CNN "Mfg"
 	1    2300 3950
 	1    0    0    -1  
 $EndComp
