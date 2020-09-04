@@ -256,7 +256,7 @@ F 3 "~" H 3150 3850 50  0001 C CNN
 F 4 "Ohmite" H 3150 3850 50  0001 C CNN "Mfg"
 F 5 "LVK12R040FER" H 3150 3850 50  0001 C CNN "Mfg Part Num"
 	1    3150 3850
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Analog_ADC:INA219AxDCN U603
