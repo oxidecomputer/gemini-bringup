@@ -112,30 +112,17 @@ D2
 Text Label 6500 3800 0    50   ~ 0
 D3
 $Comp
-L txb01xx:TXB0106PWR U801
-U 1 1 5F376223
-P 4800 4800
-F 0 "U801" H 4800 5465 50  0000 C CNN
-F 1 "TXB0106PWR" H 4800 5374 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 4800 4800 50  0001 C CNN
-F 3 "" H 4800 4800 50  0001 C CNN
-F 4 "Texas Instruments" H 4800 4800 50  0001 C CNN "Mfg"
-F 5 "TXB0106PWR" H 4800 4800 50  0001 C CNN "Mfg Part Num"
-	1    4800 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x08_Odd_Even J801
 U 1 1 5F378801
-P 2600 4800
-F 0 "J801" H 2650 4175 50  0000 C CNN
-F 1 "IDC" H 2650 4266 50  0000 C CNN
-F 2 "idc-smd:IDC-Header_02x08_2.54mm_Vertical_SMD" H 2600 4800 50  0001 C CNN
-F 3 "~" H 2600 4800 50  0001 C CNN
-F 4 "CNC Tech" H 2600 4800 50  0001 C CNN "Mfg"
-F 5 "3020-16-0300-00" H 2600 4800 50  0001 C CNN "Mfg Part Num"
-	1    2600 4800
-	-1   0    0    1   
+P 2600 4700
+F 0 "J801" H 2650 4075 50  0000 C CNN
+F 1 "IDC" H 2650 4166 50  0000 C CNN
+F 2 "idc-smd:IDC-Header_02x08_2.54mm_Vertical_SMD" H 2600 4700 50  0001 C CNN
+F 3 "~" H 2600 4700 50  0001 C CNN
+F 4 "CNC Tech" H 2600 4700 50  0001 C CNN "Mfg"
+F 5 "3020-16-0300-00" H 2600 4700 50  0001 C CNN "Mfg Part Num"
+	1    2600 4700
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4250 4400 2800 4400
@@ -191,15 +178,9 @@ $EndComp
 Wire Wire Line
 	2800 5000 4250 5000
 Wire Wire Line
-	5350 4600 5700 4600
-Wire Wire Line
 	5350 4700 6250 4700
 Wire Wire Line
 	5350 4800 6250 4800
-Wire Wire Line
-	5350 4900 6250 4900
-Wire Wire Line
-	5350 5000 6250 5000
 Wire Wire Line
 	5350 5100 5400 5100
 $Comp
@@ -247,59 +228,46 @@ Text HLabel 8350 3700 2    50   Input ~ 0
 ~RESET
 Text Label 6250 4700 2    50   ~ 0
 D0
-Text Label 6250 4800 2    50   ~ 0
+Text Label 6250 4600 2    50   ~ 0
 D1
-Text Label 6250 4900 2    50   ~ 0
+Text Label 6250 4800 2    50   ~ 0
 D2
 Text Label 6250 5000 2    50   ~ 0
 D3
 Wire Wire Line
 	6450 3800 7200 3800
-Wire Wire Line
-	6750 3600 6850 3600
 Text HLabel 6250 5250 2    50   Input ~ 0
 HOST_ACCESS
 Text Notes 4150 4300 2    50   ~ 0
 Host Side\nPowered by remote system\n1.2 - 3.6 V
 Text Notes 3600 5800 0    50   ~ 0
 OE is sampled relative to Vcca.\nVcca and Vccb share GND.\nPull it down to keep buffer\ndisabled until SP drives high.\nInput appears to be 3V3 tolerant\neven for 1V8 Vcca.
-Text Label 2800 4400 0    50   ~ 0
+Text Label 2950 4900 0    50   ~ 0
 ~HOST_CE
 Text Label 2800 4500 0    50   ~ 0
 HOST_VCC
 Text Label 2800 5100 0    50   ~ 0
 HOST_VCC
-Text Label 2800 4600 0    50   ~ 0
+Text Label 2950 4400 0    50   ~ 0
 HOST_SCK
-Text Label 2800 4700 0    50   ~ 0
+Text Label 2950 4700 0    50   ~ 0
 HOST_D0
-Text Label 2800 4800 0    50   ~ 0
+Text Label 2950 4600 0    50   ~ 0
 HOST_D1
-Text Label 2800 4900 0    50   ~ 0
+Text Label 2950 4800 0    50   ~ 0
 HOST_D2
-Text Label 2800 5000 0    50   ~ 0
+Text Label 2950 5000 0    50   ~ 0
 HOST_D3
+Entry Wire Line
+	6250 4600 6350 4500
 Entry Wire Line
 	6250 4700 6350 4600
 Entry Wire Line
 	6250 4800 6350 4700
 Entry Wire Line
-	6250 4900 6350 4800
-Entry Wire Line
 	6250 5000 6350 4900
 Wire Wire Line
-	6850 4400 6850 3600
-Wire Wire Line
-	5350 4400 6850 4400
-Connection ~ 6850 3600
-Wire Wire Line
-	6850 3600 7200 3600
-Wire Wire Line
-	6950 3500 6950 4500
-Wire Wire Line
-	6950 4500 5700 4500
-Wire Wire Line
-	5700 4500 5700 4600
+	6950 3500 6950 4400
 Connection ~ 6950 3500
 Wire Wire Line
 	6950 3500 6750 3500
@@ -413,6 +381,38 @@ Wire Wire Line
 	4250 5250 6250 5250
 Wire Wire Line
 	5400 5100 5400 5850
+$Comp
+L txb01xx:TXB0106PWR U801
+U 1 1 5F376223
+P 4800 4800
+F 0 "U801" H 4800 5465 50  0000 C CNN
+F 1 "TXB0106PWR" H 4800 5374 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 4800 4800 50  0001 C CNN
+F 3 "" H 4800 4800 50  0001 C CNN
+F 4 "Texas Instruments" H 4800 4800 50  0001 C CNN "Mfg"
+F 5 "TXB0106PWR" H 4800 4800 50  0001 C CNN "Mfg Part Num"
+	1    4800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3600 7050 3600
+Wire Wire Line
+	5350 4400 6950 4400
+Wire Wire Line
+	5350 4600 6250 4600
+Connection ~ 7050 3600
+Wire Wire Line
+	7050 3600 7200 3600
+Wire Wire Line
+	5350 5000 6250 5000
+Wire Wire Line
+	5350 4900 5750 4900
+Wire Wire Line
+	5750 4900 5750 5100
+Wire Wire Line
+	5750 5100 7050 5100
+Wire Wire Line
+	7050 3600 7050 5100
 Wire Bus Line
 	6350 2550 6350 4900
 $EndSCHEMATC
