@@ -252,7 +252,7 @@ Wire Wire Line
 Connection ~ 3600 1400
 Text Label 3950 1400 0    50   ~ 0
 FAN5V
-Text Label 5750 1300 2    50   ~ 0
+Text Label 4750 1300 2    50   ~ 0
 FAN5V
 Text Label 4550 2450 1    50   ~ 0
 FAN5V
@@ -790,7 +790,7 @@ F 5 "Bourns" H 7300 1450 50  0001 C CNN "Mfg"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 1300 5950 1300
+	4750 1300 4900 1300
 Connection ~ 5950 1300
 Wire Wire Line
 	5950 1300 6050 1300
@@ -824,4 +824,70 @@ Wire Wire Line
 Connection ~ 7200 1300
 Wire Wire Line
 	7200 1300 7300 1300
+$Comp
+L Device:C_Small C?
+U 1 1 5F6D6DB8
+P 4900 1400
+AR Path="/5F1928E5/5F29584B/5F6D6DB8" Ref="C?"  Part="1" 
+AR Path="/5F24B563/5F6D6DB8" Ref="C704"  Part="1" 
+F 0 "C704" H 4992 1446 50  0000 L CNN
+F 1 "0µ1" H 4992 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 1400 50  0001 C CNN
+F 3 "~" H 4900 1400 50  0001 C CNN
+F 4 "CL10B104KB8NNWC" H 4900 1400 50  0001 C CNN "Mfg Part Num"
+F 5 "Samsung Electro-Mechanics" H 4900 1400 50  0001 C CNN "Mfg"
+	1    4900 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 1300
+Wire Wire Line
+	4900 1300 5950 1300
+$Comp
+L power:GND #PWR0710
+U 1 1 5F6D94F0
+P 4900 1500
+F 0 "#PWR0710" H 4900 1250 50  0001 C CNN
+F 1 "GND" H 4905 1327 50  0000 C CNN
+F 2 "" H 4900 1500 50  0001 C CNN
+F 3 "" H 4900 1500 50  0001 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F6D9DA4
+P 1300 3650
+AR Path="/5F1928E5/5F29584B/5F6D9DA4" Ref="C?"  Part="1" 
+AR Path="/5F24B563/5F6D9DA4" Ref="C703"  Part="1" 
+F 0 "C703" H 1392 3696 50  0000 L CNN
+F 1 "0µ1" H 1392 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1300 3650 50  0001 C CNN
+F 3 "~" H 1300 3650 50  0001 C CNN
+F 4 "CL10B104KB8NNWC" H 1300 3650 50  0001 C CNN "Mfg Part Num"
+F 5 "Samsung Electro-Mechanics" H 1300 3650 50  0001 C CNN "Mfg"
+	1    1300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0705
+U 1 1 5F6DAF5B
+P 1300 3550
+F 0 "#PWR0705" H 1300 3400 50  0001 C CNN
+F 1 "+3V3" H 1315 3723 50  0000 C CNN
+F 2 "" H 1300 3550 50  0001 C CNN
+F 3 "" H 1300 3550 50  0001 C CNN
+	1    1300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0709
+U 1 1 5F6DB2FB
+P 1300 3750
+F 0 "#PWR0709" H 1300 3500 50  0001 C CNN
+F 1 "GND" H 1305 3577 50  0000 C CNN
+F 2 "" H 1300 3750 50  0001 C CNN
+F 3 "" H 1300 3750 50  0001 C CNN
+	1    1300 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
