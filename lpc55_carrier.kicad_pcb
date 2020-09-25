@@ -329,7 +329,7 @@
     )
   )
 
-  (module "hirose-df9:Hirose_DF9-51x-1V(69)_2Rows_51Pin-2MP_P1.0mm_Vertical" (layer F.Cu) (tedit 5F4954C0) (tstamp 5F49FAE1)
+  (module "hirose-df9:Hirose_DF9-51S-1V(69)_2Rows_51Pin-2MP_P1.0mm_Vertical" (layer F.Cu) (tedit 5F4954C0) (tstamp 5F49FAE1)
     (at 110.744 68.326)
     (path /5F48204E)
     (attr smd)
