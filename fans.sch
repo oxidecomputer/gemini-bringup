@@ -192,7 +192,7 @@ F 1 "MCP1703A-5002_SOT89" H 3150 1551 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3150 1600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 3150 1350 50  0001 C CNN
 F 4 "Microchip" H 3150 1400 50  0001 C CNN "Mfg"
-F 5 "MCP1703A-5002" H 3150 1400 50  0001 C CNN "Mfg Part Num"
+F 5 "MCP1703AT-5002E/MB" H 3150 1400 50  0001 C CNN "Mfg Part Num"
 	1    3150 1400
 	1    0    0    -1  
 $EndComp
