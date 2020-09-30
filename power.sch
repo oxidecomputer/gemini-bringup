@@ -19,10 +19,10 @@ U 1 1 5F3C5136
 P 1350 2200
 F 0 "J601" H 1407 2525 50  0000 C CNN
 F 1 "Barrel_Jack" H 1407 2434 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal" H 1400 2160 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 1400 2160 50  0001 C CNN
 F 3 "~" H 1400 2160 50  0001 C CNN
-F 4 "Cliff Electronic Components" H 1350 2200 50  0001 C CNN "Mfg"
-F 5 "FC681465S" H 1350 2200 50  0001 C CNN "Mfg Part Num"
+F 4 "CUI Devices" H 1350 2200 50  0001 C CNN "Mfg"
+F 5 "PJ-036AH-SMT-TR" H 1350 2200 50  0001 C CNN "Mfg Part Num"
 	1    1350 2200
 	1    0    0    -1  
 $EndComp
