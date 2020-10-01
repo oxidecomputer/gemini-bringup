@@ -628,4 +628,15 @@ F 3 "~" H 3200 1100 50  0001 C CNN
 	1    3200 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H112
+U 1 1 5F768622
+P 3200 1300
+F 0 "H112" H 3300 1346 50  0000 L CNN
+F 1 "GRAPHIC PLACEHOLDER" H 3300 1255 50  0000 L CNN
+F 2 "grumpy:logo-4mm-mask" H 3200 1300 50  0001 C CNN
+F 3 "~" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
