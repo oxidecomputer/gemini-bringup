@@ -688,19 +688,6 @@ F 3 "" H 9600 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_Open SW303
-U 1 1 5F2000A4
-P 9850 2250
-F 0 "SW303" H 9850 2485 50  0000 C CNN
-F 1 "C&K ATS2D1G NC LFS" H 9850 2394 50  0000 C CNN
-F 2 "c-and-k-ats-series:ATS" H 9850 2250 50  0001 C CNN
-F 3 "~" H 9850 2250 50  0001 C CNN
-F 4 "C&K" H 9850 2250 50  0001 C CNN "Mfg"
-F 5 "ATS2D1G NC LFS" H 9850 2250 50  0001 C CNN "Mfg Part Num"
-	1    9850 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal_Small Y301
 U 1 1 5F22694B
 P 20950 3650
@@ -2320,15 +2307,11 @@ Wire Wire Line
 Wire Wire Line
 	9400 3450 8950 3450
 Wire Wire Line
-	9600 2250 9650 2250
-Wire Wire Line
 	9950 3650 10000 3650
 Wire Wire Line
 	10000 3050 9800 3050
 Wire Wire Line
 	10000 3450 9400 3450
-Wire Wire Line
-	10150 2250 10050 2250
 Wire Wire Line
 	10450 2250 10600 2250
 Wire Wire Line
@@ -3183,6 +3166,8 @@ Wire Wire Line
 	9300 11950 10000 11950
 Wire Wire Line
 	9300 12050 10000 12050
+Wire Wire Line
+	9600 2250 10150 2250
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line

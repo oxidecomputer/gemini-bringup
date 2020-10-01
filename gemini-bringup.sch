@@ -595,4 +595,26 @@ F 3 "~" H 1300 1450 50  0001 C CNN
 	1    1300 1450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H106
+U 1 1 5F7CAC07
+P 3200 900
+F 0 "H106" H 3300 946 50  0000 L CNN
+F 1 "GRAPHIC PLACEHOLDER" H 3300 855 50  0000 L CNN
+F 2 "grumpy:grumpy" H 3200 900 50  0001 C CNN
+F 3 "~" H 3200 900 50  0001 C CNN
+	1    3200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H107
+U 1 1 5F7F0EA3
+P 2000 950
+F 0 "H107" H 2100 996 50  0000 L CNN
+F 1 "M3" H 2100 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 950 50  0001 C CNN
+F 3 "~" H 2000 950 50  0001 C CNN
+	1    2000 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

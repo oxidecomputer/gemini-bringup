@@ -141,4 +141,5 @@
   (lib (name hirose-df9)(type KiCad)(uri ${KIPRJMOD}/lib/hirose-df9.pretty)(options "")(descr ""))
   (lib (name c-and-k-ats-series)(type KiCad)(uri ${KIPRJMOD}/lib/c-and-k-ats-series.pretty)(options "")(descr ""))
   (lib (name c-and-k-pts851)(type KiCad)(uri ${KIPRJMOD}/lib/c-and-k-pts851.pretty)(options "")(descr ""))
+  (lib (name grumpy)(type KiCad)(uri ${KIPRJMOD}/lib/grumpy.pretty)(options "")(descr ""))
 )
