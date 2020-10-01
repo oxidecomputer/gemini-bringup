@@ -617,4 +617,15 @@ F 3 "~" H 2000 950 50  0001 C CNN
 	1    2000 950 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H111
+U 1 1 5F84B4F9
+P 3200 1100
+F 0 "H111" H 3300 1146 50  0000 L CNN
+F 1 "GRAPHIC PLACEHOLDER" H 3300 1055 50  0000 L CNN
+F 2 "grumpy:newt_of_trust" H 3200 1100 50  0001 C CNN
+F 3 "~" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

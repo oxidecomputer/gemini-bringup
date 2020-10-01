@@ -198,8 +198,6 @@ F 5 "Samsung Electro-Mechanics" H 6050 4800 50  0001 C CNN "Mfg"
 	1    6050 4800
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	4250 3200 4250 3750
 $Comp
 L power:+3V3 #PWR0907
 U 1 1 5F68DC3A
@@ -222,4 +220,6 @@ F 3 "" H 6050 4900 50  0001 C CNN
 	1    6050 4900
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	4250 3200 4250 3750
 $EndSCHEMATC
