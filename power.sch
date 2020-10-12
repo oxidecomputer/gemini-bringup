@@ -109,6 +109,7 @@ F 1 "DNP" V 3012 2650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 2650 50  0001 C CNN
 F 3 "~" H 3150 2650 50  0001 C CNN
 F 4 "generic" H 3150 2650 50  0001 C CNN "Mfg Part Num"
+F 5 "DNP" H 3150 2650 50  0001 C CNN "Config"
 	1    3150 2650
 	0    1    1    0   
 $EndComp
@@ -483,6 +484,7 @@ F 1 "DNP" V 3012 4400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 4400 50  0001 C CNN
 F 3 "~" H 3150 4400 50  0001 C CNN
 F 4 "generic" H 3150 4400 50  0001 C CNN "Mfg Part Num"
+F 5 "DNP" H 3150 4400 50  0001 C CNN "Config"
 	1    3150 4400
 	0    1    1    0   
 $EndComp
