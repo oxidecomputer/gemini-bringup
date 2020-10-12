@@ -23,6 +23,7 @@ F 2 "Connector_PinSocket_2.00mm:PinSocket_2x24_P2.00mm_Vertical_SMD" H 6100 3350
 F 3 "~" H 6100 3350 50  0001 C CNN
 F 4 "Samtec" H 6100 3350 50  0001 C CNN "Mfg"
 F 5 "TMM-124-01-L-D-SM" H 6100 3350 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00033" H 6100 3350 50  0001 C CNN "CPN"
 	1    6100 3350
 	1    0    0    -1  
 $EndComp
@@ -380,6 +381,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 2750 50  0001 C CNN
 F 3 "~" H 6650 2750 50  0001 C CNN
 F 4 "CR0603-JW-220ELF" H 6650 2750 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 6650 2750 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 6650 2750 50  0001 C CNN "CPN"
 	1    6650 2750
 	0    1    1    0   
 $EndComp
@@ -399,6 +401,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 3050 50  0001 C CNN
 F 3 "~" H 5050 3050 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 5050 3050 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 5050 3050 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 5050 3050 50  0001 C CNN "CPN"
 	1    5050 3050
 	1    0    0    -1  
 $EndComp
@@ -414,6 +417,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 3050 50  0001 C CNN
 F 3 "~" H 4600 3050 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 4600 3050 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 4600 3050 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 4600 3050 50  0001 C CNN "CPN"
 	1    4600 3050
 	1    0    0    -1  
 $EndComp

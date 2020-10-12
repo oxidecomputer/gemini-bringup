@@ -23,6 +23,7 @@ F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 1400 2160 50
 F 3 "~" H 1400 2160 50  0001 C CNN
 F 4 "CUI Devices" H 1350 2200 50  0001 C CNN "Mfg"
 F 5 "PJ-036AH-SMT-TR" H 1350 2200 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00037" H 1350 2200 50  0001 C CNN "CPN"
 	1    1350 2200
 	1    0    0    -1  
 $EndComp
@@ -38,6 +39,7 @@ F 2 "passives:R_Shunt_Ohmite_LVK12_CW_Pinout" V 3080 2100 50  0001 C CNN
 F 3 "~" H 3150 2100 50  0001 C CNN
 F 4 "Ohmite" H 3150 2100 50  0001 C CNN "Mfg"
 F 5 "LVK12R020FER" H 3150 2100 50  0001 C CNN "Mfg Part Num"
+F 6 "232-00031" H 3150 2100 50  0001 C CNN "CPN"
 	1    3150 2100
 	0    -1   1    0   
 $EndComp
@@ -66,6 +68,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23-8" H 4600 2750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina219.pdf" H 4300 3000 50  0001 C CNN
 F 4 "Texas Instruments" H 3950 3100 50  0001 C CNN "Mfg"
 F 5 "INA219AIDCNT" H 3950 3100 50  0001 C CNN "Mfg Part Num"
+F 6 "221-00015" H 3950 3100 50  0001 C CNN "CPN"
 	1    3950 3100
 	1    0    0    -1  
 $EndComp
@@ -79,6 +82,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 2400 50  0001 C CNN
 F 3 "~" H 2900 2400 50  0001 C CNN
 F 4 "CR0603-J/-000ELF" H 2900 2400 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 2900 2400 50  0001 C CNN "Mfg"
+F 6 "232-00025" H 2900 2400 50  0001 C CNN "CPN"
 	1    2900 2400
 	1    0    0    -1  
 $EndComp
@@ -92,6 +96,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 2400 50  0001 C CNN
 F 3 "~" H 3400 2400 50  0001 C CNN
 F 4 "CR0603-J/-000ELF" H 3400 2400 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 3400 2400 50  0001 C CNN "Mfg"
+F 6 "232-00025" H 3400 2400 50  0001 C CNN "CPN"
 	1    3400 2400
 	1    0    0    -1  
 $EndComp
@@ -135,6 +140,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 2700 50  0001 C CNN
 F 3 "~" H 4450 2700 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 4450 2700 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 4450 2700 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 4450 2700 50  0001 C CNN "CPN"
 	1    4450 2700
 	-1   0    0    1   
 $EndComp
@@ -209,6 +215,7 @@ F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 1950 3600 50  000
 F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 1900 3850 50  0001 C CNN
 F 4 "Murata" H 1900 3850 50  0001 C CNN "Mfg"
 F 5 "OKI-78SR-3.3_1.5-W36-C" H 1900 3850 50  0001 C CNN "Mfg Part Num"
+F 6 "229-00003" H 1900 3850 50  0001 C CNN "CPN"
 	1    1900 3850
 	1    0    0    -1  
 $EndComp
@@ -255,6 +262,7 @@ F 2 "passives:R_Shunt_Ohmite_LVK12_CW_Pinout" V 3080 3850 50  0001 C CNN
 F 3 "~" H 3150 3850 50  0001 C CNN
 F 4 "Ohmite" H 3150 3850 50  0001 C CNN "Mfg"
 F 5 "LVK12R047FER" H 3150 3850 50  0001 C CNN "Mfg Part Num"
+F 6 "232-00032" H 3150 3850 50  0001 C CNN "CPN"
 	1    3150 3850
 	0    1    1    0   
 $EndComp
@@ -268,6 +276,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23-8" H 4600 4500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina219.pdf" H 4300 4750 50  0001 C CNN
 F 4 "Texas Instruments" H 3950 4850 50  0001 C CNN "Mfg"
 F 5 "INA219AIDCNT" H 3950 4850 50  0001 C CNN "Mfg Part Num"
+F 6 "221-00015" H 3950 4850 50  0001 C CNN "CPN"
 	1    3950 4850
 	1    0    0    -1  
 $EndComp
@@ -281,6 +290,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4150 50  0001 C CNN
 F 3 "~" H 2900 4150 50  0001 C CNN
 F 4 "CR0603-J/-000ELF" H 2900 4150 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 2900 4150 50  0001 C CNN "Mfg"
+F 6 "232-00025" H 2900 4150 50  0001 C CNN "CPN"
 	1    2900 4150
 	1    0    0    -1  
 $EndComp
@@ -294,6 +304,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 4150 50  0001 C CNN
 F 3 "~" H 3400 4150 50  0001 C CNN
 F 4 "CR0603-J/-000ELF" H 3400 4150 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 3400 4150 50  0001 C CNN "Mfg"
+F 6 "232-00025" H 3400 4150 50  0001 C CNN "CPN"
 	1    3400 4150
 	1    0    0    -1  
 $EndComp
@@ -319,6 +330,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 4450 50  0001 C CNN
 F 3 "~" H 4450 4450 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 4450 4450 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 4450 4450 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 4450 4450 50  0001 C CNN "CPN"
 	1    4450 4450
 	-1   0    0    1   
 $EndComp
@@ -414,6 +426,7 @@ F 2 "Fuse:Fuse_1812_4532Metric" H 2300 1900 50  0001 L CNN
 F 3 "~" H 2250 2100 50  0001 C CNN
 F 4 "1812L200/16DR" H 2250 2100 50  0001 C CNN "Mfg Part Num"
 F 5 "Littelfuse Inc" H 2250 2100 50  0001 C CNN "Mfg"
+F 6 "219-00002" H 2250 2100 50  0001 C CNN "CPN"
 	1    2250 2100
 	0    1    1    0   
 $EndComp
@@ -496,6 +509,7 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 2450 2200 50  0001 C CNN
 F 3 "~" H 2450 2200 50  0001 C CNN
 F 4 "CL10A226MO7JZNC" H 2450 2200 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 2450 2200 50  0001 C CNN "Mfg"
+F 6 "212-00020" H 2450 2200 50  0001 C CNN "CPN"
 	1    2450 2200
 	1    0    0    -1  
 $EndComp
@@ -520,6 +534,7 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 3950 50  0001 C CNN
 F 3 "~" H 2300 3950 50  0001 C CNN
 F 4 "CL10A226MO7JZNC" H 2300 3950 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 2300 3950 50  0001 C CNN "Mfg"
+F 6 "212-00020" H 2300 3950 50  0001 C CNN "CPN"
 	1    2300 3950
 	1    0    0    -1  
 $EndComp

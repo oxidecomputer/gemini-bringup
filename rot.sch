@@ -23,6 +23,7 @@ F 2 "c-and-k-pts851:PTS815" H 2900 2700 50  0001 C CNN
 F 3 "~" H 2900 2700 50  0001 C CNN
 F 4 "C&K" H 2900 2700 50  0001 C CNN "Mfg"
 F 5 "PTS815 SJM 250 SMTR LFS" H 2900 2700 50  0001 C CNN "Mfg Part Num"
+F 6 "237-00005" H 2900 2700 50  0001 C CNN "CPN"
 	1    2900 2700
 	0    1    1    0   
 $EndComp
@@ -67,6 +68,7 @@ F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2300 2000
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1950 750 50  0001 C CNN
 F 4 "Samtec Inc" H 2300 2000 50  0001 C CNN "Mfg"
 F 5 "FTSH-105-01-F-DV-K" H 2300 2000 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00022" H 2300 2000 50  0001 C CNN "CPN"
 	1    2300 2000
 	1    0    0    -1  
 $EndComp
@@ -151,6 +153,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 20130 1600 50  0001 C CNN
 F 3 "~" H 20200 1600 50  0001 C CNN
 F 4 "CR0603-JW-104ELF" H 20200 1600 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 20200 1600 50  0001 C CNN "Mfg"
+F 6 "232-00021" H 20200 1600 50  0001 C CNN "CPN"
 	1    20200 1600
 	1    0    0    -1  
 $EndComp
@@ -178,6 +181,7 @@ F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 3150 4500 50  0001 C CNN
 F 3 "~" H 3150 4500 50  0001 C CNN
 F 4 "C&K" H 3150 4500 50  0001 C CNN "Mfg"
 F 5 "JS102011SAQN" H 3150 4500 50  0001 C CNN "Mfg Part Num"
+F 6 "237-00004" H 3150 4500 50  0001 C CNN "CPN"
 	1    3150 4500
 	-1   0    0    -1  
 $EndComp
@@ -212,6 +216,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 
 F 3 "~" H 1350 4350 50  0001 C CNN
 F 4 "METZ CONNECT USA" H 1350 4350 50  0001 C CNN "Mfg"
 F 5 "PM20204VBNN" H 1350 4350 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00021" H 1350 4350 50  0001 C CNN "CPN"
 	1    1350 4350
 	-1   0    0    -1  
 $EndComp
@@ -386,6 +391,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical_SMD_Pin1Right" H
 F 3 "~" H 21100 3700 50  0001 C CNN
 F 4 "Amphenol ICC" H 21100 3700 50  0001 C CNN "Mfg"
 F 5 "10129380-910001ALF" H 21100 3700 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00024" H 21100 3700 50  0001 C CNN "CPN"
 	1    21100 3700
 	1    0    0    -1  
 $EndComp
@@ -439,6 +445,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 19830 2050 50  0001 C CNN
 F 3 "~" H 19900 2050 50  0001 C CNN
 F 4 "CR0603-JW-220ELF" H 19900 2050 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 19900 2050 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 19900 2050 50  0001 C CNN "CPN"
 	1    19900 2050
 	0    1    1    0   
 $EndComp
@@ -457,6 +464,7 @@ F 2 "hirose-df9:Hirose_DF9-51P-1V(69)_2Rows_51Pin-2MP_P1.0mm_Vertical" H 11600 5
 F 3 "~" H 11600 5900 50  0001 C CNN
 F 4 "Hirose" H 11600 5900 50  0001 C CNN "Mfg"
 F 5 "DF9-51P-1V(69)" H 11600 5900 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00023" H 11600 5900 50  0001 C CNN "CPN"
 	1    11600 5900
 	1    0    0    -1  
 $EndComp
@@ -590,6 +598,7 @@ F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 2000 5750 50  0001 C CNN
 F 3 "~" H 2000 5750 50  0001 C CNN
 F 4 "150060RS75000" H 2000 5750 50  0001 C CNN "Mfg Part Num"
 F 5 "Würth Elektronik" H 2000 5750 50  0001 C CNN "Mfg"
+F 6 "224-00005" H 2000 5750 50  0001 C CNN "CPN"
 	1    2000 5750
 	-1   0    0    1   
 $EndComp
@@ -605,6 +614,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 5750 50  0001 C CNN
 F 3 "~" H 2500 5750 50  0001 C CNN
 F 4 "CR0603-JW-680ELF" H 2500 5750 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 2500 5750 50  0001 C CNN "Mfg"
+F 6 "232-00020" H 2500 5750 50  0001 C CNN "CPN"
 	1    2500 5750
 	0    1    1    0   
 $EndComp
@@ -633,6 +643,7 @@ F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 2000 5950 50  0001 C CNN
 F 3 "~" H 2000 5950 50  0001 C CNN
 F 4 "150060AS75000" H 2000 5950 50  0001 C CNN "Mfg Part Num"
 F 5 "Würth Elektronik" H 2000 5950 50  0001 C CNN "Mfg"
+F 6 "224-00006" H 2000 5950 50  0001 C CNN "CPN"
 	1    2000 5950
 	-1   0    0    1   
 $EndComp
@@ -648,6 +659,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 5950 50  0001 C CNN
 F 3 "~" H 2500 5950 50  0001 C CNN
 F 4 "CR0603-JW-680ELF" H 2500 5950 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 2500 5950 50  0001 C CNN "Mfg"
+F 6 "232-00020" H 2500 5950 50  0001 C CNN "CPN"
 	1    2500 5950
 	0    1    1    0   
 $EndComp

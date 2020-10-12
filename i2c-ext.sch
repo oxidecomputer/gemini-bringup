@@ -27,6 +27,7 @@ F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6500 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9802.pdf" H 5300 4100 50  0001 C CNN
 F 4 "Texas Instruments" H 5600 3650 50  0001 C CNN "Mfg"
 F 5 "TCA9802DGKR" H 5600 3650 50  0001 C CNN "Mfg Part Num"
+F 6 "221-00022" H 5600 3650 50  0001 C CNN "CPN"
 	1    5600 3650
 	1    0    0    -1  
 $EndComp
@@ -74,6 +75,7 @@ F 2 "molex-sl:SL_1x06_Vertical_SMD" H 7350 3600 50  0001 C CNN
 F 3 "~" H 7350 3600 50  0001 C CNN
 F 4 "Molex" H 7350 3600 50  0001 C CNN "Mfg"
 F 5 "0740991006" H 7350 3600 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00028" H 7350 3600 50  0001 C CNN "CPN"
 	1    7350 3600
 	1    0    0    -1  
 $EndComp
@@ -134,6 +136,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3200 50  0001 C CNN
 F 3 "~" H 4900 3200 50  0001 C CNN
 F 4 "CR0603-JW-332ELF" H 4900 3200 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 4900 3200 50  0001 C CNN "Mfg"
+F 6 "232-00018" H 4900 3200 50  0001 C CNN "CPN"
 	1    4900 3200
 	1    0    0    -1  
 $EndComp
@@ -156,6 +159,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3200 50  0001 C CNN
 F 3 "~" H 5050 3200 50  0001 C CNN
 F 4 "CR0603-JW-332ELF" H 5050 3200 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 5050 3200 50  0001 C CNN "Mfg"
+F 6 "232-00018" H 5050 3200 50  0001 C CNN "CPN"
 	1    5050 3200
 	1    0    0    -1  
 $EndComp
@@ -204,6 +208,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3750 50  0001 C CNN
 F 3 "~" H 5050 3750 50  0001 C CNN
 F 4 "CR0603-JW-103ELF" H 5050 3750 50  0001 C CNN "Mfg Part Num"
 F 5 "Bourns" H 5050 3750 50  0001 C CNN "Mfg"
+F 6 "232-00024" H 5050 3750 50  0001 C CNN "CPN"
 	1    5050 3750
 	0    -1   -1   0   
 $EndComp
@@ -257,6 +262,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 7900 3350 50  0001 C CNN
 F 3 "~" H 7900 3350 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 7900 3350 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 7900 3350 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 7900 3350 50  0001 C CNN "CPN"
 	1    7900 3350
 	1    0    0    -1  
 $EndComp
@@ -294,6 +300,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 4500 50  0001 C CNN
 F 3 "~" H 4900 4500 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 4900 4500 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 4900 4500 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 4900 4500 50  0001 C CNN "CPN"
 	1    4900 4500
 	1    0    0    -1  
 $EndComp

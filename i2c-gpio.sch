@@ -23,6 +23,7 @@ F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 5550 3350 50  0001 C CNN
 F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf" H 5550 3350 50  0001 C CNN
 F 4 "NXP" H 5550 3350 50  0001 C CNN "Mfg"
 F 5 "PCA9555PW" H 5550 3350 50  0001 C CNN "Mfg Part Num"
+F 6 "221-00023" H 5550 3350 50  0001 C CNN "CPN"
 	1    5550 3350
 	1    0    0    -1  
 $EndComp
@@ -100,6 +101,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 7300 2850
 F 3 "~" H 7300 2850 50  0001 C CNN
 F 4 "Amphenol ICC" H 7300 2850 50  0001 C CNN "Mfg"
 F 5 "10129383-910001ALF" H 7300 2850 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00035" H 7300 2850 50  0001 C CNN "CPN"
 	1    7300 2850
 	1    0    0    -1  
 $EndComp
@@ -151,6 +153,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 6800 3750
 F 3 "~" H 6800 3750 50  0001 C CNN
 F 4 "Amphenol ICC" H 6800 3750 50  0001 C CNN "Mfg"
 F 5 "10129383-910001ALF" H 6800 3750 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00035" H 6800 3750 50  0001 C CNN "CPN"
 	1    6800 3750
 	1    0    0    -1  
 $EndComp
@@ -202,6 +205,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 3450 50  0001 C CNN
 F 3 "~" H 4550 3450 50  0001 C CNN
 F 4 "CL10B104KB8NNWC" H 4550 3450 50  0001 C CNN "Mfg Part Num"
 F 5 "Samsung Electro-Mechanics" H 4550 3450 50  0001 C CNN "Mfg"
+F 6 "212-00011" H 4550 3450 50  0001 C CNN "CPN"
 	1    4550 3450
 	1    0    0    -1  
 $EndComp
