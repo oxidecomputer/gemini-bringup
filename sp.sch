@@ -321,7 +321,7 @@ F 3 "" H 9500 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP_Small C326
+L Device:C_Small C326
 U 1 1 5F1BDA59
 P 21250 2600
 F 0 "C326" H 21338 2646 50  0000 L CNN
@@ -369,7 +369,7 @@ F 3 "" H 21400 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C304
+L Device:C_Small C304
 U 1 1 5F1C1EEE
 P 18800 1600
 F 0 "C304" H 18888 1646 50  0000 L CNN
