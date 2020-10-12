@@ -39,7 +39,7 @@ F 1 "STM32H753BITx" H 11550 3700 50  0000 C CNN
 F 2 "yamaichi-sockets:IC149-208-x61-x5x" H 10200 2850 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00388325.pdf" H 11500 7950 50  0001 C CNN
 F 4 "Yamaichi Electronics" H 11500 7950 50  0001 C CNN "Mfg"
-F 5 "IC149-208-161-B1" H 11500 7950 50  0001 C CNN "Mfg Part Num"
+F 5 "IC149-208-161-B5" H 11500 7950 50  0001 C CNN "Mfg Part Num"
 	1    11500 7950
 	1    0    0    -1  
 $EndComp

@@ -26,7 +26,7 @@ F 1 "TCA9802" H 5800 3200 50  0000 C CNN
 F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6500 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9802.pdf" H 5300 4100 50  0001 C CNN
 F 4 "Texas Instruments" H 5600 3650 50  0001 C CNN "Mfg"
-F 5 "TCA9802" H 5600 3650 50  0001 C CNN "Mfg Part Num"
+F 5 "TCA9802DGKR" H 5600 3650 50  0001 C CNN "Mfg Part Num"
 	1    5600 3650
 	1    0    0    -1  
 $EndComp
