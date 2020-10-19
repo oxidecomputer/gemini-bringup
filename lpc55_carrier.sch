@@ -1552,4 +1552,36 @@ Text Label 18550 4650 2    50   ~ 0
 SCT0_OUT2
 NoConn ~ 2300 4950
 NoConn ~ 2300 4550
+$Comp
+L Mechanical:MountingHole H101
+U 1 1 5F8EE4E5
+P 1600 12650
+F 0 "H101" H 1700 12700 50  0000 L CNN
+F 1 "M3" H 1700 12650 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1600 12650 50  0001 C CNN
+F 3 "~" H 1600 12650 50  0001 C CNN
+	1    1600 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H102
+U 1 1 5F8EF079
+P 2000 12650
+F 0 "H102" H 2100 12700 50  0000 L CNN
+F 1 "M3" H 2100 12650 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 12650 50  0001 C CNN
+F 3 "~" H 2000 12650 50  0001 C CNN
+	1    2000 12650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1250 12400 3900 12400
+Wire Notes Line
+	3900 12400 3900 13050
+Wire Notes Line
+	3900 13050 1250 13050
+Wire Notes Line
+	1250 13050 1250 12400
+Text Notes 1350 12950 0    50   ~ 10
+Mounting
 $EndSCHEMATC
