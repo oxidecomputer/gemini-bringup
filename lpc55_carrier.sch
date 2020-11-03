@@ -702,11 +702,11 @@ Place 4.7uF near ferrite bead\nPlace 47pF and 0.1uF near LPC55 VDDA\nPlace 10nF 
 Wire Notes Line
 	1200 1350 1200 3550
 Wire Notes Line
-	1200 3550 7100 3550
+	1200 3550 7750 3550
 Wire Notes Line
 	7750 3550 7750 1350
 Wire Notes Line
-	7100 1350 1200 1350
+	7750 1350 1200 1350
 Text Notes 1250 3500 0    50   ~ 10
 Power Filtering and Decoupling
 $Comp
