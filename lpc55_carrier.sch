@@ -89,9 +89,9 @@ OSC_IN
 Text Label 2850 4750 0    50   ~ 0
 OSC_OUT
 Text Label 10050 7050 2    50   ~ 0
-OSC_IN
+XTAL32M_P
 Text Label 10050 7150 2    50   ~ 0
-OSC_OUT
+XTAL32M_N
 $Comp
 L Device:Crystal Y102
 U 1 1 5F2B4CA3
@@ -774,9 +774,9 @@ F 3 "" H 3850 5850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 10050 6850 2    50   ~ 0
-OSC_RTC_OUT
+XTAL32K_N
 Text Label 10050 6750 2    50   ~ 0
-OSC_RTC_IN
+XTAL32K_P
 Text Notes 3400 6950 0    50   ~ 0
 1 - 2 Xtal\n2 - 3 No Xtal
 Wire Wire Line
