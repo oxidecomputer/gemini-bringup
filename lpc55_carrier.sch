@@ -1677,4 +1677,30 @@ $EndComp
 Connection ~ 1850 1750
 Wire Wire Line
 	1850 1750 2000 1750
+Text Notes 9000 1850 0    50   ~ 0
+Default\nPIO0_2\nPIO0_5\nPIO0_11\nPIO0_12
+Text Notes 9700 1850 0    50   ~ 0
+-\nPD\nPU\nPD\nPU
+Text Notes 10550 1850 0    50   ~ 0
+Z\nI\nI\nI\nI
+Text Notes 9050 1400 0    50   Italic 0
+Pin
+Text Notes 9500 1400 0    50   Italic 0
+Pull up/down
+Text Notes 10200 1400 0    50   Italic 0
+Input/Output/Hi-Z
+Text Notes 9600 1250 0    50   ~ 10
+POR Pin Mode
+Wire Notes Line
+	8950 1150 11000 1150
+Wire Notes Line
+	11000 1900 8950 1900
+Wire Notes Line
+	8950 1900 8950 1150
+Wire Notes Line
+	8950 1300 11000 1300
+Wire Notes Line
+	11000 1150 11000 1900
+Wire Notes Line
+	8950 1450 11000 1450
 $EndSCHEMATC
