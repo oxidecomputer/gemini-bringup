@@ -1668,4 +1668,6 @@ Wire Notes Line
 	5800 12700 1200 12700
 Wire Notes Line
 	1200 12700 1200 10400
+Text Notes 4200 10900 0    50   ~ 0
+~HS_SPI_SSEL1~ and ~HS_SPI_IRQ~\nmust have internal pull-ups enabled
 $EndSCHEMATC
