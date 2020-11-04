@@ -166,22 +166,22 @@ off as invalid.
 
 #### Digital
 
-* [ ] Signals are correct logic level for input pin
-* [ ] Pullups on all open-drain outputs
-* [ ] Pulldowns on all PECL outputs
-* [ ] Termination on all high-speed signals
-* [ ] AC coupling caps on gigabit transceivers
-* [ ] TX/RX paired correctly for UART, SPI, MGT, etc
-* [ ] Differential pair polarity / pairing correct
-* [ ] Active high/low enable signal polarity correct
-* [ ] I/O banking rules met on FPGAs etc
+* [X] Signals are correct logic level for input pin
+* [x] Pullups on all open-drain outputs
+* [x] Pulldowns on all PECL outputs
+* [x] Termination on all high-speed signals
+* [x] AC coupling caps on gigabit transceivers
+* [x] TX/RX paired correctly for UART, SPI, MGT, etc
+* [x] Differential pair polarity / pairing correct
+* [x] Active high/low enable signal polarity correct
+* [x] I/O banking rules met on FPGAs etc
 
 #### Analog
 
-* [ ] RC time constant for attenuators sane given ADC sampling frequency
-* [ ] Verify frequency response of RF components across entire operating range. Don't assume a "1-100 MHz" amplifier has the
+* [x] RC time constant for attenuators sane given ADC sampling frequency
+* [x] Verify frequency response of RF components across entire operating range. Don't assume a "1-100 MHz" amplifier has the
 same gain across the whole range.
-* [ ] Verify polarity of op-amp feedback
+* [x] Verify polarity of op-amp feedback
 
 #### Clocks
 
