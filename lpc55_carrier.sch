@@ -1036,20 +1036,8 @@ Text Label 10050 6350 2    50   ~ 0
 FC0_RXD
 Text Label 10050 3950 2    50   ~ 0
 ISP0
-Text Label 3050 11350 0    50   ~ 0
-ISP0
-Text Notes 2750 11600 0    50   ~ 0
+Text Notes 8200 4150 0    50   ~ 0
 Default to Passive Boot.\nPull LOW for ISP boot.
-Text Notes 1350 11800 0    50   ~ 10
-Recovery
-Wire Notes Line
-	1250 11950 3900 11950
-Wire Notes Line
-	3900 11950 3900 10550
-Wire Notes Line
-	3900 10550 1250 10550
-Wire Notes Line
-	1250 10550 1250 11950
 Text Label 10050 3650 2    50   ~ 0
 FC3_TXD_SCL_MISO
 Text Label 10050 3750 2    50   ~ 0
@@ -1097,24 +1085,6 @@ Text Label 13200 2900 0    50   ~ 0
 LX
 Text Label 13200 2800 0    50   ~ 0
 FB
-$Comp
-L Device:R R111
-U 1 1 5F3C1231
-P 2400 11100
-F 0 "R111" H 2500 11150 50  0000 L CNN
-F 1 "100kR" H 2500 11100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 11100 50  0001 C CNN
-F 3 "~" H 2400 11100 50  0001 C CNN
-F 4 "232-00021" H 2400 11100 50  0001 C CNN "CPN"
-	1    2400 11100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 11250 2400 11350
-Wire Wire Line
-	2400 10950 2400 10900
-Wire Wire Line
-	2400 11350 3050 11350
 $Comp
 L Device:D D103
 U 1 1 5F493717
@@ -1549,8 +1519,6 @@ Text Label 4550 7800 1    50   ~ 0
 VDD
 Text Label 3950 8900 1    50   ~ 0
 VDD
-Text Label 2400 10900 1    50   ~ 0
-VDD
 $Comp
 L Device:C C113
 U 1 1 5F7DE78D
@@ -1703,4 +1671,14 @@ Wire Notes Line
 	11000 1150 11000 1900
 Wire Notes Line
 	8950 1450 11000 1450
+Text Notes 8200 3900 0    50   ~ 10
+ISP0
+Wire Notes Line
+	8150 3750 9200 3750
+Wire Notes Line
+	9200 3750 9200 4200
+Wire Notes Line
+	9200 4200 8150 4200
+Wire Notes Line
+	8150 4200 8150 3750
 $EndSCHEMATC
