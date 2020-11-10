@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Barrel_Jack_Switch_Pin3Ring J601
+L Connector:Barrel_Jack_Switch J601
 U 1 1 5F3C5136
 P 1350 2200
 F 0 "J601" H 1407 2525 50  0000 C CNN

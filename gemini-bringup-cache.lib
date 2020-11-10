@@ -25,11 +25,11 @@ X A1 8 400 -100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Connector_Barrel_Jack_Switch_Pin3Ring
+# Connector_Barrel_Jack_Switch
 #
-DEF Connector_Barrel_Jack_Switch_Pin3Ring J 0 20 Y N 1 F N
+DEF Connector_Barrel_Jack_Switch J 0 20 Y N 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "Connector_Barrel_Jack_Switch_Pin3Ring" 0 -200 50 H V C CNN
+F1 "Connector_Barrel_Jack_Switch" 0 -200 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 $FPLIST
@@ -45,8 +45,8 @@ P 2 0 1 10 200 100 150 100 N
 P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
 P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
 X ~ 1 300 100 100 L 50 50 1 1 P
-X ~ 2 300 0 100 L 50 50 1 1 P
-X ~ 3 300 -100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+X ~ 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
