@@ -156,7 +156,6 @@ Text HLabel 1200 2750 0    50   BiDi ~ 0
 SCL
 Text HLabel 3350 2850 0    50   Output ~ 0
 ~ALERT
-NoConn ~ 3800 2950
 Wire Wire Line
 	5150 4450 4650 4450
 Wire Wire Line
@@ -918,4 +917,6 @@ F 3 "" H 1300 3750 50  0001 C CNN
 	1    1300 3750
 	1    0    0    -1  
 $EndComp
+Text Label 3800 2950 2    50   ~ 0
+FAN5V
 $EndSCHEMATC
