@@ -507,7 +507,7 @@ Wire Wire Line
 Connection ~ 3400 4400
 NoConn ~ 1650 2200
 $Comp
-L Device:C_Small C606
+L Device:CP_Small C606
 U 1 1 5F918180
 P 2450 2200
 F 0 "C606" H 2542 2246 50  0000 L CNN
