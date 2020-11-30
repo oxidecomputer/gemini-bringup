@@ -1447,24 +1447,7 @@ F 6 "242-00017" H 5950 1650 50  0001 C CNN "CPN"
 	1    5950 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C422
-U 1 1 5F3FCDA3
-P 5500 1750
-F 0 "C422" V 5271 1750 50  0000 C CNN
-F 1 "DNP" V 5362 1750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 1750 50  0001 C CNN
-F 3 "~" H 5500 1750 50  0001 C CNN
-F 4 "" H 5500 1750 50  0001 C CNN "Mfg Part Num"
-F 5 "DNP" H 5500 1750 50  0001 C CNN "Config"
-	1    5500 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5000 1750 5400 1750
 Connection ~ 5000 1750
-Wire Wire Line
-	5600 1750 5950 1750
 $Comp
 L Device:R R423
 U 1 1 5F9CC659
@@ -1680,4 +1663,6 @@ $EndComp
 Wire Wire Line
 	5900 4900 5900 5200
 Connection ~ 5900 5200
+Wire Wire Line
+	5000 1750 5950 1750
 $EndSCHEMATC
