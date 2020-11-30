@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 58)
-    (tracks 4028)
+    (tracks 4034)
     (zones 0)
     (modules 282)
     (nets 311)
@@ -17,8 +17,8 @@
 
   (layers
     (0 F.Cu signal)
-    (1 In1.Cu signal)
-    (2 In2.Cu signal)
+    (1 In1.Cu signal hide)
+    (2 In2.Cu signal hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -14725,6 +14725,12 @@
   (segment (start 51.345 43.43) (end 52.97 43.43) (width 0.2) (layer F.Cu) (net 6))
   (via (at 139.5 13) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6))
   (segment (start 139.5 14.75) (end 139.5 13) (width 0.2) (layer F.Cu) (net 6))
+  (via (at 59.584 39.986097) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6) (tstamp 5FC6426A))
+  (segment (start 60.734 39.986) (end 59.584097 39.986) (width 0.4) (layer F.Cu) (net 6) (tstamp 5FC6426B))
+  (via (at 59.584 38.986) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6) (tstamp 5FC6426C))
+  (segment (start 60.734 38.986) (end 59.584 38.986) (width 0.4) (layer F.Cu) (net 6) (tstamp 5FC6426D))
+  (via (at 59.584 37.986) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6) (tstamp 5FC6426E))
+  (segment (start 60.734 37.986) (end 59.584 37.986) (width 0.4) (layer F.Cu) (net 6) (tstamp 5FC6426F))
   (segment (start 112.9375 74.85) (end 112 75.7875) (width 0.2) (layer F.Cu) (net 7) (status 20))
   (segment (start 115 74.85) (end 112.9375 74.85) (width 0.2) (layer F.Cu) (net 7) (status 10))
   (segment (start 116.6 73.25) (end 115 74.85) (width 0.2) (layer F.Cu) (net 7) (status 20))
