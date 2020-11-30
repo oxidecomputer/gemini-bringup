@@ -259,7 +259,7 @@ F 3 "" H 2450 1400 50  0001 C CNN
 $EndComp
 Connection ~ 2450 1400
 Wire Wire Line
-	3600 1400 3950 1400
+	3600 1400 3800 1400
 Connection ~ 3600 1400
 Text Label 3950 1400 0    50   ~ 0
 FAN5V
@@ -938,4 +938,18 @@ F 3 "" H 1300 3750 50  0001 C CNN
 $EndComp
 Text Label 3800 2950 2    50   ~ 0
 FAN5V
+$Comp
+L Connector:TestPoint TP701
+U 1 1 5FCF47A1
+P 3800 1400
+F 0 "TP701" H 3800 1750 50  0000 C CNN
+F 1 "FAN5V" H 3800 1650 50  0000 C CNN
+F 2 "" H 4000 1400 50  0001 C CNN
+F 3 "~" H 4000 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 1400
+Wire Wire Line
+	3800 1400 3950 1400
 $EndSCHEMATC

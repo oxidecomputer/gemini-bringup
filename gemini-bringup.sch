@@ -649,4 +649,43 @@ F 3 "~" H 3200 1300 50  0001 C CNN
 	1    3200 1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP101
+U 1 1 5FC8EAFF
+P 5850 950
+F 0 "TP101" V 5800 1150 50  0000 L CNN
+F 1 "+12V" V 5850 1150 50  0000 L CNN
+F 2 "" H 6050 950 50  0001 C CNN
+F 3 "~" H 6050 950 50  0001 C CNN
+	1    5850 950 
+	0    1    1    0   
+$EndComp
+Text Label 5850 950  2    50   ~ 0
++12V
+$Comp
+L Connector:TestPoint TP103
+U 1 1 5FC8F323
+P 5850 1100
+F 0 "TP103" V 5800 1300 50  0000 L CNN
+F 1 "+3.3V" V 5850 1300 50  0000 L CNN
+F 2 "" H 6050 1100 50  0001 C CNN
+F 3 "~" H 6050 1100 50  0001 C CNN
+	1    5850 1100
+	0    1    1    0   
+$EndComp
+Text Label 5850 1100 2    50   ~ 0
++3V3
+$Comp
+L Connector:TestPoint TP104
+U 1 1 5FC95488
+P 5850 1250
+F 0 "TP104" V 5800 1450 50  0000 L CNN
+F 1 "GND" V 5850 1450 50  0000 L CNN
+F 2 "" H 6050 1250 50  0001 C CNN
+F 3 "~" H 6050 1250 50  0001 C CNN
+	1    5850 1250
+	0    1    1    0   
+$EndComp
+Text Label 5850 1250 2    50   ~ 0
+GND
 $EndSCHEMATC
