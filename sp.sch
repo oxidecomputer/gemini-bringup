@@ -31,20 +31,6 @@ F11 "~INTR" O L 20350 7450 50
 F12 "~RESET" I L 20350 7300 50 
 $EndSheet
 $Comp
-L MCU_ST_STM32H7:STM32H753BITx U301
-U 1 1 5F192C5B
-P 11500 7950
-F 0 "U301" H 11550 3800 50  0000 C CNN
-F 1 "STM32H753BITx" H 11550 3700 50  0000 C CNN
-F 2 "yamaichi-sockets:IC149-208-x61-x5x" H 10200 2850 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00388325.pdf" H 11500 7950 50  0001 C CNN
-F 4 "Yamaichi Electronics" H 11500 7950 50  0001 C CNN "Mfg"
-F 5 "IC149-208-161-B5" H 11500 7950 50  0001 C CNN "Mfg Part Num"
-F 6 "215-00036" H 11500 7950 50  0001 C CNN "CPN"
-	1    11500 7950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J301
 U 1 1 5F197A06
 P 2300 2400
@@ -272,48 +258,48 @@ $EndComp
 $Comp
 L power:VDDA #PWR0316
 U 1 1 5F1AFE60
-P 12400 2200
-F 0 "#PWR0316" H 12400 2050 50  0001 C CNN
-F 1 "VDDA" H 12415 2373 50  0000 C CNN
-F 2 "" H 12400 2200 50  0001 C CNN
-F 3 "" H 12400 2200 50  0001 C CNN
-	1    12400 2200
+P 12200 2100
+F 0 "#PWR0316" H 12200 1950 50  0001 C CNN
+F 1 "VDDA" H 12215 2273 50  0000 C CNN
+F 2 "" H 12200 2100 50  0001 C CNN
+F 3 "" H 12200 2100 50  0001 C CNN
+	1    12200 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0314
 U 1 1 5F1B23B4
-P 11350 2200
-F 0 "#PWR0314" H 11350 2050 50  0001 C CNN
-F 1 "+3V3" H 11365 2373 50  0000 C CNN
-F 2 "" H 11350 2200 50  0001 C CNN
-F 3 "" H 11350 2200 50  0001 C CNN
-	1    11350 2200
+P 11350 2100
+F 0 "#PWR0314" H 11350 1950 50  0001 C CNN
+F 1 "+3V3" H 11365 2273 50  0000 C CNN
+F 2 "" H 11350 2100 50  0001 C CNN
+F 3 "" H 11350 2100 50  0001 C CNN
+	1    11350 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB301
 U 1 1 5F1B33B5
-P 11850 2300
-F 0 "FB301" V 11613 2300 50  0000 C CNN
-F 1 "33R @ 100MHz" V 11704 2300 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 11780 2300 50  0001 C CNN
-F 3 "~" H 11850 2300 50  0001 C CNN
-F 4 "BLM18PG330SN1D" H 11850 2300 50  0001 C CNN "Mfg Part Num"
-F 5 "Murata Electronics" H 11850 2300 50  0001 C CNN "Mfg"
-F 6 "242-00017" H 11850 2300 50  0001 C CNN "CPN"
-	1    11850 2300
+P 11800 2300
+F 0 "FB301" V 11563 2300 50  0000 C CNN
+F 1 "33R @ 100MHz" V 11654 2300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 11730 2300 50  0001 C CNN
+F 3 "~" H 11800 2300 50  0001 C CNN
+F 4 "BLM18PG330SN1D" H 11800 2300 50  0001 C CNN "Mfg Part Num"
+F 5 "Murata Electronics" H 11800 2300 50  0001 C CNN "Mfg"
+F 6 "242-00017" H 11800 2300 50  0001 C CNN "CPN"
+	1    11800 2300
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0315
 U 1 1 5F1B85B2
-P 11450 13400
-F 0 "#PWR0315" H 11450 13150 50  0001 C CNN
-F 1 "GND" H 11455 13227 50  0000 C CNN
-F 2 "" H 11450 13400 50  0001 C CNN
-F 3 "" H 11450 13400 50  0001 C CNN
-	1    11450 13400
+P 11350 11700
+F 0 "#PWR0315" H 11350 11450 50  0001 C CNN
+F 1 "GND" H 11355 11527 50  0000 C CNN
+F 2 "" H 11350 11700 50  0001 C CNN
+F 3 "" H 11350 11700 50  0001 C CNN
+	1    11350 11700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1199,20 +1185,6 @@ F 7 "3.3V" H 17950 9650 50  0001 C CNN "C_Vbias"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J303
-U 1 1 5F7EA7F4
-P 8450 6450
-F 0 "J303" H 8500 6750 50  0000 C CNN
-F 1 "AUX_HDR_J" H 8500 6650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD" H 8450 6450 50  0001 C CNN
-F 3 "~" H 8450 6450 50  0001 C CNN
-F 4 "Amphenol ICC" H 8450 6450 50  0001 C CNN "Mfg"
-F 5 "54202-S08-04" H 8450 6450 50  0001 C CNN "Mfg Part Num"
-F 6 "215-00026" H 8450 6450 50  0001 C CNN "CPN"
-	1    8450 6450
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R316
 U 1 1 5F7EB350
 P 17750 9550
@@ -1264,28 +1236,6 @@ F 6 "232-00019" H 2600 10550 50  0001 C CNN "CPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3V3 #PWR0335
-U 1 1 5F88DFFB
-P 8150 6250
-F 0 "#PWR0335" H 8150 6100 50  0001 C CNN
-F 1 "+3V3" H 8165 6423 50  0000 C CNN
-F 2 "" H 8150 6250 50  0001 C CNN
-F 3 "" H 8150 6250 50  0001 C CNN
-	1    8150 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0336
-U 1 1 5F8AF632
-P 8050 6800
-F 0 "#PWR0336" H 8050 6550 50  0001 C CNN
-F 1 "GND" H 8055 6627 50  0000 C CNN
-F 2 "" H 8050 6800 50  0001 C CNN
-F 3 "" H 8050 6800 50  0001 C CNN
-	1    8050 6800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Small D305
 U 1 1 5F95D875
 P 3000 1900
@@ -1328,13 +1278,13 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0303
 U 1 1 600C0EC1
-P 12150 2300
-F 0 "#FLG0303" H 12150 2375 50  0001 C CNN
-F 1 "PWR_FLAG" H 12150 2473 50  0000 C CNN
-F 2 "" H 12150 2300 50  0001 C CNN
-F 3 "~" H 12150 2300 50  0001 C CNN
-	1    12150 2300
-	1    0    0    -1  
+P 12200 2300
+F 0 "#FLG0303" H 12200 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 12200 2473 50  0000 C CNN
+F 2 "" H 12200 2300 50  0001 C CNN
+F 3 "~" H 12200 2300 50  0001 C CNN
+	1    12200 2300
+	0    1    1    0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0302
@@ -1386,8 +1336,6 @@ Text Notes 2600 4800 0    50   ~ 0
 Debug LEDs
 Text Notes 1800 3550 0    50   ~ 0
 Debug, Reset, Recovery
-Text Notes 12450 2750 0    50   ~ 0
-Design assumes we're not\nusing USB.
 Text Notes 3100 1800 0    50   ~ 0
 Diode promptly drains reset cap at powerdown.
 Text Notes 5000 3200 0    50   ~ 0
@@ -1398,67 +1346,35 @@ Text HLabel 2850 8750 2    50   Output ~ 0
 FPGA_CLK
 Text Label 1700 8500 2    50   ~ 0
 FPGA_DA0
-Text Label 13000 9450 0    50   ~ 0
-FPGA_DA0
 Text Label 1700 8600 2    50   ~ 0
-FPGA_DA1
-Text Label 13000 9550 0    50   ~ 0
 FPGA_DA1
 Text Label 1700 9500 2    50   ~ 0
 FPGA_DA10
-Text Label 13000 11050 0    50   ~ 0
-FPGA_DA10
 Text Label 1700 9600 2    50   ~ 0
-FPGA_DA11
-Text Label 13000 11150 0    50   ~ 0
 FPGA_DA11
 Text Label 1700 9700 2    50   ~ 0
 FPGA_DA12
-Text Label 13000 11250 0    50   ~ 0
-FPGA_DA12
 Text Label 1700 9800 2    50   ~ 0
-FPGA_DA13
-Text Label 13000 8850 0    50   ~ 0
 FPGA_DA13
 Text Label 1700 9900 2    50   ~ 0
 FPGA_DA14
-Text Label 13000 8950 0    50   ~ 0
-FPGA_DA14
 Text Label 1700 10000 2    50   ~ 0
-FPGA_DA15
-Text Label 13000 9050 0    50   ~ 0
 FPGA_DA15
 Text Label 1700 8700 2    50   ~ 0
 FPGA_DA2
-Text Label 13000 8050 0    50   ~ 0
-FPGA_DA2
 Text Label 1700 8800 2    50   ~ 0
-FPGA_DA3
-Text Label 13000 8150 0    50   ~ 0
 FPGA_DA3
 Text Label 1700 8900 2    50   ~ 0
 FPGA_DA4
-Text Label 13000 10450 0    50   ~ 0
-FPGA_DA4
 Text Label 1700 9000 2    50   ~ 0
-FPGA_DA5
-Text Label 13000 10550 0    50   ~ 0
 FPGA_DA5
 Text Label 1700 9100 2    50   ~ 0
 FPGA_DA6
-Text Label 13000 10650 0    50   ~ 0
-FPGA_DA6
 Text Label 1700 9200 2    50   ~ 0
-FPGA_DA7
-Text Label 13000 10750 0    50   ~ 0
 FPGA_DA7
 Text Label 1700 9300 2    50   ~ 0
 FPGA_DA8
-Text Label 13000 10850 0    50   ~ 0
-FPGA_DA8
 Text Label 1700 9400 2    50   ~ 0
-FPGA_DA9
-Text Label 13000 10950 0    50   ~ 0
 FPGA_DA9
 Text HLabel 2400 8500 2    50   BiDi ~ 0
 FPGA_DA[0..15]
@@ -1478,25 +1394,17 @@ Text HLabel 2250 12150 2    50   BiDi ~ 0
 I2C1_B_SCL
 Text Label 1700 12150 2    50   ~ 0
 I2C1_B_SCL
-Text Label 13000 5450 0    50   ~ 0
-I2C1_B_SCL
 Text HLabel 2250 12050 2    50   BiDi ~ 0
 I2C1_B_SDA
 Text Label 1700 12050 2    50   ~ 0
-I2C1_B_SDA
-Text Label 13000 5550 0    50   ~ 0
 I2C1_B_SDA
 Text HLabel 2250 12950 2    50   BiDi ~ 0
 I2C2_F_SCL
 Text Label 1700 12950 2    50   ~ 0
 I2C2_F_SCL
-Text Label 13000 11550 0    50   ~ 0
-I2C2_F_SCL
 Text HLabel 2250 12850 2    50   BiDi ~ 0
 I2C2_F_SDA
 Text Label 1700 12850 2    50   ~ 0
-I2C2_F_SDA
-Text Label 13000 11450 0    50   ~ 0
 I2C2_F_SDA
 Text HLabel 3900 13150 2    50   Output ~ 0
 I2C_MUX_ENABLE
@@ -1514,90 +1422,48 @@ Text HLabel 4000 12150 2    50   BiDi ~ 0
 I2C3_H_SCL
 Text Label 3450 12150 2    50   ~ 0
 I2C3_H_SCL
-Text Label 10000 10450 2    50   ~ 0
-I2C3_H_SCL
 Text HLabel 4000 12050 2    50   BiDi ~ 0
 I2C3_H_SDA
 Text Label 3450 12050 2    50   ~ 0
-I2C3_H_SDA
-Text Label 10000 10550 2    50   ~ 0
 I2C3_H_SDA
 Text HLabel 2250 13750 2    50   BiDi ~ 0
 I2C4_D_SCL
 Text Label 1700 13750 2    50   ~ 0
 I2C4_D_SCL
-Text Label 13000 9250 0    50   ~ 0
-I2C4_D_SCL
 Text HLabel 2250 13650 2    50   BiDi ~ 0
 I2C4_D_SDA
 Text Label 1700 13650 2    50   ~ 0
 I2C4_D_SDA
-Text Label 13000 9350 0    50   ~ 0
-I2C4_D_SDA
-Text Label 13000 12850 0    50   ~ 0
-I2C4_F_SCL
-Text Label 13000 12950 0    50   ~ 0
-I2C4_F_SDA
 Text HLabel 3950 13800 2    50   BiDi ~ 0
 I2C4_H_SCL
 Text Label 3400 13800 2    50   ~ 0
-I2C4_H_SCL
-Text Label 10000 10850 2    50   ~ 0
 I2C4_H_SCL
 Text HLabel 3950 13700 2    50   BiDi ~ 0
 I2C4_H_SDA
 Text Label 3400 13700 2    50   ~ 0
 I2C4_H_SDA
-Text Label 10000 10950 2    50   ~ 0
-I2C4_H_SDA
-Text Notes 12250 13300 0    50   ~ 0
+Text Notes 12050 11600 0    50   ~ 0
 Isolating VSSA would improve\nanalog performance.
 Text Label 2350 4000 2    50   ~ 0
 LED0
-Text Label 10000 8850 2    50   ~ 0
-LED0
 Text Label 2350 4200 2    50   ~ 0
-LED1
-Text Label 10000 8950 2    50   ~ 0
 LED1
 Text Label 2350 4400 2    50   ~ 0
 LED2
-Text Label 10000 9050 2    50   ~ 0
-LED2
 Text Label 2350 4600 2    50   ~ 0
-LED3
-Text Label 10000 9150 2    50   ~ 0
 LED3
 Text Notes 4150 2350 0    50   ~ 0
 Note: STM32H7 has internal pull\nresistors on SWD lines and reset\nso we don't need to add them here.
 Text Notes 17700 9950 0    50   ~ 0
 ON/OFF sequencing circuit\nfrom data sheet.
-Text Label 13000 7750 0    50   ~ 0
-OSC32_IN
 Text Label 22150 4600 0    50   ~ 0
 OSC32_IN
-Text Label 13000 7850 0    50   ~ 0
-OSC32_OUT
 Text Label 21350 4600 2    50   ~ 0
 OSC32_OUT
-Text Label 10000 9750 2    50   ~ 0
-OSC_IN
 Text Label 22150 3600 0    50   ~ 0
 OSC_IN
-Text Label 10000 9850 2    50   ~ 0
-OSC_OUT
 Text Label 21050 3600 2    50   ~ 0
 OSC_OUT
-Text Label 8700 6350 0    50   ~ 0
-PJ0
-Text Label 8700 6450 0    50   ~ 0
-PJ1
-Text Label 8700 6550 0    50   ~ 0
-PJ2
-Text Label 8700 6650 0    50   ~ 0
-PJ3
-Text Label 8700 6750 0    50   ~ 0
-PJ4
 Text Notes 1200 11750 0    50   ~ 0
 Parallel bus egress
 Text Notes 2100 14050 0    50   ~ 0
@@ -1606,29 +1472,17 @@ Text HLabel 2800 10550 2    50   Output ~ 0
 QSPI_CLK
 Text Label 2400 10550 2    50   ~ 0
 QSPI_CLKx
-Text Label 13000 12450 0    50   ~ 0
-QSPI_CLKx
 Text HLabel 2400 11000 2    50   Output ~ 0
 QSPI_HOST_ACCESS
 Text Label 2400 11000 2    50   ~ 0
 QSPI_HOST_ACCESS
-Text Label 13000 11850 0    50   ~ 0
-QSPI_HOST_ACCESS
 Text Label 1750 10400 2    50   ~ 0
-QSPI_IO0
-Text Label 13000 12250 0    50   ~ 0
 QSPI_IO0
 Text Label 1750 10500 2    50   ~ 0
 QSPI_IO1
-Text Label 13000 12350 0    50   ~ 0
-QSPI_IO1
 Text Label 1750 10600 2    50   ~ 0
 QSPI_IO2
-Text Label 13000 12150 0    50   ~ 0
-QSPI_IO2
 Text Label 1750 10700 2    50   ~ 0
-QSPI_IO3
-Text Label 13000 12050 0    50   ~ 0
 QSPI_IO3
 Text HLabel 2400 10400 2    50   BiDi ~ 0
 QSPI_IO[0..3]
@@ -1636,40 +1490,22 @@ Text Label 2350 10400 2    50   ~ 0
 QSPI_IO[0..3]
 Text Notes 19000 7950 0    50   ~ 0
 RMII to ethernet switch
-Text Label 13000 3650 0    50   ~ 0
-RMII_CRS_DV
 Text Label 20350 6700 2    50   ~ 0
 RMII_CRS_DV
-Text Label 13000 6450 0    50   ~ 0
-RMII_MDC
 Text Label 19500 7100 2    50   ~ 0
 RMII_MDC
-Text Label 13000 3150 0    50   ~ 0
-RMII_MDIO
 Text Label 19500 7000 2    50   ~ 0
 RMII_MDIO
-Text Label 13000 3050 0    50   ~ 0
-RMII_REF_CLK
 Text Label 20350 6800 2    50   ~ 0
 RMII_REF_CLK
-Text Label 13000 6750 0    50   ~ 0
-RMII_RXD0
 Text Label 20350 6400 2    50   ~ 0
 RMII_RXD0
-Text Label 13000 6850 0    50   ~ 0
-RMII_RXD1
 Text Label 20350 6500 2    50   ~ 0
 RMII_RXD1
-Text Label 10000 12750 2    50   ~ 0
-RMII_TXD0
 Text Label 19500 6000 2    50   ~ 0
 RMII_TXD0
-Text Label 10000 12650 2    50   ~ 0
-RMII_TXD1
 Text Label 19500 6100 2    50   ~ 0
 RMII_TXD1
-Text Label 10000 12550 2    50   ~ 0
-RMII_TXEN
 Text Label 19500 6200 2    50   ~ 0
 RMII_TXEN
 Text Notes 5000 2800 0    50   ~ 0
@@ -1682,15 +1518,9 @@ Text HLabel 3300 15150 2    50   Output ~ 0
 ROT_SCK
 Text Label 1800 15250 2    50   ~ 0
 ROT_SPI4_MISO
-Text Label 13000 10250 0    50   ~ 0
-ROT_SPI4_MISO
 Text Label 1800 15350 2    50   ~ 0
 ROT_SPI4_MOSI
-Text Label 13000 10350 0    50   ~ 0
-ROT_SPI4_MOSI
 Text Label 1800 15150 2    50   ~ 0
-ROT_SPI4_SCK
-Text Label 13000 9950 0    50   ~ 0
 ROT_SPI4_SCK
 Text Label 20100 9400 0    50   ~ 0
 RS232_CTS
@@ -1706,25 +1536,15 @@ Text HLabel 2750 11550 2    50   Output ~ 0
 SDMMC1_CLK
 Text Label 2700 11550 2    50   ~ 0
 SDMMC1_CLK
-Text Label 13000 7550 0    50   ~ 0
-SDMMC1_CLK
 Text HLabel 2550 11400 2    50   Output ~ 0
 SDMMC1_CMD
 Text Label 2550 11400 2    50   ~ 0
 SDMMC1_CMD
-Text Label 13000 8250 0    50   ~ 0
-SDMMC1_CMD
 Text Label 1750 11250 2    50   ~ 0
-SDMMC1_D0
-Text Label 13000 7150 0    50   ~ 0
 SDMMC1_D0
 Text Label 1750 11350 2    50   ~ 0
 SDMMC1_D1
-Text Label 13000 7250 0    50   ~ 0
-SDMMC1_D1
 Text Label 1750 11450 2    50   ~ 0
-SDMMC1_D2
-Text Label 13000 7350 0    50   ~ 0
 SDMMC1_D2
 Text Label 1750 11550 2    50   ~ 0
 SDMMC1_D3
@@ -1734,15 +1554,9 @@ Text Label 2500 11250 2    50   ~ 0
 SDMMC1_D[0..3]
 Text Label 4350 14750 2    50   ~ 0
 SPI2_MISO
-Text Label 10000 8250 2    50   ~ 0
-SPI2_MISO
 Text Label 4350 14850 2    50   ~ 0
 SPI2_MOSI
-Text Label 10000 8350 2    50   ~ 0
-SPI2_MOSI
 Text Label 4350 14650 2    50   ~ 0
-SPI2_SCK
-Text Label 10000 8150 2    50   ~ 0
 SPI2_SCK
 Text Label 4450 15650 2    50   ~ 0
 SPI6_MISO
@@ -1758,65 +1572,41 @@ Text HLabel 5000 15550 2    50   Output ~ 0
 SPI_ROM_SCK
 Text Label 3700 2300 0    50   ~ 0
 SWD_CLK
-Text Label 13000 4350 0    50   ~ 0
-SWD_CLK
 Text Label 3700 2400 0    50   ~ 0
-SWD_IO
-Text Label 13000 4250 0    50   ~ 0
 SWD_IO
 Text Notes 19400 5900 0    50   ~ 0
 Series drive resistors as\nrecommended by datasheet;\nplace close to CPU
 Text Label 3700 2500 0    50   ~ 0
 TRACESWO
-Text Label 13000 4950 0    50   ~ 0
-TRACESWO
 Text Notes 21400 10650 0    50   ~ 0
 This is a DCE-side version of the old\nPC internal serial port connector,\nwhich is still used on EthanolX. We\nimplement the DCE side so that the\ntwo machines can be connected by\na 10-pin ribbon cable.
-Text Label 13000 4050 0    50   ~ 0
-USART1_CTS
 Text Label 18950 9400 2    50   ~ 0
 USART1_CTS
-Text Label 13000 4150 0    50   ~ 0
-USART1_RTS
 Text Label 18950 9300 2    50   ~ 0
 USART1_RTS
-Text Label 13000 3950 0    50   ~ 0
-USART1_RX
 Text Label 18950 9100 2    50   ~ 0
 USART1_RX
-Text Label 13000 3850 0    50   ~ 0
-USART1_TX
 Text Label 18950 9000 2    50   ~ 0
 USART1_TX
 Text Notes 8850 2100 0    50   ~ 0
 Use MOMENTARY NC\nMust be closed when\npower is on!
-Text Label 13000 6350 0    50   ~ 0
-~ETH_IRQ
 Text Label 20350 7450 2    50   ~ 0
 ~ETH_IRQ
 Text HLabel 2850 9150 2    50   Output ~ 0
 ~FPGA_BL0
 Text Label 2400 9150 2    50   ~ 0
 ~FPGA_BL0
-Text Label 13000 9750 0    50   ~ 0
-~FPGA_BL0
 Text HLabel 2850 9250 2    50   Output ~ 0
 ~FPGA_BL1
 Text Label 2400 9250 2    50   ~ 0
-~FPGA_BL1
-Text Label 13000 9850 0    50   ~ 0
 ~FPGA_BL1
 Text HLabel 2850 8950 2    50   Output ~ 0
 ~FPGA_CE1
 Text Label 2400 8950 2    50   ~ 0
 ~FPGA_CE1
-Text Label 13000 8750 0    50   ~ 0
-~FPGA_CE1
 Text HLabel 2850 9050 2    50   Output ~ 0
 ~FPGA_CE2
 Text Label 2400 9050 2    50   ~ 0
-~FPGA_CE2
-Text Label 10000 12350 2    50   ~ 0
 ~FPGA_CE2
 Text HLabel 5150 14950 2    50   Output ~ 0
 ~FPGA_CS0
@@ -1826,43 +1616,29 @@ Text HLabel 2850 9450 2    50   Input ~ 0
 ~FPGA_IRQ
 Text Label 2400 9450 2    50   ~ 0
 ~FPGA_IRQ
-Text Label 13000 8650 0    50   ~ 0
-~FPGA_IRQ
 Text HLabel 2850 8850 2    50   Output ~ 0
 ~FPGA_LE
 Text Label 2400 8850 2    50   ~ 0
-~FPGA_LE
-Text Label 13000 5350 0    50   ~ 0
 ~FPGA_LE
 Text HLabel 2850 8650 2    50   Output ~ 0
 ~FPGA_OE
 Text Label 2400 8650 2    50   ~ 0
 ~FPGA_OE
-Text Label 13000 8450 0    50   ~ 0
-~FPGA_OE
 Text HLabel 5150 14550 2    50   Output ~ 0
 ~FPGA_RESET
 Text Label 4350 14550 2    50   ~ 0
-~FPGA_RESET
-Text Label 10000 12450 2    50   ~ 0
 ~FPGA_RESET
 Text HLabel 2850 9350 2    50   Output ~ 0
 ~FPGA_WE
 Text Label 2400 9350 2    50   ~ 0
 ~FPGA_WE
-Text Label 13000 8550 0    50   ~ 0
-~FPGA_WE
 Text HLabel 2250 12250 2    50   BiDi ~ 0
 ~I2C1_B_SMBA
 Text Label 1700 12250 2    50   ~ 0
 ~I2C1_B_SMBA
-Text Label 13000 5150 0    50   ~ 0
-~I2C1_B_SMBA
 Text HLabel 2250 13050 2    50   BiDi ~ 0
 ~I2C2_F_SMBA
 Text Label 1700 13050 2    50   ~ 0
-~I2C2_F_SMBA
-Text Label 13000 11650 0    50   ~ 0
 ~I2C2_F_SMBA
 Text HLabel 3900 13050 2    50   BiDi ~ 0
 ~I2C_MUX_SMBA
@@ -1872,33 +1648,21 @@ Text HLabel 4000 12250 2    50   BiDi ~ 0
 ~I2C3_H_SMBA
 Text Label 3450 12250 2    50   ~ 0
 ~I2C3_H_SMBA
-Text Label 10000 10650 2    50   ~ 0
-~I2C3_H_SMBA
 Text HLabel 2250 13850 2    50   BiDi ~ 0
 ~I2C4_D_SMBA
 Text Label 1700 13850 2    50   ~ 0
 ~I2C4_D_SMBA
-Text Label 13000 9150 0    50   ~ 0
-~I2C4_D_SMBA
-Text Label 13000 12750 0    50   ~ 0
-~I2C4_F_SMBA
 Text HLabel 3950 13900 2    50   BiDi ~ 0
 ~I2C4_H_SMBA
 Text Label 3400 13900 2    50   ~ 0
-~I2C4_H_SMBA
-Text Label 10000 10750 2    50   ~ 0
 ~I2C4_H_SMBA
 Text HLabel 2400 10700 2    50   Output ~ 0
 ~QSPI_CS
 Text Label 2400 10700 2    50   ~ 0
 ~QSPI_CS
-Text Label 13000 5250 0    50   ~ 0
-~QSPI_CS
 Text HLabel 2400 10850 2    50   Output ~ 0
 ~QSPI_RESET
 Text Label 2400 10850 2    50   ~ 0
-~QSPI_RESET
-Text Label 13000 11950 0    50   ~ 0
 ~QSPI_RESET
 Text HLabel 3300 15050 2    50   Output ~ 0
 ~RESET
@@ -1916,23 +1680,13 @@ Text HLabel 3300 15550 2    50   Output ~ 0
 ~ROT_IRQ
 Text Label 1800 15550 2    50   ~ 0
 ~ROT_IRQ
-Text Label 13000 10050 0    50   ~ 0
-~ROT_IRQ
 Text Label 1800 15450 2    50   ~ 0
 ~ROT_SPI4_CS
-Text Label 13000 10150 0    50   ~ 0
-~ROT_SPI4_CS
-Text Label 13000 3750 0    50   ~ 0
-~RS232_SHDN
 Text Label 17700 9750 2    50   ~ 0
 ~RS232_SHDN
 Text Label 4350 14950 2    50   ~ 0
 ~SPI2_CS0
-Text Label 10000 8050 2    50   ~ 0
-~SPI2_CS0
 Text Label 4350 15050 2    50   ~ 0
-~SPI2_CS1
-Text Label 10000 11250 2    50   ~ 0
 ~SPI2_CS1
 Text Label 4450 15850 2    50   ~ 0
 ~SPI6_CS
@@ -1941,8 +1695,6 @@ Text HLabel 5000 15850 2    50   Output ~ 0
 Text HLabel 5000 15450 2    50   Output ~ 0
 ~SPI_ROM_PROG
 Text Label 4450 15450 2    50   ~ 0
-~SPI_ROM_PROG
-Text Label 13000 3250 0    50   ~ 0
 ~SPI_ROM_PROG
 Wire Wire Line
 	1700 12050 2250 12050
@@ -2195,93 +1947,27 @@ Wire Wire Line
 Wire Wire Line
 	10600 2450 10600 2650
 Wire Wire Line
-	10700 2650 10800 2650
-Wire Wire Line
 	10800 2450 10600 2450
-Wire Wire Line
-	10800 2650 10900 2650
-Wire Wire Line
-	10800 13250 10900 13250
-Wire Wire Line
-	10900 2650 11000 2650
-Wire Wire Line
-	10900 13250 11000 13250
-Wire Wire Line
-	11000 2650 11100 2650
-Wire Wire Line
-	11000 13250 11100 13250
 Wire Wire Line
 	11100 2450 11350 2450
 Wire Wire Line
-	11100 2650 11200 2650
-Wire Wire Line
-	11100 13250 11200 13250
-Wire Wire Line
-	11200 2650 11300 2650
-Wire Wire Line
-	11200 13250 11300 13250
-Wire Wire Line
-	11300 2650 11350 2650
-Wire Wire Line
-	11300 13250 11400 13250
-Wire Wire Line
-	11350 2200 11350 2300
+	11350 2100 11350 2300
 Wire Wire Line
 	11350 2300 11350 2450
 Wire Wire Line
 	11350 2450 11350 2650
 Wire Wire Line
-	11350 2650 11400 2650
+	11350 11700 11350 11550
 Wire Wire Line
-	11400 2650 11500 2650
+	11700 2300 11350 2300
 Wire Wire Line
-	11400 13250 11450 13250
+	12000 11550 12000 11700
 Wire Wire Line
-	11450 13250 11500 13250
+	12000 11700 11350 11700
 Wire Wire Line
-	11450 13400 11450 13250
+	12200 2300 12200 2100
 Wire Wire Line
-	11500 2650 11600 2650
-Wire Wire Line
-	11500 13250 11600 13250
-Wire Wire Line
-	11600 2650 11700 2650
-Wire Wire Line
-	11600 13250 11700 13250
-Wire Wire Line
-	11700 2650 11800 2650
-Wire Wire Line
-	11700 13250 11800 13250
-Wire Wire Line
-	11750 2300 11350 2300
-Wire Wire Line
-	11800 2650 11900 2650
-Wire Wire Line
-	11800 13250 11900 13250
-Wire Wire Line
-	11900 2650 12000 2650
-Wire Wire Line
-	11900 13250 12000 13250
-Wire Wire Line
-	11950 2300 12150 2300
-Wire Wire Line
-	12000 2650 12100 2650
-Wire Wire Line
-	12000 13250 12100 13250
-Wire Wire Line
-	12100 2650 12200 2650
-Wire Wire Line
-	12150 2300 12400 2300
-Wire Wire Line
-	12200 2650 12300 2650
-Wire Wire Line
-	12200 13250 12200 13400
-Wire Wire Line
-	12200 13400 11450 13400
-Wire Wire Line
-	12400 2300 12400 2200
-Wire Wire Line
-	12400 2650 12400 2300
+	12200 2650 12200 2300
 Wire Wire Line
 	17900 9550 17950 9550
 Wire Wire Line
@@ -2499,40 +2185,11 @@ Connection ~ 8950 3550
 Connection ~ 9400 3450
 Connection ~ 10600 2250
 Connection ~ 10600 2450
-Connection ~ 10800 2650
-Connection ~ 10900 2650
-Connection ~ 10900 13250
-Connection ~ 11000 2650
-Connection ~ 11000 13250
-Connection ~ 11100 2650
-Connection ~ 11100 13250
-Connection ~ 11200 2650
-Connection ~ 11200 13250
-Connection ~ 11300 2650
-Connection ~ 11300 13250
 Connection ~ 11350 2300
 Connection ~ 11350 2450
-Connection ~ 11350 2650
-Connection ~ 11400 2650
-Connection ~ 11400 13250
-Connection ~ 11450 13250
-Connection ~ 11450 13400
-Connection ~ 11500 2650
-Connection ~ 11500 13250
-Connection ~ 11600 2650
-Connection ~ 11600 13250
-Connection ~ 11700 2650
-Connection ~ 11700 13250
-Connection ~ 11800 2650
-Connection ~ 11800 13250
-Connection ~ 11900 2650
-Connection ~ 11900 13250
-Connection ~ 12000 2650
-Connection ~ 12000 13250
-Connection ~ 12100 2650
-Connection ~ 12150 2300
-Connection ~ 12200 2650
-Connection ~ 12400 2300
+Connection ~ 11350 11550
+Connection ~ 11350 11700
+Connection ~ 12200 2300
 Connection ~ 17950 9550
 Connection ~ 17950 9750
 Connection ~ 19350 8400
@@ -2547,50 +2204,6 @@ Connection ~ 22100 3600
 Connection ~ 21400 2500
 Connection ~ 21400 2700
 NoConn ~ 2800 2600
-NoConn ~ 10000 6150
-NoConn ~ 10000 6950
-NoConn ~ 10000 7050
-NoConn ~ 10000 7150
-NoConn ~ 10000 7250
-NoConn ~ 10000 7550
-NoConn ~ 10000 7650
-NoConn ~ 10000 7750
-NoConn ~ 10000 7850
-NoConn ~ 10000 8450
-NoConn ~ 10000 8550
-NoConn ~ 10000 8650
-NoConn ~ 10000 8750
-NoConn ~ 10000 9250
-NoConn ~ 10000 9350
-NoConn ~ 10000 9450
-NoConn ~ 10000 9550
-NoConn ~ 10000 9950
-NoConn ~ 10000 10050
-NoConn ~ 10000 11050
-NoConn ~ 10000 11150
-NoConn ~ 10000 11550
-NoConn ~ 10000 12150
-NoConn ~ 10000 12250
-NoConn ~ 10000 12950
-NoConn ~ 13000 2950
-NoConn ~ 13000 4450
-NoConn ~ 13000 4650
-NoConn ~ 13000 4750
-NoConn ~ 13000 4850
-NoConn ~ 13000 5050
-NoConn ~ 13000 5650
-NoConn ~ 13000 5750
-NoConn ~ 13000 5850
-NoConn ~ 13000 5950
-NoConn ~ 13000 6050
-NoConn ~ 13000 6150
-NoConn ~ 13000 6650
-NoConn ~ 13000 6950
-NoConn ~ 13000 7050
-NoConn ~ 13000 7650
-NoConn ~ 13000 11750
-NoConn ~ 13000 12550
-NoConn ~ 13000 12650
 NoConn ~ 18950 9800
 NoConn ~ 21350 9700
 NoConn ~ 21350 10000
@@ -2651,268 +2264,12 @@ Wire Notes Line
 	22800 5600 22800 8000
 Wire Notes Line
 	22800 8000 18950 8000
-Text Label 13000 6550 0    50   ~ 0
-~ETH_RESET
 Wire Wire Line
 	21800 3600 22100 3600
 Wire Wire Line
 	21400 3600 21600 3600
-NoConn ~ 8250 11850
-Text Label 8750 12050 0    50   ~ 0
-PG4
-Text Label 8750 11950 0    50   ~ 0
-PG3
-Text Label 8750 11850 0    50   ~ 0
-PG2
-Text Label 8750 11750 0    50   ~ 0
-PG1
-Text Label 8750 11650 0    50   ~ 0
-PG0
-$Comp
-L power:GND #PWR0338
-U 1 1 5FE1DD44
-P 8150 12100
-F 0 "#PWR0338" H 8150 11850 50  0001 C CNN
-F 1 "GND" H 8155 11927 50  0000 C CNN
-F 2 "" H 8150 12100 50  0001 C CNN
-F 3 "" H 8150 12100 50  0001 C CNN
-	1    8150 12100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0337
-U 1 1 5FE1D1B6
-P 8250 11500
-F 0 "#PWR0337" H 8250 11350 50  0001 C CNN
-F 1 "+3V3" H 8265 11673 50  0000 C CNN
-F 2 "" H 8250 11500 50  0001 C CNN
-F 3 "" H 8250 11500 50  0001 C CNN
-	1    8250 11500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J304
-U 1 1 5FBE11F6
-P 8550 11750
-F 0 "J304" H 8600 12050 50  0000 C CNN
-F 1 "AUX_HDR_G" H 8600 11950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD" H 8550 11750 50  0001 C CNN
-F 3 "~" H 8550 11750 50  0001 C CNN
-F 4 "Amphenol ICC" H 8550 11750 50  0001 C CNN "Mfg"
-F 5 "54202-S08-04" H 8550 11750 50  0001 C CNN "Mfg Part Num"
-F 6 "215-00026" H 8550 11750 50  0001 C CNN "CPN"
-	1    8550 11750
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 10000 6850
-NoConn ~ 10000 10150
-NoConn ~ 10000 10250
-NoConn ~ 10000 10350
-Text Label 10000 11450 2    50   ~ 0
-I2C_MUX_ENABLE
 Text Label 2400 8750 2    50   ~ 0
 FPGA_CLKx
-Text Label 13000 8350 0    50   ~ 0
-FPGA_CLKx
-Text Label 13000 7450 0    50   ~ 0
-SDMMC1_D3
-Wire Wire Line
-	8250 12050 8250 11950
-Wire Wire Line
-	8250 11750 8150 11750
-Wire Wire Line
-	8150 11750 8150 12100
-Wire Wire Line
-	8250 11500 8250 11650
-Wire Wire Line
-	8150 6750 8150 6650
-Wire Wire Line
-	8150 6450 8050 6450
-Wire Wire Line
-	8050 6450 8050 6800
-NoConn ~ 8150 6550
-Wire Wire Line
-	8150 6350 8150 6250
-$Comp
-L Device:R R323
-U 1 1 5F5FE9FE
-P 9100 6350
-F 0 "R323" V 9150 6200 50  0000 C CNN
-F 1 "22R" V 9100 6350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 6350 50  0001 C CNN
-F 3 "~" H 9100 6350 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9100 6350 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9100 6350 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9100 6350 50  0001 C CNN "CPN"
-	1    9100 6350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R330
-U 1 1 5F6004B9
-P 9100 6450
-F 0 "R330" V 9150 6300 50  0000 C CNN
-F 1 "22R" V 9100 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 6450 50  0001 C CNN
-F 3 "~" H 9100 6450 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9100 6450 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9100 6450 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9100 6450 50  0001 C CNN "CPN"
-	1    9100 6450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R331
-U 1 1 5F600685
-P 9100 6550
-F 0 "R331" V 9150 6400 50  0000 C CNN
-F 1 "22R" V 9100 6550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 6550 50  0001 C CNN
-F 3 "~" H 9100 6550 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9100 6550 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9100 6550 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9100 6550 50  0001 C CNN "CPN"
-	1    9100 6550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R332
-U 1 1 5F6008B0
-P 9100 6650
-F 0 "R332" V 9150 6500 50  0000 C CNN
-F 1 "22R" V 9100 6650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 6650 50  0001 C CNN
-F 3 "~" H 9100 6650 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9100 6650 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9100 6650 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9100 6650 50  0001 C CNN "CPN"
-	1    9100 6650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R333
-U 1 1 5F600CA1
-P 9100 6750
-F 0 "R333" V 9150 6600 50  0000 C CNN
-F 1 "22R" V 9100 6750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 6750 50  0001 C CNN
-F 3 "~" H 9100 6750 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9100 6750 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9100 6750 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9100 6750 50  0001 C CNN "CPN"
-	1    9100 6750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8650 6350 8950 6350
-Wire Wire Line
-	8650 6450 8950 6450
-Wire Wire Line
-	8650 6550 8950 6550
-Wire Wire Line
-	8650 6650 8950 6650
-Wire Wire Line
-	8150 6750 8950 6750
-Wire Wire Line
-	9250 6350 10000 6350
-Wire Wire Line
-	9250 6450 10000 6450
-Wire Wire Line
-	9250 6550 10000 6550
-Wire Wire Line
-	9250 6650 10000 6650
-Wire Wire Line
-	9250 6750 10000 6750
-$Comp
-L Device:R R334
-U 1 1 5F742B02
-P 9150 11650
-F 0 "R334" V 9200 11500 50  0000 C CNN
-F 1 "22R" V 9150 11650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 11650 50  0001 C CNN
-F 3 "~" H 9150 11650 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9150 11650 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9150 11650 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9150 11650 50  0001 C CNN "CPN"
-	1    9150 11650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R335
-U 1 1 5F74419E
-P 9150 11750
-F 0 "R335" V 9200 11600 50  0000 C CNN
-F 1 "22R" V 9150 11750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 11750 50  0001 C CNN
-F 3 "~" H 9150 11750 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9150 11750 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9150 11750 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9150 11750 50  0001 C CNN "CPN"
-	1    9150 11750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R336
-U 1 1 5F744507
-P 9150 11850
-F 0 "R336" V 9200 11700 50  0000 C CNN
-F 1 "22R" V 9150 11850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 11850 50  0001 C CNN
-F 3 "~" H 9150 11850 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9150 11850 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9150 11850 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9150 11850 50  0001 C CNN "CPN"
-	1    9150 11850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R337
-U 1 1 5F74477E
-P 9150 11950
-F 0 "R337" V 9200 11800 50  0000 C CNN
-F 1 "22R" V 9150 11950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 11950 50  0001 C CNN
-F 3 "~" H 9150 11950 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9150 11950 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9150 11950 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9150 11950 50  0001 C CNN "CPN"
-	1    9150 11950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R338
-U 1 1 5F744A61
-P 9150 12050
-F 0 "R338" V 9200 11900 50  0000 C CNN
-F 1 "22R" V 9150 12050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 12050 50  0001 C CNN
-F 3 "~" H 9150 12050 50  0001 C CNN
-F 4 "CR0603-JW-220ELF" H 9150 12050 50  0001 C CNN "Mfg Part Num"
-F 5 "Bourns" H 9150 12050 50  0001 C CNN "Mfg"
-F 6 "232-00019" H 9150 12050 50  0001 C CNN "CPN"
-	1    9150 12050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8750 11650 9000 11650
-Wire Wire Line
-	8750 11750 9000 11750
-Wire Wire Line
-	8750 11850 9000 11850
-Wire Wire Line
-	8750 11950 9000 11950
-Wire Wire Line
-	8250 12050 9000 12050
-Wire Wire Line
-	9300 11650 10000 11650
-Wire Wire Line
-	9300 11750 10000 11750
-Wire Wire Line
-	9300 11850 10000 11850
-Wire Wire Line
-	9300 11950 10000 11950
-Wire Wire Line
-	9300 12050 10000 12050
 Wire Wire Line
 	9600 2250 10150 2250
 $Comp
@@ -3308,23 +2665,480 @@ F 7 "3.3V" H 18150 1600 50  0001 C CNN "C_Vbias"
 	1    18150 1600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10000 5750
-NoConn ~ 10000 5850
-NoConn ~ 10000 5950
-NoConn ~ 10000 6050
-Text Label 13000 3350 0    50   ~ 0
+Text Notes 12450 2750 0    50   ~ 0
+Design assumes we're not\nusing USB.
+Text Label 12800 9450 0    50   ~ 0
+FPGA_DA0
+Text Label 12800 9550 0    50   ~ 0
+FPGA_DA1
+Text Label 12800 11050 0    50   ~ 0
+FPGA_DA10
+Text Label 12800 11150 0    50   ~ 0
+FPGA_DA11
+Text Label 12800 11250 0    50   ~ 0
+FPGA_DA12
+Text Label 12800 8850 0    50   ~ 0
+FPGA_DA13
+Text Label 12800 8950 0    50   ~ 0
+FPGA_DA14
+Text Label 12800 9050 0    50   ~ 0
+FPGA_DA15
+Text Label 12800 8050 0    50   ~ 0
+FPGA_DA2
+Text Label 12800 8150 0    50   ~ 0
+FPGA_DA3
+Text Label 12800 10450 0    50   ~ 0
+FPGA_DA4
+Text Label 12800 10550 0    50   ~ 0
+FPGA_DA5
+Text Label 12800 10650 0    50   ~ 0
+FPGA_DA6
+Text Label 12800 10750 0    50   ~ 0
+FPGA_DA7
+Text Label 12800 10850 0    50   ~ 0
+FPGA_DA8
+Text Label 12800 10950 0    50   ~ 0
+FPGA_DA9
+Text Label 12800 5450 0    50   ~ 0
+I2C1_B_SCL
+Text Label 12800 5550 0    50   ~ 0
+I2C1_B_SDA
+Text Label 10000 9850 2    50   ~ 0
+I2C2_F_SCL
+Text Label 10000 9750 2    50   ~ 0
+I2C2_F_SDA
+Text Label 10000 7050 2    50   ~ 0
+I2C3_H_SCL
+Text Label 10000 7150 2    50   ~ 0
+I2C3_H_SDA
+Text Label 12800 9250 0    50   ~ 0
+I2C4_D_SCL
+Text Label 12800 9350 0    50   ~ 0
+I2C4_D_SDA
+Text Label 10000 11150 2    50   ~ 0
+I2C4_F_SCL
+Text Label 10000 11250 2    50   ~ 0
+I2C4_F_SDA
+Text Label 10000 7450 2    50   ~ 0
+I2C4_H_SCL
+Text Label 10000 7550 2    50   ~ 0
+I2C4_H_SDA
+Text Label 10000 5850 2    50   ~ 0
+LED0
+Text Label 10000 5950 2    50   ~ 0
+LED1
+Text Label 10000 6050 2    50   ~ 0
+LED2
+Text Label 10000 6150 2    50   ~ 0
+LED3
+Text Label 12800 7750 0    50   ~ 0
+OSC32_IN
+Text Label 12800 7850 0    50   ~ 0
+OSC32_OUT
+Text Label 10000 6350 2    50   ~ 0
+OSC_IN
+Text Label 10000 6450 2    50   ~ 0
+OSC_OUT
+Text Label 10000 10750 2    50   ~ 0
+QSPI_CLKx
+Text Label 10000 10150 2    50   ~ 0
+QSPI_HOST_ACCESS
+Text Label 10000 10550 2    50   ~ 0
+QSPI_IO0
+Text Label 10000 10650 2    50   ~ 0
+QSPI_IO1
+Text Label 10000 10450 2    50   ~ 0
+QSPI_IO2
+Text Label 10000 10350 2    50   ~ 0
+QSPI_IO3
+Text Label 12800 3650 0    50   ~ 0
+RMII_CRS_DV
+Text Label 12800 6450 0    50   ~ 0
+RMII_MDC
+Text Label 12800 3150 0    50   ~ 0
+RMII_MDIO
+Text Label 12800 3050 0    50   ~ 0
+RMII_REF_CLK
+Text Label 12800 6750 0    50   ~ 0
+RMII_RXD0
+Text Label 12800 6850 0    50   ~ 0
+RMII_RXD1
+Text Label 10000 9350 2    50   ~ 0
+RMII_TXD0
+Text Label 10000 9250 2    50   ~ 0
+RMII_TXD1
+Text Label 10000 9150 2    50   ~ 0
+RMII_TXEN
+Text Label 12800 10250 0    50   ~ 0
+ROT_SPI4_MISO
+Text Label 12800 10350 0    50   ~ 0
+ROT_SPI4_MOSI
+Text Label 12800 9950 0    50   ~ 0
+ROT_SPI4_SCK
+Text Label 12800 7550 0    50   ~ 0
+SDMMC1_CLK
+Text Label 12800 8250 0    50   ~ 0
+SDMMC1_CMD
+Text Label 12800 7150 0    50   ~ 0
+SDMMC1_D0
+Text Label 12800 7250 0    50   ~ 0
+SDMMC1_D1
+Text Label 12800 7350 0    50   ~ 0
+SDMMC1_D2
+Text Label 10000 5250 2    50   ~ 0
+SPI2_MISO
+Text Label 10000 5350 2    50   ~ 0
+SPI2_MOSI
+Text Label 10000 5150 2    50   ~ 0
+SPI2_SCK
+Text Label 12800 4350 0    50   ~ 0
+SWD_CLK
+Text Label 12800 4250 0    50   ~ 0
+SWD_IO
+Text Label 12800 4950 0    50   ~ 0
+TRACESWO
+Text Label 12800 4050 0    50   ~ 0
+USART1_CTS
+Text Label 12800 4150 0    50   ~ 0
+USART1_RTS
+Text Label 12800 3950 0    50   ~ 0
+USART1_RX
+Text Label 12800 3850 0    50   ~ 0
+USART1_TX
+Text Label 12800 6350 0    50   ~ 0
+~ETH_IRQ
+Text Label 12800 9750 0    50   ~ 0
+~FPGA_BL0
+Text Label 12800 9850 0    50   ~ 0
+~FPGA_BL1
+Text Label 12800 8750 0    50   ~ 0
+~FPGA_CE1
+Text Label 10000 8950 2    50   ~ 0
+~FPGA_CE2
+Text Label 12800 8650 0    50   ~ 0
+~FPGA_IRQ
+Text Label 12800 5350 0    50   ~ 0
+~FPGA_LE
+Text Label 12800 8450 0    50   ~ 0
+~FPGA_OE
+Text Label 10000 9050 2    50   ~ 0
+~FPGA_RESET
+Text Label 12800 8550 0    50   ~ 0
+~FPGA_WE
+Text Label 12800 5150 0    50   ~ 0
+~I2C1_B_SMBA
+Text Label 10000 9950 2    50   ~ 0
+~I2C2_F_SMBA
+Text Label 10000 7250 2    50   ~ 0
+~I2C3_H_SMBA
+Text Label 12800 9150 0    50   ~ 0
+~I2C4_D_SMBA
+Text Label 10000 11050 2    50   ~ 0
+~I2C4_F_SMBA
+Text Label 10000 7350 2    50   ~ 0
+~I2C4_H_SMBA
+Text Label 12800 5250 0    50   ~ 0
+~QSPI_CS
+Text Label 10000 10250 2    50   ~ 0
+~QSPI_RESET
+Text Label 12800 10050 0    50   ~ 0
+~ROT_IRQ
+Text Label 12800 10150 0    50   ~ 0
+~ROT_SPI4_CS
+Text Label 12800 3750 0    50   ~ 0
+~RS232_SHDN
+Text Label 10000 5050 2    50   ~ 0
+~SPI2_CS0
+Text Label 10000 7850 2    50   ~ 0
+~SPI2_CS1
+Text Label 12800 3250 0    50   ~ 0
+~SPI_ROM_PROG
+Text Label 12800 6550 0    50   ~ 0
+~ETH_RESET
+NoConn ~ 8250 8450
+Text Label 8750 8650 0    50   ~ 0
+PG4
+Text Label 8750 8550 0    50   ~ 0
+PG3
+Text Label 8750 8450 0    50   ~ 0
+PG2
+Text Label 8750 8350 0    50   ~ 0
+PG1
+Text Label 8750 8250 0    50   ~ 0
+PG0
+$Comp
+L power:GND #PWR0338
+U 1 1 5FE1DD44
+P 8150 8700
+F 0 "#PWR0338" H 8150 8450 50  0001 C CNN
+F 1 "GND" H 8155 8527 50  0000 C CNN
+F 2 "" H 8150 8700 50  0001 C CNN
+F 3 "" H 8150 8700 50  0001 C CNN
+	1    8150 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0337
+U 1 1 5FE1D1B6
+P 8250 8100
+F 0 "#PWR0337" H 8250 7950 50  0001 C CNN
+F 1 "+3V3" H 8265 8273 50  0000 C CNN
+F 2 "" H 8250 8100 50  0001 C CNN
+F 3 "" H 8250 8100 50  0001 C CNN
+	1    8250 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J304
+U 1 1 5FBE11F6
+P 8550 8350
+F 0 "J304" H 8600 8650 50  0000 C CNN
+F 1 "AUX_HDR_G" H 8600 8550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD" H 8550 8350 50  0001 C CNN
+F 3 "~" H 8550 8350 50  0001 C CNN
+F 4 "Amphenol ICC" H 8550 8350 50  0001 C CNN "Mfg"
+F 5 "54202-S08-04" H 8550 8350 50  0001 C CNN "Mfg Part Num"
+F 6 "215-00026" H 8550 8350 50  0001 C CNN "CPN"
+	1    8550 8350
+	-1   0    0    -1  
+$EndComp
+Text Label 10000 8050 2    50   ~ 0
+I2C_MUX_ENABLE
+Text Label 12800 8350 0    50   ~ 0
+FPGA_CLKx
+Text Label 12800 7450 0    50   ~ 0
+SDMMC1_D3
+Wire Wire Line
+	8250 8650 8250 8550
+Wire Wire Line
+	8250 8350 8150 8350
+Wire Wire Line
+	8250 8100 8250 8250
+$Comp
+L Device:R R334
+U 1 1 5F742B02
+P 9150 8250
+F 0 "R334" V 9200 8100 50  0000 C CNN
+F 1 "22R" V 9150 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 8250 50  0001 C CNN
+F 3 "~" H 9150 8250 50  0001 C CNN
+F 4 "CR0603-JW-220ELF" H 9150 8250 50  0001 C CNN "Mfg Part Num"
+F 5 "Bourns" H 9150 8250 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 9150 8250 50  0001 C CNN "CPN"
+	1    9150 8250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R335
+U 1 1 5F74419E
+P 9150 8350
+F 0 "R335" V 9200 8200 50  0000 C CNN
+F 1 "22R" V 9150 8350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 8350 50  0001 C CNN
+F 3 "~" H 9150 8350 50  0001 C CNN
+F 4 "CR0603-JW-220ELF" H 9150 8350 50  0001 C CNN "Mfg Part Num"
+F 5 "Bourns" H 9150 8350 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 9150 8350 50  0001 C CNN "CPN"
+	1    9150 8350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R336
+U 1 1 5F744507
+P 9150 8450
+F 0 "R336" V 9200 8300 50  0000 C CNN
+F 1 "22R" V 9150 8450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 8450 50  0001 C CNN
+F 3 "~" H 9150 8450 50  0001 C CNN
+F 4 "CR0603-JW-220ELF" H 9150 8450 50  0001 C CNN "Mfg Part Num"
+F 5 "Bourns" H 9150 8450 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 9150 8450 50  0001 C CNN "CPN"
+	1    9150 8450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R337
+U 1 1 5F74477E
+P 9150 8550
+F 0 "R337" V 9200 8400 50  0000 C CNN
+F 1 "22R" V 9150 8550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 8550 50  0001 C CNN
+F 3 "~" H 9150 8550 50  0001 C CNN
+F 4 "CR0603-JW-220ELF" H 9150 8550 50  0001 C CNN "Mfg Part Num"
+F 5 "Bourns" H 9150 8550 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 9150 8550 50  0001 C CNN "CPN"
+	1    9150 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R338
+U 1 1 5F744A61
+P 9150 8650
+F 0 "R338" V 9200 8500 50  0000 C CNN
+F 1 "22R" V 9150 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 8650 50  0001 C CNN
+F 3 "~" H 9150 8650 50  0001 C CNN
+F 4 "CR0603-JW-220ELF" H 9150 8650 50  0001 C CNN "Mfg Part Num"
+F 5 "Bourns" H 9150 8650 50  0001 C CNN "Mfg"
+F 6 "232-00019" H 9150 8650 50  0001 C CNN "CPN"
+	1    9150 8650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 8250 9000 8250
+Wire Wire Line
+	8750 8350 9000 8350
+Wire Wire Line
+	8750 8450 9000 8450
+Wire Wire Line
+	8750 8550 9000 8550
+Wire Wire Line
+	8250 8650 9000 8650
+Wire Wire Line
+	9300 8250 10000 8250
+Wire Wire Line
+	9300 8350 10000 8350
+Wire Wire Line
+	9300 8450 10000 8450
+Wire Wire Line
+	9300 8550 10000 8550
+Wire Wire Line
+	9300 8650 10000 8650
+Text Label 12800 3350 0    50   ~ 0
 ~SPI6_CS
-Text Label 13000 3450 0    50   ~ 0
+Text Label 12800 3450 0    50   ~ 0
 SPI6_SCK
-Text Label 13000 3550 0    50   ~ 0
+Text Label 12800 3550 0    50   ~ 0
 SPI6_MISO
-Text Label 10000 12850 2    50   ~ 0
+Text Label 10000 9450 2    50   ~ 0
 SPI6_MOSI
-NoConn ~ 10000 7350
-NoConn ~ 10000 7450
-NoConn ~ 10000 5450
-NoConn ~ 10000 5550
+NoConn ~ 12800 2950
+NoConn ~ 12800 4450
+NoConn ~ 12800 4650
+NoConn ~ 12800 4750
+NoConn ~ 12800 4850
+NoConn ~ 12800 5050
+NoConn ~ 12800 5650
+NoConn ~ 12800 5750
+NoConn ~ 12800 5850
+NoConn ~ 12800 5950
+NoConn ~ 12800 6050
+NoConn ~ 12800 6150
+NoConn ~ 12800 7650
+NoConn ~ 12800 7050
+NoConn ~ 12800 6950
+NoConn ~ 12800 6650
+NoConn ~ 10000 10050
+NoConn ~ 10000 10850
+NoConn ~ 10000 10950
+NoConn ~ 10000 9550
+NoConn ~ 10000 8150
+NoConn ~ 10000 8750
+NoConn ~ 10000 8850
+NoConn ~ 10000 6550
+NoConn ~ 10000 6650
+NoConn ~ 10000 6750
+NoConn ~ 10000 6850
+NoConn ~ 10000 6950
+NoConn ~ 10000 7650
+NoConn ~ 10000 7750
+NoConn ~ 10000 5750
 NoConn ~ 10000 5650
+NoConn ~ 10000 5550
+NoConn ~ 10000 5450
+Wire Wire Line
+	11900 2300 12200 2300
+Connection ~ 11350 2650
+Wire Wire Line
+	11350 11550 11300 11550
+Connection ~ 11300 11550
+Wire Wire Line
+	11200 11550 11300 11550
+Connection ~ 11200 11550
+Wire Wire Line
+	11100 11550 11200 11550
+Connection ~ 11100 11550
+Wire Wire Line
+	11000 11550 11100 11550
+Connection ~ 11000 11550
+Wire Wire Line
+	10900 11550 11000 11550
+Wire Wire Line
+	10800 11550 10900 11550
+Connection ~ 10900 11550
+Wire Wire Line
+	11800 11550 11900 11550
+Connection ~ 11800 11550
+Wire Wire Line
+	11700 11550 11800 11550
+Connection ~ 11700 11550
+Wire Wire Line
+	11600 11550 11700 11550
+Connection ~ 11600 11550
+Wire Wire Line
+	11500 11550 11600 11550
+Connection ~ 11500 11550
+Wire Wire Line
+	11350 11550 11400 11550
+Wire Wire Line
+	11400 11550 11500 11550
+Connection ~ 11400 11550
+Wire Wire Line
+	11350 2650 11400 2650
+Connection ~ 11400 2650
+Wire Wire Line
+	11300 2650 11350 2650
+Connection ~ 11300 2650
+Wire Wire Line
+	11200 2650 11300 2650
+Connection ~ 11200 2650
+Wire Wire Line
+	11100 2650 11200 2650
+Connection ~ 11100 2650
+Wire Wire Line
+	11000 2650 11100 2650
+Connection ~ 11000 2650
+Wire Wire Line
+	10900 2650 11000 2650
+Connection ~ 10900 2650
+Wire Wire Line
+	10800 2650 10900 2650
+Wire Wire Line
+	10700 2650 10800 2650
+Connection ~ 10800 2650
+Wire Wire Line
+	12000 2650 12100 2650
+Connection ~ 12000 2650
+Wire Wire Line
+	11900 2650 12000 2650
+Connection ~ 11900 2650
+Wire Wire Line
+	11800 2650 11900 2650
+Connection ~ 11800 2650
+Wire Wire Line
+	11700 2650 11800 2650
+Connection ~ 11700 2650
+Wire Wire Line
+	11600 2650 11700 2650
+Connection ~ 11600 2650
+Wire Wire Line
+	11500 2650 11600 2650
+Wire Wire Line
+	11400 2650 11500 2650
+Connection ~ 11500 2650
+$Comp
+L MCU_ST_STM32H7:STM32H753IITx U301
+U 1 1 611B72C6
+P 11400 7050
+F 0 "U301" H 11400 3850 50  0000 C CNN
+F 1 "STM32H753IITx" H 11400 3750 50  0000 C CNN
+F 2 "Package_QFP:LQFP-176_24x24mm_P0.5mm" H 10200 2750 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00388325.pdf" H 11400 7050 50  0001 C CNN
+	1    11400 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 8350 8150 8700
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
