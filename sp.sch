@@ -1745,17 +1745,11 @@ SPI2_SCK
 Text Label 10000 8150 2    50   ~ 0
 SPI2_SCK
 Text Label 4450 15650 2    50   ~ 0
-SPI5_MISO
-Text Label 10000 7450 2    50   ~ 0
-SPI5_MISO
+SPI6_MISO
 Text Label 4450 15750 2    50   ~ 0
-SPI5_MOSI
-Text Label 10000 7350 2    50   ~ 0
-SPI5_MOSI
+SPI6_MOSI
 Text Label 4450 15550 2    50   ~ 0
-SPI5_SCK
-Text Label 10000 5450 2    50   ~ 0
-SPI5_SCK
+SPI6_SCK
 Text HLabel 5000 15650 2    50   Input ~ 0
 SPI_ROM_MISO
 Text HLabel 5000 15750 2    50   Output ~ 0
@@ -1941,16 +1935,14 @@ Text Label 4350 15050 2    50   ~ 0
 Text Label 10000 11250 2    50   ~ 0
 ~SPI2_CS1
 Text Label 4450 15850 2    50   ~ 0
-~SPI5_CS
-Text Label 10000 5550 2    50   ~ 0
-~SPI5_CS
+~SPI6_CS
 Text HLabel 5000 15850 2    50   Output ~ 0
 ~SPI_ROM_CS
 Text HLabel 5000 15450 2    50   Output ~ 0
 ~SPI_ROM_PROG
 Text Label 4450 15450 2    50   ~ 0
 ~SPI_ROM_PROG
-Text Label 10000 5650 2    50   ~ 0
+Text Label 13000 3250 0    50   ~ 0
 ~SPI_ROM_PROG
 Wire Wire Line
 	1700 12050 2250 12050
@@ -2581,10 +2573,6 @@ NoConn ~ 10000 12150
 NoConn ~ 10000 12250
 NoConn ~ 10000 12950
 NoConn ~ 13000 2950
-NoConn ~ 13000 3250
-NoConn ~ 13000 3350
-NoConn ~ 13000 3450
-NoConn ~ 13000 3550
 NoConn ~ 13000 4450
 NoConn ~ 13000 4650
 NoConn ~ 13000 4750
@@ -2669,7 +2657,6 @@ Wire Wire Line
 	21800 3600 22100 3600
 Wire Wire Line
 	21400 3600 21600 3600
-NoConn ~ 10000 12850
 NoConn ~ 8250 11850
 Text Label 8750 12050 0    50   ~ 0
 PG4
@@ -3325,6 +3312,19 @@ NoConn ~ 10000 5750
 NoConn ~ 10000 5850
 NoConn ~ 10000 5950
 NoConn ~ 10000 6050
+Text Label 13000 3350 0    50   ~ 0
+~SPI6_CS
+Text Label 13000 3450 0    50   ~ 0
+SPI6_SCK
+Text Label 13000 3550 0    50   ~ 0
+SPI6_MISO
+Text Label 10000 12850 2    50   ~ 0
+SPI6_MOSI
+NoConn ~ 10000 7350
+NoConn ~ 10000 7450
+NoConn ~ 10000 5450
+NoConn ~ 10000 5550
+NoConn ~ 10000 5650
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
