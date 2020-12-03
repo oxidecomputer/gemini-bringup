@@ -1554,19 +1554,19 @@ Text Notes 12250 13300 0    50   ~ 0
 Isolating VSSA would improve\nanalog performance.
 Text Label 2350 4000 2    50   ~ 0
 LED0
-Text Label 10000 5750 2    50   ~ 0
+Text Label 10000 8850 2    50   ~ 0
 LED0
 Text Label 2350 4200 2    50   ~ 0
 LED1
-Text Label 10000 5850 2    50   ~ 0
+Text Label 10000 8950 2    50   ~ 0
 LED1
 Text Label 2350 4400 2    50   ~ 0
 LED2
-Text Label 10000 5950 2    50   ~ 0
+Text Label 10000 9050 2    50   ~ 0
 LED2
 Text Label 2350 4600 2    50   ~ 0
 LED3
-Text Label 10000 6050 2    50   ~ 0
+Text Label 10000 9150 2    50   ~ 0
 LED3
 Text Notes 4150 2350 0    50   ~ 0
 Note: STM32H7 has internal pull\nresistors on SWD lines and reset\nso we don't need to add them here.
@@ -2568,10 +2568,6 @@ NoConn ~ 10000 8450
 NoConn ~ 10000 8550
 NoConn ~ 10000 8650
 NoConn ~ 10000 8750
-NoConn ~ 10000 8850
-NoConn ~ 10000 8950
-NoConn ~ 10000 9050
-NoConn ~ 10000 9150
 NoConn ~ 10000 9250
 NoConn ~ 10000 9350
 NoConn ~ 10000 9450
@@ -3325,6 +3321,10 @@ F 7 "3.3V" H 18150 1600 50  0001 C CNN "C_Vbias"
 	1    18150 1600
 	1    0    0    -1  
 $EndComp
+NoConn ~ 10000 5750
+NoConn ~ 10000 5850
+NoConn ~ 10000 5950
+NoConn ~ 10000 6050
 Wire Bus Line
 	1900 11250 1900 11650
 Wire Bus Line
