@@ -1486,10 +1486,6 @@ Text Label 1700 12050 2    50   ~ 0
 I2C1_B_SDA
 Text Label 13000 5550 0    50   ~ 0
 I2C1_B_SDA
-Text Label 13000 5650 0    50   ~ 0
-I2C2_B_SCL
-Text Label 13000 5750 0    50   ~ 0
-I2C2_B_SDA
 Text HLabel 2250 12950 2    50   BiDi ~ 0
 I2C2_F_SCL
 Text Label 1700 12950 2    50   ~ 0
@@ -1510,14 +1506,10 @@ Text HLabel 3900 12950 2    50   BiDi ~ 0
 I2C_MUX_SCL
 Text Label 3350 12950 2    50   ~ 0
 I2C4_F_SCL
-Text Label 10000 10150 2    50   ~ 0
-I2C2_H_SCL
 Text HLabel 3900 12850 2    50   BiDi ~ 0
 I2C_MUX_SDA
 Text Label 3350 12850 2    50   ~ 0
 I2C4_F_SDA
-Text Label 10000 10250 2    50   ~ 0
-I2C2_H_SDA
 Text HLabel 4000 12150 2    50   BiDi ~ 0
 I2C3_H_SCL
 Text Label 3450 12150 2    50   ~ 0
@@ -1786,16 +1778,6 @@ Text Label 13000 4950 0    50   ~ 0
 TRACESWO
 Text Notes 21400 10650 0    50   ~ 0
 This is a DCE-side version of the old\nPC internal serial port connector,\nwhich is still used on EthanolX. We\nimplement the DCE side so that the\ntwo machines can be connected by\na 10-pin ribbon cable.
-Text Label 10000 11150 2    50   ~ 0
-UART4_RX
-Text Label 10000 11050 2    50   ~ 0
-UART4_TX
-Text Label 13000 4450 0    50   ~ 0
-UART7_TX
-Text Label 10000 7250 2    50   ~ 0
-UART8_RX
-Text Label 10000 7150 2    50   ~ 0
-UART8_TX
 Text Label 13000 4050 0    50   ~ 0
 USART1_CTS
 Text Label 18950 9400 2    50   ~ 0
@@ -1812,10 +1794,6 @@ Text Label 13000 3850 0    50   ~ 0
 USART1_TX
 Text Label 18950 9000 2    50   ~ 0
 USART1_TX
-Text Label 13000 7050 0    50   ~ 0
-USART6_RX
-Text Label 13000 6950 0    50   ~ 0
-USART6_TX
 Text Notes 8850 2100 0    50   ~ 0
 Use MOMENTARY NC\nMust be closed when\npower is on!
 Text Label 13000 6350 0    50   ~ 0
@@ -1886,8 +1864,6 @@ Text Label 1700 12250 2    50   ~ 0
 ~I2C1_B_SMBA
 Text Label 13000 5150 0    50   ~ 0
 ~I2C1_B_SMBA
-Text Label 13000 5850 0    50   ~ 0
-~I2C2_B_SMBA
 Text HLabel 2250 13050 2    50   BiDi ~ 0
 ~I2C2_F_SMBA
 Text Label 1700 13050 2    50   ~ 0
@@ -1898,8 +1874,6 @@ Text HLabel 3900 13050 2    50   BiDi ~ 0
 ~I2C_MUX_SMBA
 Text Label 3350 13050 2    50   ~ 0
 ~I2C4_F_SMBA
-Text Label 10000 10350 2    50   ~ 0
-~I2C2_H_SMBA
 Text HLabel 4000 12250 2    50   BiDi ~ 0
 ~I2C3_H_SMBA
 Text Label 3450 12250 2    50   ~ 0
