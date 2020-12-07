@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "LPC55 Carrier"
-Date ""
-Rev ""
+Date "2020-12-07"
+Rev "1"
 Comp "Oxide Computer"
 Comment1 "P/N: 913-00002"
 Comment2 ""

@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 3 15
 Title "Service Processor"
-Date ""
-Rev ""
+Date "2020-12-07"
+Rev "1"
 Comp "Oxide Computer"
 Comment1 "P/N: 913-00001"
 Comment2 ""

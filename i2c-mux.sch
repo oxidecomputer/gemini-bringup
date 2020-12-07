@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 15
 Title "Muxed external I2C"
-Date ""
-Rev ""
+Date "2020-12-07"
+Rev "1"
 Comp "Oxide Computer"
 Comment1 "P/N: 913-00001"
 Comment2 ""
