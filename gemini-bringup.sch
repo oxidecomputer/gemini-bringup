@@ -644,7 +644,7 @@ U 1 1 5F768622
 P 3200 1300
 F 0 "H112" H 3200 1150 50  0000 C CNN
 F 1 "913-00001" H 3200 1050 50  0000 C CNN
-F 2 "grumpy:Oxide_Board_Identifier_30.5x9mm" H 3200 950 50  0000 C CNN
+F 2 "grumpy:Oxide_Board_Identifier_33x7mm" H 3200 950 50  0000 C CNN
 F 3 "~" H 3200 1300 50  0001 C CNN
 	1    3200 1300
 	1    0    0    -1  
