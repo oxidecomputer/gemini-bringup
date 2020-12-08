@@ -3123,6 +3123,8 @@ F 1 "STM32H753IITx" H 11400 3750 50  0000 C CNN
 F 2 "Package_QFP:LQFP-176_24x24mm_P0.5mm" H 10200 2750 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00388325.pdf" H 11400 7050 50  0001 C CNN
 F 4 "221-00030" H 11400 7050 50  0001 C CNN "CPN"
+F 5 "STM32H753IIT6" H 11400 7050 50  0001 C CNN "MPN"
+F 6 "STMicroelectronics" H 11400 7050 50  0001 C CNN "Mfg"
 	1    11400 7050
 	1    0    0    -1  
 $EndComp
