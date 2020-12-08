@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 15
-Title ""
+Title "Muxed external I2C"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Oxide Computer"
+Comment1 "P/N: 913-00001"
 Comment2 ""
 Comment3 ""
 Comment4 ""

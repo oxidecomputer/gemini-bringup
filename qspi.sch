@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 15
-Title ""
+Title "Quad SPI Flash"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Oxide Computer"
+Comment1 "P/N: 913-00001"
 Comment2 ""
 Comment3 ""
 Comment4 ""
