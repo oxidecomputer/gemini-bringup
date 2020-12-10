@@ -1,6 +1,6 @@
-update=Sun 06 Dec 2020 22:44:22 PST
+update=Thu 10 Dec 2020 11:44:46 PST
 version=1
-last_client=kicad
+last_client=pcbnew
 [general]
 version=1
 RootSch=
@@ -37,10 +37,10 @@ ViaDrill1=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
-SilkLineWidth=0.12
-SilkTextSizeV=0.75
-SilkTextSizeH=0.75
-SilkTextSizeThickness=0.09999999999999999
+SilkLineWidth=0.127
+SilkTextSizeV=0.635
+SilkTextSizeH=0.635
+SilkTextSizeThickness=0.127
 SilkTextItalic=0
 SilkTextUpright=1
 CopperLineWidth=0.2
