@@ -20,6 +20,43 @@ which will create spurious changes to your copy of the repo and prevent
 subsequent pull/rebase/merge/push operations from working as desired.
 
 
+# Shopping list
+
+The following items are included with the initial kit; if you are building one
+of these later you will need to acquire them on your own.
+
+- A power supply (should have been included, we bought a batch, but if you have
+  to go out on your own: 12V 2+A depending on how many fans you want to run;
+  5.5mm OD / 2.1mm ID barrel)
+
+You will also need the following:
+
+- A USB-to-TTL-serial adapter, ideally one ending in loose Dupont wires so it
+  doesn't have a fixed pinout. If you don't already have one, we have 10 of them
+  we can distribute.
+
+- A SWD tool that can program the STM32H7.
+  - [STLink
+    V3](https://www.amazon.com/STLINK-V3-Modular-Circuit-debugger-Programmer/dp/B07KPMK8VX/)
+    is the nicest but will only talk to ST parts. If you plan on doing heavy
+    development on the STM32H7 this is a good thing to acquire.
+  - [STLink
+    V2](https://www.amazon.com/Microcontrollers-circuit-debugger-programmer-emulator/dp/B00C7WDTLG/)
+    works pretty well but will need an adapter board or cable to go from the
+    old-style 20pin connector to the modern 10pin connectr, something like
+    [this](https://www.amazon.com/ARM-JTAG-20-10-ARM-Micro-JTAG-adapter/dp/B009UEO9ZY).
+  - Cheaper STLink clones are also probably fine.
+  - The MCU-Link discussed below _might_ work but we haven't tested it yet.
+
+- A SWD tool that can program the LPC55S, if you expect to be doing that.
+  - The STLink/V2 will do it with the adapter board; the STLink/V3 will **not**.
+  - NXP's recently launched
+    [MCU-Link](https://www.nxp.com/design/development-boards/lpcxpresso-boards/jtag-swd-debug-probe:MCU-LINK)
+    looks like it's compatible with our tooling but we haven't tested it.
+  - NXP's previous-gen LPC-Link2 board will work if you can still find it.
+
+- A logic analyzer is never a _bad_ idea. We like the Saleae Logic.
+
 # Schematic Checklist
 
 ## Gemini Bringup
