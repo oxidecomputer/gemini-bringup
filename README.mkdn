@@ -29,31 +29,89 @@ of these later you will need to acquire them on your own.
   to go out on your own: 12V 2+A depending on how many fans you want to run;
   5.5mm OD / 2.1mm ID barrel)
 
-You will also need the following:
-
-- A USB-to-TTL-serial adapter, ideally one ending in loose Dupont wires so it
-  doesn't have a fixed pinout. If you don't already have one, we have 10 of them
-  we can distribute.
+You will need to separately acquire the following to be able to program all the
+micros:
 
 - A SWD tool that can program the STM32H7.
-  - [STLink
-    V3](https://www.amazon.com/STLINK-V3-Modular-Circuit-debugger-Programmer/dp/B07KPMK8VX/)
+  - [STLink V3](https://www.amazon.com/STLINK-V3-Modular-Circuit-debugger-Programmer/dp/B07KPMK8VX/)
     is the nicest but will only talk to ST parts. We're trying to standardize on
     this.
-  - [STLink
-    V2](https://www.amazon.com/Microcontrollers-circuit-debugger-programmer-emulator/dp/B00C7WDTLG/)
+  - [STLink V2](https://www.amazon.com/Microcontrollers-circuit-debugger-programmer-emulator/dp/B00C7WDTLG/)
     in a pinch, e.g. if the V3 is unavailable. Needs an adapter from the
-    old-style 20pin connector to the modern 10pin connectr, something like
+    old-style 20pin connector to the modern 10pin connector, something like
     [this](https://www.amazon.com/ARM-JTAG-20-10-ARM-Micro-JTAG-adapter/dp/B009UEO9ZY).
 
-- A SWD tool that can program the LPC55S, if you expect to be doing that.
-  - The STLink/V2 will do it with the adapter board; the STLink/V3 will **not**.
-  - NXP's recently launched
-    [MCU-Link](https://www.nxp.com/design/development-boards/lpcxpresso-boards/jtag-swd-debug-probe:MCU-LINK)
-    looks like it's compatible with our tooling but we haven't tested it.
-  - NXP's previous-gen LPC-Link2 board will work if you can still find it.
+- A USB-to-TTL-serial adapter, ideally one ending in loose Dupont wires so it
+  doesn't have a fixed pinout. You will use this for flashing the LPC55 on the
+  RoT carrier, at least the first time. If you don't already have one, we have
+  10 of them we can distribute.
 
-- A logic analyzer is never a _bad_ idea. We like the Saleae Logic.
+Depending on your development goals you may also need:
+
+- A SWD tool that can program the LPC55S. The answer here is much less clear
+  and you can skip it for now if you're mostly doing SP work.
+  - The [MCU-Link](https://www.nxp.com/design/development-boards/lpcxpresso-boards/jtag-swd-debug-probe:MCU-LINK)
+    works for flashing but not log/test output. We may be able to make it work
+    later.
+  - NXP's previous-gen LPC-Link2 board will also work w/o log/test output if you
+    can still find it.
+  - In practice we are mostly using the LPC55Sxpresso board with a soldered-on
+    header and a hack.
+
+- A logic analyzer is never a _bad_ idea if you're doing driver development. We
+  like the Saleae Logic.
+
+# Handling
+
+Handle the board by its edges if possible.
+
+This board is not well-defended against static discharge. Please try not to zap
+the exposed pins. For best results, use the board in a static-safe workspace,
+ideally elevated on standoffs in the corner holes (which we forgot to include in
+your kit, sorry). It will work OK on a non-staticky desk surface, too, as long
+as you bring yourself and the board to a similar electrical potential before
+touching exposed metal bits. Touching the Ethernet plug jacks is an OK place to
+ground, they are somewhat better isolated than the rest of the exposed pins.
+
+# Getting Started
+
+If you have a pre-validated board, it should already have firmware on it. To
+check that things still kinda work:
+
+1. Unpack the base board and the RoT carrier board from their antistatic bags,
+   handling carefully.
+
+2. Attach the RoT to the base board, if you want to test the RoT. It goes in the
+   northwest corner of the base board, only fits one way, and makes a satisfying
+   *click* when it is fully seated.
+
+3. Plug in the included power supply. (The connector is at the northeast
+   corner.)
+
+You should get two blinking lights, one directly northwest of the big central
+ARM chip (the SP) and one just south of the RoT carrier board.
+
+To build and program your own firmware, you will need to have followed the
+toolchain setup instructions in [the Hubris repo](https://github.com/oxidecomputer/hubris/).
+We don't yet have a dedicated firmware image for the RoT, and have been running
+hacked versions of a demo app on it, so instead, here are instructions for
+building and flashing the SP.
+
+1. Disconnect power before plugging/unplugging anything.
+
+2. Plug in the skinny 10-pin ribbon cable from your STLink V3 to connector J301,
+   which is to the northeast of the SP and is labeled "BRICK SP" because that's
+   what you can do with it.
+
+3. Plug the other end into your STLink V3.
+
+4. In the Hubris repository, run: `cargo xtask flash gemini-bu/app.toml`
+
+5. Relax. On a first build this may take several minutes.
+
+6. A successful build-and-flash will end in something that looks like an error
+   message (sorry). Scan up a few lines for the phrase `** Verified OK**`. If
+   that appears, you're good, and the lights should be blinking by the SP.
 
 # Schematic Checklist
 
