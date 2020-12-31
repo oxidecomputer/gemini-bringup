@@ -101,15 +101,18 @@ building and flashing the SP.
 
 2. Plug in the skinny 10-pin ribbon cable from your STLink V3 to connector J301,
    which is to the northeast of the SP and is labeled "BRICK SP" because that's
-   what you can do with it.
+   what you can do with it.  (Some STLink's have a 14-pin STDC14 ribbon cable.
+   That works here, too.)
 
 3. Plug the other end into your STLink V3.
 
-4. In the Hubris repository, run: `cargo xtask flash gemini-bu/app.toml`
+4. Reconnect power to the board.
 
-5. Relax. On a first build this may take several minutes.
+5. In the Hubris repository, run: `cargo xtask flash gemini-bu/app.toml`
 
-6. A successful build-and-flash will end in something that looks like an error
+6. Relax. On a first build this may take several minutes.
+
+7. A successful build-and-flash will end in something that looks like an error
    message (sorry). Scan up a few lines for the phrase `** Verified OK**`. If
    that appears, you're good, and the lights should be blinking by the SP.
 

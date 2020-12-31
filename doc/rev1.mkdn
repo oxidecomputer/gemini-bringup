@@ -42,6 +42,8 @@ Pin 1 **Southwest.**
 9. GND
 10. /RESET
 
+Note that this is intentionally compatible with the STDC14 pinout as well.
+
 ### J204 `ROTATING "TRUST KNIVES"`
 
 Generic signals from the RoT that we thought might be useful.
