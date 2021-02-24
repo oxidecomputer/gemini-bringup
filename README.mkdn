@@ -44,7 +44,9 @@ micros:
 - A USB-to-TTL-serial adapter, ideally one ending in loose Dupont wires so it
   doesn't have a fixed pinout. You will use this for flashing the LPC55 on the
   RoT carrier, at least the first time. If you don't already have one, we have
-  10 of them we can distribute.
+  10 of them we can distribute.  IMPORTANT: This is only for flashing the LPC55;  do *NOT* attach it to the baseboard UART header marked "SERIAL TO HOST".  The
+  host header uses RS-232 signalling, which may damage your TTL adapter and
+  will not work properly with it in any event.
 
 Depending on your development goals you may also need:
 
