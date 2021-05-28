@@ -78,25 +78,25 @@ The board sports ten PMOD-compatible connectors of four types.
 
 UART connectors use the standard PMOD "type 3" pinout.
 
-J12 (southeast corner): USART1. TX=B6, RX=B7, RTS=A12, CTS=A11.
-J13 (east edge): USART2. TX=D5, RX=D6, RTS=D4, CTS=D3.
-J14 (northwest corner): UART7. TX=E8, RX=E7, RTS=E9, CTS=E10.
+- J12 (southeast corner): USART1. TX=B6, RX=B7, RTS=A12, CTS=A11.
+- J13 (east edge): USART2. TX=D5, RX=D6, RTS=D4, CTS=D3.
+- J14 (northwest corner): UART7. TX=E8, RX=E7, RTS=E9, CTS=E10.
 
 ### I2C
 
 I2C connectors use the standard PMOD "type 6" pinout.
 
-J9 (north edge): I2C2. SDA=F0, SCL=F1, SMBA=F2, RESET=F3.
-J10 (south edge): J2C3. SDA=C9, SCL=A8, SMBA=A9, RESET=A10.
-J11 (south edge): I2C4. SDA=F15, SCL=F14, SMBA=F13, RESET=G0. 
+- J9 (north edge): I2C2. SDA=F0, SCL=F1, SMBA=F2, RESET=F3.
+- J10 (south edge): J2C3. SDA=C9, SCL=A8, SMBA=A9, RESET=A10.
+- J11 (south edge): I2C4. SDA=F15, SCL=F14, SMBA=F13, RESET=G0. 
 
 ### SPI
 
 SPI connectors use the standard PMOD "type 2A" pinout.
 
-J3 (southeast): SPI3. MISO=C11, MOSI=C12, SCK=C10, CS=A15, INT=D0, RESET=D1.
-J4 (southwest): SPI4. MISO=E13, MOSI=E14, SCK=E12, CS=E11, INT=E15, RESET=B10.
-J5 (northeast): SPI6. MISO=G12, MOSI=G14, SCK=G13, CS=G8, INT=G11, RESET=G15.
+- J3 (southeast): SPI3. MISO=C11, MOSI=C12, SCK=C10, CS=A15, INT=D0, RESET=D1.
+- J4 (southwest): SPI4. MISO=E13, MOSI=E14, SCK=E12, CS=E11, INT=E15, RESET=B10.
+- J5 (northeast): SPI6. MISO=G12, MOSI=G14, SCK=G13, CS=G8, INT=G11, RESET=G15.
 
 ### QuadSPI
 
@@ -119,10 +119,10 @@ hold, reset).
 Four connectors on the board are intended for random unforeseen uses. They are
 labeled on the silkscreen.
 
-J7: 3x 12V (north row) and GND (south row)
-J8: 3x 3v3 (north row) and GND (south row)
-J16: ground, 3v3, and seven free GPIO
-J17: ground, 3v3, and five free GPIO
+- J7: 3x 12V (north row) and GND (south row)
+- J8: 3x 3v3 (north row) and GND (south row)
+- J16: ground, 3v3, and seven free GPIO
+- J17: ground, 3v3, and five free GPIO
 
 ## NIC connector and test points
 
