@@ -139,7 +139,7 @@ U 1 1 60EE9D0A
 P 12100 1900
 F 0 "J13" H 12150 2317 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" H 12150 2226 50  0000 C CNN
-F 2 "" H 12100 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 12100 1900 50  0001 C CNN
 F 3 "~" H 12100 1900 50  0001 C CNN
 	1    12100 1900
 	1    0    0    -1  
@@ -255,18 +255,18 @@ U 1 1 60DB20CF
 P 12100 4100
 F 0 "J14" H 12150 4517 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" H 12150 4426 50  0000 C CNN
-F 2 "" H 12100 4100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 12100 4100 50  0001 C CNN
 F 3 "~" H 12100 4100 50  0001 C CNN
 	1    12100 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push SW3
 U 1 1 6131864A
 P 15400 2200
-F 0 "SW2" H 15400 2485 50  0000 C CNN
+F 0 "SW3" H 15400 2485 50  0000 C CNN
 F 1 "FLT" H 15400 2394 50  0000 C CNN
-F 2 "" H 15400 2400 50  0001 C CNN
+F 2 "c-and-k-pts851:PTS815" H 15400 2400 50  0001 C CNN
 F 3 "~" H 15400 2400 50  0001 C CNN
 	1    15400 2200
 	1    0    0    -1  
@@ -464,40 +464,38 @@ F 4 "1%" H 14568 5909 50  0001 L CNN "Tolerance"
 $EndComp
 Text Label 13900 6000 0    50   ~ 0
 PWR_EN
-Wire Wire Line
-	11900 6200 12000 6200
 $Comp
 L power:GND #PWR0106
 U 1 1 61775626
-P 11900 6200
-F 0 "#PWR0106" H 11900 5950 50  0001 C CNN
-F 1 "GND" H 11905 6027 50  0000 C CNN
-F 2 "" H 11900 6200 50  0001 C CNN
-F 3 "" H 11900 6200 50  0001 C CNN
-	1    11900 6200
+P 11600 5900
+F 0 "#PWR0106" H 11600 5650 50  0001 C CNN
+F 1 "GND" H 11605 5727 50  0000 C CNN
+F 2 "" H 11600 5900 50  0001 C CNN
+F 3 "" H 11600 5900 50  0001 C CNN
+	1    11600 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11500 6100 12000 6100
+	11800 6100 12100 6100
 Wire Wire Line
-	11500 6000 12000 6000
+	11800 6000 12100 6000
 Wire Wire Line
-	11500 5900 12000 5900
-Text Label 11500 6100 0    50   ~ 0
+	11600 5900 12100 5900
+Text Label 11800 6000 0    50   ~ 0
 CMD2
-Text Label 11500 6000 0    50   ~ 0
+Text Label 11800 6100 0    50   ~ 0
 CMD1
-Text Label 11500 5900 0    50   ~ 0
+Text Label 11800 6200 0    50   ~ 0
 PWR_EN
 $Comp
 L Connector_Generic:Conn_01x04 J15
 U 1 1 61755907
-P 12200 6000
-F 0 "J15" H 12280 5992 50  0000 L CNN
-F 1 "Conn_01x04" H 12280 5901 50  0000 L CNN
-F 2 "" H 12200 6000 50  0001 C CNN
-F 3 "~" H 12200 6000 50  0001 C CNN
-	1    12200 6000
+P 12300 6000
+F 0 "J15" H 12380 5992 50  0000 L CNN
+F 1 "Conn_01x04" H 12380 5901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12300 6000 50  0001 C CNN
+F 3 "~" H 12300 6000 50  0001 C CNN
+	1    12300 6000
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -561,10 +559,10 @@ Wire Wire Line
 Text Label 8500 4500 0    50   ~ 0
 AUX1_TX_TAP_P
 $Comp
-L Device:R_Small_US R17
+L Device:R_Small_US R16
 U 1 1 60F540AE
 P 8400 5000
-F 0 "R17" V 8105 5000 50  0000 C CNN
+F 0 "R16" V 8105 5000 50  0000 C CNN
 F 1 "75" V 8196 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 5000 50  0001 C CNN
 F 3 "~" H 8400 5000 50  0001 C CNN
@@ -573,10 +571,10 @@ F 4 "1%" V 8287 5000 50  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R16
+L Device:R_Small_US R17
 U 1 1 60F53C61
 P 8400 4500
-F 0 "R16" V 8105 4500 50  0000 C CNN
+F 0 "R17" V 8105 4500 50  0000 C CNN
 F 1 "75" V 8196 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 4500 50  0001 C CNN
 F 3 "~" H 8400 4500 50  0001 C CNN
@@ -589,7 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 3800 9100 3800
 Text Label 8500 3800 0    50   ~ 0
-AUX0_RX_TAP_N
+AUX0_TX_TAP_N
 $Comp
 L Device:R_Small_US R15
 U 1 1 60EEFAC1
@@ -638,7 +636,7 @@ U 1 1 60D80468
 P 1100 4700
 F 0 "J2" H 1050 4850 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1200 4584 50  0001 L CNN
-F 2 "" H 1100 4700 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 1100 4700 50  0001 C CNN
 F 3 " ~" H 1100 4700 50  0001 C CNN
 	1    1100 4700
 	-1   0    0    -1  
@@ -649,7 +647,7 @@ U 1 1 60D7FB30
 P 1300 5100
 F 0 "J4" H 1250 5250 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1400 4984 50  0001 L CNN
-F 2 "" H 1300 5100 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 1300 5100 50  0001 C CNN
 F 3 " ~" H 1300 5100 50  0001 C CNN
 	1    1300 5100
 	-1   0    0    -1  
@@ -660,7 +658,7 @@ U 1 1 60D7F1CF
 P 1300 3600
 F 0 "J3" H 1250 3750 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1400 3484 50  0001 L CNN
-F 2 "" H 1300 3600 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 1300 3600 50  0001 C CNN
 F 3 " ~" H 1300 3600 50  0001 C CNN
 	1    1300 3600
 	-1   0    0    -1  
@@ -671,13 +669,13 @@ U 1 1 60D73D9A
 P 1100 3200
 F 0 "J1" H 1050 3350 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1200 3084 50  0001 L CNN
-F 2 "" H 1100 3200 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 1100 3200 50  0001 C CNN
 F 3 " ~" H 1100 3200 50  0001 C CNN
 	1    1100 3200
 	-1   0    0    -1  
 $EndComp
-Text Notes 1000 10600 0    50   ~ 10
-TODO:\n\n- Check TX/RX cap values againt bit rate\n- Add TPs, mounting holes, fiducials, logo, P/N, S/N “parts”
+Text Notes 9200 10600 0    50   ~ 10
+TODO:\n\n- Check TX/RX cap values againt bit rate
 Text Notes 800  2200 0    79   ~ 16
 Ignition Target
 $Comp
@@ -691,74 +689,72 @@ F 3 "" H 4900 5200 50  0001 C CNN
 	1    4900 5200
 	1    0    0    -1  
 $EndComp
-Connection ~ 4500 3600
+Connection ~ 4300 3600
 Wire Wire Line
-	4500 3600 5000 3600
+	4300 3600 4800 3600
 Wire Wire Line
-	5700 3600 5800 3600
+	5800 3400 5800 3600
 Wire Wire Line
-	5700 3400 5700 3600
-Wire Wire Line
-	5600 3400 5700 3400
+	5400 3400 5800 3400
 $Comp
 L Ignition:V3P3 #PWR0111
 U 1 1 6164C39E
-P 4500 3100
-F 0 "#PWR0111" H 4500 2950 50  0001 C CNN
-F 1 "V3P3" H 4515 3273 50  0000 C CNN
-F 2 "" H 4500 3100 50  0001 C CNN
-F 3 "" H 4500 3100 50  0001 C CNN
-	1    4500 3100
+P 4300 3100
+F 0 "#PWR0111" H 4300 2950 50  0001 C CNN
+F 1 "V3P3" H 4315 3273 50  0000 C CNN
+F 2 "" H 4300 3100 50  0001 C CNN
+F 3 "" H 4300 3100 50  0001 C CNN
+	1    4300 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3400 4500 3600
+	4300 3400 4300 3600
 $Comp
 L power:GND #PWR0112
 U 1 1 61642A05
-P 4500 3600
-F 0 "#PWR0112" H 4500 3350 50  0001 C CNN
-F 1 "GND" H 4505 3427 50  0000 C CNN
-F 2 "" H 4500 3600 50  0001 C CNN
-F 3 "" H 4500 3600 50  0001 C CNN
-	1    4500 3600
+P 4300 3600
+F 0 "#PWR0112" H 4300 3350 50  0001 C CNN
+F 1 "GND" H 4305 3427 50  0000 C CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3100 4500 3200
+	4300 3100 4300 3200
 Wire Wire Line
-	4900 3200 4900 3100
-Connection ~ 4900 3200
+	4700 3200 4700 3100
+Connection ~ 4700 3200
 Wire Wire Line
-	5000 3200 4900 3200
+	4800 3200 4700 3200
 Wire Wire Line
-	4900 3400 4900 3200
+	4700 3400 4700 3200
 Wire Wire Line
-	5000 3400 4900 3400
+	4800 3400 4700 3400
 $Comp
 L Ignition:GCM188R71E105KA64D C7
 U 1 1 616260FA
-P 4500 3300
-F 0 "C7" H 4592 3437 50  0000 L CNN
-F 1 "GCM188R71E105KA64D" H 4510 3220 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4500 3300 50  0001 C CNN
-F 3 "~" H 4500 3300 50  0001 C CNN
-F 4 "1uF" H 4592 3346 50  0000 L CNN "Capacitance"
-F 5 "25V" H 4592 3255 50  0000 L CNN "VDC"
-F 6 "X7R" H 4592 3164 50  0000 L CNN "Coefficient"
-F 7 "0603" H 4500 2900 50  0001 L CNN "Package"
-	1    4500 3300
+P 4300 3300
+F 0 "C7" H 4392 3437 50  0000 L CNN
+F 1 "GCM188R71E105KA64D" H 4310 3220 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 3300 50  0001 C CNN
+F 3 "~" H 4300 3300 50  0001 C CNN
+F 4 "1uF" H 4392 3346 50  0000 L CNN "Capacitance"
+F 5 "25V" H 4392 3255 50  0000 L CNN "VDC"
+F 6 "X7R" H 4392 3164 50  0000 L CNN "Coefficient"
+F 7 "0603" H 4300 2900 50  0001 L CNN "Package"
+	1    4300 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Ignition:AMPMGFB-50.0000T U2
 U 1 1 61619B86
-P 5300 3400
-F 0 "U2" H 5300 3865 50  0000 C CNN
-F 1 "AMPMGFB-50.0000T" H 5300 3774 50  0000 C CNN
-F 2 "" H 5300 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/3/AMPM-1381360.pdf" H 5300 2800 50  0001 C CNN
-	1    5300 3400
+P 5100 3400
+F 0 "U2" H 5100 3865 50  0000 C CNN
+F 1 "AMPMGFB-50.0000T" H 5100 3774 50  0000 C CNN
+F 2 "Package_LGA_ABRACON:ABRACON_VFLGA-4_1.6x1.2mm" H 5100 2900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/3/AMPM-1381360.pdf" H 5100 2800 50  0001 C CNN
+	1    5100 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1122,12 +1118,12 @@ F 3 "" H 4300 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push SW2
 U 1 1 61311F1C
 P 4500 5500
-F 0 "SW1" H 4500 5785 50  0000 C CNN
+F 0 "SW2" H 4500 5785 50  0000 C CNN
 F 1 "SYS_RST" H 4500 5694 50  0000 C CNN
-F 2 "" H 4500 5700 50  0001 C CNN
+F 2 "c-and-k-pts851:PTS815" H 4500 5700 50  0001 C CNN
 F 3 "~" H 4500 5700 50  0001 C CNN
 	1    4500 5500
 	1    0    0    -1  
@@ -1161,7 +1157,7 @@ ID3
 Text Label 5300 6200 0    50   ~ 0
 ID4
 Text Label 5300 6300 0    50   ~ 0
-ID4
+ID5
 Wire Wire Line
 	5300 5800 5800 5800
 Wire Wire Line
@@ -1217,7 +1213,7 @@ U 1 1 60CABDCA
 P 6600 5000
 F 0 "U1" H 6600 6665 50  0000 C CNN
 F 1 "IGNITION001-QFN" H 6600 6574 50  0000 C CNN
-F 2 "" H 7500 6000 50  0001 C CNN
+F 2 "lattice-drqfn84:Lattice_DRQFN-84-1EP_7x7mm_P0.50mm_EP3.5x3.5mm_ThermalVias" H 7500 6000 50  0001 C CNN
 F 3 "https://rfd.shared.oxide.computer/rfd/0142" H 7500 6000 50  0001 C CNN
 	1    6600 5000
 	1    0    0    -1  
@@ -1265,7 +1261,7 @@ AUX1_RX_N
 Text Label 7500 3900 0    50   ~ 0
 AUX0_TX_P
 Text Label 7500 4000 0    50   ~ 0
-AUX0_RX_N
+AUX0_TX_N
 Text Label 7500 4300 0    50   ~ 0
 AUX1_TX_P
 Text Label 7500 4400 0    50   ~ 0
@@ -1383,7 +1379,7 @@ U 1 1 60CCA8F4
 P 10700 3800
 F 0 "J9" H 10700 3950 50  0000 C CNN
 F 1 "Conn_Coaxial" H 10300 4000 50  0001 L CNN
-F 2 "" H 10700 3800 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 10700 3800 50  0001 C CNN
 F 3 " ~" H 10700 3800 50  0001 C CNN
 	1    10700 3800
 	1    0    0    -1  
@@ -1394,18 +1390,18 @@ U 1 1 60CCBDA0
 P 10900 3300
 F 0 "J11" H 10850 3450 50  0000 L CNN
 F 1 "Conn_Coaxial" H 11000 3184 50  0001 L CNN
-F 2 "" H 10900 3300 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 10900 3300 50  0001 C CNN
 F 3 " ~" H 10900 3300 50  0001 C CNN
 	1    10900 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J12
+L Connector:Conn_Coaxial J10
 U 1 1 60D3F4B2
 P 10900 4500
-F 0 "J12" H 10850 4650 50  0000 L CNN
+F 0 "J10" H 10850 4650 50  0000 L CNN
 F 1 "Conn_Coaxial" H 11000 4384 50  0001 L CNN
-F 2 "" H 10900 4500 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 10900 4500 50  0001 C CNN
 F 3 " ~" H 10900 4500 50  0001 C CNN
 	1    10900 4500
 	1    0    0    -1  
@@ -1426,12 +1422,12 @@ Wire Wire Line
 Wire Wire Line
 	10700 5200 10900 5200
 $Comp
-L Connector:Conn_Coaxial J10
+L Connector:Conn_Coaxial J12
 U 1 1 60D164C4
 P 10700 5000
-F 0 "J10" H 10700 5150 50  0000 C CNN
+F 0 "J12" H 10700 5150 50  0000 C CNN
 F 1 "Conn_Coaxial" H 10300 5200 50  0001 L CNN
-F 2 "" H 10700 5000 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 10700 5000 50  0001 C CNN
 F 3 " ~" H 10700 5000 50  0001 C CNN
 	1    10700 5000
 	1    0    0    -1  
@@ -1442,7 +1438,7 @@ U 1 1 6101A628
 P 9500 5400
 F 0 "J7" H 9580 5392 50  0000 L CNN
 F 1 "Conn_01x04" H 9580 5301 50  0000 L CNN
-F 2 "" H 9500 5400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 9500 5400 50  0001 C CNN
 F 3 "~" H 9500 5400 50  0001 C CNN
 	1    9500 5400
 	1    0    0    -1  
@@ -1453,19 +1449,15 @@ U 1 1 6101B9D3
 P 9500 6000
 F 0 "J8" H 9580 5992 50  0000 L CNN
 F 1 "Conn_01x04" H 9580 5901 50  0000 L CNN
-F 2 "" H 9500 6000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 9500 6000 50  0001 C CNN
 F 3 "~" H 9500 6000 50  0001 C CNN
 	1    9500 6000
 	1    0    0    -1  
 $EndComp
-Text Label 8500 5400 0    50   ~ 0
-AUX0_TX_TAP_P
 Text Label 8500 5500 0    50   ~ 0
-AUX0_RX_TAP_N
-Text Label 8500 6000 0    50   ~ 0
-AUX1_TX_TAP_P
-Text Label 8500 6100 0    50   ~ 0
-AUX1_TX_TAP_N
+AUX0_TX_TAP_P
+Text Label 8500 5400 0    50   ~ 0
+AUX0_TX_TAP_N
 Wire Wire Line
 	8500 5500 9300 5500
 Wire Wire Line
@@ -1524,7 +1516,7 @@ U 1 1 61473EB0
 P 14800 6000
 F 0 "D1" H 14793 5745 50  0000 C CNN
 F 1 "LTST-C193KGKT-5A" H 14793 5836 50  0000 C CNN
-F 2 "" H 14800 6000 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 14800 6000 50  0001 C CNN
 F 3 "~" H 14800 6000 50  0001 C CNN
 	1    14800 6000
 	-1   0    0    1   
@@ -1537,7 +1529,7 @@ U 1 1 6147A847
 P 1400 6600
 F 0 "J6" H 1480 6592 50  0000 L CNN
 F 1 "Conn_01x04" H 1480 6501 50  0000 L CNN
-F 2 "" H 1400 6600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 1400 6600 50  0001 C CNN
 F 3 "~" H 1400 6600 50  0001 C CNN
 	1    1400 6600
 	-1   0    0    1   
@@ -1559,7 +1551,7 @@ U 1 1 6147A841
 P 1400 6000
 F 0 "J5" H 1480 5992 50  0000 L CNN
 F 1 "Conn_01x04" H 1480 5901 50  0000 L CNN
-F 2 "" H 1400 6000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 1400 6000 50  0001 C CNN
 F 3 "~" H 1400 6000 50  0001 C CNN
 	1    1400 6000
 	-1   0    0    1   
@@ -1647,9 +1639,9 @@ Text Label 1800 4700 0    50   ~ 0
 AUX1_RX_TAP_P
 Text Label 1800 5100 0    50   ~ 0
 AUX1_RX_TAP_N
-Text Label 1800 6500 0    50   ~ 0
-AUX1_RX_TAP_P
 Text Label 1800 6600 0    50   ~ 0
+AUX1_RX_TAP_P
+Text Label 1800 6500 0    50   ~ 0
 AUX1_RX_TAP_N
 Text Label 1800 3200 0    50   ~ 0
 AUX0_RX_TAP_P
@@ -1659,9 +1651,9 @@ Wire Wire Line
 	1800 3600 2500 3600
 Wire Wire Line
 	1800 3200 2500 3200
-Text Label 1800 5900 0    50   ~ 0
-AUX0_RX_TAP_P
 Text Label 1800 6000 0    50   ~ 0
+AUX0_RX_TAP_P
+Text Label 1800 5900 0    50   ~ 0
 AUX0_RX_TAP_N
 Wire Wire Line
 	1600 5900 2400 5900
@@ -1724,10 +1716,10 @@ F 7 "0603" V 10437 3300 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C10
+L Ignition:GCM188R71E105KA64D C11
 U 1 1 616B25C0
 P 10300 4500
-F 0 "C10" V 10529 4500 50  0000 C CNN
+F 0 "C11" V 10529 4500 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 10310 4420 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 4500 50  0001 C CNN
 F 3 "~" H 10300 4500 50  0001 C CNN
@@ -1739,10 +1731,10 @@ F 7 "0603" V 10437 4500 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C11
+L Ignition:GCM188R71E105KA64D C10
 U 1 1 616B2AFA
 P 10300 5000
-F 0 "C11" V 10529 5000 50  0000 C CNN
+F 0 "C10" V 10529 5000 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 10310 4920 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 5000 50  0001 C CNN
 F 3 "~" H 10300 5000 50  0001 C CNN
@@ -1770,6 +1762,153 @@ Wire Wire Line
 Text Notes 8100 9600 0    50   ~ 0
 The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253\nusing PIO pin pairs in Bank 3. The resistor values above were derived\nusing the equations on p. 4 and the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm each. The intend\nhere is that one pin of a 100 mil header/ footprint is inserted between the\ntwo resistors. If done using a tight layout this via should add minimal\ndisruption at the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for alternative\nprototyping by not fitting the second series resistor, parallel resistor and\nSMA connector, while using the first resistor footprint as slew limiting\nresistor or for series termination.\n\nOne possible application of this alternative scheme is to allow the Ignition\nprotocol to be carried using single ended LVCMOS signaling at 3.3V\nbetween this broad and an ECP5 dev board without requiring SMA\nconnectors for the link partner. This would simplify initial prototyping work.\n\nThe AC couping capacitors near the SMA connector are optional in case\none wants to experiment. The layout should allow for some copper nearby\nconnected to ground so experiments with a choke are possible. If not in\nuse 0 ohm resistors should be fitted.
 Wire Wire Line
-	4500 3100 4900 3100
-Connection ~ 4500 3100
+	4300 3100 4700 3100
+Connection ~ 4300 3100
+Text Label 5500 3400 0    50   ~ 0
+CLK_50M
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 61186B02
+P 1000 8600
+F 0 "H1" V 954 8750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 8750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1000 8600 50  0001 C CNN
+F 3 "~" H 1000 8600 50  0001 C CNN
+	1    1000 8600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 61197EFF
+P 1000 8800
+F 0 "H2" V 954 8950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 8950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1000 8800 50  0001 C CNN
+F 3 "~" H 1000 8800 50  0001 C CNN
+	1    1000 8800
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 611C8D25
+P 1000 9000
+F 0 "H3" V 954 9150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 9150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1000 9000 50  0001 C CNN
+F 3 "~" H 1000 9000 50  0001 C CNN
+	1    1000 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 611D8E91
+P 1000 9200
+F 0 "H4" V 954 9350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 9350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1000 9200 50  0001 C CNN
+F 3 "~" H 1000 9200 50  0001 C CNN
+	1    1000 9200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 611E8DC8
+P 900 9300
+F 0 "#PWR04" H 900 9050 50  0001 C CNN
+F 1 "GND" H 905 9127 50  0000 C CNN
+F 2 "" H 900 9300 50  0001 C CNN
+F 3 "" H 900 9300 50  0001 C CNN
+	1    900  9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  8600 900  8800
+Connection ~ 900  8800
+Wire Wire Line
+	900  8800 900  9000
+Connection ~ 900  9000
+Wire Wire Line
+	900  9000 900  9200
+Connection ~ 900  9200
+Wire Wire Line
+	900  9200 900  9300
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 6120074B
+P 3200 8700
+F 0 "FID1" H 3285 8746 50  0000 L CNN
+F 1 "IGNITIONLET" H 3285 8655 50  0000 L CNN
+F 2 "grumpy:Oxide_Board_Identifier_23x6mm" H 3200 8700 50  0001 C CNN
+F 3 "~" H 3200 8700 50  0001 C CNN
+	1    3200 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 61202097
+P 3200 9000
+F 0 "FID2" H 3285 9046 50  0000 L CNN
+F 1 "Fiducial" H 3285 8955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3200 9000 50  0001 C CNN
+F 3 "~" H 3200 9000 50  0001 C CNN
+	1    3200 9000
+	1    0    0    -1  
+$EndComp
+Text Notes 800  8300 0    79   ~ 16
+Mechanical
+Text Notes 2100 9800 0    50   ~ 0
+The board assumes the width of two standard\n0.80” PMOD boards. J16 is present only for\nadditional mechanical stability, but can be used\nfor prototyping.
+NoConn ~ 2200 8700
+NoConn ~ 2200 8800
+NoConn ~ 2200 8900
+NoConn ~ 2200 9000
+NoConn ~ 2200 9200
+NoConn ~ 2700 9200
+NoConn ~ 2700 9000
+NoConn ~ 2700 8900
+NoConn ~ 2700 8800
+NoConn ~ 2700 8700
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J16
+U 1 1 6130518A
+P 2400 8900
+F 0 "J16" H 2450 9317 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 2450 9226 50  0000 C CNN
+F 2 "pmod:PMOD_12pin_peripheral_horizontal" H 2400 8900 50  0001 C CNN
+F 3 "~" H 2400 8900 50  0001 C CNN
+	1    2400 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 61307B28
+P 2100 9100
+F 0 "#PWR0162" H 2100 8850 50  0001 C CNN
+F 1 "GND" H 2105 8927 50  0000 C CNN
+F 2 "" H 2100 9100 50  0001 C CNN
+F 3 "" H 2100 9100 50  0001 C CNN
+	1    2100 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 61307EE4
+P 2800 9100
+F 0 "#PWR0163" H 2800 8850 50  0001 C CNN
+F 1 "GND" H 2805 8927 50  0000 C CNN
+F 2 "" H 2800 9100 50  0001 C CNN
+F 3 "" H 2800 9100 50  0001 C CNN
+	1    2800 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 9100 2200 9100
+Wire Wire Line
+	2700 9100 2800 9100
+Wire Wire Line
+	11800 6200 12100 6200
+Text Label 8500 6100 0    50   ~ 0
+AUX1_TX_TAP_P
+Text Label 8500 6000 0    50   ~ 0
+AUX1_TX_TAP_N
 $EndSCHEMATC

@@ -19,7 +19,7 @@ U 1 1 61271500
 P 7400 6700
 F 0 "U102" H 7400 7765 50  0000 C CNN
 F 1 "LT3013EFE#PBF" H 7400 7674 50  0000 C CNN
-F 2 "" H 7400 6200 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 7400 6200 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3013fe.pdf" H 7400 6100 50  0001 C CNN
 	1    7400 6700
 	1    0    0    -1  
@@ -78,7 +78,7 @@ U 1 1 61271522
 P 7400 4400
 F 0 "U101" H 7400 5465 50  0000 C CNN
 F 1 "LT3013EFE#PBF" H 7400 5374 50  0000 C CNN
-F 2 "" H 7400 3900 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 7400 3900 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3013fe.pdf" H 7400 3800 50  0001 C CNN
 	1    7400 4400
 	1    0    0    -1  
@@ -133,12 +133,7 @@ F 3 "" H 13300 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13400 6800 13300 6800
-Wire Wire Line
-	13300 6800 13300 6900
-Wire Wire Line
 	13400 6900 13300 6900
-Connection ~ 13300 6900
 Wire Wire Line
 	13300 6900 13300 7000
 Wire Wire Line
@@ -160,7 +155,7 @@ U 1 1 61271552
 P 8100 3800
 F 0 "R103" H 8168 3891 50  0000 L CNN
 F 1 "1K" H 8168 3800 50  0000 L CNN
-F 2 "" H 8100 3800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 3800 50  0001 C CNN
 F 3 "~" H 8100 3800 50  0001 C CNN
 F 4 "1%" H 8168 3709 50  0000 L CNN "Tolerance"
 	1    8100 3800
@@ -172,7 +167,7 @@ U 1 1 61271559
 P 8100 4200
 F 0 "R104" H 8168 4291 50  0000 L CNN
 F 1 "147K" H 8168 4200 50  0000 L CNN
-F 2 "" H 8100 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 4200 50  0001 C CNN
 F 3 "~" H 8100 4200 50  0001 C CNN
 F 4 "1%" H 8168 4109 50  0000 L CNN "Tolerance"
 	1    8100 4200
@@ -314,7 +309,7 @@ AR Path="/612715A8" Ref="R?"  Part="1"
 AR Path="/61252D76/612715A8" Ref="R102"  Part="1" 
 F 0 "R102" H 6468 4191 50  0000 L CNN
 F 1 "100K" H 6468 4100 50  0000 L CNN
-F 2 "" H 6400 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 4100 50  0001 C CNN
 F 3 "~" H 6400 4100 50  0001 C CNN
 F 4 "1%" H 6468 4009 50  0000 L CNN "Tolerance"
 	1    6400 4100
@@ -480,7 +475,7 @@ U 1 1 61271610
 P 8100 6100
 F 0 "R105" H 8168 6191 50  0000 L CNN
 F 1 "147K" H 8168 6100 50  0000 L CNN
-F 2 "" H 8100 6100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 6100 50  0001 C CNN
 F 3 "~" H 8100 6100 50  0001 C CNN
 F 4 "1%" H 8168 6009 50  0000 L CNN "Tolerance"
 	1    8100 6100
@@ -492,7 +487,7 @@ U 1 1 61271617
 P 8100 6500
 F 0 "R106" H 8168 6591 50  0000 L CNN
 F 1 "88K7" H 8168 6500 50  0000 L CNN
-F 2 "" H 8100 6500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 6500 50  0001 C CNN
 F 3 "~" H 8100 6500 50  0001 C CNN
 F 4 "1%" H 8168 6409 50  0000 L CNN "Tolerance"
 	1    8100 6500
@@ -685,8 +680,8 @@ L Ignition:IGNITION001-QFN U?
 U 2 1 6127169A
 P 14200 5900
 AR Path="/6127169A" Ref="U?"  Part="2" 
-AR Path="/61252D76/6127169A" Ref="U104"  Part="2" 
-F 0 "U104" H 14100 7500 50  0000 L CNN
+AR Path="/61252D76/6127169A" Ref="U1"  Part="2" 
+F 0 "U1" H 14100 7500 50  0000 L CNN
 F 1 "IGNITION001-QFN" H 13900 4400 50  0000 L CNN
 F 2 "" H 15100 6900 50  0001 C CNN
 F 3 "https://rfd.shared.oxide.computer/rfd/0142" H 15100 6900 50  0001 C CNN
@@ -1117,7 +1112,7 @@ U 1 1 61D74AC0
 P 11400 6200
 F 0 "J103" H 11318 5875 50  0000 C CNN
 F 1 "Conn_01x03" H 11318 5966 50  0000 C CNN
-F 2 "" H 11400 6200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11400 6200 50  0001 C CNN
 F 3 "~" H 11400 6200 50  0001 C CNN
 	1    11400 6200
 	-1   0    0    1   
@@ -1219,7 +1214,7 @@ U 1 1 612715D8
 P 5600 6400
 F 0 "R101" H 5668 6491 50  0000 L CNN
 F 1 "100K" H 5668 6400 50  0000 L CNN
-F 2 "" H 5600 6400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 6400 50  0001 C CNN
 F 3 "~" H 5600 6400 50  0001 C CNN
 F 4 "1%" H 5668 6309 50  0000 L CNN "Tolerance"
 	1    5600 6400
@@ -1249,29 +1244,29 @@ Connection ~ 6000 5900
 Text Notes 10600 6200 0    50   ~ 0
 2.5V: pins 1-2 \n3.3V: pins 2-3
 Wire Wire Line
-	2800 3800 2900 3800
+	2500 3800 2600 3800
 $Comp
 L power:GND #PWR?
 U 1 1 61E843B3
-P 2900 3800
+P 2600 3800
 AR Path="/61E843B3" Ref="#PWR?"  Part="1" 
 AR Path="/61252D76/61E843B3" Ref="#PWR0147"  Part="1" 
-F 0 "#PWR0147" H 2900 3550 50  0001 C CNN
-F 1 "GND" H 2905 3627 50  0000 C CNN
-F 2 "" H 2900 3800 50  0001 C CNN
-F 3 "" H 2900 3800 50  0001 C CNN
-	1    2900 3800
+F 0 "#PWR0147" H 2600 3550 50  0001 C CNN
+F 1 "GND" H 2605 3627 50  0000 C CNN
+F 2 "" H 2600 3800 50  0001 C CNN
+F 3 "" H 2600 3800 50  0001 C CNN
+	1    2600 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Barrel_Jack_MountingPin J101
 U 1 1 61E83C2F
-P 2500 3700
-F 0 "J101" H 2557 4017 50  0000 C CNN
-F 1 "Barrel_Jack_MountingPin" H 2557 3926 50  0000 C CNN
-F 2 "" H 2550 3660 50  0001 C CNN
-F 3 "~" H 2550 3660 50  0001 C CNN
-	1    2500 3700
+P 2200 3700
+F 0 "J101" H 2257 4017 50  0000 C CNN
+F 1 "Barrel_Jack_MountingPin" H 2257 3926 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2250 3660 50  0001 C CNN
+F 3 "~" H 2250 3660 50  0001 C CNN
+	1    2200 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1288,19 +1283,6 @@ $EndComp
 Text Label 4900 3600 0    50   ~ 0
 VIN_12V
 $Comp
-L Device:Polyfuse_Small F101
-U 1 1 61EAD4BD
-P 3900 3600
-F 0 "F101" V 3695 3600 50  0000 C CNN
-F 1 "Polyfuse_Small" V 3786 3600 50  0000 C CNN
-F 2 "" H 3950 3400 50  0001 L CNN
-F 3 "~" H 3900 3600 50  0001 C CNN
-	1    3900 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4000 3600 4400 3600
-$Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 61F2FBE3
 P 4800 3600
@@ -1311,18 +1293,18 @@ F 3 "~" H 4800 3600 50  0001 C CNN
 	1    4800 3600
 	1    0    0    -1  
 $EndComp
-Text Notes 2100 4400 0    50   ~ 0
+Text Notes 1800 4400 0    50   ~ 0
 The Fake Bus Bar can take 5-12V from the barrel jack\nor J2 can be used to injecting 12V from the Gimletlet\nusing short Dupont wires. This allows both boards to\nbe powered by a single supply.
 Text Notes 2100 3200 0    50   ~ 10
 Fake Bus Bar
 Wire Notes Line
-	2000 3000 2000 4500
+	1700 3000 1700 4500
 Wire Notes Line
-	2000 4500 5400 4500
+	1700 4500 5400 4500
 Wire Notes Line
 	5400 4500 5400 3000
 Wire Notes Line
-	5400 3000 2000 3000
+	5400 3000 1700 3000
 Text Notes 8600 4700 0    50   ~ 0
 The number of input/output capacitors was copied from\nthe Gimlet implementation, which assumes a 54V input\nvoltage. Given a smaller difference between VIN of this\nboard and the output less may be required. The footprints\nare here to adjust/fix if needed.
 Text Notes 9600 3600 0    50   ~ 0
@@ -1334,24 +1316,22 @@ Vout nom: 2.5V\nImax: 200mA
 $Comp
 L Connector_Generic:Conn_01x02 J102
 U 1 1 60DD6D36
-P 3600 3700
-F 0 "J102" H 3680 3692 50  0000 L CNN
-F 1 "Conn_01x02" H 3680 3601 50  0000 L CNN
-F 2 "" H 3600 3700 50  0001 C CNN
-F 3 "~" H 3600 3700 50  0001 C CNN
-	1    3600 3700
+P 3300 3700
+F 0 "J102" H 3380 3692 50  0000 L CNN
+F 1 "Conn_01x02" H 3380 3601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3300 3700 50  0001 C CNN
+F 3 "~" H 3300 3700 50  0001 C CNN
+	1    3300 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3800 3300 3800
-Connection ~ 2900 3800
+	3100 3800 3000 3800
+Connection ~ 2600 3800
 Wire Wire Line
-	3400 3700 3400 3600
+	3100 3700 3100 3600
 Wire Wire Line
-	2800 3600 3400 3600
-Wire Wire Line
-	3400 3600 3800 3600
-Connection ~ 3400 3600
+	2500 3600 3100 3600
+Connection ~ 3100 3600
 Wire Wire Line
 	7800 8500 8100 8500
 Connection ~ 8100 8500
@@ -1392,17 +1372,25 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 61AA36E8
-P 3300 3800
-F 0 "#FLG0103" H 3300 3875 50  0001 C CNN
-F 1 "PWR_FLAG" H 3300 3973 50  0000 C CNN
-F 2 "" H 3300 3800 50  0001 C CNN
-F 3 "~" H 3300 3800 50  0001 C CNN
-	1    3300 3800
+P 3000 3800
+F 0 "#FLG0103" H 3000 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 3000 3973 50  0000 C CNN
+F 2 "" H 3000 3800 50  0001 C CNN
+F 3 "~" H 3000 3800 50  0001 C CNN
+	1    3000 3800
 	-1   0    0    1   
 $EndComp
-Connection ~ 3300 3800
+Connection ~ 3000 3800
 Wire Wire Line
-	3300 3800 2900 3800
-NoConn ~ 2500 4000
+	3000 3800 2600 3800
+NoConn ~ 2200 4000
 Connection ~ 9300 3600
+NoConn ~ 13400 6800
+NoConn ~ 13600 8200
+Text Notes 4300 4300 0    50   ~ 0
+I_hold: 100mA\nI_trip: 300mA\n\nV_max: 30V\nI_max: 10A
+Text Label 12200 6200 0    50   ~ 0
+VCCIO_3
+Wire Wire Line
+	3100 3600 4400 3600
 $EndSCHEMATC

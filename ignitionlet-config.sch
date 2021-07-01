@@ -147,12 +147,12 @@ CDONE
 $Comp
 L power:GND #PWR0152
 U 1 1 619276BD
-P 5900 8000
-F 0 "#PWR0152" H 5900 7750 50  0001 C CNN
-F 1 "GND" H 5905 7827 50  0000 C CNN
-F 2 "" H 5900 8000 50  0001 C CNN
-F 3 "" H 5900 8000 50  0001 C CNN
-	1    5900 8000
+P 5900 8500
+F 0 "#PWR0152" H 5900 8250 50  0001 C CNN
+F 1 "GND" H 5905 8327 50  0000 C CNN
+F 2 "" H 5900 8500 50  0001 C CNN
+F 3 "" H 5900 8500 50  0001 C CNN
+	1    5900 8500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -195,8 +195,6 @@ $EndComp
 Wire Wire Line
 	6000 7900 5900 7900
 Connection ~ 5900 7900
-Wire Wire Line
-	5900 7900 5900 8000
 Text Label 13900 7400 0    50   ~ 0
 CBSEL1
 Text Label 12700 7400 0    50   ~ 0
@@ -215,7 +213,7 @@ U 1 1 61A90E75
 P 6200 3500
 F 0 "J201" H 6200 4167 50  0000 C CNN
 F 1 "PMOD_2A_PERIPHERAL" H 6200 4076 50  0000 C CNN
-F 2 "" H 6200 3500 50  0001 C CNN
+F 2 "pmod:PMOD_12pin_peripheral_horizontal" H 6200 3500 50  0001 C CNN
 F 3 "https://www.digilentinc.com/Pmods/Digilent-Pmod_%20Interface_Specification.pdf" V 5850 2250 50  0001 C CNN
 	1    6200 3500
 	1    0    0    -1  
@@ -242,15 +240,15 @@ Wire Wire Line
 Connection ~ 5600 3900
 NoConn ~ 5700 3200
 NoConn ~ 5700 3100
-Text Label 10300 4700 0    50   ~ 0
+Text Label 9700 4700 0    50   ~ 0
 ~SPI_RESET
-Text Label 10300 4900 0    50   ~ 0
+Text Label 9700 4900 0    50   ~ 0
 SPI_SCK
-Text Label 10300 5000 0    50   ~ 0
+Text Label 9700 5000 0    50   ~ 0
 ~SPI_SS
-Text Label 10300 5100 0    50   ~ 0
+Text Label 9700 5100 0    50   ~ 0
 SPI_MISO
-Text Label 10300 5200 0    50   ~ 0
+Text Label 9700 5200 0    50   ~ 0
 SPI_MOSI
 Wire Notes Line
 	5500 2200 5500 4200
@@ -296,11 +294,11 @@ Fit one of two SPI flash\noptions.
 Text Notes 5600 7400 0    50   ~ 0
 Intended for hacking and/or\nforced reset/write protect.
 Wire Notes Line
-	5500 6900 5500 8300
+	5500 6900 5500 8800
 Wire Notes Line
-	5500 8300 7400 8300
+	5500 8800 7400 8800
 Wire Notes Line
-	7400 8300 7400 6900
+	7400 8800 7400 6900
 Wire Notes Line
 	7400 6900 5500 6900
 $Comp
@@ -351,7 +349,7 @@ $EndComp
 Wire Wire Line
 	5200 2300 5200 2400
 Text Notes 3700 5700 0    50   ~ 0
-Intended to make with Adafruit\nFT232H + adapter to allow\nsoftware compatibility with both\nLattice and open source\nprogramming tools.\n\nThe pinout is compatible with a\nstraight PMOD 2A connector to\nallow for alternative adapters if\ndesired.\n\nWhatever connects to this header\nis expected to bring slew limiting\nresistors.
+Intended to mate with Adafruit\nFT232H + adapter to allow\nsoftware compatibility with both\nLattice and open source\nprogramming tools.\n\nThe pinout is compatible with a\nstraight PMOD 2A connector to\nallow for alternative adapters if\ndesired.\n\nWhatever connects to this header\nis expected to bring slew limiting\nresistors.
 Wire Notes Line
 	3600 4300 3600 5800
 Wire Notes Line
@@ -475,7 +473,7 @@ U 1 1 61CB86EC
 P 6200 7800
 F 0 "J203" H 6250 8117 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 6250 8026 50  0000 C CNN
-F 2 "" H 6200 7800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6200 7800 50  0001 C CNN
 F 3 "~" H 6200 7800 50  0001 C CNN
 	1    6200 7800
 	1    0    0    -1  
@@ -486,7 +484,7 @@ U 1 1 61CC5C66
 P 13300 7400
 F 0 "J204" H 13380 7442 50  0000 L CNN
 F 1 "Conn_01x03" H 13380 7351 50  0000 L CNN
-F 2 "" H 13300 7400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13300 7400 50  0001 C CNN
 F 3 "~" H 13300 7400 50  0001 C CNN
 	1    13300 7400
 	1    0    0    -1  
@@ -561,7 +559,7 @@ U 1 1 61CE4DCD
 P 14500 7400
 F 0 "J205" H 14580 7442 50  0000 L CNN
 F 1 "Conn_01x03" H 14580 7351 50  0000 L CNN
-F 2 "" H 14500 7400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14500 7400 50  0001 C CNN
 F 3 "~" H 14500 7400 50  0001 C CNN
 	1    14500 7400
 	1    0    0    -1  
@@ -665,8 +663,8 @@ U 1 1 60D52B2B
 P 6200 5100
 F 0 "J202" H 6200 5767 50  0000 C CNN
 F 1 "IGNITION_TARGET_HDR" H 6200 5676 50  0000 C CNN
-F 2 "" H 6200 5100 50  0001 C CNN
-F 3 "" V 5850 3850 50  0001 C CNN
+F 2 "samtec-tfc:TFC-105-02-F-D-A-K" H 6200 5100 50  0001 C CNN
+F 3 "https://www.samtec.com/products/tfc-105-02-f-d-a-k" V 5850 3850 50  0001 C CNN
 	1    6200 5100
 	1    0    0    -1  
 $EndComp
@@ -742,7 +740,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 4700 8100 4700
 Wire Wire Line
-	6500 7700 8100 7700
+	6500 7700 7200 7700
 Wire Wire Line
 	7200 5000 8700 5000
 Wire Wire Line
@@ -819,12 +817,6 @@ Text Label 9700 7900 0    50   ~ 0
 ~FLASH_WP
 Wire Wire Line
 	9000 7900 12000 7900
-Text Label 11900 8600 0    50   ~ 0
-SPI_MISO
-Text Label 11900 8500 0    50   ~ 0
-SPI_MOSI
-Text Label 11900 6400 0    50   ~ 0
-SPI_MOSI
 NoConn ~ 6000 8000
 Text Label 9700 8700 0    50   ~ 0
 ~FLASH_WP
@@ -860,7 +852,7 @@ U 1 1 618594E5
 P 11200 8600
 F 0 "U6" H 11200 9165 50  0000 C CNN
 F 1 "AT25PE80-SSHN-B" H 11200 9074 50  0000 C CNN
-F 2 "" H 11200 7900 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11200 7900 50  0001 C CNN
 F 3 "" H 11200 7800 50  0001 C CNN
 	1    11200 8600
 	1    0    0    -1  
@@ -914,8 +906,6 @@ Wire Wire Line
 	12400 6500 12400 8600
 Wire Wire Line
 	12400 6500 12400 5600
-Text Label 11900 6500 0    50   ~ 0
-SPI_MISO
 Connection ~ 12400 6500
 $Comp
 L Ignition:MT25QL128ABB8E12-0AUT U5
@@ -923,11 +913,44 @@ U 1 1 618573CD
 P 11200 6800
 F 0 "U5" H 11200 7675 50  0000 C CNN
 F 1 "MT25QL128ABB8E12-0AUT" H 11200 7575 50  0000 C CNN
-F 2 "" H 11200 6100 50  0001 C CNN
+F 2 "micron-sop2:Micron_SOP2-16_7.5x10.3mm_P1.27mm" H 11200 6100 50  0001 C CNN
 F 3 "" H 11200 5900 50  0001 C CNN
 	1    11200 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	11700 6500 12400 6500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60D8ACEC
+P 6300 8500
+AR Path="/60D8ACEC" Ref="SW?"  Part="1" 
+AR Path="/61701F79/60D8ACEC" Ref="SW1"  Part="1" 
+F 0 "SW1" H 6300 8785 50  0000 C CNN
+F 1 "FPGA_RST" H 6300 8694 50  0000 C CNN
+F 2 "c-and-k-pts851:PTS815" H 6300 8700 50  0001 C CNN
+F 3 "~" H 6300 8700 50  0001 C CNN
+	1    6300 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 8500 6100 8500
+Wire Wire Line
+	6500 8500 7200 8500
+Connection ~ 7200 7700
+Wire Wire Line
+	7200 7700 8100 7700
+Wire Wire Line
+	7200 8500 7200 7700
+Wire Wire Line
+	5900 7900 5900 8500
+Connection ~ 5900 8500
+Text Label 11900 8600 0    50   ~ 0
+FLASH_DO
+Text Label 11900 8500 0    50   ~ 0
+SPI_MOSI
+Text Label 11900 6500 0    50   ~ 0
+FLASH_DO
+Text Label 11900 6400 0    50   ~ 0
+SPI_MOSI
 $EndSCHEMATC

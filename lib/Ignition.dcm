@@ -33,6 +33,7 @@ $ENDCMP
 $CMP IGNITION_TARGET_HDR
 D Ignition Target programming/debug header
 K ignition program debug
+F https://www.samtec.com/products/tfc-105-02-f-d-a-k
 $ENDCMP
 #
 $CMP LT3013EFE#PBF
