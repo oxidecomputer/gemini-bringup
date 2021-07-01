@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IGNITION001-QFN
+D Ignition Target, programmable
+K Ignition iCE401K DRQFN84
+F https://rfd.shared.oxide.computer/rfd/0142
+$ENDCMP
+#
+#End Doc Library
