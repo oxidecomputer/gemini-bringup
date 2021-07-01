@@ -30,7 +30,7 @@ K Ignition iCE401K DRQFN84
 F https://rfd.shared.oxide.computer/rfd/0142
 $ENDCMP
 #
-$CMP IGNITION_HDR_TARGET
+$CMP IGNITION_TARGET_HDR
 D Ignition Target programming/debug header
 K ignition program debug
 $ENDCMP

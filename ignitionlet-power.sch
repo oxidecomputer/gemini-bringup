@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "Power"
-Date "2021-06-17"
+Date "2021-06-18"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -1127,10 +1127,10 @@ F 3 "" H 8700 8500 50  0001 C CNN
 $EndComp
 Connection ~ 8700 8500
 $Comp
-L Connector_Generic:Conn_01x03 JP3
+L Connector_Generic:Conn_01x03 JP1
 U 1 1 61D74AC0
 P 11400 6200
-F 0 "JP3" H 11318 5875 50  0000 C CNN
+F 0 "JP1" H 11318 5875 50  0000 C CNN
 F 1 "Conn_01x03" H 11318 5966 50  0000 C CNN
 F 2 "" H 11400 6200 50  0001 C CNN
 F 3 "~" H 11400 6200 50  0001 C CNN
@@ -1253,27 +1253,6 @@ F 3 "" H 5600 6200 50  0001 C CNN
 	1    5600 6200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 JP2
-U 1 1 61E37606
-P 5100 3000
-F 0 "JP2" H 5180 3042 50  0000 L CNN
-F 1 "Conn_01x03" H 5180 2951 50  0000 L CNN
-F 2 "" H 5100 3000 50  0001 C CNN
-F 3 "~" H 5100 3000 50  0001 C CNN
-	1    5100 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 3300 4800 3300
-Wire Wire Line
-	4800 3300 4800 3100
-Wire Wire Line
-	4800 3100 4900 3100
-Wire Wire Line
-	4100 2900 4900 2900
-Wire Wire Line
-	4900 3000 4700 3000
 Connection ~ 5600 3600
 Wire Wire Line
 	5200 3600 5200 5900
@@ -1284,108 +1263,70 @@ Wire Wire Line
 Connection ~ 6000 5900
 Text Notes 10600 6200 0    50   ~ 0
 2.5V: pins 1-2 \n3.3V: pins 2-3
-Connection ~ 5200 3600
 Wire Wire Line
-	2600 2900 2800 2900
-$Comp
-L Device:Jumper JP1
-U 1 1 61E8E6F7
-P 3100 2900
-F 0 "JP1" H 3100 3164 50  0000 C CNN
-F 1 "Jumper" H 3100 3073 50  0000 C CNN
-F 2 "" H 3100 2900 50  0001 C CNN
-F 3 "~" H 3100 2900 50  0001 C CNN
-	1    3100 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 3100 2700 3100
+	2800 3800 3000 3800
 $Comp
 L power:GND #PWR?
 U 1 1 61E843B3
-P 2700 3100
+P 3000 3800
 AR Path="/61E843B3" Ref="#PWR?"  Part="1" 
 AR Path="/61252D76/61E843B3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2700 2850 50  0001 C CNN
-F 1 "GND" H 2705 2927 50  0000 C CNN
-F 2 "" H 2700 3100 50  0001 C CNN
-F 3 "" H 2700 3100 50  0001 C CNN
-	1    2700 3100
+F 0 "#PWR?" H 3000 3550 50  0001 C CNN
+F 1 "GND" H 3005 3627 50  0000 C CNN
+F 2 "" H 3000 3800 50  0001 C CNN
+F 3 "" H 3000 3800 50  0001 C CNN
+	1    3000 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Barrel_Jack_MountingPin J?
+L Connector:Barrel_Jack_MountingPin J1
 U 1 1 61E83C2F
-P 2300 3000
-F 0 "J?" H 2357 3317 50  0000 C CNN
-F 1 "Barrel_Jack_MountingPin" H 2357 3226 50  0000 C CNN
-F 2 "" H 2350 2960 50  0001 C CNN
-F 3 "~" H 2350 2960 50  0001 C CNN
-	1    2300 3000
+P 2500 3700
+F 0 "J1" H 2557 4017 50  0000 C CNN
+F 1 "Barrel_Jack_MountingPin" H 2557 3926 50  0000 C CNN
+F 2 "" H 2550 3660 50  0001 C CNN
+F 3 "~" H 2550 3660 50  0001 C CNN
+	1    2500 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Ignition:VIN_12V #PWR?
 U 1 1 61E4983E
-P 4100 2900
-F 0 "#PWR?" H 4100 2750 50  0001 C CNN
-F 1 "VIN_12V" H 4100 3100 50  0000 C CNN
-F 2 "" H 4100 2900 50  0001 C CNN
-F 3 "" H 4100 2900 50  0001 C CNN
-	1    4100 2900
+P 4300 3600
+F 0 "#PWR?" H 4300 3450 50  0001 C CNN
+F 1 "VIN_12V" H 4300 3800 50  0000 C CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Ignition:VIN_VBUS #PWR?
-U 1 1 61E38560
-P 4100 3300
-F 0 "#PWR?" H 4100 3150 50  0001 C CNN
-F 1 "VIN_VBUS" H 4100 3500 50  0000 C CNN
-F 2 "" H 4100 3300 50  0001 C CNN
-F 3 "" H 4100 3300 50  0001 C CNN
-	1    4100 3300
-	1    0    0    -1  
-$EndComp
-Text Label 4300 2900 0    50   ~ 0
+Text Label 4900 3600 0    50   ~ 0
 VIN_12V
-Text Label 4300 3300 0    50   ~ 0
-VIN_VBUS
-Wire Wire Line
-	3400 2900 3600 2900
 $Comp
 L Device:Polyfuse_Small F?
 U 1 1 61EAD4BD
-P 3700 2900
-F 0 "F?" V 3495 2900 50  0000 C CNN
-F 1 "Polyfuse_Small" V 3586 2900 50  0000 C CNN
-F 2 "" H 3750 2700 50  0001 L CNN
-F 3 "~" H 3700 2900 50  0001 C CNN
-	1    3700 2900
+P 3700 3600
+F 0 "F?" V 3495 3600 50  0000 C CNN
+F 1 "Polyfuse_Small" V 3586 3600 50  0000 C CNN
+F 2 "" H 3750 3400 50  0001 L CNN
+F 3 "~" H 3700 3600 50  0001 C CNN
+	1    3700 3600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3800 2900 4100 2900
-Connection ~ 4100 2900
-Wire Wire Line
-	4700 3000 4700 3600
-Wire Wire Line
-	4700 3600 5100 3600
-Text Label 4800 3600 0    50   ~ 0
-VIN
+	3800 3600 4300 3600
+Connection ~ 4300 3600
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 61F2FBE3
-P 5100 3600
-F 0 "#FLG?" H 5100 3675 50  0001 C CNN
-F 1 "PWR_FLAG" H 5100 3773 50  0000 C CNN
-F 2 "" H 5100 3600 50  0001 C CNN
-F 3 "~" H 5100 3600 50  0001 C CNN
-	1    5100 3600
+P 4700 3600
+F 0 "#FLG?" H 4700 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4700 3773 50  0000 C CNN
+F 2 "" H 4700 3600 50  0001 C CNN
+F 3 "~" H 4700 3600 50  0001 C CNN
+	1    4700 3600
 	1    0    0    -1  
 $EndComp
-Connection ~ 5100 3600
-Wire Wire Line
-	5100 3600 5200 3600
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 61F302A4
@@ -1430,18 +1371,18 @@ $EndComp
 Wire Wire Line
 	8100 8500 8700 8500
 Connection ~ 8100 8500
-Text Notes 1900 4200 0    50   ~ 0
-The Fake Bus Bar can take 5-12V from the barrel jack\nor 5V from VBUS, provided through the programming\nheader. The three-pin jumper is deliberate as to avoid\naccidentally connecting both inputs.\n\nJP1 is intended to allow disconnecting the barrel jack\nas well as injecting 12V from the Gimletlet using short\nDupont wires. This allows both boards to be powered\nby a single supply.
-Text Notes 1900 2500 0    50   ~ 10
+Text Notes 2100 4400 0    50   ~ 0
+The Fake Bus Bar can take 5-12V from the barrel jack\nor J2 can be used to injecting 12V from the Gimletlet\nusing short Dupont wires. This allows both boards to\nbe powered by a single supply.
+Text Notes 2100 3200 0    50   ~ 10
 Fake Bus Bar
 Wire Notes Line
-	1800 2300 1800 4300
+	2000 3000 2000 4500
 Wire Notes Line
-	1800 4300 5400 4300
+	2000 4500 5400 4500
 Wire Notes Line
-	5400 4300 5400 2300
+	5400 4500 5400 3000
 Wire Notes Line
-	5400 2300 1800 2300
+	5400 3000 2000 3000
 Text Notes 8600 4700 0    50   ~ 0
 The number of input/output capacitors was copied from\nthe Gimlet implementation, which assumes a 54V input\nvoltage. Given a smaller difference between VIN of this\nboard and the output less may be required. The footprints\nare here to adjust/fix if needed.
 Text Notes 9600 3600 0    50   ~ 0
@@ -1450,4 +1391,31 @@ Text Notes 9600 5900 0    50   ~ 0
 Vout nom: 3.3V\nImax: 250mA
 Text Notes 9000 8500 0    50   ~ 0
 Vout nom: 2.5V\nImax: 200mA
+Wire Wire Line
+	4300 3600 4700 3600
+Connection ~ 5200 3600
+Connection ~ 4700 3600
+Wire Wire Line
+	4700 3600 5200 3600
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 60DD6D36
+P 3400 3700
+F 0 "J2" H 3480 3692 50  0000 L CNN
+F 1 "Conn_01x02" H 3480 3601 50  0000 L CNN
+F 2 "" H 3400 3700 50  0001 C CNN
+F 3 "~" H 3400 3700 50  0001 C CNN
+	1    3400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3800 3000 3800
+Connection ~ 3000 3800
+Wire Wire Line
+	3200 3700 3200 3600
+Wire Wire Line
+	2800 3600 3200 3600
+Wire Wire Line
+	3200 3600 3600 3600
+Connection ~ 3200 3600
 $EndSCHEMATC

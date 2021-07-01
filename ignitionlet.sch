@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "Ignition Application"
-Date "2021-06-17"
+Date "2021-06-18"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 11300 7200 2300 2500
+S 11300 7200 2200 2500
 U 61252D76
 F0 "Power" 50
 F1 "ignitionlet-power.sch" 50
@@ -512,7 +512,7 @@ F 3 "~" H 12200 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 13800 7200 2100 2500
+S 13700 7200 2200 2500
 U 61701F79
 F0 "Config" 50
 F1 "ignitionlet-config.sch" 50
@@ -542,10 +542,10 @@ Wire Notes Line
 Wire Notes Line
 	15900 700  15900 7000
 Wire Notes Line
-	13700 5400 13700 7000
-Text Notes 12300 8500 0    79   ~ 16
+	13600 5400 13600 7000
+Text Notes 12200 8500 0    79   ~ 16
 Power
-Text Notes 13950 8500 0    79   ~ 16
+Text Notes 13900 8500 0    79   ~ 16
 Programming & Configuration
 Text Notes 8400 9500 0    50   ~ 0
 The LVDS transmitter pair is implemented as per Lattice\nFPGA-TN-1253 using PIO pin pairs in Bank 3. The resistor\nvalues above were derived using the equations on p. 4\nand the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm\neach. The intend here is that one pin of a 100 mil header/\nfootprint is inserted between the two resistors. If done\nusing a tight layout this via should add minimal disruption\nat the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for\nalternative prototyping by not fitting the second series \nresistor, parallel resisitor and SMA connector, while using\nthe first resistor footprint as slew liminiting resistor or for\nseries termination.\n\nOne possible application of this alternative scheme is to\nallow the Ignition protocol to be carried using single ended\nLVCMOS signalling at 3.3V between this broad and an ECP5\ndev board without requiring SMA connectors for the link\npartner. This would simplify initial prototyping work. 
@@ -861,7 +861,7 @@ F 3 " ~" H 10500 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2000 7700 0    50   ~ 10
-TODO:\n\n- Document program/configuration modes\n- Rework AUX_RX for alternative prototyping\n- Pick LED and limit resisitor
+TODO:\n\n- Rework AUX_RX for alternative prototyping\n- Pick LED and limit resisitor
 Text Notes 1450 2450 0    79   ~ 16
 Ignition Target
 $Comp
@@ -1500,17 +1500,6 @@ Wire Wire Line
 	5600 4800 6100 4800
 Wire Wire Line
 	5600 4700 6100 4700
-$Comp
-L Ignition:IGNITION001-QFN U1
-U 1 1 60CABDCA
-P 6900 5000
-F 0 "U1" H 6900 6665 50  0000 C CNN
-F 1 "IGNITION001-QFN" H 6900 6574 50  0000 C CNN
-F 2 "" H 7800 6000 50  0001 C CNN
-F 3 "https://rfd.shared.oxide.computer/rfd/0142" H 7800 6000 50  0001 C CNN
-	1    6900 5000
-	1    0    0    -1  
-$EndComp
 Text Notes 11400 3400 0    79   ~ 16
 ID Straps
 Wire Wire Line
@@ -1526,4 +1515,15 @@ Wire Wire Line
 	9800 4700 9800 4900
 Wire Wire Line
 	9800 3400 9800 3600
+$Comp
+L Ignition:IGNITION001-QFN U1
+U 1 1 60CABDCA
+P 6900 5000
+F 0 "U1" H 6900 6665 50  0000 C CNN
+F 1 "IGNITION001-QFN" H 6900 6574 50  0000 C CNN
+F 2 "" H 7800 6000 50  0001 C CNN
+F 3 "https://rfd.shared.oxide.computer/rfd/0142" H 7800 6000 50  0001 C CNN
+	1    6900 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
