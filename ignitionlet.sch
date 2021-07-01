@@ -5,9 +5,9 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "Ignition Target"
-Date "2021-06-21"
+Date "2021-07-01"
 Rev "1"
-Comp ""
+Comp "Oxide Computer Co."
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -674,8 +674,8 @@ F 3 " ~" H 1100 3200 50  0001 C CNN
 	1    1100 3200
 	-1   0    0    -1  
 $EndComp
-Text Notes 9200 10600 0    50   ~ 10
-TODO:\n\n- Check TX/RX cap values againt bit rate
+Text Notes 5100 8000 0    50   ~ 10
+TODO:\n\n- Check TX/RX cap values againt bit rate\n- Add chokes on SerDes
 Text Notes 800  2200 0    79   ~ 16
 Ignition Target
 $Comp
@@ -1837,7 +1837,7 @@ L Mechanical:Fiducial FID1
 U 1 1 6120074B
 P 3200 8700
 F 0 "FID1" H 3285 8746 50  0000 L CNN
-F 1 "IGNITIONLET" H 3285 8655 50  0000 L CNN
+F 1 "Ignitionlet" H 3285 8655 50  0000 L CNN
 F 2 "grumpy:Oxide_Board_Identifier_23x6mm" H 3200 8700 50  0001 C CNN
 F 3 "~" H 3200 8700 50  0001 C CNN
 	1    3200 8700
@@ -1856,7 +1856,7 @@ F 3 "~" H 3200 9000 50  0001 C CNN
 $EndComp
 Text Notes 800  8300 0    79   ~ 16
 Mechanical
-Text Notes 2100 9800 0    50   ~ 0
+Text Notes 1900 9800 0    50   ~ 0
 The board assumes the width of two standard\n0.80” PMOD boards. J16 is present only for\nadditional mechanical stability, but can be used\nfor prototyping.
 NoConn ~ 2200 8700
 NoConn ~ 2200 8800
@@ -1911,4 +1911,12 @@ Text Label 8500 6100 0    50   ~ 0
 AUX1_TX_TAP_P
 Text Label 8500 6000 0    50   ~ 0
 AUX1_TX_TAP_N
+Wire Notes Line
+	700  8100 4000 8100
+Wire Notes Line
+	4000 8100 4000 10000
+Wire Notes Line
+	4000 10000 700  10000
+Wire Notes Line
+	700  10000 700  8100
 $EndSCHEMATC
