@@ -1,17 +1,19 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP +3.3V
-D Power symbol creates a global label with name "+3.3V"
-K power-flag
-$ENDCMP
-#
-$CMP +3.3V_copy
-D Power symbol creates a global label with name "+3.3V"
-K power-flag
+$CMP AMPMGFB-50.0000T
+D Clock Oscillator MEMS 50MHz XO 25ppm
+K OSC XO MEMS
+F https://www.mouser.com/datasheet/2/3/AMPM-1381360.pdf
 $ENDCMP
 #
 $CMP C0603C106M8PACTU
 D Cap Ceramic 10uF 10V X5R 0603
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP GCM188R71E105KA64D
+D Cap Ceramic 1uF 25V X7R 0603
 K capacitor cap
 F ~
 $ENDCMP
@@ -28,10 +30,21 @@ K Ignition iCE401K DRQFN84
 F https://rfd.shared.oxide.computer/rfd/0142
 $ENDCMP
 #
+$CMP IGNITION_HDR_TARGET
+D Ignition Target programming/debug header
+K ignition program debug
+$ENDCMP
+#
 $CMP LT3013EFE#PBF
 D LDO Voltage Regulator 80Vin, 250mA, Power Good
 K LDO PWRGD TSSOP
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3013fe.pdf
+$ENDCMP
+#
+$CMP PMOD_2A_PERIPHERAL
+D PMOD 2A SPI Peripheral
+K pmod spi
+F https://www.digilentinc.com/Pmods/Digilent-Pmod_%20Interface_Specification.pdf
 $ENDCMP
 #
 $CMP TPS7A0525PDBVR
@@ -45,8 +58,23 @@ D Power symbol creates a global label with name "V1P2"
 K power-flag
 $ENDCMP
 #
+$CMP V2P5
+D Power symbol creates a global label with name "V2P5"
+K power-flag
+$ENDCMP
+#
 $CMP V3P3
 D Power symbol creates a global label with name "V3P3"
+K power-flag
+$ENDCMP
+#
+$CMP VIN_12V
+D Power symbol creates a global label with name "VIN_12V"
+K power-flag
+$ENDCMP
+#
+$CMP VIN_VBUS
+D Power symbol creates a global label with name "VIN_VBUS"
 K power-flag
 $ENDCMP
 #
