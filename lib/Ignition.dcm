@@ -41,6 +41,12 @@ K LDO PWRGD TSSOP
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3013fe.pdf
 $ENDCMP
 #
+$CMP LTST-C193KGKT-5A
+D Light emitting diode, filled shape
+K LED diode
+F ~
+$ENDCMP
+#
 $CMP PMOD_2A_PERIPHERAL
 D PMOD 2A SPI Peripheral
 K pmod spi
