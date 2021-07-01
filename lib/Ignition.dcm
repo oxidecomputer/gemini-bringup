@@ -1,5 +1,27 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +3.3V
+D Power symbol creates a global label with name "+3.3V"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_copy
+D Power symbol creates a global label with name "+3.3V"
+K power-flag
+$ENDCMP
+#
+$CMP C0603C106M8PACTU
+D Cap Ceramic 10uF 10V X5R 0603
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP GRM21BR61E106KA73K
+D Cap Ceramic 10uF 25V X5R 0805
+K capacitor cap
+F ~
+$ENDCMP
+#
 $CMP IGNITION001-QFN
 D Ignition Target, programmable
 K Ignition iCE401K DRQFN84
@@ -16,6 +38,16 @@ $CMP TPS7A0525PDBVR
 D LDO 200mA 2.5Vout
 K LDO SOT-23
 F https://www.ti.com/lit/ds/symlink/tps7a05.pdf
+$ENDCMP
+#
+$CMP V1P2
+D Power symbol creates a global label with name "V1P2"
+K power-flag
+$ENDCMP
+#
+$CMP V3P3
+D Power symbol creates a global label with name "V3P3"
+K power-flag
 $ENDCMP
 #
 #End Doc Library

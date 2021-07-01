@@ -208,5 +208,5 @@
   (lib (name Valve)(type Legacy)(uri ${KIPRJMOD}/lib/kicad/kicad-symbols/Valve.lib)(options "")(descr "Valve symbols"))
   (lib (name Video)(type Legacy)(uri ${KIPRJMOD}/lib/kicad/kicad-symbols/Video.lib)(options "")(descr "Video symbols"))
   (lib (name stm32h7)(type Legacy)(uri ${KIPRJMOD}/lib/stm32h7.lib)(options "")(descr ""))
-  (lib (name Ignition)(type Legacy)(uri ${KIPRJMOD}/lib/Ignition.lib)(options "")(descr ""))
+  (lib (name Ignition)(type Legacy)(uri ${KIPRJMOD}/lib/Ignition.lib)(options "")(descr "Ignition symbols"))
 )
