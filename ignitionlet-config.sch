@@ -202,11 +202,11 @@ CBSEL1
 Text Label 12700 7400 0    50   ~ 0
 CBSEL0
 Text Label 6600 7800 0    50   ~ 0
-FLASH_RESET_L
+~FLASH_RESET
 Text Label 6600 7700 0    50   ~ 0
-FPGA_RESET_L
+~FPGA_RESET
 Text Label 6600 7900 0    50   ~ 0
-FLASH_WP_L
+~FLASH_WP
 Wire Wire Line
 	12300 6400 12300 5200
 $Comp
@@ -808,15 +808,15 @@ Wire Wire Line
 Wire Wire Line
 	8100 4200 8400 4200
 Text Label 9700 6400 0    50   ~ 0
-FLASH_RESET_L
+~FLASH_RESET
 Text Label 9700 6500 0    50   ~ 0
 ~SPI_SS
 Text Label 9700 6600 0    50   ~ 0
 SPI_SCK
 Text Label 9700 7800 0    50   ~ 0
-FLASH_HOLD_L
+~FLASH_HOLD
 Text Label 9700 7900 0    50   ~ 0
-FLASH_WP_L
+~FLASH_WP
 Wire Wire Line
 	9000 7900 12000 7900
 Text Label 11900 8600 0    50   ~ 0
@@ -827,13 +827,13 @@ Text Label 11900 6400 0    50   ~ 0
 SPI_MOSI
 NoConn ~ 6000 8000
 Text Label 9700 8700 0    50   ~ 0
-FLASH_WP_L
+~FLASH_WP
 Text Label 9700 8800 0    50   ~ 0
 SPI_SCK
 Text Label 9700 8600 0    50   ~ 0
 ~SPI_SS
 Text Label 9700 8500 0    50   ~ 0
-FLASH_RESET_L
+~FLASH_RESET
 Wire Wire Line
 	8900 8700 10700 8700
 Wire Wire Line

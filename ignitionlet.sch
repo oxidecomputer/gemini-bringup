@@ -22,17 +22,17 @@ $EndSheet
 Wire Wire Line
 	11600 2200 11600 2300
 Text Label 12500 2200 0    50   ~ 0
-ROT_FLT_L
+~ROT_FLT
 Text Label 12500 2100 0    50   ~ 0
-PWR_FLT4_L
+~PWR_FLT4
 Text Label 12500 2000 0    50   ~ 0
-PWR_FLT3_L
+~PWR_FLT3
 Text Label 12500 1900 0    50   ~ 0
-PWR_FLT2_L
+~PWR_FLT2
 Text Label 12500 1800 0    50   ~ 0
-PWR_FLT1_L
+~PWR_FLT1
 Text Label 12500 1700 0    50   ~ 0
-PWR_FLT0_L
+~PWR_FLT0
 Wire Wire Line
 	12400 2200 15000 2200
 Wire Wire Line
@@ -1149,7 +1149,7 @@ F 4 "1%" H 4968 5209 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Text Label 5300 5500 0    50   ~ 0
-SYS_RST_L
+~SYS_RST
 Text Label 5300 5800 0    50   ~ 0
 ID0
 Text Label 5300 5900 0    50   ~ 0
@@ -1186,17 +1186,17 @@ F 3 "" H 11600 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5300 4700 0    50   ~ 0
-PWR_FLT0_L
+~PWR_FLT0
 Text Label 5300 4800 0    50   ~ 0
-PWR_FLT1_L
+~PWR_FLT1
 Text Label 5300 4900 0    50   ~ 0
-PWR_FLT2_L
+~PWR_FLT2
 Text Label 5300 5000 0    50   ~ 0
-PWR_FLT3_L
+~PWR_FLT3
 Text Label 5300 5100 0    50   ~ 0
-PWR_FLT4_L
+~PWR_FLT4
 Text Label 5300 5200 0    50   ~ 0
-ROT_FLT_L
+~ROT_FLT
 Wire Wire Line
 	5300 5200 5800 5200
 Wire Wire Line
