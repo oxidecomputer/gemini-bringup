@@ -6,4 +6,16 @@ K Ignition iCE401K DRQFN84
 F https://rfd.shared.oxide.computer/rfd/0142
 $ENDCMP
 #
+$CMP LT3013EFE#PBF
+D LDO Voltage Regulator 80Vin, 250mA, Power Good
+K LDO PWRGD TSSOP
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3013fe.pdf
+$ENDCMP
+#
+$CMP TPS7A0525PDBVR
+D LDO 200mA 2.5Vout
+K LDO SOT-23
+F https://www.ti.com/lit/ds/symlink/tps7a05.pdf
+$ENDCMP
+#
 #End Doc Library
