@@ -134,10 +134,10 @@ F 3 "" H 11600 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J?
+L Connector_Generic:Conn_02x06_Odd_Even J13
 U 1 1 60EE9D0A
 P 12100 1900
-F 0 "J?" H 12150 2317 50  0000 C CNN
+F 0 "J13" H 12150 2317 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" H 12150 2226 50  0000 C CNN
 F 2 "" H 12100 1900 50  0001 C CNN
 F 3 "~" H 12100 1900 50  0001 C CNN
@@ -250,10 +250,10 @@ Wire Wire Line
 Wire Wire Line
 	15000 4700 15000 4800
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J?
+L Connector_Generic:Conn_02x06_Odd_Even J14
 U 1 1 60DB20CF
 P 12100 4100
-F 0 "J?" H 12150 4517 50  0000 C CNN
+F 0 "J14" H 12150 4517 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" H 12150 4426 50  0000 C CNN
 F 2 "" H 12100 4100 50  0001 C CNN
 F 3 "~" H 12100 4100 50  0001 C CNN
@@ -261,10 +261,10 @@ F 3 "~" H 12100 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW2
 U 1 1 6131864A
 P 15400 2200
-F 0 "SW?" H 15400 2485 50  0000 C CNN
+F 0 "SW2" H 15400 2485 50  0000 C CNN
 F 1 "FLT" H 15400 2394 50  0000 C CNN
 F 2 "" H 15400 2400 50  0001 C CNN
 F 3 "~" H 15400 2400 50  0001 C CNN
@@ -288,10 +288,10 @@ $EndComp
 Wire Wire Line
 	15600 2200 15600 2300
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R24
 U 1 1 61373AA2
 P 13000 1500
-F 0 "R?" H 13068 1591 50  0000 L CNN
+F 0 "R24" H 13068 1591 50  0000 L CNN
 F 1 "10K" H 13068 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13000 1500 50  0001 C CNN
 F 3 "~" H 13000 1500 50  0001 C CNN
@@ -300,10 +300,10 @@ F 4 "1%" H 13068 1409 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R25
 U 1 1 613741BD
 P 13400 1500
-F 0 "R?" H 13468 1591 50  0000 L CNN
+F 0 "R25" H 13468 1591 50  0000 L CNN
 F 1 "10K" H 13468 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13400 1500 50  0001 C CNN
 F 3 "~" H 13400 1500 50  0001 C CNN
@@ -312,10 +312,10 @@ F 4 "1%" H 13468 1409 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R26
 U 1 1 613743DC
 P 13800 1500
-F 0 "R?" H 13868 1591 50  0000 L CNN
+F 0 "R26" H 13868 1591 50  0000 L CNN
 F 1 "10K" H 13868 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13800 1500 50  0001 C CNN
 F 3 "~" H 13800 1500 50  0001 C CNN
@@ -324,10 +324,10 @@ F 4 "1%" H 13868 1409 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R27
 U 1 1 6137470F
 P 14200 1500
-F 0 "R?" H 14268 1591 50  0000 L CNN
+F 0 "R27" H 14268 1591 50  0000 L CNN
 F 1 "10K" H 14268 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14200 1500 50  0001 C CNN
 F 3 "~" H 14200 1500 50  0001 C CNN
@@ -336,10 +336,10 @@ F 4 "1%" H 14268 1409 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R28
 U 1 1 61374A78
 P 14600 1500
-F 0 "R?" H 14668 1591 50  0000 L CNN
+F 0 "R28" H 14668 1591 50  0000 L CNN
 F 1 "10K" H 14668 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 1500 50  0001 C CNN
 F 3 "~" H 14600 1500 50  0001 C CNN
@@ -348,10 +348,10 @@ F 4 "1%" H 14668 1409 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R29
 U 1 1 61374DBD
 P 15000 1500
-F 0 "R?" H 15068 1591 50  0000 L CNN
+F 0 "R29" H 15068 1591 50  0000 L CNN
 F 1 "10K" H 15068 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 15000 1500 50  0001 C CNN
 F 3 "~" H 15000 1500 50  0001 C CNN
@@ -360,10 +360,10 @@ F 4 "1%" H 15068 1409 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R30
 U 1 1 61375198
 P 13000 4600
-F 0 "R?" H 13068 4691 50  0000 L CNN
+F 0 "R30" H 13068 4691 50  0000 L CNN
 F 1 "10K" H 13068 4600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13000 4600 50  0001 C CNN
 F 3 "~" H 13000 4600 50  0001 C CNN
@@ -372,10 +372,10 @@ F 4 "1%" H 13068 4509 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R31
 U 1 1 613757BF
 P 13400 4600
-F 0 "R?" H 13468 4691 50  0000 L CNN
+F 0 "R31" H 13468 4691 50  0000 L CNN
 F 1 "10K" H 13468 4600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13400 4600 50  0001 C CNN
 F 3 "~" H 13400 4600 50  0001 C CNN
@@ -384,10 +384,10 @@ F 4 "1%" H 13468 4509 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R32
 U 1 1 61375A2C
 P 13800 4600
-F 0 "R?" H 13868 4691 50  0000 L CNN
+F 0 "R32" H 13868 4691 50  0000 L CNN
 F 1 "10K" H 13868 4600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13800 4600 50  0001 C CNN
 F 3 "~" H 13800 4600 50  0001 C CNN
@@ -396,10 +396,10 @@ F 4 "1%" H 13868 4509 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R33
 U 1 1 61375CE1
 P 14200 4600
-F 0 "R?" H 14268 4691 50  0000 L CNN
+F 0 "R33" H 14268 4691 50  0000 L CNN
 F 1 "10K" H 14268 4600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14200 4600 50  0001 C CNN
 F 3 "~" H 14200 4600 50  0001 C CNN
@@ -408,10 +408,10 @@ F 4 "1%" H 14268 4509 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R34
 U 1 1 61375F9C
 P 14600 4600
-F 0 "R?" H 14668 4691 50  0000 L CNN
+F 0 "R34" H 14668 4691 50  0000 L CNN
 F 1 "10K" H 14668 4600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 4600 50  0001 C CNN
 F 3 "~" H 14600 4600 50  0001 C CNN
@@ -420,10 +420,10 @@ F 4 "1%" H 14668 4509 50  0001 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R35
 U 1 1 61376239
 P 15000 4600
-F 0 "R?" H 15068 4691 50  0000 L CNN
+F 0 "R35" H 15068 4691 50  0000 L CNN
 F 1 "10K" H 15068 4600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 15000 4600 50  0001 C CNN
 F 3 "~" H 15000 4600 50  0001 C CNN
@@ -451,10 +451,10 @@ $EndComp
 Wire Wire Line
 	13900 6000 14400 6000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R36
 U 1 1 6178E19E
 P 14500 6000
-F 0 "R?" V 14600 6000 50  0000 C CNN
+F 0 "R36" V 14600 6000 50  0000 C CNN
 F 1 "280" V 14700 6000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14500 6000 50  0001 C CNN
 F 3 "~" H 14500 6000 50  0001 C CNN
@@ -490,10 +490,10 @@ CMD1
 Text Label 11500 5900 0    50   ~ 0
 PWR_EN
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J15
 U 1 1 61755907
 P 12200 6000
-F 0 "J?" H 12280 5992 50  0000 L CNN
+F 0 "J15" H 12280 5992 50  0000 L CNN
 F 1 "Conn_01x04" H 12280 5901 50  0000 L CNN
 F 2 "" H 12200 6000 50  0001 C CNN
 F 3 "~" H 12200 6000 50  0001 C CNN
@@ -561,10 +561,10 @@ Wire Wire Line
 Text Label 8500 4500 0    50   ~ 0
 AUX1_TX_TAP_P
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R17
 U 1 1 60F540AE
 P 8400 5000
-F 0 "R?" V 8105 5000 50  0000 C CNN
+F 0 "R17" V 8105 5000 50  0000 C CNN
 F 1 "75" V 8196 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 5000 50  0001 C CNN
 F 3 "~" H 8400 5000 50  0001 C CNN
@@ -573,10 +573,10 @@ F 4 "1%" V 8287 5000 50  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R16
 U 1 1 60F53C61
 P 8400 4500
-F 0 "R?" V 8105 4500 50  0000 C CNN
+F 0 "R16" V 8105 4500 50  0000 C CNN
 F 1 "75" V 8196 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 4500 50  0001 C CNN
 F 3 "~" H 8400 4500 50  0001 C CNN
@@ -591,10 +591,10 @@ Wire Wire Line
 Text Label 8500 3800 0    50   ~ 0
 AUX0_RX_TAP_N
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R15
 U 1 1 60EEFAC1
 P 8400 3800
-F 0 "R?" V 8105 3800 50  0000 C CNN
+F 0 "R15" V 8105 3800 50  0000 C CNN
 F 1 "75" V 8196 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 3800 50  0001 C CNN
 F 3 "~" H 8400 3800 50  0001 C CNN
@@ -605,10 +605,10 @@ $EndComp
 Wire Wire Line
 	7400 3900 8100 3900
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R14
 U 1 1 60ED7688
 P 8400 3300
-F 0 "R?" V 8105 3300 50  0000 C CNN
+F 0 "R14" V 8105 3300 50  0000 C CNN
 F 1 "75" V 8196 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 3300 50  0001 C CNN
 F 3 "~" H 8400 3300 50  0001 C CNN
@@ -633,10 +633,10 @@ Wire Wire Line
 Wire Wire Line
 	1500 3600 1600 3600
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J2
 U 1 1 60D80468
 P 1100 4700
-F 0 "J?" H 1050 4850 50  0000 L CNN
+F 0 "J2" H 1050 4850 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1200 4584 50  0001 L CNN
 F 2 "" H 1100 4700 50  0001 C CNN
 F 3 " ~" H 1100 4700 50  0001 C CNN
@@ -644,10 +644,10 @@ F 3 " ~" H 1100 4700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J4
 U 1 1 60D7FB30
 P 1300 5100
-F 0 "J?" H 1250 5250 50  0000 L CNN
+F 0 "J4" H 1250 5250 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1400 4984 50  0001 L CNN
 F 2 "" H 1300 5100 50  0001 C CNN
 F 3 " ~" H 1300 5100 50  0001 C CNN
@@ -655,10 +655,10 @@ F 3 " ~" H 1300 5100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J3
 U 1 1 60D7F1CF
 P 1300 3600
-F 0 "J?" H 1250 3750 50  0000 L CNN
+F 0 "J3" H 1250 3750 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1400 3484 50  0001 L CNN
 F 2 "" H 1300 3600 50  0001 C CNN
 F 3 " ~" H 1300 3600 50  0001 C CNN
@@ -666,10 +666,10 @@ F 3 " ~" H 1300 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J1
 U 1 1 60D73D9A
 P 1100 3200
-F 0 "J?" H 1050 3350 50  0000 L CNN
+F 0 "J1" H 1050 3350 50  0000 L CNN
 F 1 "Conn_Coaxial" H 1200 3084 50  0001 L CNN
 F 2 "" H 1100 3200 50  0001 C CNN
 F 3 " ~" H 1100 3200 50  0001 C CNN
@@ -703,12 +703,12 @@ Wire Wire Line
 $Comp
 L Ignition:V3P3 #PWR0111
 U 1 1 6164C39E
-P 4600 3100
-F 0 "#PWR0111" H 4600 2950 50  0001 C CNN
-F 1 "V3P3" H 4615 3273 50  0000 C CNN
-F 2 "" H 4600 3100 50  0001 C CNN
-F 3 "" H 4600 3100 50  0001 C CNN
-	1    4600 3100
+P 4500 3100
+F 0 "#PWR0111" H 4500 2950 50  0001 C CNN
+F 1 "V3P3" H 4515 3273 50  0000 C CNN
+F 2 "" H 4500 3100 50  0001 C CNN
+F 3 "" H 4500 3100 50  0001 C CNN
+	1    4500 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -725,8 +725,6 @@ F 3 "" H 4500 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3100 4600 3100
-Wire Wire Line
 	4500 3100 4500 3200
 Wire Wire Line
 	4900 3200 4900 3100
@@ -738,10 +736,10 @@ Wire Wire Line
 Wire Wire Line
 	5000 3400 4900 3400
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C7
 U 1 1 616260FA
 P 4500 3300
-F 0 "C?" H 4592 3437 50  0000 L CNN
+F 0 "C7" H 4592 3437 50  0000 L CNN
 F 1 "GCM188R71E105KA64D" H 4510 3220 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4500 3300 50  0001 C CNN
 F 3 "~" H 4500 3300 50  0001 C CNN
@@ -753,10 +751,10 @@ F 7 "0603" H 4500 2900 50  0001 L CNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ignition:AMPMGFB-50.0000T U?
+L Ignition:AMPMGFB-50.0000T U2
 U 1 1 61619B86
 P 5300 3400
-F 0 "U?" H 5300 3865 50  0000 C CNN
+F 0 "U2" H 5300 3865 50  0000 C CNN
 F 1 "AMPMGFB-50.0000T" H 5300 3774 50  0000 C CNN
 F 2 "" H 5300 2900 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/3/AMPM-1381360.pdf" H 5300 2800 50  0001 C CNN
@@ -851,10 +849,10 @@ F 3 "" H 3500 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R11
 U 1 1 613DAF43
 P 3500 4700
-F 0 "R?" H 3568 4791 50  0000 L CNN
+F 0 "R11" H 3568 4791 50  0000 L CNN
 F 1 "10K" H 3568 4700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 4700 50  0001 C CNN
 F 3 "~" H 3500 4700 50  0001 C CNN
@@ -863,10 +861,10 @@ F 4 "1%" H 3568 4609 50  0000 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R12
 U 1 1 613DAF3C
 P 3500 5100
-F 0 "R?" H 3568 5191 50  0000 L CNN
+F 0 "R12" H 3568 5191 50  0000 L CNN
 F 1 "10K" H 3568 5100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 5100 50  0001 C CNN
 F 3 "~" H 3500 5100 50  0001 C CNN
@@ -886,10 +884,10 @@ Wire Wire Line
 Wire Wire Line
 	3100 4300 3100 4400
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R7
 U 1 1 613DAF2B
 P 3100 4500
-F 0 "R?" H 3168 4591 50  0000 L CNN
+F 0 "R7" H 3168 4591 50  0000 L CNN
 F 1 "50" H 3168 4500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 4500 50  0001 C CNN
 F 3 "~" H 3100 4500 50  0001 C CNN
@@ -898,10 +896,10 @@ F 4 "1%" H 3168 4409 50  0000 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R8
 U 1 1 613DAF24
 P 3100 5200
-F 0 "R?" H 3168 5291 50  0000 L CNN
+F 0 "R8" H 3168 5291 50  0000 L CNN
 F 1 "50" H 3168 5200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 5200 50  0001 C CNN
 F 3 "~" H 3100 5200 50  0001 C CNN
@@ -921,10 +919,10 @@ F 3 "" H 2700 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C6
 U 1 1 613DAF17
 P 2700 5000
-F 0 "C?" H 2792 5091 50  0000 L CNN
+F 0 "C6" H 2792 5091 50  0000 L CNN
 F 1 "GCM188R71E105KA64D" H 2710 4920 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 5000 50  0001 C CNN
 F 3 "~" H 2700 5000 50  0001 C CNN
@@ -936,10 +934,10 @@ F 7 "0603" H 2792 4909 50  0000 L CNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C3
 U 1 1 613DAF0D
 P 1700 4700
-F 0 "C?" V 1929 4700 50  0000 C CNN
+F 0 "C3" V 1929 4700 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 1710 4620 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 4700 50  0001 C CNN
 F 3 "~" H 1700 4700 50  0001 C CNN
@@ -951,10 +949,10 @@ F 7 "0603" V 1837 4700 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C4
 U 1 1 613DAF03
 P 1700 5100
-F 0 "C?" V 1929 5100 50  0000 C CNN
+F 0 "C4" V 1929 5100 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 1710 5020 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 5100 50  0001 C CNN
 F 3 "~" H 1700 5100 50  0001 C CNN
@@ -993,10 +991,10 @@ F 3 "" H 3500 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R9
 U 1 1 613AD374
 P 3500 3200
-F 0 "R?" H 3568 3291 50  0000 L CNN
+F 0 "R9" H 3568 3291 50  0000 L CNN
 F 1 "10K" H 3568 3200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 3200 50  0001 C CNN
 F 3 "~" H 3500 3200 50  0001 C CNN
@@ -1005,10 +1003,10 @@ F 4 "1%" H 3568 3109 50  0000 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R10
 U 1 1 613ACAA7
 P 3500 3600
-F 0 "R?" H 3568 3691 50  0000 L CNN
+F 0 "R10" H 3568 3691 50  0000 L CNN
 F 1 "10K" H 3568 3600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 3600 50  0001 C CNN
 F 3 "~" H 3500 3600 50  0001 C CNN
@@ -1028,10 +1026,10 @@ Wire Wire Line
 Wire Wire Line
 	3100 2800 3100 2900
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R5
 U 1 1 61395A63
 P 3100 3000
-F 0 "R?" H 3168 3091 50  0000 L CNN
+F 0 "R5" H 3168 3091 50  0000 L CNN
 F 1 "50" H 3168 3000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 3000 50  0001 C CNN
 F 3 "~" H 3100 3000 50  0001 C CNN
@@ -1040,10 +1038,10 @@ F 4 "1%" H 3168 2909 50  0000 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R6
 U 1 1 61394C32
 P 3100 3700
-F 0 "R?" H 3168 3791 50  0000 L CNN
+F 0 "R6" H 3168 3791 50  0000 L CNN
 F 1 "50" H 3168 3700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 3700 50  0001 C CNN
 F 3 "~" H 3100 3700 50  0001 C CNN
@@ -1063,10 +1061,10 @@ F 3 "" H 2700 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C5
 U 1 1 61393010
 P 2700 3500
-F 0 "C?" H 2792 3591 50  0000 L CNN
+F 0 "C5" H 2792 3591 50  0000 L CNN
 F 1 "GCM188R71E105KA64D" H 2710 3420 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 3500 50  0001 C CNN
 F 3 "~" H 2700 3500 50  0001 C CNN
@@ -1078,10 +1076,10 @@ F 7 "0603" H 2792 3409 50  0000 L CNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C1
 U 1 1 6139292F
 P 1700 3200
-F 0 "C?" V 1929 3200 50  0000 C CNN
+F 0 "C1" V 1929 3200 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 1710 3120 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 3200 50  0001 C CNN
 F 3 "~" H 1700 3200 50  0001 C CNN
@@ -1093,10 +1091,10 @@ F 7 "0603" V 1837 3200 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C2
 U 1 1 61390485
 P 1700 3600
-F 0 "C?" V 1929 3600 50  0000 C CNN
+F 0 "C2" V 1929 3600 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 1710 3520 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 3600 50  0001 C CNN
 F 3 "~" H 1700 3600 50  0001 C CNN
@@ -1124,10 +1122,10 @@ F 3 "" H 4300 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 61311F1C
 P 4500 5500
-F 0 "SW?" H 4500 5785 50  0000 C CNN
+F 0 "SW1" H 4500 5785 50  0000 C CNN
 F 1 "SYS_RST" H 4500 5694 50  0000 C CNN
 F 2 "" H 4500 5700 50  0001 C CNN
 F 3 "~" H 4500 5700 50  0001 C CNN
@@ -1139,10 +1137,10 @@ Wire Wire Line
 Wire Wire Line
 	4900 5400 4900 5500
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R13
 U 1 1 61309F10
 P 4900 5300
-F 0 "R?" H 4968 5391 50  0000 L CNN
+F 0 "R13" H 4968 5391 50  0000 L CNN
 F 1 "10K" H 4968 5300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 5300 50  0001 C CNN
 F 3 "~" H 4900 5300 50  0001 C CNN
@@ -1225,10 +1223,10 @@ F 3 "https://rfd.shared.oxide.computer/rfd/0142" H 7500 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 60E3EE23
 P 1100 3800
-F 0 "#PWR?" H 1100 3550 50  0001 C CNN
+F 0 "#PWR01" H 1100 3550 50  0001 C CNN
 F 1 "GND" H 1105 3627 50  0000 C CNN
 F 2 "" H 1100 3800 50  0001 C CNN
 F 3 "" H 1100 3800 50  0001 C CNN
@@ -1279,10 +1277,10 @@ Wire Wire Line
 	10900 4700 10900 5200
 Connection ~ 10900 4000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 60E4DEC4
 P 10900 4000
-F 0 "#PWR?" H 10900 3750 50  0001 C CNN
+F 0 "#PWR03" H 10900 3750 50  0001 C CNN
 F 1 "GND" H 10905 3827 50  0000 C CNN
 F 2 "" H 10900 4000 50  0001 C CNN
 F 3 "" H 10900 4000 50  0001 C CNN
@@ -1296,10 +1294,10 @@ Wire Wire Line
 Wire Wire Line
 	10900 3500 10900 4000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R18
 U 1 1 6145F1D4
 P 9200 3300
-F 0 "R?" V 8905 3300 50  0000 C CNN
+F 0 "R18" V 8905 3300 50  0000 C CNN
 F 1 "75" V 8996 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 3300 50  0001 C CNN
 F 3 "~" H 9200 3300 50  0001 C CNN
@@ -1308,10 +1306,10 @@ F 4 "1%" V 9087 3300 50  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R19
 U 1 1 61467B98
 P 9200 3800
-F 0 "R?" V 8905 3800 50  0000 C CNN
+F 0 "R19" V 8905 3800 50  0000 C CNN
 F 1 "75" V 8996 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 3800 50  0001 C CNN
 F 3 "~" H 9200 3800 50  0001 C CNN
@@ -1320,10 +1318,10 @@ F 4 "1%" V 9087 3800 50  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R22
 U 1 1 614698B9
 P 9400 3500
-F 0 "R?" H 9332 3409 50  0000 R CNN
+F 0 "R22" H 9332 3409 50  0000 R CNN
 F 1 "140" H 9332 3500 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 3500 50  0001 C CNN
 F 3 "~" H 9400 3500 50  0001 C CNN
@@ -1338,10 +1336,10 @@ Wire Wire Line
 Wire Wire Line
 	9400 3800 9400 3600
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R20
 U 1 1 614BC9FA
 P 9200 4500
-F 0 "R?" V 8905 4500 50  0000 C CNN
+F 0 "R20" V 8905 4500 50  0000 C CNN
 F 1 "75" V 8996 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 4500 50  0001 C CNN
 F 3 "~" H 9200 4500 50  0001 C CNN
@@ -1350,10 +1348,10 @@ F 4 "1%" V 9087 4500 50  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R21
 U 1 1 614BCA01
 P 9200 5000
-F 0 "R?" V 8905 5000 50  0000 C CNN
+F 0 "R21" V 8905 5000 50  0000 C CNN
 F 1 "75" V 8996 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 5000 50  0001 C CNN
 F 3 "~" H 9200 5000 50  0001 C CNN
@@ -1362,10 +1360,10 @@ F 4 "1%" V 9087 5000 50  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R23
 U 1 1 614BCA08
 P 9400 4700
-F 0 "R?" H 9332 4609 50  0000 R CNN
+F 0 "R23" H 9332 4609 50  0000 R CNN
 F 1 "140" H 9332 4700 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 4700 50  0001 C CNN
 F 3 "~" H 9400 4700 50  0001 C CNN
@@ -1380,10 +1378,10 @@ Wire Wire Line
 Wire Wire Line
 	9300 5000 9400 5000
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J9
 U 1 1 60CCA8F4
 P 10700 3800
-F 0 "J?" H 10700 3950 50  0000 C CNN
+F 0 "J9" H 10700 3950 50  0000 C CNN
 F 1 "Conn_Coaxial" H 10300 4000 50  0001 L CNN
 F 2 "" H 10700 3800 50  0001 C CNN
 F 3 " ~" H 10700 3800 50  0001 C CNN
@@ -1391,10 +1389,10 @@ F 3 " ~" H 10700 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J11
 U 1 1 60CCBDA0
 P 10900 3300
-F 0 "J?" H 10850 3450 50  0000 L CNN
+F 0 "J11" H 10850 3450 50  0000 L CNN
 F 1 "Conn_Coaxial" H 11000 3184 50  0001 L CNN
 F 2 "" H 10900 3300 50  0001 C CNN
 F 3 " ~" H 10900 3300 50  0001 C CNN
@@ -1402,10 +1400,10 @@ F 3 " ~" H 10900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J12
 U 1 1 60D3F4B2
 P 10900 4500
-F 0 "J?" H 10850 4650 50  0000 L CNN
+F 0 "J12" H 10850 4650 50  0000 L CNN
 F 1 "Conn_Coaxial" H 11000 4384 50  0001 L CNN
 F 2 "" H 10900 4500 50  0001 C CNN
 F 3 " ~" H 10900 4500 50  0001 C CNN
@@ -1428,10 +1426,10 @@ Wire Wire Line
 Wire Wire Line
 	10700 5200 10900 5200
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J10
 U 1 1 60D164C4
 P 10700 5000
-F 0 "J?" H 10700 5150 50  0000 C CNN
+F 0 "J10" H 10700 5150 50  0000 C CNN
 F 1 "Conn_Coaxial" H 10300 5200 50  0001 L CNN
 F 2 "" H 10700 5000 50  0001 C CNN
 F 3 " ~" H 10700 5000 50  0001 C CNN
@@ -1439,10 +1437,10 @@ F 3 " ~" H 10700 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J7
 U 1 1 6101A628
 P 9500 5400
-F 0 "J?" H 9580 5392 50  0000 L CNN
+F 0 "J7" H 9580 5392 50  0000 L CNN
 F 1 "Conn_01x04" H 9580 5301 50  0000 L CNN
 F 2 "" H 9500 5400 50  0001 C CNN
 F 3 "~" H 9500 5400 50  0001 C CNN
@@ -1450,10 +1448,10 @@ F 3 "~" H 9500 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J8
 U 1 1 6101B9D3
 P 9500 6000
-F 0 "J?" H 9580 5992 50  0000 L CNN
+F 0 "J8" H 9580 5992 50  0000 L CNN
 F 1 "Conn_01x04" H 9580 5901 50  0000 L CNN
 F 2 "" H 9500 6000 50  0001 C CNN
 F 3 "~" H 9500 6000 50  0001 C CNN
@@ -1521,10 +1519,10 @@ AUX0_TX_LVDS_P
 Text Label 9500 3800 0    50   ~ 0
 AUX0_TX_LVDS_N
 $Comp
-L Ignition:LTST-C193KGKT-5A D?
+L Ignition:LTST-C193KGKT-5A D1
 U 1 1 61473EB0
 P 14800 6000
-F 0 "D?" H 14793 5745 50  0000 C CNN
+F 0 "D1" H 14793 5745 50  0000 C CNN
 F 1 "LTST-C193KGKT-5A" H 14793 5836 50  0000 C CNN
 F 2 "" H 14800 6000 50  0001 C CNN
 F 3 "~" H 14800 6000 50  0001 C CNN
@@ -1532,12 +1530,12 @@ F 3 "~" H 14800 6000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 15200 6200 0    50   ~ 0
-If: 5mA\nVf: 1.9V\nRlim: 280ohm
+If: 5mA\nVf: 1.9V\nRlim: 280Ω
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J6
 U 1 1 6147A847
 P 1400 6600
-F 0 "J?" H 1480 6592 50  0000 L CNN
+F 0 "J6" H 1480 6592 50  0000 L CNN
 F 1 "Conn_01x04" H 1480 6501 50  0000 L CNN
 F 2 "" H 1400 6600 50  0001 C CNN
 F 3 "~" H 1400 6600 50  0001 C CNN
@@ -1545,10 +1543,10 @@ F 3 "~" H 1400 6600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 6147A85F
 P 1700 6800
-F 0 "#PWR?" H 1700 6550 50  0001 C CNN
+F 0 "#PWR02" H 1700 6550 50  0001 C CNN
 F 1 "GND" H 1705 6627 50  0000 C CNN
 F 2 "" H 1700 6800 50  0001 C CNN
 F 3 "" H 1700 6800 50  0001 C CNN
@@ -1556,10 +1554,10 @@ F 3 "" H 1700 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J5
 U 1 1 6147A841
 P 1400 6000
-F 0 "J?" H 1480 5992 50  0000 L CNN
+F 0 "J5" H 1480 5992 50  0000 L CNN
 F 1 "Conn_01x04" H 1480 5901 50  0000 L CNN
 F 2 "" H 1400 6000 50  0001 C CNN
 F 3 "~" H 1400 6000 50  0001 C CNN
@@ -1586,10 +1584,10 @@ Connection ~ 1700 6700
 Wire Wire Line
 	1700 6700 1700 6800
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R2
 U 1 1 614FB29C
 P 2900 4000
-F 0 "R?" V 2695 4000 50  0000 C CNN
+F 0 "R2" V 2695 4000 50  0000 C CNN
 F 1 "0" V 2786 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 4000 50  0001 C CNN
 F 3 "~" H 2900 4000 50  0001 C CNN
@@ -1600,10 +1598,10 @@ $EndComp
 Wire Wire Line
 	3000 4000 3100 4000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R1
 U 1 1 614FC685
 P 2900 2800
-F 0 "R?" V 2695 2800 50  0000 C CNN
+F 0 "R1" V 2695 2800 50  0000 C CNN
 F 1 "0" V 2786 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 2800 50  0001 C CNN
 F 3 "~" H 2900 2800 50  0001 C CNN
@@ -1614,10 +1612,10 @@ $EndComp
 Wire Wire Line
 	3000 2800 3100 2800
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R3
 U 1 1 614FC9EC
 P 2900 4300
-F 0 "R?" V 2695 4300 50  0000 C CNN
+F 0 "R3" V 2695 4300 50  0000 C CNN
 F 1 "0" V 2786 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 4300 50  0001 C CNN
 F 3 "~" H 2900 4300 50  0001 C CNN
@@ -1628,10 +1626,10 @@ $EndComp
 Wire Wire Line
 	3000 4300 3100 4300
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R4
 U 1 1 614FCDDD
 P 2900 5500
-F 0 "R?" V 2695 5500 50  0000 C CNN
+F 0 "R4" V 2695 5500 50  0000 C CNN
 F 1 "0" V 2786 5500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 5500 50  0001 C CNN
 F 3 "~" H 2900 5500 50  0001 C CNN
@@ -1685,9 +1683,6 @@ Wire Notes Line
 	4000 8000 700  8000
 Wire Notes Line
 	700  2400 4000 2400
-Connection ~ 4600 3100
-Wire Wire Line
-	4600 3100 4900 3100
 Wire Wire Line
 	3100 4000 5800 4000
 Connection ~ 3100 4000
@@ -1699,10 +1694,10 @@ Wire Wire Line
 	3100 4300 5800 4300
 Connection ~ 3100 4300
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C9
 U 1 1 616B137E
 P 10300 3800
-F 0 "C?" V 10529 3800 50  0000 C CNN
+F 0 "C9" V 10529 3800 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 10310 3720 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 3800 50  0001 C CNN
 F 3 "~" H 10300 3800 50  0001 C CNN
@@ -1714,10 +1709,10 @@ F 7 "0603" V 10437 3800 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C8
 U 1 1 616B233B
 P 10300 3300
-F 0 "C?" V 10529 3300 50  0000 C CNN
+F 0 "C8" V 10529 3300 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 10310 3220 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 3300 50  0001 C CNN
 F 3 "~" H 10300 3300 50  0001 C CNN
@@ -1729,10 +1724,10 @@ F 7 "0603" V 10437 3300 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C10
 U 1 1 616B25C0
 P 10300 4500
-F 0 "C?" V 10529 4500 50  0000 C CNN
+F 0 "C10" V 10529 4500 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 10310 4420 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 4500 50  0001 C CNN
 F 3 "~" H 10300 4500 50  0001 C CNN
@@ -1744,10 +1739,10 @@ F 7 "0603" V 10437 4500 50  0001 C CNN "Package"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ignition:GCM188R71E105KA64D C?
+L Ignition:GCM188R71E105KA64D C11
 U 1 1 616B2AFA
 P 10300 5000
-F 0 "C?" V 10529 5000 50  0000 C CNN
+F 0 "C11" V 10529 5000 50  0000 C CNN
 F 1 "GCM188R71E105KA64D" H 10310 4920 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 5000 50  0001 C CNN
 F 3 "~" H 10300 5000 50  0001 C CNN
@@ -1774,4 +1769,7 @@ Wire Wire Line
 	10400 5000 10500 5000
 Text Notes 8100 9600 0    50   ~ 0
 The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253\nusing PIO pin pairs in Bank 3. The resistor values above were derived\nusing the equations on p. 4 and the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm each. The intend\nhere is that one pin of a 100 mil header/ footprint is inserted between the\ntwo resistors. If done using a tight layout this via should add minimal\ndisruption at the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for alternative\nprototyping by not fitting the second series resistor, parallel resistor and\nSMA connector, while using the first resistor footprint as slew limiting\nresistor or for series termination.\n\nOne possible application of this alternative scheme is to allow the Ignition\nprotocol to be carried using single ended LVCMOS signaling at 3.3V\nbetween this broad and an ECP5 dev board without requiring SMA\nconnectors for the link partner. This would simplify initial prototyping work.\n\nThe AC couping capacitors near the SMA connector are optional in case\none wants to experiment. The layout should allow for some copper nearby\nconnected to ground so experiments with a choke are possible. If not in\nuse 0 ohm resistors should be fitted.
+Wire Wire Line
+	4500 3100 4900 3100
+Connection ~ 4500 3100
 $EndSCHEMATC
