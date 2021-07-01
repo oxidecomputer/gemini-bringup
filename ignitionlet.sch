@@ -541,11 +541,11 @@ LVDS TX
 Wire Notes Line
 	8000 2400 11100 2400
 Wire Notes Line
-	11100 9300 11100 2400
+	11100 9700 11100 2400
 Wire Notes Line
-	8000 9300 11100 9300
+	8000 9700 11100 9700
 Wire Notes Line
-	8000 2400 8000 9300
+	8000 2400 8000 9700
 Wire Wire Line
 	8100 3300 8300 3300
 Wire Wire Line
@@ -677,7 +677,7 @@ F 3 " ~" H 1100 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 1000 10600 0    50   ~ 10
-TODO:\n\n- Check TX/RX caps\n- Add TPs, mounting holes, fiducials, logo, P/N, S/N “parts”
+TODO:\n\n- Check TX/RX cap values againt bit rate\n- Add TPs, mounting holes, fiducials, logo, P/N, S/N “parts”
 Text Notes 800  2200 0    79   ~ 16
 Ignition Target
 $Comp
@@ -1678,7 +1678,7 @@ LVDS RX
 Wire Notes Line
 	700  2400 700  8000
 Text Notes 800  7900 0    50   ~ 0
-The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253 using\nPIO pin pairs in Bank 3. The iCE40 inputs expect a proper LVDS signal so the\ninputs are biased after the AC-coupling cap. Resistor and capacitor values can\nbe tuned where required.\n\nAn optional header footprint/via is placed near the SMA connector allowing\nalternate prototyping, either using either single-ended or differential\nsignaling. The zero ohm resistor pads can be used for termination or slew\nlimiting resistors if desired.
+The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253 using\nPIO pin pairs in Bank 3. The iCE40 inputs expect a proper LVDS signal so the\ninputs are biased after the AC-coupling cap. Resistor and capacitor values can\nbe tuned where required.\n\nAn optional header footprint/via is placed near the SMA connector to allow for\nalternate prototyping, using either single-ended or differential signaling. The\nzero ohm resistor footprint can be used for termination or slew limiting\nresistors if desired.
 Wire Notes Line
 	4000 2400 4000 8000
 Wire Notes Line
@@ -1772,6 +1772,6 @@ Wire Wire Line
 	10400 4500 10700 4500
 Wire Wire Line
 	10400 5000 10500 5000
-Text Notes 8100 9200 0    50   ~ 0
-The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253\nusing PIO pin pairs in Bank 3. The resistor values above were derived\nusing the equations on p. 4 and the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm each. The intend\nhere is that one pin of a 100 mil header/ footprint is inserted between the\ntwo resistors. If done using a tight layout this via should add minimal\ndisruption at the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for alternative\nprototyping by not fitting the second series resistor, parallel resistor and\nSMA connector, while using the first resistor footprint as slew limiting\nresistor or for series termination.\n\nOne possible application of this alternative scheme is to allow the Ignition\nprotocol to be carried using single ended LVCMOS signaling at 3.3V\nbetween this broad and an ECP5 dev board without requiring SMA\nconnectors for the link partner. This would simplify initial prototyping work.
+Text Notes 8100 9600 0    50   ~ 0
+The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253\nusing PIO pin pairs in Bank 3. The resistor values above were derived\nusing the equations on p. 4 and the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm each. The intend\nhere is that one pin of a 100 mil header/ footprint is inserted between the\ntwo resistors. If done using a tight layout this via should add minimal\ndisruption at the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for alternative\nprototyping by not fitting the second series resistor, parallel resistor and\nSMA connector, while using the first resistor footprint as slew limiting\nresistor or for series termination.\n\nOne possible application of this alternative scheme is to allow the Ignition\nprotocol to be carried using single ended LVCMOS signaling at 3.3V\nbetween this broad and an ECP5 dev board without requiring SMA\nconnectors for the link partner. This would simplify initial prototyping work.\n\nThe AC couping capacitors near the SMA connector are optional in case\none wants to experiment. The layout should allow for some copper nearby\nconnected to ground so experiments with a choke are possible. If not in\nuse 0 ohm resistors should be fitted.
 $EndSCHEMATC
