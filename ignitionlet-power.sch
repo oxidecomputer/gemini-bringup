@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "Power"
-Date "2021-07-01"
+Date "2021-07-02"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -929,8 +929,8 @@ L Ignition:V1P2 #PWR?
 U 1 1 61271727
 P 11800 4500
 AR Path="/61271727" Ref="#PWR?"  Part="1" 
-AR Path="/61252D76/61271727" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 11800 4350 50  0001 C CNN
+AR Path="/61252D76/61271727" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 11800 4350 50  0001 C CNN
 F 1 "V1P2" H 11800 4675 50  0000 C CNN
 F 2 "" H 11800 4500 50  0001 C CNN
 F 3 "" H 11800 4500 50  0001 C CNN
@@ -1333,12 +1333,12 @@ Wire Wire Line
 	2500 3600 3100 3600
 Connection ~ 3100 3600
 Wire Wire Line
-	7800 8500 8100 8500
+	7800 8500 7900 8500
 Connection ~ 8100 8500
 Wire Wire Line
-	8500 5900 8900 5900
+	8500 5900 8700 5900
 Wire Wire Line
-	8500 3600 8900 3600
+	8500 3600 8700 3600
 Wire Wire Line
 	6900 5100 6800 5100
 Connection ~ 6800 5100
@@ -1393,4 +1393,96 @@ Text Label 12200 6200 0    50   ~ 0
 VCCIO_3
 Wire Wire Line
 	3100 3600 4000 3600
+$Comp
+L Connector:TestPoint TP101
+U 1 1 61D4307F
+P 8700 3600
+F 0 "TP101" H 8643 3672 50  0000 R CNN
+F 1 "TestPoint" H 8758 3627 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8900 3600 50  0001 C CNN
+F 3 "~" H 8900 3600 50  0001 C CNN
+	1    8700 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8700 3600
+Wire Wire Line
+	8700 3600 8900 3600
+$Comp
+L Connector:TestPoint TP102
+U 1 1 61D43B3D
+P 8700 5900
+F 0 "TP102" H 8643 5972 50  0000 R CNN
+F 1 "TestPoint" H 8758 5927 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8900 5900 50  0001 C CNN
+F 3 "~" H 8900 5900 50  0001 C CNN
+	1    8700 5900
+	1    0    0    -1  
+$EndComp
+Connection ~ 8700 5900
+Wire Wire Line
+	8700 5900 8900 5900
+$Comp
+L Connector:TestPoint TP103
+U 1 1 61D46D51
+P 7900 8500
+F 0 "TP103" H 7750 8750 50  0000 L CNN
+F 1 "TestPoint" H 7958 8527 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8100 8500 50  0001 C CNN
+F 3 "~" H 8100 8500 50  0001 C CNN
+	1    7900 8500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7900 8500
+Wire Wire Line
+	7900 8500 8100 8500
+$Comp
+L Connector:TestPoint TP104
+U 1 1 61D47B76
+P 8700 7750
+F 0 "TP104" H 8700 7983 50  0000 C CNN
+F 1 "TestPoint" H 8758 7777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8900 7750 50  0001 C CNN
+F 3 "~" H 8900 7750 50  0001 C CNN
+	1    8700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D4831A
+P 8700 7750
+AR Path="/61D4831A" Ref="#PWR?"  Part="1" 
+AR Path="/61252D76/61D4831A" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 8700 7500 50  0001 C CNN
+F 1 "GND" H 8705 7577 50  0000 C CNN
+F 2 "" H 8700 7750 50  0001 C CNN
+F 3 "" H 8700 7750 50  0001 C CNN
+	1    8700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP105
+U 1 1 61D64422
+P 9000 7750
+F 0 "TP105" H 9000 7983 50  0000 C CNN
+F 1 "TestPoint" H 9058 7777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 9200 7750 50  0001 C CNN
+F 3 "~" H 9200 7750 50  0001 C CNN
+	1    9000 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D64428
+P 9000 7750
+AR Path="/61D64428" Ref="#PWR?"  Part="1" 
+AR Path="/61252D76/61D64428" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 9000 7500 50  0001 C CNN
+F 1 "GND" H 9005 7577 50  0000 C CNN
+F 2 "" H 9000 7750 50  0001 C CNN
+F 3 "" H 9000 7750 50  0001 C CNN
+	1    9000 7750
+	1    0    0    -1  
+$EndComp
+Text Notes 8600 8100 0    50   ~ 0
+Keystone 5015s for easier probe access.
 $EndSCHEMATC

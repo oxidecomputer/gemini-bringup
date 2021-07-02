@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "Ignition Target"
-Date "2021-07-01"
+Date "2021-07-02"
 Rev "1"
 Comp "Oxide Computer Co."
 Comment1 ""
@@ -516,8 +516,6 @@ Text Notes 11600 2900 0    50   ~ 0
 Fault pin straps allow setting fixed fault values. The switch\nattached to ROT_FLT provides a convenient way to cause\nfault interrupts during integration tests. The header allows\nreuse of these pins for alternative prototyping.
 Wire Notes Line
 	11400 600  16000 600 
-Text Notes 13900 5500 0    79   ~ 16
-Power Enable LED
 Text Notes 11500 5500 0    79   ~ 16
 CMD Bits Header
 Text Notes 11600 6700 0    50   ~ 0
@@ -683,7 +681,7 @@ F 3 "" H 4600 4900 50  0001 C CNN
 $EndComp
 Connection ~ 4000 3300
 Wire Wire Line
-	4000 3300 4500 3300
+	4000 3300 4200 3300
 Wire Wire Line
 	5500 3100 5500 3300
 Wire Wire Line
@@ -1742,7 +1740,7 @@ The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253\nusing PIO 
 Wire Wire Line
 	4000 2800 4400 2800
 Connection ~ 4000 2800
-Text Label 5200 3100 0    50   ~ 0
+Text Label 5100 3100 0    50   ~ 0
 CLK_50M
 $Comp
 L Mechanical:MountingHole_Pad H1
@@ -1955,4 +1953,76 @@ Text Label 8100 3000 0    50   ~ 0
 AUX0_TX_TAP_P
 Wire Notes Line
 	11400 600  11400 9400
+Connection ~ 5500 3100
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61CD52A4
+P 5500 3100
+F 0 "TP1" H 5558 3218 50  0000 L CNN
+F 1 "TestPoint" H 5558 3127 50  0000 L CNN
+F 2 "test-point:TestPoint_THTPad_D0.6mm_Drill0.3mm" H 5700 3100 50  0001 C CNN
+F 3 "~" H 5700 3100 50  0001 C CNN
+	1    5500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61CF29FF
+P 4200 3300
+F 0 "TP2" H 4150 3400 50  0000 R CNN
+F 1 "TestPoint" H 4150 3500 50  0000 R CNN
+F 2 "test-point:TestPoint_THTPad_D0.6mm_Drill0.3mm" H 4400 3300 50  0001 C CNN
+F 3 "~" H 4400 3300 50  0001 C CNN
+	1    4200 3300
+	-1   0    0    1   
+$EndComp
+Connection ~ 4200 3300
+Wire Wire Line
+	4200 3300 4500 3300
+Wire Wire Line
+	14700 6450 14750 6450
+Wire Wire Line
+	15100 6450 15100 6550
+Wire Wire Line
+	15050 6450 15100 6450
+$Comp
+L power:GND #PWR0121
+U 1 1 61D8CF1B
+P 15100 6550
+F 0 "#PWR0121" H 15100 6300 50  0001 C CNN
+F 1 "GND" H 15105 6377 50  0000 C CNN
+F 2 "" H 15100 6550 50  0001 C CNN
+F 3 "" H 15100 6550 50  0001 C CNN
+	1    15100 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 6450 14500 6450
+$Comp
+L Device:R_Small_US R37
+U 1 1 61D8CF23
+P 14600 6450
+F 0 "R37" V 14700 6450 50  0000 C CNN
+F 1 "280" V 14800 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 6450 50  0001 C CNN
+F 3 "~" H 14600 6450 50  0001 C CNN
+F 4 "1%" H 14668 6359 50  0001 L CNN "Tolerance"
+	1    14600 6450
+	0    1    1    0   
+$EndComp
+Text Label 14000 6450 0    50   ~ 0
+CMD1
+$Comp
+L Ignition:LTST-C193KGKT-5A D2
+U 1 1 61D8CF2A
+P 14900 6450
+F 0 "D2" H 14893 6195 50  0000 C CNN
+F 1 "LTST-C193KGKT-5A" H 14893 6286 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 14900 6450 50  0001 C CNN
+F 3 "~" H 14900 6450 50  0001 C CNN
+	1    14900 6450
+	-1   0    0    1   
+$EndComp
+Text Notes 13900 5500 0    79   ~ 16
+CMDx LEDs
 $EndSCHEMATC
