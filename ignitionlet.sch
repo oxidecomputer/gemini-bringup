@@ -1745,142 +1745,138 @@ CLK_50M
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 61186B02
-P 900 8300
-F 0 "H1" V 854 8450 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 8450 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 8300 50  0001 C CNN
-F 3 "~" H 900 8300 50  0001 C CNN
-	1    900  8300
+P 900 9500
+F 0 "H1" V 854 9650 50  0000 L CNN
+F 1 "MountingHole_Pad" V 945 9650 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 9500 50  0001 C CNN
+F 3 "~" H 900 9500 50  0001 C CNN
+	1    900  9500
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 61197EFF
-P 900 8500
-F 0 "H2" V 854 8650 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 8650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 8500 50  0001 C CNN
-F 3 "~" H 900 8500 50  0001 C CNN
-	1    900  8500
+P 900 9700
+F 0 "H2" V 854 9850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 945 9850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 9700 50  0001 C CNN
+F 3 "~" H 900 9700 50  0001 C CNN
+	1    900  9700
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 611C8D25
-P 900 8700
-F 0 "H3" V 854 8850 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 8850 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 8700 50  0001 C CNN
-F 3 "~" H 900 8700 50  0001 C CNN
-	1    900  8700
+P 900 9900
+F 0 "H3" V 854 10050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 945 10050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 9900 50  0001 C CNN
+F 3 "~" H 900 9900 50  0001 C CNN
+	1    900  9900
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 611D8E91
-P 900 8900
-F 0 "H4" V 854 9050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 9050 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 8900 50  0001 C CNN
-F 3 "~" H 900 8900 50  0001 C CNN
-	1    900  8900
+P 900 10100
+F 0 "H4" V 854 10250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 945 10250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 10100 50  0001 C CNN
+F 3 "~" H 900 10100 50  0001 C CNN
+	1    900  10100
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 611E8DC8
-P 800 9000
-F 0 "#PWR04" H 800 8750 50  0001 C CNN
-F 1 "GND" H 805 8827 50  0000 C CNN
-F 2 "" H 800 9000 50  0001 C CNN
-F 3 "" H 800 9000 50  0001 C CNN
-	1    800  9000
+P 800 10200
+F 0 "#PWR04" H 800 9950 50  0001 C CNN
+F 1 "GND" H 805 10027 50  0000 C CNN
+F 2 "" H 800 10200 50  0001 C CNN
+F 3 "" H 800 10200 50  0001 C CNN
+	1    800  10200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  8300 800  8500
-Connection ~ 800  8500
+	800  9500 800  9700
+Connection ~ 800  9700
 Wire Wire Line
-	800  8500 800  8700
-Connection ~ 800  8700
+	800  9700 800  9900
+Connection ~ 800  9900
 Wire Wire Line
-	800  8700 800  8900
-Connection ~ 800  8900
+	800  9900 800  10100
+Connection ~ 800  10100
 Wire Wire Line
-	800  8900 800  9000
+	800  10100 800  10200
 $Comp
 L Mechanical:Fiducial FID1
 U 1 1 6120074B
-P 3100 8400
-F 0 "FID1" H 3185 8446 50  0000 L CNN
-F 1 "Ignitionlet" H 3185 8355 50  0000 L CNN
-F 2 "grumpy:Oxide_Board_Identifier_23x6mm" H 3100 8400 50  0001 C CNN
-F 3 "~" H 3100 8400 50  0001 C CNN
-	1    3100 8400
+P 3800 9400
+F 0 "FID1" H 3885 9446 50  0000 L CNN
+F 1 "Ignitionlet" H 3885 9355 50  0000 L CNN
+F 2 "grumpy:Oxide_Board_Identifier_23x6mm" H 3800 9400 50  0001 C CNN
+F 3 "~" H 3800 9400 50  0001 C CNN
+	1    3800 9400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:Fiducial FID2
 U 1 1 61202097
-P 3100 8700
-F 0 "FID2" H 3185 8746 50  0000 L CNN
-F 1 "Fiducial" H 3185 8655 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3100 8700 50  0001 C CNN
-F 3 "~" H 3100 8700 50  0001 C CNN
-	1    3100 8700
+P 3800 9700
+F 0 "FID2" H 3885 9746 50  0000 L CNN
+F 1 "Fiducial" H 3885 9655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3800 9700 50  0001 C CNN
+F 3 "~" H 3800 9700 50  0001 C CNN
+	1    3800 9700
 	1    0    0    -1  
 $EndComp
-Text Notes 700  8000 0    79   ~ 16
+Text Notes 700  9200 0    79   ~ 16
 Mechanical
-Text Notes 1800 9500 0    50   ~ 0
-The board assumes the width of two standard\n0.80” PMOD boards. J16 is present only for\nadditional mechanical stability, but can be used\nfor prototyping.
-NoConn ~ 2100 8400
-NoConn ~ 2100 8500
-NoConn ~ 2100 8600
-NoConn ~ 2100 8700
-NoConn ~ 2100 8900
-NoConn ~ 2600 8900
-NoConn ~ 2600 8700
-NoConn ~ 2600 8600
-NoConn ~ 2600 8500
-NoConn ~ 2600 8400
+Text Notes 1800 10900 0    50   ~ 0
+The board assumes the width of two standard\n0.80” PMOD boards. J16 is intended for additional\nmechanical stability, but is connected to J17 as a\nType 1 interface, providing GPIOs for prototyping\nwhich for example can be wired to CDONE or\nFLASH_RESET when connected to an appropriate\nhost board.
+NoConn ~ 2100 9600
+NoConn ~ 2100 9700
+NoConn ~ 2100 9800
+NoConn ~ 2100 9900
+NoConn ~ 2100 10100
+NoConn ~ 2600 10100
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J16
 U 1 1 6130518A
-P 2300 8600
-F 0 "J16" H 2350 9017 50  0000 C CNN
-F 1 "Conn_02x06_Top_Bottom" H 2350 8926 50  0000 C CNN
-F 2 "pmod:PMOD_12pin_peripheral_horizontal" H 2300 8600 50  0001 C CNN
-F 3 "~" H 2300 8600 50  0001 C CNN
-	1    2300 8600
+P 2300 9800
+F 0 "J16" H 2350 10217 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 2350 10126 50  0000 C CNN
+F 2 "pmod:PMOD_12pin_peripheral_horizontal" H 2300 9800 50  0001 C CNN
+F 3 "~" H 2300 9800 50  0001 C CNN
+	1    2300 9800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0162
 U 1 1 61307B28
-P 2000 8800
-F 0 "#PWR0162" H 2000 8550 50  0001 C CNN
-F 1 "GND" H 2005 8627 50  0000 C CNN
-F 2 "" H 2000 8800 50  0001 C CNN
-F 3 "" H 2000 8800 50  0001 C CNN
-	1    2000 8800
+P 2000 10000
+F 0 "#PWR0162" H 2000 9750 50  0001 C CNN
+F 1 "GND" H 2005 9827 50  0000 C CNN
+F 2 "" H 2000 10000 50  0001 C CNN
+F 3 "" H 2000 10000 50  0001 C CNN
+	1    2000 10000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0163
 U 1 1 61307EE4
-P 2700 8800
-F 0 "#PWR0163" H 2700 8550 50  0001 C CNN
-F 1 "GND" H 2705 8627 50  0000 C CNN
-F 2 "" H 2700 8800 50  0001 C CNN
-F 3 "" H 2700 8800 50  0001 C CNN
-	1    2700 8800
+P 2700 10000
+F 0 "#PWR0163" H 2700 9750 50  0001 C CNN
+F 1 "GND" H 2705 9827 50  0000 C CNN
+F 2 "" H 2700 10000 50  0001 C CNN
+F 3 "" H 2700 10000 50  0001 C CNN
+	1    2700 10000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 8800 2100 8800
+	2000 10000 2100 10000
 Wire Wire Line
-	2600 8800 2700 8800
+	2600 10000 2700 10000
 Wire Wire Line
 	11900 6100 12200 6100
 Text Label 8100 5800 0    50   ~ 0
@@ -1888,13 +1884,13 @@ AUX1_TX_TAP_P
 Text Label 8100 5700 0    50   ~ 0
 AUX1_TX_TAP_N
 Wire Notes Line
-	600  7800 3900 7800
+	600  9000 4400 9000
 Wire Notes Line
-	3900 7800 3900 9700
+	4400 9000 4400 11000
 Wire Notes Line
-	3900 9700 600  9700
+	4400 11000 600  11000
 Wire Notes Line
-	600  9700 600  7800
+	600  11000 600  9000
 $Comp
 L Ignition:MCZ1210AH900L2TA0G L1
 U 1 1 6182B5FB
@@ -2025,4 +2021,23 @@ F 3 "~" H 14900 6450 50  0001 C CNN
 $EndComp
 Text Notes 13900 5500 0    79   ~ 16
 CMDx LEDs
+$Comp
+L Connector_Generic:Conn_01x04 J17
+U 1 1 60E0E021
+P 3200 9700
+F 0 "J17" H 3200 10025 50  0000 C CNN
+F 1 "Conn_01x04" H 3200 9925 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3200 9700 50  0001 C CNN
+F 3 "~" H 3200 9700 50  0001 C CNN
+	1    3200 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 9600 3000 9600
+Wire Wire Line
+	3000 9700 2600 9700
+Wire Wire Line
+	2600 9800 3000 9800
+Wire Wire Line
+	3000 9900 2600 9900
 $EndSCHEMATC
