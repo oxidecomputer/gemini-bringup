@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADAFRUIT_FT232H_REV_D
+D Adafruit FT232H rev D
+F https://learn.adafruit.com/assets/88382
+$ENDCMP
+#
 $CMP AMPMGFB-50.0000T
 D Clock Oscillator MEMS 50MHz XO 25ppm
 K OSC XO MEMS
