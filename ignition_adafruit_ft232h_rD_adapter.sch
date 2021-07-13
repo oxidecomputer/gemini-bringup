@@ -5,9 +5,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Ignition Header Adapter for Adafruit FT232H rev D"
-Date "2021-07-06"
-Rev ""
-Comp ""
+Date "2021-07-12"
+Rev "1"
+Comp "Oxide Computer Co."
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1740,4 +1740,15 @@ $EndComp
 Connection ~ 3100 3500
 Wire Wire Line
 	7000 4200 7100 4200
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 60E8A50C
+P 7900 5500
+F 0 "FID3" H 7985 5500 50  0000 L CNN
+F 1 "Fiducial" H 7985 5455 50  0001 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7900 5500 50  0001 C CNN
+F 3 "~" H 7900 5500 50  0001 C CNN
+	1    7900 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
