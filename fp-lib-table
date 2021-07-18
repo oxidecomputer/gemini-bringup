@@ -151,4 +151,6 @@
   (lib (name LED_SMD_LiteOn)(type KiCad)(uri ${KIPRJMOD}/lib/LED_SMD_LiteOn.pretty)(options "")(descr ""))
   (lib (name adafruit)(type KiCad)(uri ${KIPRJMOD}/lib/adafruit.pretty)(options "")(descr ""))
   (lib (name mechanical)(type KiCad)(uri ${KIPRJMOD}/lib/mechanical.pretty)(options "")(descr ""))
+  (lib (name Package_BGA_0x)(type KiCad)(uri ${KIPRJMOD}/lib/Package_BGA_0x.pretty)(options "")(descr ""))
+  (lib (name Package_DFN_QFN_0x)(type KiCad)(uri ${KIPRJMOD}/lib/Package_DFN_QFN_0x.pretty)(options "")(descr ""))
 )

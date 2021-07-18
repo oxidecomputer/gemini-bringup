@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "Ignition Target"
-Date "2021-07-02"
-Rev "1"
+Date "2021-07-21"
+Rev "2"
 Comp "Oxide Computer Co."
 Comment1 ""
 Comment2 ""
@@ -20,482 +20,231 @@ F0 "Power" 50
 F1 "ignitionlet-power.sch" 50
 $EndSheet
 Wire Wire Line
-	11700 2100 11700 2200
-Text Label 12600 2100 0    50   ~ 0
-~ROT_FLT
-Text Label 12600 2000 0    50   ~ 0
-~PWR_FLT4
-Text Label 12600 1900 0    50   ~ 0
-~PWR_FLT3
+	11700 1800 11700 1900
 Text Label 12600 1800 0    50   ~ 0
-~PWR_FLT2
+~ROT_FLT
 Text Label 12600 1700 0    50   ~ 0
-~PWR_FLT1
+~PWR_FLT4
 Text Label 12600 1600 0    50   ~ 0
+~PWR_FLT3
+Text Label 12600 1500 0    50   ~ 0
+~PWR_FLT2
+Text Label 12600 1400 0    50   ~ 0
+~PWR_FLT1
+Text Label 12600 1300 0    50   ~ 0
 ~PWR_FLT0
 Wire Wire Line
-	12500 2100 15100 2100
+	12500 1700 12600 1700
 Wire Wire Line
-	12500 2000 14700 2000
+	12500 1600 12600 1600
 Wire Wire Line
-	12500 1900 14300 1900
+	12500 1500 12600 1500
 Wire Wire Line
-	12500 1800 13900 1800
+	12500 1400 12600 1400
 Wire Wire Line
-	12500 1700 13500 1700
+	12500 1300 13000 1300
 Wire Wire Line
-	12500 1600 13100 1600
-Connection ~ 13100 1200
-$Comp
-L Ignition:V3P3 #PWR0101
-U 1 1 610CD692
-P 13100 1200
-F 0 "#PWR0101" H 13100 1050 50  0001 C CNN
-F 1 "V3P3" H 13115 1373 50  0000 C CNN
-F 2 "" H 13100 1200 50  0001 C CNN
-F 3 "" H 13100 1200 50  0001 C CNN
-	1    13100 1200
-	1    0    0    -1  
-$EndComp
+	11700 1400 11700 1500
+Connection ~ 11700 1400
 Wire Wire Line
-	14700 1200 14300 1200
-Connection ~ 14700 1200
+	12000 1400 11700 1400
 Wire Wire Line
-	14700 1300 14700 1200
+	11700 1500 11700 1600
+Connection ~ 11700 1500
 Wire Wire Line
-	14300 1200 13900 1200
-Connection ~ 14300 1200
+	12000 1500 11700 1500
 Wire Wire Line
-	14300 1300 14300 1200
+	11700 1600 11700 1700
+Connection ~ 11700 1600
 Wire Wire Line
-	13900 1200 13500 1200
-Connection ~ 13900 1200
-Wire Wire Line
-	13900 1300 13900 1200
-Wire Wire Line
-	13500 1200 13100 1200
-Connection ~ 13500 1200
-Wire Wire Line
-	13500 1300 13500 1200
-Wire Wire Line
-	13100 1200 13100 1300
-Wire Wire Line
-	15100 1200 14700 1200
-Wire Wire Line
-	15100 1300 15100 1200
-Wire Wire Line
-	15100 2100 15100 1500
-Wire Wire Line
-	14700 2000 14700 1500
-Wire Wire Line
-	14300 1900 14300 1500
-Wire Wire Line
-	13900 1800 13900 1500
-Wire Wire Line
-	13500 1700 13500 1500
-Wire Wire Line
-	13100 1600 13100 1500
+	12000 1600 11700 1600
 Wire Wire Line
 	11700 1700 11700 1800
 Connection ~ 11700 1700
 Wire Wire Line
 	12000 1700 11700 1700
-Wire Wire Line
-	11700 1800 11700 1900
 Connection ~ 11700 1800
 Wire Wire Line
 	12000 1800 11700 1800
 Wire Wire Line
-	11700 1900 11700 2000
-Connection ~ 11700 1900
+	11700 1300 11700 1400
 Wire Wire Line
-	12000 1900 11700 1900
-Wire Wire Line
-	11700 2000 11700 2100
-Connection ~ 11700 2000
-Wire Wire Line
-	12000 2000 11700 2000
-Connection ~ 11700 2100
-Wire Wire Line
-	12000 2100 11700 2100
-Wire Wire Line
-	11700 1600 11700 1700
-Wire Wire Line
-	12000 1600 11700 1600
+	12000 1300 11700 1300
 $Comp
 L power:GND #PWR0102
 U 1 1 60F3C067
-P 11700 2200
-F 0 "#PWR0102" H 11700 1950 50  0001 C CNN
-F 1 "GND" H 11705 2027 50  0000 C CNN
-F 2 "" H 11700 2200 50  0001 C CNN
-F 3 "" H 11700 2200 50  0001 C CNN
-	1    11700 2200
+P 11700 1900
+F 0 "#PWR0102" H 11700 1650 50  0001 C CNN
+F 1 "GND" H 11705 1727 50  0000 C CNN
+F 2 "" H 11700 1900 50  0001 C CNN
+F 3 "" H 11700 1900 50  0001 C CNN
+	1    11700 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J13
 U 1 1 60EE9D0A
-P 12200 1800
-F 0 "J13" H 12250 2217 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 12250 2126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 12200 1800 50  0001 C CNN
-F 3 "~" H 12200 1800 50  0001 C CNN
-	1    12200 1800
+P 12200 1500
+F 0 "J13" H 12250 1917 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 12250 1826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 12200 1500 50  0001 C CNN
+F 3 "~" H 12200 1500 50  0001 C CNN
+	1    12200 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15100 4700 15100 4800
+	15000 1800 15100 1800
 Wire Wire Line
-	12500 4300 13100 4300
+	15000 1700 15100 1700
 Wire Wire Line
-	12500 4200 13500 4200
+	15000 1600 15100 1600
 Wire Wire Line
-	12500 4100 13900 4100
+	15000 1500 15100 1500
 Wire Wire Line
-	12500 4000 14300 4000
+	15000 1400 15100 1400
 Wire Wire Line
-	12500 3900 14700 3900
-Wire Wire Line
-	12500 3800 15100 3800
-Text Label 12600 3800 0    50   ~ 0
+	15000 1300 15100 1300
+Text Label 15100 1300 0    50   ~ 0
 ID0
-Text Label 12600 3900 0    50   ~ 0
+Text Label 15100 1400 0    50   ~ 0
 ID1
-Text Label 12600 4000 0    50   ~ 0
+Text Label 15100 1500 0    50   ~ 0
 ID2
-Text Label 12600 4100 0    50   ~ 0
+Text Label 15100 1600 0    50   ~ 0
 ID3
-Text Label 12600 4200 0    50   ~ 0
+Text Label 15100 1700 0    50   ~ 0
 ID4
-Text Label 12600 4300 0    50   ~ 0
+Text Label 15100 1800 0    50   ~ 0
 ID5
 Wire Wire Line
-	13100 4300 13100 4400
+	14200 1300 14500 1300
 Wire Wire Line
-	13500 4200 13500 4400
+	14200 1400 14500 1400
 Wire Wire Line
-	13900 4100 13900 4400
+	14200 1500 14500 1500
 Wire Wire Line
-	14300 4000 14300 4400
+	14200 1600 14500 1600
 Wire Wire Line
-	14700 3900 14700 4400
-Connection ~ 15100 4700
+	14200 1700 14500 1700
 Wire Wire Line
-	15100 3800 15100 4400
+	14200 1800 14500 1800
+Connection ~ 14200 1300
 Wire Wire Line
-	11700 3800 12000 3800
+	14200 1200 14200 1300
 Wire Wire Line
-	11700 3900 12000 3900
+	14200 1400 14200 1500
+Connection ~ 14200 1400
 Wire Wire Line
-	11700 4000 12000 4000
+	14200 1500 14200 1600
+Connection ~ 14200 1500
 Wire Wire Line
-	11700 4100 12000 4100
+	14200 1600 14200 1700
+Connection ~ 14200 1600
 Wire Wire Line
-	11700 4200 12000 4200
+	14200 1700 14200 1800
+Connection ~ 14200 1700
 Wire Wire Line
-	11700 4300 12000 4300
-Connection ~ 11700 3800
-Wire Wire Line
-	11700 3700 11700 3800
-Wire Wire Line
-	11700 3900 11700 4000
-Connection ~ 11700 3900
-Wire Wire Line
-	11700 4000 11700 4100
-Connection ~ 11700 4000
-Wire Wire Line
-	11700 4100 11700 4200
-Connection ~ 11700 4100
-Wire Wire Line
-	11700 4200 11700 4300
-Connection ~ 11700 4200
-Wire Wire Line
-	11700 3800 11700 3900
-$Comp
-L power:GND #PWR0103
-U 1 1 60E4DDFD
-P 15100 4800
-F 0 "#PWR0103" H 15100 4550 50  0001 C CNN
-F 1 "GND" H 15105 4627 50  0000 C CNN
-F 2 "" H 15100 4800 50  0001 C CNN
-F 3 "" H 15100 4800 50  0001 C CNN
-	1    15100 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 4700 14300 4700
-Connection ~ 14700 4700
-Wire Wire Line
-	14700 4600 14700 4700
-Wire Wire Line
-	14300 4700 13900 4700
-Connection ~ 14300 4700
-Wire Wire Line
-	14300 4600 14300 4700
-Wire Wire Line
-	13900 4700 13500 4700
-Connection ~ 13900 4700
-Wire Wire Line
-	13900 4600 13900 4700
-Wire Wire Line
-	13500 4700 13100 4700
-Connection ~ 13500 4700
-Wire Wire Line
-	13500 4600 13500 4700
-Wire Wire Line
-	13100 4700 13100 4600
-Wire Wire Line
-	15100 4700 14700 4700
-Wire Wire Line
-	15100 4600 15100 4700
+	14200 1300 14200 1400
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J14
 U 1 1 60DB20CF
-P 12200 4000
-F 0 "J14" H 12250 4417 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 12250 4326 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 12200 4000 50  0001 C CNN
-F 3 "~" H 12200 4000 50  0001 C CNN
-	1    12200 4000
+P 14700 1500
+F 0 "J14" H 14750 1917 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 14750 1826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 14700 1500 50  0001 C CNN
+F 3 "~" H 14700 1500 50  0001 C CNN
+	1    14700 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW3
 U 1 1 6131864A
-P 15500 2100
-F 0 "SW3" H 15500 2385 50  0000 C CNN
-F 1 "FLT" H 15500 2294 50  0000 C CNN
-F 2 "c-and-k-pts851:PTS815" H 15500 2300 50  0001 C CNN
-F 3 "~" H 15500 2300 50  0001 C CNN
-	1    15500 2100
+P 13200 1300
+F 0 "SW3" H 13200 1585 50  0000 C CNN
+F 1 "FLT" H 13200 1494 50  0000 C CNN
+F 2 "c-and-k-pts851:PTS815" H 13200 1500 50  0001 C CNN
+F 3 "~" H 13200 1500 50  0001 C CNN
+	1    13200 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	15100 2100 15300 2100
-Connection ~ 15100 2100
 $Comp
 L power:GND #PWR0104
 U 1 1 6131B850
-P 15700 2200
-F 0 "#PWR0104" H 15700 1950 50  0001 C CNN
-F 1 "GND" H 15705 2027 50  0000 C CNN
-F 2 "" H 15700 2200 50  0001 C CNN
-F 3 "" H 15700 2200 50  0001 C CNN
-	1    15700 2200
+P 13400 1400
+F 0 "#PWR0104" H 13400 1150 50  0001 C CNN
+F 1 "GND" H 13405 1227 50  0000 C CNN
+F 2 "" H 13400 1400 50  0001 C CNN
+F 3 "" H 13400 1400 50  0001 C CNN
+	1    13400 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15700 2100 15700 2200
-$Comp
-L Device:R_Small_US R24
-U 1 1 61373AA2
-P 13100 1400
-F 0 "R24" H 13168 1491 50  0000 L CNN
-F 1 "10K" H 13168 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13100 1400 50  0001 C CNN
-F 3 "~" H 13100 1400 50  0001 C CNN
-F 4 "1%" H 13168 1309 50  0001 L CNN "Tolerance"
-	1    13100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R25
-U 1 1 613741BD
-P 13500 1400
-F 0 "R25" H 13568 1491 50  0000 L CNN
-F 1 "10K" H 13568 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13500 1400 50  0001 C CNN
-F 3 "~" H 13500 1400 50  0001 C CNN
-F 4 "1%" H 13568 1309 50  0001 L CNN "Tolerance"
-	1    13500 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R26
-U 1 1 613743DC
-P 13900 1400
-F 0 "R26" H 13968 1491 50  0000 L CNN
-F 1 "10K" H 13968 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13900 1400 50  0001 C CNN
-F 3 "~" H 13900 1400 50  0001 C CNN
-F 4 "1%" H 13968 1309 50  0001 L CNN "Tolerance"
-	1    13900 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R27
-U 1 1 6137470F
-P 14300 1400
-F 0 "R27" H 14368 1491 50  0000 L CNN
-F 1 "10K" H 14368 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14300 1400 50  0001 C CNN
-F 3 "~" H 14300 1400 50  0001 C CNN
-F 4 "1%" H 14368 1309 50  0001 L CNN "Tolerance"
-	1    14300 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R28
-U 1 1 61374A78
-P 14700 1400
-F 0 "R28" H 14768 1491 50  0000 L CNN
-F 1 "10K" H 14768 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14700 1400 50  0001 C CNN
-F 3 "~" H 14700 1400 50  0001 C CNN
-F 4 "1%" H 14768 1309 50  0001 L CNN "Tolerance"
-	1    14700 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R29
-U 1 1 61374DBD
-P 15100 1400
-F 0 "R29" H 15168 1491 50  0000 L CNN
-F 1 "10K" H 15168 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 1400 50  0001 C CNN
-F 3 "~" H 15100 1400 50  0001 C CNN
-F 4 "1%" H 15168 1309 50  0001 L CNN "Tolerance"
-	1    15100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R30
-U 1 1 61375198
-P 13100 4500
-F 0 "R30" H 13168 4591 50  0000 L CNN
-F 1 "10K" H 13168 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13100 4500 50  0001 C CNN
-F 3 "~" H 13100 4500 50  0001 C CNN
-F 4 "1%" H 13168 4409 50  0001 L CNN "Tolerance"
-	1    13100 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R31
-U 1 1 613757BF
-P 13500 4500
-F 0 "R31" H 13568 4591 50  0000 L CNN
-F 1 "10K" H 13568 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13500 4500 50  0001 C CNN
-F 3 "~" H 13500 4500 50  0001 C CNN
-F 4 "1%" H 13568 4409 50  0001 L CNN "Tolerance"
-	1    13500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R32
-U 1 1 61375A2C
-P 13900 4500
-F 0 "R32" H 13968 4591 50  0000 L CNN
-F 1 "10K" H 13968 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13900 4500 50  0001 C CNN
-F 3 "~" H 13900 4500 50  0001 C CNN
-F 4 "1%" H 13968 4409 50  0001 L CNN "Tolerance"
-	1    13900 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R33
-U 1 1 61375CE1
-P 14300 4500
-F 0 "R33" H 14368 4591 50  0000 L CNN
-F 1 "10K" H 14368 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14300 4500 50  0001 C CNN
-F 3 "~" H 14300 4500 50  0001 C CNN
-F 4 "1%" H 14368 4409 50  0001 L CNN "Tolerance"
-	1    14300 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R34
-U 1 1 61375F9C
-P 14700 4500
-F 0 "R34" H 14768 4591 50  0000 L CNN
-F 1 "10K" H 14768 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14700 4500 50  0001 C CNN
-F 3 "~" H 14700 4500 50  0001 C CNN
-F 4 "1%" H 14768 4409 50  0001 L CNN "Tolerance"
-	1    14700 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R35
-U 1 1 61376239
-P 15100 4500
-F 0 "R35" H 15168 4591 50  0000 L CNN
-F 1 "10K" H 15168 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 4500 50  0001 C CNN
-F 3 "~" H 15100 4500 50  0001 C CNN
-F 4 "1%" H 15168 4409 50  0001 L CNN "Tolerance"
-	1    15100 4500
-	1    0    0    -1  
-$EndComp
+	13400 1300 13400 1400
 Wire Wire Line
-	14700 5900 14750 5900
+	14800 3700 14850 3700
 Wire Wire Line
-	15100 5900 15100 6000
+	15200 3700 15200 3800
 Wire Wire Line
-	15050 5900 15100 5900
+	15150 3700 15200 3700
 $Comp
 L power:GND #PWR0105
 U 1 1 617A6C4F
-P 15100 6000
-F 0 "#PWR0105" H 15100 5750 50  0001 C CNN
-F 1 "GND" H 15105 5827 50  0000 C CNN
-F 2 "" H 15100 6000 50  0001 C CNN
-F 3 "" H 15100 6000 50  0001 C CNN
-	1    15100 6000
+P 15200 3800
+F 0 "#PWR0105" H 15200 3550 50  0001 C CNN
+F 1 "GND" H 15205 3627 50  0000 C CNN
+F 2 "" H 15200 3800 50  0001 C CNN
+F 3 "" H 15200 3800 50  0001 C CNN
+	1    15200 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14000 5900 14500 5900
+	14100 3700 14600 3700
 $Comp
 L Device:R_Small_US R36
 U 1 1 6178E19E
-P 14600 5900
-F 0 "R36" V 14700 5900 50  0000 C CNN
-F 1 "280" V 14800 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 5900 50  0001 C CNN
-F 3 "~" H 14600 5900 50  0001 C CNN
-F 4 "1%" H 14668 5809 50  0001 L CNN "Tolerance"
-	1    14600 5900
+P 14700 3700
+F 0 "R36" V 14800 3700 50  0000 C CNN
+F 1 "309" V 14900 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14700 3700 50  0001 C CNN
+F 3 "~" H 14700 3700 50  0001 C CNN
+F 4 "1%" H 14768 3609 50  0001 L CNN "Tolerance"
+	1    14700 3700
 	0    1    1    0   
 $EndComp
-Text Label 14000 5900 0    50   ~ 0
+Text Label 14100 3700 0    50   ~ 0
 PWR_EN
 $Comp
 L power:GND #PWR0106
 U 1 1 61775626
-P 11700 5800
-F 0 "#PWR0106" H 11700 5550 50  0001 C CNN
-F 1 "GND" H 11705 5627 50  0000 C CNN
-F 2 "" H 11700 5800 50  0001 C CNN
-F 3 "" H 11700 5800 50  0001 C CNN
-	1    11700 5800
+P 11800 3600
+F 0 "#PWR0106" H 11800 3350 50  0001 C CNN
+F 1 "GND" H 11805 3427 50  0000 C CNN
+F 2 "" H 11800 3600 50  0001 C CNN
+F 3 "" H 11800 3600 50  0001 C CNN
+	1    11800 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11900 6000 12200 6000
+	12000 3800 12300 3800
 Wire Wire Line
-	11900 5900 12200 5900
+	12000 3700 12300 3700
 Wire Wire Line
-	11700 5800 12200 5800
-Text Label 11900 5900 0    50   ~ 0
+	11800 3600 12300 3600
+Text Label 12000 3700 0    50   ~ 0
 CMD2
-Text Label 11900 6000 0    50   ~ 0
+Text Label 12000 3800 0    50   ~ 0
 CMD1
-Text Label 11900 6100 0    50   ~ 0
+Text Label 12000 3900 0    50   ~ 0
 PWR_EN
 $Comp
 L Connector_Generic:Conn_01x04 J15
 U 1 1 61755907
-P 12400 5900
-F 0 "J15" H 12480 5892 50  0000 L CNN
-F 1 "Conn_01x04" H 12480 5801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12400 5900 50  0001 C CNN
-F 3 "~" H 12400 5900 50  0001 C CNN
-	1    12400 5900
+P 12500 3700
+F 0 "J15" H 12580 3692 50  0000 L CNN
+F 1 "Conn_01x04" H 12580 3601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12500 3700 50  0001 C CNN
+F 3 "~" H 12500 3700 50  0001 C CNN
+	1    12500 3700
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -504,28 +253,28 @@ U 61701F79
 F0 "Config" 50
 F1 "ignitionlet-config.sch" 50
 $EndSheet
-Text Notes 11600 5100 0    50   ~ 0
-ID straps allow setting the desired value. The header\nallows reuse of these pins for alternative prototyping\n\nSee RFD 142 for currently allocated ID values.
+Text Notes 14000 2800 0    50   ~ 0
+ID straps allow setting the desired value.\nThe header allows reuse of these pins\nfor alternative prototyping.\n\nSee RFD 142 for currently allocated ID\nvalues. The FPGA should use programmable\npull-up/pull-down on these pins if required.
 Wire Notes Line
-	11400 5300 16000 5300
+	11400 4800 16000 4800
 Wire Notes Line
 	16000 3100 11400 3100
 Text Notes 11500 800  0    79   ~ 16
 Fault Pin Straps
 Text Notes 11600 2900 0    50   ~ 0
-Fault pin straps allow setting fixed fault values. The switch\nattached to ROT_FLT provides a convenient way to cause\nfault interrupts during integration tests. The header allows\nreuse of these pins for alternative prototyping.
+Fault pin straps allow setting fixed fault values.\nThe switch attached to PWR_FLT0 provides a\nconvenient way to cause fault interrupts during\nintegration tests. The header allows reuse of\nthese pins for alternative prototyping.\n\nThe FPGA should use programmable\npull-up/pull-down on these poins if required.
 Wire Notes Line
 	11400 600  16000 600 
-Text Notes 11500 5500 0    79   ~ 16
+Text Notes 11600 3300 0    79   ~ 16
 CMD Bits Header
-Text Notes 11600 6700 0    50   ~ 0
-Command bits are exposed on a header\nfor easy test probing and alternative\nprototyping.
+Text Notes 11700 4500 0    50   ~ 0
+Command bits are exposed on a header\nfor easy probing and/or alternative\nprototyping.
 Wire Notes Line
 	11400 6900 16000 6900
 Wire Notes Line
 	16000 600  16000 6900
 Wire Notes Line
-	13700 5300 13700 6900
+	13800 3100 13800 4800
 Text Notes 12400 8500 0    79   ~ 16
 Power
 Text Notes 13900 8500 0    79   ~ 16
@@ -535,9 +284,9 @@ LVDS TX
 Wire Notes Line
 	7100 2100 11400 2100
 Wire Notes Line
-	7100 9400 11400 9400
+	7100 9000 11400 9000
 Wire Notes Line
-	7100 2100 7100 9400
+	7100 2100 7100 9000
 Wire Wire Line
 	7700 3000 7900 3000
 Wire Wire Line
@@ -731,7 +480,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 3000 50  0001 C CNN
 F 3 "~" H 4000 3000 50  0001 C CNN
 F 4 "1uF" H 4092 3046 50  0000 L CNN "Capacitance"
 F 5 "25V" H 4092 2955 50  0000 L CNN "VDC"
-F 6 "X7R" H 4092 2864 50  0000 L CNN "Coefficient"
+F 6 "X7R" H 4092 2864 50  0001 L CNN "Coefficient"
 F 7 "0603" H 4000 2600 50  0001 L CNN "Package"
 	1    4000 3000
 	1    0    0    -1  
@@ -772,28 +521,6 @@ Wire Wire Line
 	2200 3700 2500 3700
 Wire Wire Line
 	2200 3300 2200 3700
-$Comp
-L Ignition:V2P5 #PWR0113
-U 1 1 6142A1AC
-P 3200 2800
-F 0 "#PWR0113" H 3200 2650 50  0001 C CNN
-F 1 "V2P5" H 3200 2975 50  0000 C CNN
-F 2 "" H 3200 2800 50  0001 C CNN
-F 3 "" H 3200 2800 50  0001 C CNN
-	1    3200 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Ignition:V2P5 #PWR0114
-U 1 1 61427F74
-P 3200 4300
-F 0 "#PWR0114" H 3200 4150 50  0001 C CNN
-F 1 "V2P5" H 3200 4475 50  0000 C CNN
-F 2 "" H 3200 4300 50  0001 C CNN
-F 3 "" H 3200 4300 50  0001 C CNN
-	1    3200 4300
-	1    0    0    -1  
-$EndComp
 Connection ~ 2800 5200
 Wire Wire Line
 	3600 5200 3600 4100
@@ -1159,12 +886,12 @@ Wire Wire Line
 $Comp
 L Ignition:V3P3 #PWR0120
 U 1 1 60E4E2D4
-P 11700 3700
-F 0 "#PWR0120" H 11700 3550 50  0001 C CNN
-F 1 "V3P3" H 11715 3873 50  0000 C CNN
-F 2 "" H 11700 3700 50  0001 C CNN
-F 3 "" H 11700 3700 50  0001 C CNN
-	1    11700 3700
+P 14200 1200
+F 0 "#PWR0120" H 14200 1050 50  0001 C CNN
+F 1 "V3P3" H 14215 1373 50  0000 C CNN
+F 2 "" H 14200 1200 50  0001 C CNN
+F 3 "" H 14200 1200 50  0001 C CNN
+	1    14200 1200
 	1    0    0    -1  
 $EndComp
 Text Label 5000 4400 0    50   ~ 0
@@ -1191,7 +918,7 @@ Wire Wire Line
 	5000 4500 5500 4500
 Wire Wire Line
 	5000 4400 5500 4400
-Text Notes 11500 3300 0    79   ~ 16
+Text Notes 14000 800  0    79   ~ 16
 ID Straps
 $Comp
 L Ignition:IGNITION001-QFN U1
@@ -1495,16 +1222,16 @@ AUX0_TX_LVDS_N
 $Comp
 L Ignition:LTST-C193KGKT-5A D1
 U 1 1 61473EB0
-P 14900 5900
-F 0 "D1" H 14893 5645 50  0000 C CNN
-F 1 "LTST-C193KGKT-5A" H 14893 5736 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 14900 5900 50  0001 C CNN
-F 3 "~" H 14900 5900 50  0001 C CNN
-	1    14900 5900
+P 15000 3700
+F 0 "D1" H 14993 3445 50  0000 C CNN
+F 1 "LTST-C193KGKT-5A" H 14993 3536 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 15000 3700 50  0001 C CNN
+F 3 "~" H 15000 3700 50  0001 C CNN
+	1    15000 3700
 	-1   0    0    1   
 $EndComp
-Text Notes 15300 6100 0    50   ~ 0
-If: 5mA\nVf: 1.9V\nRlim: 280Ω
+Text Notes 15400 3900 0    50   ~ 0
+If: 5mA\nVf: 1.9V\nRlim: ~~300Ω
 $Comp
 L Connector_Generic:Conn_01x04 J6
 U 1 1 6147A847
@@ -1735,8 +1462,8 @@ Wire Wire Line
 Wire Wire Line
 	9000 4200 9800 4200
 Connection ~ 9000 4200
-Text Notes 8000 9300 0    50   ~ 0
-The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253\nusing PIO pin pairs in Bank 3. The resistor values above were derived\nusing the equations on p. 4 and the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm each. The intend\nhere is that one pin of a 100 mil header/ footprint is inserted between the\ntwo resistors. If done using a tight layout this via should add minimal\ndisruption at the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for alternative\nprototyping by not fitting the second series resistor, parallel resistor and\nSMA connector, while using the first resistor footprint as slew limiting\nresistor or for series termination.\n\nOne possible application of this alternative scheme is to allow the Ignition\nprotocol to be carried using single ended LVCMOS signaling at 3.3V\nbetween this broad and an ECP5 dev board without requiring SMA\nconnectors for the link partner. This would simplify initial prototyping work.\n\nThe AC couping capacitors near the SMA connector are optional in case\none wants to experiment. The layout should allow for some copper nearby\nconnected to ground so experiments with a choke are possible. If not in\nuse 0 ohm resistors should be fitted.
+Text Notes 7200 8800 0    50   ~ 0
+The LVDS transmitter pair is implemented as per Lattice FPGA-TN-1253 using PIO pin pairs in Bank 3.\nThe resistor values above were derived using the equations on p. 4 and the following assumptions:\n\nZ0 = 50 ohm\nVCCIO = 2.5V\nV_OD = 0.35V\nR_OUTPUT = 30 ohm\n\nR_P = 2 * ((Z0 * VCCIO) / (VCCIO - (2 * V_OD)))\n     = 2 * (165 / 1.8)\n     = 139 ohm\n\nR_S = ((Z0 * R_P / 2) / ((R_P / 2) - Z0) - R_OUTPUT\n     = (3472 / 19) - 30\n     = 149 ohm\n\nThe series resistor is broken into two pieces of 75 ohm each. The intend here is that one pin of a 100\nmil header/ footprint is inserted between the two resistors. If done using a tight layout this via should\nadd minimal disruption at the edge rates of these transmitters.\n\nInserting the via would allow for IO pin to be reused for alternative prototyping by not fitting the second\nseries resistor, parallel resistor and SMA connector, while using the first resistor footprint as slew limiting\nresistor or for series termination.\n\nOne possible application of this alternative scheme is to allow the Ignition protocol to be carried using\nsingle ended LVCMOS signaling at 3.3V between this broad and an ECP5 dev board without requiring\nSMA connectors for the link partner. This would simplify initial prototyping work.\n\nThe AC couping capacitors near the SMA connector are optional in case one wants to experiment. The\nlayout should allow for some copper nearby connected to ground so experiments with a choke are\npossible. If not in use 0 ohm resistors should be fitted.
 Wire Wire Line
 	4000 2800 4400 2800
 Connection ~ 4000 2800
@@ -1745,152 +1472,144 @@ CLK_50M
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 61186B02
-P 900 9500
-F 0 "H1" V 854 9650 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 9650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 9500 50  0001 C CNN
-F 3 "~" H 900 9500 50  0001 C CNN
-	1    900  9500
+P 11800 5300
+F 0 "H1" V 11754 5450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 11845 5450 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 11800 5300 50  0001 C CNN
+F 3 "~" H 11800 5300 50  0001 C CNN
+	1    11800 5300
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 61197EFF
-P 900 9700
-F 0 "H2" V 854 9850 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 9850 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 9700 50  0001 C CNN
-F 3 "~" H 900 9700 50  0001 C CNN
-	1    900  9700
+P 11800 5500
+F 0 "H2" V 11754 5650 50  0000 L CNN
+F 1 "MountingHole_Pad" V 11845 5650 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 11800 5500 50  0001 C CNN
+F 3 "~" H 11800 5500 50  0001 C CNN
+	1    11800 5500
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 611C8D25
-P 900 9900
-F 0 "H3" V 854 10050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 10050 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 9900 50  0001 C CNN
-F 3 "~" H 900 9900 50  0001 C CNN
-	1    900  9900
+P 11800 5700
+F 0 "H3" V 11754 5850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 11845 5850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 11800 5700 50  0001 C CNN
+F 3 "~" H 11800 5700 50  0001 C CNN
+	1    11800 5700
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 611D8E91
-P 900 10100
-F 0 "H4" V 854 10250 50  0000 L CNN
-F 1 "MountingHole_Pad" V 945 10250 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 10100 50  0001 C CNN
-F 3 "~" H 900 10100 50  0001 C CNN
-	1    900  10100
+P 11800 5900
+F 0 "H4" V 11754 6050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 11845 6050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 11800 5900 50  0001 C CNN
+F 3 "~" H 11800 5900 50  0001 C CNN
+	1    11800 5900
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 611E8DC8
-P 800 10200
-F 0 "#PWR04" H 800 9950 50  0001 C CNN
-F 1 "GND" H 805 10027 50  0000 C CNN
-F 2 "" H 800 10200 50  0001 C CNN
-F 3 "" H 800 10200 50  0001 C CNN
-	1    800  10200
+P 11700 6000
+F 0 "#PWR04" H 11700 5750 50  0001 C CNN
+F 1 "GND" H 11705 5827 50  0000 C CNN
+F 2 "" H 11700 6000 50  0001 C CNN
+F 3 "" H 11700 6000 50  0001 C CNN
+	1    11700 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  9500 800  9700
-Connection ~ 800  9700
+	11700 5300 11700 5500
+Connection ~ 11700 5500
 Wire Wire Line
-	800  9700 800  9900
-Connection ~ 800  9900
+	11700 5500 11700 5700
+Connection ~ 11700 5700
 Wire Wire Line
-	800  9900 800  10100
-Connection ~ 800  10100
+	11700 5700 11700 5900
+Connection ~ 11700 5900
 Wire Wire Line
-	800  10100 800  10200
+	11700 5900 11700 6000
 $Comp
 L Mechanical:Fiducial FID1
 U 1 1 6120074B
-P 3800 9400
-F 0 "FID1" H 3885 9446 50  0000 L CNN
-F 1 "Ignitionlet" H 3885 9355 50  0000 L CNN
-F 2 "grumpy:Oxide_Board_Identifier_23x6mm" H 3800 9400 50  0001 C CNN
-F 3 "~" H 3800 9400 50  0001 C CNN
-	1    3800 9400
+P 14700 5200
+F 0 "FID1" H 14785 5246 50  0000 L CNN
+F 1 "Ignitionlet" H 14785 5155 50  0000 L CNN
+F 2 "grumpy:Oxide_Board_Identifier_23x6mm_PCBWay" H 14700 5200 50  0001 C CNN
+F 3 "~" H 14700 5200 50  0001 C CNN
+	1    14700 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:Fiducial FID2
 U 1 1 61202097
-P 3800 9700
-F 0 "FID2" H 3885 9746 50  0000 L CNN
-F 1 "Fiducial" H 3885 9655 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3800 9700 50  0001 C CNN
-F 3 "~" H 3800 9700 50  0001 C CNN
-	1    3800 9700
+P 14700 5500
+F 0 "FID2" H 14785 5546 50  0000 L CNN
+F 1 "Fiducial" H 14785 5455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 14700 5500 50  0001 C CNN
+F 3 "~" H 14700 5500 50  0001 C CNN
+	1    14700 5500
 	1    0    0    -1  
 $EndComp
-Text Notes 700  9200 0    79   ~ 16
+Text Notes 11600 5000 0    79   ~ 16
 Mechanical
-Text Notes 1800 10900 0    50   ~ 0
+Text Notes 12700 6700 0    50   ~ 0
 The board assumes the width of two standard\n0.80” PMOD boards. J16 is intended for additional\nmechanical stability, but is connected to J17 as a\nType 1 interface, providing GPIOs for prototyping\nwhich for example can be wired to CDONE or\nFLASH_RESET when connected to an appropriate\nhost board.
-NoConn ~ 2100 9600
-NoConn ~ 2100 9700
-NoConn ~ 2100 9800
-NoConn ~ 2100 9900
-NoConn ~ 2100 10100
-NoConn ~ 2600 10100
+NoConn ~ 13000 5400
+NoConn ~ 13000 5500
+NoConn ~ 13000 5600
+NoConn ~ 13000 5700
+NoConn ~ 13000 5900
+NoConn ~ 13500 5900
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J16
 U 1 1 6130518A
-P 2300 9800
-F 0 "J16" H 2350 10217 50  0000 C CNN
-F 1 "Conn_02x06_Top_Bottom" H 2350 10126 50  0000 C CNN
-F 2 "pmod:PMOD_12pin_peripheral_horizontal" H 2300 9800 50  0001 C CNN
-F 3 "~" H 2300 9800 50  0001 C CNN
-	1    2300 9800
+P 13200 5600
+F 0 "J16" H 13250 6017 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 13250 5926 50  0000 C CNN
+F 2 "pmod:PMOD_12pin_peripheral_horizontal" H 13200 5600 50  0001 C CNN
+F 3 "~" H 13200 5600 50  0001 C CNN
+	1    13200 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0162
 U 1 1 61307B28
-P 2000 10000
-F 0 "#PWR0162" H 2000 9750 50  0001 C CNN
-F 1 "GND" H 2005 9827 50  0000 C CNN
-F 2 "" H 2000 10000 50  0001 C CNN
-F 3 "" H 2000 10000 50  0001 C CNN
-	1    2000 10000
+P 12900 5800
+F 0 "#PWR0162" H 12900 5550 50  0001 C CNN
+F 1 "GND" H 12905 5627 50  0000 C CNN
+F 2 "" H 12900 5800 50  0001 C CNN
+F 3 "" H 12900 5800 50  0001 C CNN
+	1    12900 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0163
 U 1 1 61307EE4
-P 2700 10000
-F 0 "#PWR0163" H 2700 9750 50  0001 C CNN
-F 1 "GND" H 2705 9827 50  0000 C CNN
-F 2 "" H 2700 10000 50  0001 C CNN
-F 3 "" H 2700 10000 50  0001 C CNN
-	1    2700 10000
+P 13600 5800
+F 0 "#PWR0163" H 13600 5550 50  0001 C CNN
+F 1 "GND" H 13605 5627 50  0000 C CNN
+F 2 "" H 13600 5800 50  0001 C CNN
+F 3 "" H 13600 5800 50  0001 C CNN
+	1    13600 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 10000 2100 10000
+	12900 5800 13000 5800
 Wire Wire Line
-	2600 10000 2700 10000
+	13500 5800 13600 5800
 Wire Wire Line
-	11900 6100 12200 6100
+	12000 3900 12300 3900
 Text Label 8100 5800 0    50   ~ 0
 AUX1_TX_TAP_P
 Text Label 8100 5700 0    50   ~ 0
 AUX1_TX_TAP_N
-Wire Notes Line
-	600  9000 4400 9000
-Wire Notes Line
-	4400 9000 4400 11000
-Wire Notes Line
-	4400 11000 600  11000
-Wire Notes Line
-	600  11000 600  9000
 $Comp
 L Ignition:MCZ1210AH900L2TA0G L1
 U 1 1 6182B5FB
@@ -1948,7 +1667,7 @@ AUX0_TX_P
 Text Label 8100 3000 0    50   ~ 0
 AUX0_TX_TAP_P
 Wire Notes Line
-	11400 600  11400 9400
+	11400 600  11400 9000
 Connection ~ 5500 3100
 $Comp
 L Connector:TestPoint TP1
@@ -1956,7 +1675,7 @@ U 1 1 61CD52A4
 P 5500 3100
 F 0 "TP1" H 5558 3218 50  0000 L CNN
 F 1 "TestPoint" H 5558 3127 50  0000 L CNN
-F 2 "test-point:TestPoint_THTPad_D0.6mm_Drill0.3mm" H 5700 3100 50  0001 C CNN
+F 2 "test-point:TestPoint_Pad_D0.6mm" H 5700 3100 50  0001 C CNN
 F 3 "~" H 5700 3100 50  0001 C CNN
 	1    5500 3100
 	1    0    0    -1  
@@ -1976,68 +1695,107 @@ Connection ~ 4200 3300
 Wire Wire Line
 	4200 3300 4500 3300
 Wire Wire Line
-	14700 6450 14750 6450
+	14800 4400 14850 4400
 Wire Wire Line
-	15100 6450 15100 6550
+	15200 4400 15200 4500
 Wire Wire Line
-	15050 6450 15100 6450
+	15150 4400 15200 4400
 $Comp
 L power:GND #PWR0121
 U 1 1 61D8CF1B
-P 15100 6550
-F 0 "#PWR0121" H 15100 6300 50  0001 C CNN
-F 1 "GND" H 15105 6377 50  0000 C CNN
-F 2 "" H 15100 6550 50  0001 C CNN
-F 3 "" H 15100 6550 50  0001 C CNN
-	1    15100 6550
+P 15200 4500
+F 0 "#PWR0121" H 15200 4250 50  0001 C CNN
+F 1 "GND" H 15205 4327 50  0000 C CNN
+F 2 "" H 15200 4500 50  0001 C CNN
+F 3 "" H 15200 4500 50  0001 C CNN
+	1    15200 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14000 6450 14500 6450
-$Comp
-L Device:R_Small_US R37
-U 1 1 61D8CF23
-P 14600 6450
-F 0 "R37" V 14700 6450 50  0000 C CNN
-F 1 "280" V 14800 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 6450 50  0001 C CNN
-F 3 "~" H 14600 6450 50  0001 C CNN
-F 4 "1%" H 14668 6359 50  0001 L CNN "Tolerance"
-	1    14600 6450
-	0    1    1    0   
-$EndComp
-Text Label 14000 6450 0    50   ~ 0
+	14100 4400 14600 4400
+Text Label 14100 4400 0    50   ~ 0
 CMD1
 $Comp
 L Ignition:LTST-C193KGKT-5A D2
 U 1 1 61D8CF2A
-P 14900 6450
-F 0 "D2" H 14893 6195 50  0000 C CNN
-F 1 "LTST-C193KGKT-5A" H 14893 6286 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 14900 6450 50  0001 C CNN
-F 3 "~" H 14900 6450 50  0001 C CNN
-	1    14900 6450
+P 15000 4400
+F 0 "D2" H 14993 4145 50  0000 C CNN
+F 1 "LTST-C193KGKT-5A" H 14993 4236 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 15000 4400 50  0001 C CNN
+F 3 "~" H 15000 4400 50  0001 C CNN
+	1    15000 4400
 	-1   0    0    1   
 $EndComp
-Text Notes 13900 5500 0    79   ~ 16
+Text Notes 14000 3300 0    79   ~ 16
 CMDx LEDs
 $Comp
 L Connector_Generic:Conn_01x04 J17
 U 1 1 60E0E021
-P 3200 9700
-F 0 "J17" H 3200 10025 50  0000 C CNN
-F 1 "Conn_01x04" H 3200 9925 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3200 9700 50  0001 C CNN
-F 3 "~" H 3200 9700 50  0001 C CNN
-	1    3200 9700
+P 14100 5500
+F 0 "J17" H 14100 5825 50  0000 C CNN
+F 1 "Conn_01x04" H 14100 5725 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14100 5500 50  0001 C CNN
+F 3 "~" H 14100 5500 50  0001 C CNN
+	1    14100 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 9600 3000 9600
+	13500 5400 13900 5400
 Wire Wire Line
-	3000 9700 2600 9700
+	13900 5500 13500 5500
 Wire Wire Line
-	2600 9800 3000 9800
+	13500 5600 13900 5600
 Wire Wire Line
-	3000 9900 2600 9900
+	13900 5700 13500 5700
+Wire Wire Line
+	12500 1800 12600 1800
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 61AC7639
+P 14700 5800
+F 0 "FID3" H 14785 5846 50  0000 L CNN
+F 1 "Fiducial" H 14785 5755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 14700 5800 50  0001 C CNN
+F 3 "~" H 14700 5800 50  0001 C CNN
+	1    14700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R37
+U 1 1 61D8CF23
+P 14700 4400
+F 0 "R37" V 14800 4400 50  0000 C CNN
+F 1 "309" V 14900 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14700 4400 50  0001 C CNN
+F 3 "~" H 14700 4400 50  0001 C CNN
+F 4 "1%" H 14768 4309 50  0001 L CNN "Tolerance"
+	1    14700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Ignition:VCCIO_3 #PWR?
+U 1 1 611B1C8C
+P 3200 2800
+AR Path="/61252D76/611B1C8C" Ref="#PWR?"  Part="1" 
+AR Path="/611B1C8C" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 3200 2650 50  0001 C CNN
+F 1 "VCCIO_3" H 3200 2950 50  0000 C CNN
+F 2 "" H 3200 2800 50  0001 C CNN
+F 3 "" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ignition:VCCIO_3 #PWR?
+U 1 1 611BFA46
+P 3200 4300
+AR Path="/61252D76/611BFA46" Ref="#PWR?"  Part="1" 
+AR Path="/611BFA46" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 3200 4150 50  0001 C CNN
+F 1 "VCCIO_3" H 3200 4450 50  0000 C CNN
+F 2 "" H 3200 4300 50  0001 C CNN
+F 3 "" H 3200 4300 50  0001 C CNN
+	1    3200 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

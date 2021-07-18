@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "Power"
-Date "2021-07-02"
-Rev "1"
+Date "2021-07-21"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -941,14 +941,14 @@ Connection ~ 11800 4500
 $Comp
 L Ignition:V3P3 #PWR?
 U 1 1 6127172E
-P 11900 5400
+P 11700 5400
 AR Path="/6127172E" Ref="#PWR?"  Part="1" 
 AR Path="/61252D76/6127172E" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 11900 5250 50  0001 C CNN
-F 1 "V3P3" H 11915 5573 50  0000 C CNN
-F 2 "" H 11900 5400 50  0001 C CNN
-F 3 "" H 11900 5400 50  0001 C CNN
-	1    11900 5400
+F 0 "#PWR0123" H 11700 5250 50  0001 C CNN
+F 1 "V3P3" H 11715 5573 50  0000 C CNN
+F 2 "" H 11700 5400 50  0001 C CNN
+F 3 "" H 11700 5400 50  0001 C CNN
+	1    11700 5400
 	1    0    0    -1  
 $EndComp
 Connection ~ 12200 5400
@@ -1110,22 +1110,22 @@ $Comp
 L Connector_Generic:Conn_01x03 J103
 U 1 1 61D74AC0
 P 11400 6200
-F 0 "J103" H 11318 5875 50  0000 C CNN
-F 1 "Conn_01x03" H 11318 5966 50  0000 C CNN
+F 0 "J103" H 11400 5850 50  0000 C CNN
+F 1 "Conn_01x03" H 11400 5950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11400 6200 50  0001 C CNN
 F 3 "~" H 11400 6200 50  0001 C CNN
 	1    11400 6200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	11600 6100 11900 6100
+	11600 6100 11700 6100
 Wire Wire Line
-	11900 6100 11900 5400
+	11700 6100 11700 5400
 Wire Wire Line
-	11900 5400 12200 5400
-Connection ~ 11900 5400
+	11700 5400 12200 5400
+Connection ~ 11700 5400
 Wire Wire Line
-	11600 6200 12600 6200
+	11600 6200 11900 6200
 Wire Wire Line
 	11600 6300 11700 6300
 Wire Wire Line
@@ -1175,19 +1175,6 @@ Wire Wire Line
 	12600 6600 12600 6700
 Wire Wire Line
 	13000 6600 13000 6700
-$Comp
-L Ignition:V2P5 #PWR?
-U 1 1 61271789
-P 11900 6500
-AR Path="/61271789" Ref="#PWR?"  Part="1" 
-AR Path="/61252D76/61271789" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 11900 6350 50  0001 C CNN
-F 1 "V2P5" H 11900 6675 50  0000 C CNN
-F 2 "" H 11900 6500 50  0001 C CNN
-F 3 "" H 11900 6500 50  0001 C CNN
-	1    11900 6500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11900 6500 12200 6500
 Wire Wire Line
@@ -1197,14 +1184,14 @@ Wire Wire Line
 Connection ~ 11900 6500
 Connection ~ 13000 6300
 Wire Notes Line
-	10500 5150 12100 5150
+	10400 5150 12100 5150
 Wire Notes Line
 	12100 5150 12100 6600
 Wire Notes Line
-	12100 6600 10500 6600
+	12100 6600 10400 6600
 Wire Notes Line
-	10500 6600 10500 5150
-Text Notes 10600 5800 0    50   ~ 0
+	10400 6600 10400 5150
+Text Notes 10500 5800 0    50   ~ 0
 JP3 allows VCCIO_3 to be\nconfigurable as 2.5V/3.3V.\n\nIf configured as 3.3V the\nLVDS TX resistors need\nto be adjusted for compliant\ndiff swing.
 Wire Wire Line
 	5600 6500 5600 6600
@@ -1241,7 +1228,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 3600 5600 3600
 Connection ~ 6000 5900
-Text Notes 10600 6200 0    50   ~ 0
+Text Notes 10500 6200 0    50   ~ 0
 2.5V: pins 1-2 \n3.3V: pins 2-3
 Wire Wire Line
 	2500 3800 2600 3800
@@ -1389,8 +1376,6 @@ NoConn ~ 13400 6800
 NoConn ~ 13600 8200
 Text Notes 4300 4300 0    50   ~ 0
 I_hold: 100mA\nI_trip: 300mA\n\nV_max: 30V\nI_max: 10A
-Text Label 12200 6200 0    50   ~ 0
-VCCIO_3
 Wire Wire Line
 	3100 3600 4000 3600
 $Comp
@@ -1427,7 +1412,7 @@ U 1 1 61D46D51
 P 7900 8500
 F 0 "TP103" H 7750 8750 50  0000 L CNN
 F 1 "TestPoint" H 7958 8527 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8100 8500 50  0001 C CNN
+F 2 "test-point:TestPoint_Pad_D0.6mm" H 8100 8500 50  0001 C CNN
 F 3 "~" H 8100 8500 50  0001 C CNN
 	1    7900 8500
 	1    0    0    -1  
@@ -1485,4 +1470,31 @@ F 3 "" H 9000 7750 50  0001 C CNN
 $EndComp
 Text Notes 8600 8100 0    50   ~ 0
 Keystone 5015s for easier probe access.
+$Comp
+L Ignition:VCCIO_3 #PWR0103
+U 1 1 6113E3B2
+P 11900 6200
+F 0 "#PWR0103" H 11900 6050 50  0001 C CNN
+F 1 "VCCIO_3" H 11900 6350 50  0000 C CNN
+F 2 "" H 11900 6200 50  0001 C CNN
+F 3 "" H 11900 6200 50  0001 C CNN
+	1    11900 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 11900 6200
+Wire Wire Line
+	11900 6200 12600 6200
+$Comp
+L Ignition:V2P5 #PWR?
+U 1 1 61271789
+P 11900 6500
+AR Path="/61271789" Ref="#PWR?"  Part="1" 
+AR Path="/61252D76/61271789" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 11900 6350 50  0001 C CNN
+F 1 "V2P5" H 11900 6675 50  0000 C CNN
+F 2 "" H 11900 6500 50  0001 C CNN
+F 3 "" H 11900 6500 50  0001 C CNN
+	1    11900 6500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

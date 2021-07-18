@@ -210,5 +210,4 @@
   (lib (name stm32h7)(type Legacy)(uri ${KIPRJMOD}/lib/stm32h7.lib)(options "")(descr ""))
   (lib (name Ignition)(type Legacy)(uri ${KIPRJMOD}/lib/Ignition.lib)(options "")(descr "Ignition symbols"))
   (lib (name TFC-105-02-F-D-A-K)(type Legacy)(uri /Users/arjen/Downloads/TFC-105-02-F-D-A-K/TFC-105-02-F-D-A-K.lib)(options "")(descr ""))
-  (lib (name ignitionlet-rescue)(type Legacy)(uri ${KIPRJMOD}/ignitionlet-rescue.lib)(options "")(descr ""))
 )

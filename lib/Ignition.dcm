@@ -59,10 +59,22 @@ K inductor choke coil reactor magnetic coupled
 F https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_mcz1210ah_en.pdf
 $ENDCMP
 #
+$CMP MT25QL128ABB8E12-0AUT
+D 128Mb, 3V Multiple I/O Serial Flash Memory
+K spi flash bga
+F https://www.mouser.com/datasheet/2/671/mict_s_a0006161798_1-2291050.pdf
+$ENDCMP
+#
 $CMP PMOD_2A_PERIPHERAL
 D PMOD 2A SPI Peripheral
 K pmod spi
 F https://www.digilentinc.com/Pmods/Digilent-Pmod_%20Interface_Specification.pdf
+$ENDCMP
+#
+$CMP SN74CBTLV3257RSV
+D Low-Voltage 4-Bit 1-of-2 FET MUX/DEMUX
+K fet mux demux 2:1
+F https://www.ti.com/lit/ds/symlink/sn74cbtlv3257.pdf
 $ENDCMP
 #
 $CMP TPS7A0525PDBVR
@@ -83,6 +95,11 @@ $ENDCMP
 #
 $CMP V3P3
 D Power symbol creates a global label with name "V3P3"
+K power-flag
+$ENDCMP
+#
+$CMP VCCIO_3
+D Power symbol creates a global label with name "VCCIO_3"
 K power-flag
 $ENDCMP
 #
