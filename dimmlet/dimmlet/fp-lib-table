@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name pmod)(type KiCad)(uri D:/oxide/gemini-bringup/lib/pmod.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri D:/oxide/gemini-bringup/dimmlet/footprints.pretty)(options "")(descr ""))
+  (lib (name grumpy)(type KiCad)(uri D:/oxide/gemini-bringup/lib/grumpy.pretty)(options "")(descr ""))
+)
