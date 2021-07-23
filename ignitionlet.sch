@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "Ignition Target"
-Date "2021-07-21"
+Date "2021-07-22"
 Rev "2"
 Comp "Oxide Computer Co."
 Comment1 ""
@@ -128,9 +128,6 @@ Wire Wire Line
 	14200 1700 14500 1700
 Wire Wire Line
 	14200 1800 14500 1800
-Connection ~ 14200 1300
-Wire Wire Line
-	14200 1200 14200 1300
 Wire Wire Line
 	14200 1400 14200 1500
 Connection ~ 14200 1400
@@ -883,17 +880,6 @@ Wire Wire Line
 	5000 5900 5500 5900
 Wire Wire Line
 	5000 6000 5500 6000
-$Comp
-L Ignition:V3P3 #PWR0120
-U 1 1 60E4E2D4
-P 14200 1200
-F 0 "#PWR0120" H 14200 1050 50  0001 C CNN
-F 1 "V3P3" H 14215 1373 50  0000 C CNN
-F 2 "" H 14200 1200 50  0001 C CNN
-F 3 "" H 14200 1200 50  0001 C CNN
-	1    14200 1200
-	1    0    0    -1  
-$EndComp
 Text Label 5000 4400 0    50   ~ 0
 ~PWR_FLT0
 Text Label 5000 4500 0    50   ~ 0
@@ -1798,4 +1784,18 @@ F 3 "" H 3200 4300 50  0001 C CNN
 	1    3200 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 60FAAE32
+P 14200 1900
+F 0 "#PWR0120" H 14200 1650 50  0001 C CNN
+F 1 "GND" H 14205 1727 50  0000 C CNN
+F 2 "" H 14200 1900 50  0001 C CNN
+F 3 "" H 14200 1900 50  0001 C CNN
+	1    14200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 1900 14200 1800
+Connection ~ 14200 1800
 $EndSCHEMATC
