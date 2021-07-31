@@ -2,4 +2,5 @@
   (lib (name spimux-cache)(type Legacy)(uri D:/oxide/gemini-bringup/spimux/spimux-cache.lib)(options "")(descr ""))
   (lib (name 2021-07-20_03-12-09)(type Legacy)(uri D:/oxide/gemini-bringup/dimmlet/2021-07-20_03-12-09.lib)(options "")(descr ""))
   (lib (name dimmlet)(type Legacy)(uri ${KIPRJMOD}/dimmlet.lib)(options "")(descr ""))
+  (lib (name dimmlet-rescue)(type Legacy)(uri ${KIPRJMOD}/dimmlet-rescue.lib)(options "")(descr ""))
 )
