@@ -19,7 +19,7 @@ U 1 1 60EEE84D
 P 14000 3350
 F 0 "U4" H 14100 3600 50  0000 L CNN
 F 1 "MT25QU256ABA8E12" H 14150 2000 50  0000 L CNN
-F 2 "spimux:BGA-25_5x5_6.0x6.0mm" H 14000 3350 50  0001 C CNN
+F 2 "spimux:BGA-25_5x5_6.0x8.0mm" H 14000 3350 50  0001 C CNN
 F 3 "" H 14000 3350 50  0001 C CNN
 	1    14000 3350
 	1    0    0    -1  
@@ -281,46 +281,33 @@ Wire Wire Line
 Wire Wire Line
 	1950 4750 2800 4750
 Wire Wire Line
-	5100 3650 5700 3650
+	5100 4250 5700 4250
 Wire Wire Line
-	5100 3750 5700 3750
-Wire Wire Line
-	5100 3850 5700 3850
-Wire Wire Line
-	5100 3950 5700 3950
+	5100 4150 5700 4150
 Wire Wire Line
 	5100 4050 5700 4050
 Wire Wire Line
-	5100 4150 5700 4150
-Text Label 5150 3650 0    50   ~ 0
+	5100 3950 5700 3950
+Wire Wire Line
+	5100 3850 5700 3850
+Wire Wire Line
+	5100 3650 5700 3650
+Text Label 5150 4250 0    50   ~ 0
 SP_QSPI_IO3
-Text Label 5150 3750 0    50   ~ 0
+Text Label 5150 4150 0    50   ~ 0
 SP_QSPI_IO2
-Text Label 5150 3850 0    50   ~ 0
+Text Label 5150 4050 0    50   ~ 0
 SP_QSPI_IO1
 Text Label 5150 3950 0    50   ~ 0
 SP_QSPI_IO0
-Text Label 5150 4050 0    50   ~ 0
+Text Label 5150 3850 0    50   ~ 0
 ~SP_QSPI_CS
-Text Label 5150 4150 0    50   ~ 0
+Text Label 5150 3650 0    50   ~ 0
 SP_QSPI_CLK
 Wire Wire Line
 	700  4700 700  4750
 Text Label 11300 4350 0    50   ~ 0
 ~SPI_MUX_EN_L
-$Comp
-L oxide_spimux:ADG3308BCPZ U2
-U 1 1 60F6D145
-P 6700 3500
-F 0 "U2" H 7150 3765 50  0000 C CNN
-F 1 "ADG3308BCPZ" H 7150 3674 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6700 3500 50  0001 C CNN
-F 3 "" H 6700 3500 50  0001 C CNN
-F 4 "ADG3308BRUZ" H 6700 3500 50  0001 C CNN "MPN"
-F 5 "Digikey" H 6700 3500 50  0001 C CNN "Source"
-	1    6700 3500
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:+1V8 #PWR020
 U 1 1 60F73730
@@ -347,10 +334,6 @@ Wire Wire Line
 	6800 3500 6950 3500
 Wire Wire Line
 	6950 3500 6950 3400
-Wire Wire Line
-	5700 3500 5500 3500
-Wire Wire Line
-	5500 3500 5500 3400
 $Comp
 L power:GNDREF #PWR021
 U 1 1 60F796B7
@@ -363,14 +346,7 @@ F 3 "" H 6950 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 4600 6950 4600
-Wire Wire Line
-	6950 4600 6950 4700
-Wire Wire Line
 	6800 4500 6950 4500
-Wire Wire Line
-	6950 4500 6950 4600
-Connection ~ 6950 4600
 $Comp
 L power:+3.3V #PWR017
 U 1 1 60F81CF5
@@ -410,22 +386,18 @@ Wire Wire Line
 	6050 5000 6050 5100
 Wire Wire Line
 	6050 5400 6050 5450
-Text Label 7900 3650 0    50   ~ 0
+Text Label 8400 3650 0    50   ~ 0
 SP_FLASH_DQ3_1V8
-Text Label 7900 3750 0    50   ~ 0
+Text Label 8400 3750 0    50   ~ 0
 SP_FLASH_DQ2_1V8
-Text Label 7900 3850 0    50   ~ 0
+Text Label 8400 3850 0    50   ~ 0
 SP_FLASH_DQ1_1V8
-Text Label 7900 3950 0    50   ~ 0
+Text Label 8400 3950 0    50   ~ 0
 SP_FLASH_DQ0_1V8
-Text Label 7900 4050 0    50   ~ 0
+Text Label 6800 3850 0    50   ~ 0
 ~SP_FLASH_CS_L_1V8
-Text Label 7900 4150 0    50   ~ 0
+Text Label 8400 4150 0    50   ~ 0
 SP_FLASH_CLK_1V8
-Text Label 6900 4250 0    50   ~ 0
-~SP_FLASH_RESET_L_1V8
-Wire Wire Line
-	6800 4250 7800 4250
 Wire Wire Line
 	13600 3350 13600 3550
 Connection ~ 13600 3550
@@ -503,25 +475,13 @@ Wire Wire Line
 Wire Wire Line
 	11200 4550 11250 4550
 Wire Wire Line
-	6800 3850 9800 3850
-Wire Wire Line
-	9800 4150 6800 4150
-Wire Wire Line
-	9800 3950 6800 3950
-Wire Wire Line
 	11200 4350 11900 4350
-Wire Wire Line
-	6800 3650 9800 3650
-Wire Wire Line
-	6800 4050 9800 4050
 Wire Wire Line
 	11250 4650 11200 4650
 Wire Wire Line
 	11200 4150 14000 4150
 Wire Wire Line
 	11200 4050 14000 4050
-Wire Wire Line
-	9800 3750 6800 3750
 $Comp
 L Analog_Switch:TS3A27518EPW U3
 U 1 1 60EDF7A1
@@ -660,7 +620,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 8350 1150 8550
 Wire Wire Line
-	1950 4250 5700 4250
+	1950 4250 4500 4250
 Text Notes 1200 3800 0    50   ~ 0
 Matches gimletlet QSPI Header.\nXTRA7 is ~FLASH_RESET_L\nXTRA10 is SP_FLASH_MUX_SELECT
 Text Notes 1350 8450 0    50   ~ 0
@@ -990,4 +950,61 @@ F 3 "" H 9050 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 6700 9050 6600
+$Comp
+L oxide_spimux:ADG3308BRUZ U2
+U 1 1 610B68DB
+P 5800 3500
+F 0 "U2" H 6250 3765 50  0000 C CNN
+F 1 "ADG3308BRUZ" H 6250 3674 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5800 3500 50  0001 C CNN
+F 3 "" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4500 6950 4700
+Wire Wire Line
+	6800 4250 7850 4250
+Wire Wire Line
+	7850 3650 9800 3650
+Wire Wire Line
+	7750 3750 7750 4150
+Wire Wire Line
+	7750 4150 6800 4150
+Wire Wire Line
+	7650 3850 9800 3850
+Wire Wire Line
+	7750 3750 9800 3750
+Wire Wire Line
+	7650 3850 7650 4050
+Wire Wire Line
+	7650 4050 6800 4050
+Wire Wire Line
+	7850 3650 7850 4250
+Wire Wire Line
+	9800 3950 6800 3950
+Text Label 8400 4050 0    50   ~ 0
+~SP_FLASH_CS_L_1V8
+Wire Wire Line
+	8400 4050 9800 4050
+Wire Wire Line
+	8400 4150 9800 4150
+Wire Wire Line
+	6800 3850 7550 3850
+Wire Wire Line
+	6800 3650 7550 3650
+Text Label 6800 3650 0    50   ~ 0
+SP_FLASH_CLK_1V8
+Wire Wire Line
+	7550 3750 6800 3750
+Text Label 6800 3750 0    50   ~ 0
+~SP_FLASH_RESET_L_1V8
+Wire Wire Line
+	5700 3500 5500 3500
+Wire Wire Line
+	5500 3500 5500 3400
+Wire Wire Line
+	5700 3750 4500 3750
+Wire Wire Line
+	4500 3750 4500 4250
 $EndSCHEMATC
