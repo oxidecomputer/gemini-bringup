@@ -932,7 +932,7 @@ U 1 1 60F345F9
 P 9050 6500
 F 0 "H1" H 9150 6549 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9150 6458 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 9050 6500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 9050 6500 50  0001 C CNN
 F 3 "~" H 9050 6500 50  0001 C CNN
 	1    9050 6500
 	1    0    0    -1  
