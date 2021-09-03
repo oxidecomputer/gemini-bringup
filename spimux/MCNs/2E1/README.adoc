@@ -13,9 +13,18 @@ To fix the first issue, we're going to disconnect R2 from 1V8 and connect to 3V3
 To fix the second issue, we're going to run the SP signal `SP_QSPI_XTRA10` through the level translator and also disconnect
 J5 pin 1 from 3V3 and connect it to 1V8.
 
+Additionally R4 and R5 are too weak to properly drive the bus (with the level translator) when nothing is connected. these will be changed to 3.3k Ohms.
+
 == Material/Tools
 
-Nothing special except some 30ga wire, optical magnification, and tweezers and an exacto knife for scraping/cutting traces.
+Aside from normal lab tools like optical magnification, solder, flux, and tweezers, you'll need:
+
+. some 30ga wire, 
+
+. qty 2 3.3k 0402 resistors (per board)
+
+. exacto knife for scraping/cutting traces.
+
 
 == Physical Rework steps
 
@@ -39,6 +48,10 @@ image::topside_jumper2.png[Jumper]
 
 image::enable_level_trans.png[Level Trans]
 
+. Replace R4 and R5 on the top side of the board with 3.3k resistors.
+
+image::R4R5_replace.png[Pull-ups]
+
 . On the back side of the board, solder a jumper between J1 pin1 (`1V8`) and J5 pin 1 (see 2nd picture below)
 
 . On the back side of the board, the the trace (`1V8`) between J2 pin1 and the via, or optionally 
@@ -46,9 +59,15 @@ carfully drill the the via to disconnect from 1V8
 
 image::bottom-side_jumper.png[Bottom Side]
 
+
 Update the board marking:
 
 - Re-label board as rev2-E1
+
+Final example rework pictures:
+
+image::top_finished.jpg[Finished Top]
+image::bottom_finished.jpg[Finished Bottom]
 
 == Determinations
 
