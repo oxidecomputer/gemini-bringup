@@ -108,13 +108,16 @@ building and flashing the SP.
 
 3. Plug the other end into your STLink V3.
 
-4. Reconnect power to the board.
+4. Make sure SW302 (a switch on the top edge of the board) is in the position
+   labelled "OUR SP CODE"
 
-5. In the Hubris repository, run: `cargo xtask flash gemini-bu/app.toml`
+5. Reconnect power to the board.
 
-6. Relax. On a first build this may take several minutes.
+6. In the Hubris repository, run: `cargo xtask flash gemini-bu/app.toml`
 
-7. A successful build-and-flash will end in something that looks like an error
+7. Relax. On a first build this may take several minutes.
+
+8. A successful build-and-flash will end in something that looks like an error
    message (sorry). Scan up a few lines for the phrase `** Verified OK**`. If
    that appears, you're good, and the lights should be blinking by the SP.
 
