@@ -210,4 +210,6 @@
   (lib (name stm32h7)(type Legacy)(uri ${KIPRJMOD}/lib/stm32h7.lib)(options "")(descr ""))
   (lib (name Ignition)(type Legacy)(uri ${KIPRJMOD}/lib/Ignition.lib)(options "")(descr "Ignition symbols"))
   (lib (name TFC-105-02-F-D-A-K)(type Legacy)(uri /Users/arjen/Downloads/TFC-105-02-F-D-A-K/TFC-105-02-F-D-A-K.lib)(options "")(descr ""))
+  (lib (name Interface_Ethernet_0x)(type Legacy)(uri ${KIPRJMOD}/lib/Interface_Ethernet_0x.lib)(options "")(descr ""))
+  (lib (name Passives_0x)(type Legacy)(uri ${KIPRJMOD}/lib/Passives_0x.lib)(options "")(descr ""))
 )

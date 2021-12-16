@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP R_0603
+D Resistor, SMD 0603
+K r resistor
+F ~
+$ENDCMP
+#
+$CMP R_0603_DNP
+D Resistor, SMD 0603, DNP
+K r resistor dnp
+F ~
+$ENDCMP
+#
+#End Doc Library

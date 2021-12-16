@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KSZ8464FRLI
+D Ethernet Switch, 3-port 10/100 managed, RMII, 1588 PTP
+K ethernet switch 1588 ptp
+F https://ww1.microchip.com/downloads/en/DeviceDoc/IEEE1588-Precision-Time-Protocol-Enabled-Three-Port-10-100-Managed-Switch-with-MII-or-RMII-DS00002642A.pdf
+$ENDCMP
+#
+#End Doc Library
