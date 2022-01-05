@@ -1,21 +1,21 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.10)-1*
-G04 #@! TF.CreationDate,2021-08-03T19:00:01-05:00*
+G04 #@! TF.CreationDate,2021-08-03T19:53:46-05:00*
 G04 #@! TF.ProjectId,spimux,7370696d-7578-42e6-9b69-6361645f7063,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Copper,L1,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.10)-1) date 2021-08-03 19:00:01*
+G04 Created by KiCad (PCBNEW (5.1.10)-1) date 2021-08-03 19:53:46*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
-G04 #@! TA.AperFunction,SMDPad,CuDef*
-%ADD10C,0.500000*%
-G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
-%ADD11C,3.800000*%
+%ADD10C,6.400000*%
+G04 #@! TD*
+G04 #@! TA.AperFunction,SMDPad,CuDef*
+%ADD11C,0.500000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
 %ADD12O,1.700000X1.700000*%
@@ -49,6 +49,8 @@ G04 #@! TA.AperFunction,Conductor*
 G04 #@! TD*
 G04 APERTURE END LIST*
 D10*
+X170430000Y-99770000D03*
+D11*
 X140610000Y-93580000D03*
 X139610000Y-93580000D03*
 X138610000Y-93580000D03*
@@ -593,8 +595,6 @@ X120330000Y-97935000I0J-100000D01*
 G01*
 G37*
 G04 #@! TD.AperFunction*
-D11*
-X166500000Y-100000000D03*
 G04 #@! TA.AperFunction,SMDPad,CuDef*
 G36*
 G01*
