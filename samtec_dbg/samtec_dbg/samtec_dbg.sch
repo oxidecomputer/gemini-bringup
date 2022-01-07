@@ -1,0 +1,184 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TFC-105-02-F-D-A-K:TFC-105-02-F-D-A-K J3
+U 1 1 61774F3C
+P 5400 4200
+F 0 "J3" H 5400 4667 50  0000 C CNN
+F 1 "TFC-105-02-F-D-A-K" H 5400 4576 50  0000 C CNN
+F 2 "SAMTEC_TFC-105-02-F-D-A-K" H 5400 4200 50  0001 L BNN
+F 3 "" H 5400 4200 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 5400 4200 50  0001 L BNN "STANDARD"
+F 5 "R" H 5400 4200 50  0001 L BNN "PARTREV"
+F 6 "Samtec" H 5400 4200 50  0001 L BNN "MANUFACTURER"
+	1    5400 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 4350 2350 0    50   ~ 0
+Bottom-side connector for connecting to Oxide board
+Text Notes 4550 3600 0    50   ~ 0
+Top-side connector for connecting debug cables
+Wire Wire Line
+	4900 4000 3750 4000
+Wire Wire Line
+	3850 4100 4900 4100
+Wire Wire Line
+	3950 4200 4900 4200
+Wire Wire Line
+	4050 4300 4900 4300
+Wire Wire Line
+	4150 3200 4150 4400
+Wire Wire Line
+	4150 4400 4900 4400
+Wire Wire Line
+	6550 4000 5900 4000
+Wire Wire Line
+	6650 4100 5900 4100
+Wire Wire Line
+	6950 4400 5900 4400
+Wire Wire Line
+	6850 4300 5900 4300
+Wire Wire Line
+	6750 4200 5900 4200
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 6178146E
+P 5350 5150
+F 0 "J1" H 5400 5567 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5400 5476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 5350 5150 50  0001 C CNN
+F 3 "~" H 5350 5150 50  0001 C CNN
+	1    5350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4950 5150 4950
+Connection ~ 3750 4000
+Wire Wire Line
+	3850 5050 5150 5050
+Connection ~ 3850 4100
+Wire Wire Line
+	3950 5150 5150 5150
+Connection ~ 3950 4200
+Wire Wire Line
+	4050 5250 5150 5250
+Connection ~ 4050 4300
+Wire Wire Line
+	4150 5350 5150 5350
+Connection ~ 4150 4400
+Wire Wire Line
+	6950 5350 5650 5350
+Wire Wire Line
+	6850 5250 5650 5250
+Wire Wire Line
+	6750 5150 5650 5150
+Wire Wire Line
+	6650 5050 5650 5050
+Wire Wire Line
+	6550 4950 5650 4950
+Connection ~ 6550 4000
+Wire Wire Line
+	3750 4000 3750 4950
+Wire Wire Line
+	3850 4100 3850 5050
+Wire Wire Line
+	3950 4200 3950 5150
+Wire Wire Line
+	4050 4300 4050 5250
+Wire Wire Line
+	4150 4400 4150 5350
+Wire Wire Line
+	6950 4400 6950 5350
+Wire Wire Line
+	6850 4300 6850 5250
+Wire Wire Line
+	6750 4200 6750 5150
+Wire Wire Line
+	6650 4100 6650 5050
+Wire Wire Line
+	6550 4000 6550 4950
+$Comp
+L SFM-105-02-X-DH-XX:SFM-105-02-X-DH-XX J2
+U 1 1 617865F3
+P 7400 2800
+F 0 "J2" H 7630 2796 50  0000 L CNN
+F 1 "SFM-105-02-X-DH-XX" H 7630 2705 50  0000 L CNN
+F 2 "SAMTEC_SFM-105-02-X-DH-XX" H 7400 2800 50  0001 L BNN
+F 3 "" H 7400 2800 50  0001 L BNN
+F 4 "Samtec" H 7400 2800 50  0001 L BNN "MANUFACTURER"
+F 5 "D" H 7400 2800 50  0001 L BNN "PARTREV"
+F 6 "4.64 mm" H 7400 2800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Manufacturer Recommendations" H 7400 2800 50  0001 L BNN "STANDARD"
+	1    7400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2400 7000 2400
+Wire Wire Line
+	3750 2400 3750 4000
+Wire Wire Line
+	6550 2500 7000 2500
+Wire Wire Line
+	6550 2500 6550 4000
+Wire Wire Line
+	3850 2600 7000 2600
+Wire Wire Line
+	3850 2600 3850 4100
+Wire Wire Line
+	3950 2800 7000 2800
+Wire Wire Line
+	3950 2800 3950 4200
+Wire Wire Line
+	4050 3000 7000 3000
+Wire Wire Line
+	4050 3000 4050 4300
+Wire Wire Line
+	4150 3200 7000 3200
+Wire Wire Line
+	6650 4100 6650 2700
+Wire Wire Line
+	6650 2700 7000 2700
+Connection ~ 6650 4100
+Wire Wire Line
+	6750 4200 6750 2900
+Wire Wire Line
+	6750 2900 7000 2900
+Connection ~ 6750 4200
+Wire Wire Line
+	6850 4300 6850 3100
+Wire Wire Line
+	6850 3100 7000 3100
+Connection ~ 6850 4300
+Wire Wire Line
+	6950 4400 6950 3300
+Wire Wire Line
+	6950 3300 7000 3300
+Connection ~ 6950 4400
+$Comp
+L power:GND #PWR?
+U 1 1 61789BC9
+P 3950 5500
+F 0 "#PWR?" H 3950 5250 50  0001 C CNN
+F 1 "GND" H 3955 5327 50  0000 C CNN
+F 2 "" H 3950 5500 50  0001 C CNN
+F 3 "" H 3950 5500 50  0001 C CNN
+	1    3950 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5500 3950 5150
+Connection ~ 3950 5150
+$EndSCHEMATC
