@@ -68,7 +68,7 @@ jobs:
     - name: 'Render: Gimletlet NIC2'
       uses: ./.github/actions/kicad-6-schematic-pdf
       with:
-        schematic: nic2/nic2.sch
+        schematic: nic2/nic2.kicad_sch
         output_directory: tmp/rendered
     - uses: actions/upload-artifact@v2
       with:
