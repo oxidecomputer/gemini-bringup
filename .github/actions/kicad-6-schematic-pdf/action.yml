@@ -1,0 +1,13 @@
+name: 'KiCad 6 schematic PDF'
+inputs:
+  schematic:
+    description: 'Top-level schematic to render'
+    required: true
+  output_directory:
+    description: 'Output Directory'
+    required: false
+    default: 'tmp/rendered'
+runs:
+  using: 'docker'
+  image: 'setsoft/kicad_auto:ki6.0.0_Ubuntu21.10'
+  args: [ 'eeschema_do', 'export', '-f', 'pdf', '-a', '${{ inputs.schematic }}', '${{ inputs.output_directory }}' ]
