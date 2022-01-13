@@ -43,3 +43,35 @@ jobs:
         name: schematics
         path: tmp/rendered/lpc55_carrier.pdf
         if-no-files-found: error
+  render-gimletlet:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: 'Render: gimletlet'
+      uses: ./.github/actions/kicad-schematic-pdf
+      with:
+        schematic: gimletlet.sch
+        output_directory: tmp/rendered
+    - uses: actions/upload-artifact@v2
+      with:
+        name: schematics
+        path: tmp/rendered/gimletlet.pdf
+        if-no-files-found: error
+  render-gimletlet-nic2:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: 'Render: Gimletlet NIC2'
+      uses: ./.github/actions/kicad-6-schematic-pdf
+      with:
+        schematic: nic2/nic2.sch
+        output_directory: tmp/rendered
+    - uses: actions/upload-artifact@v2
+      with:
+        name: schematics
+        path: tmp/rendered/nic2.pdf
+        if-no-files-found: error
