@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Connectors_0x")(type "KiCad")(uri "/Users/mjk/oxide/gemini-bringup/lib6/Connectors_0x.pretty")(options "")(descr ""))
+  (lib (name "Logos_0x")(type "KiCad")(uri "/Users/mjk/oxide/gemini-bringup/lib6/Logos_0x.pretty")(options "")(descr ""))
+)
