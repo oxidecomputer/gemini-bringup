@@ -1,0 +1,520 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LVDS SMA Adapter"
+Date "2021-07-12"
+Rev "1"
+Comp "Oxide Computer Co."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 3300 3000
+NoConn ~ 3800 3000
+$Comp
+L power:GND #PWR01
+U 1 1 60E9252A
+P 3200 5000
+F 0 "#PWR01" H 3200 4750 50  0001 C CNN
+F 1 "GND" H 3205 4827 50  0000 C CNN
+F 2 "" H 3200 5000 50  0001 C CNN
+F 3 "" H 3200 5000 50  0001 C CNN
+	1    3200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60E92FC2
+P 3900 5000
+F 0 "#PWR02" H 3900 4750 50  0001 C CNN
+F 1 "GND" H 3905 4827 50  0000 C CNN
+F 2 "" H 3900 5000 50  0001 C CNN
+F 3 "" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3100 3200 3100
+Wire Wire Line
+	3800 3100 3900 3100
+Wire Wire Line
+	3900 3100 3900 3300
+Wire Wire Line
+	3200 3300 3300 3300
+Connection ~ 3200 3300
+Wire Wire Line
+	3800 3900 3900 3900
+Connection ~ 3900 3900
+Wire Wire Line
+	3900 3900 3900 4100
+Wire Wire Line
+	2600 3200 3300 3200
+Wire Wire Line
+	3200 3100 3200 3300
+Wire Wire Line
+	2600 3800 3300 3800
+Wire Wire Line
+	2600 3600 3300 3600
+Wire Wire Line
+	2600 3400 3300 3400
+Wire Wire Line
+	3200 3300 3200 3500
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J1
+U 1 1 60E9044B
+P 3600 3900
+F 0 "J1" H 3650 5017 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 3650 4926 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H 3600 3900 50  0001 C CNN
+F 3 "~" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3500 3300 3500
+Connection ~ 3200 3500
+Wire Wire Line
+	3200 3500 3200 3700
+Wire Wire Line
+	3200 3700 3300 3700
+Connection ~ 3200 3700
+Wire Wire Line
+	3800 3700 3900 3700
+Connection ~ 3900 3700
+Wire Wire Line
+	3900 3700 3900 3900
+Wire Wire Line
+	3800 3500 3900 3500
+Connection ~ 3900 3500
+Wire Wire Line
+	3900 3500 3900 3700
+Wire Wire Line
+	3800 3300 3900 3300
+Connection ~ 3900 3300
+Wire Wire Line
+	3900 3300 3900 3500
+Wire Wire Line
+	3200 4300 3300 4300
+Connection ~ 3200 4300
+Wire Wire Line
+	3200 4300 3200 4500
+Wire Wire Line
+	3800 4100 3900 4100
+Connection ~ 3900 4100
+Wire Wire Line
+	3900 4100 3900 4300
+Wire Wire Line
+	3800 4300 3900 4300
+Connection ~ 3900 4300
+Wire Wire Line
+	3200 3700 3200 3900
+Wire Wire Line
+	3300 4100 3200 4100
+Connection ~ 3200 4100
+Wire Wire Line
+	3200 4100 3200 4300
+Wire Wire Line
+	3300 4500 3200 4500
+Connection ~ 3200 4500
+Wire Wire Line
+	3200 4500 3200 4700
+Wire Wire Line
+	3300 4700 3200 4700
+Connection ~ 3200 4700
+Wire Wire Line
+	3200 3900 3300 3900
+Connection ~ 3200 3900
+Wire Wire Line
+	3200 3900 3200 4100
+Text Label 2600 3200 0    50   ~ 0
+AUX0_TX_P
+Text Label 2600 3400 0    50   ~ 0
+AUX0_RX_P
+Text Label 2600 3600 0    50   ~ 0
+AUX1_TX_P
+Text Label 2600 3800 0    50   ~ 0
+AUX1_RX_P
+Text Label 4500 3200 2    50   ~ 0
+AUX0_TX_N
+Text Label 4500 3400 2    50   ~ 0
+AUX0_RX_N
+Text Label 4500 3600 2    50   ~ 0
+AUX1_TX_N
+Text Label 4500 3800 2    50   ~ 0
+AUX1_RX_N
+Wire Wire Line
+	4500 3200 3800 3200
+Wire Wire Line
+	4500 3400 3800 3400
+Wire Wire Line
+	4500 3600 3800 3600
+Wire Wire Line
+	4500 3800 3800 3800
+Wire Wire Line
+	3200 4700 3200 4900
+Wire Wire Line
+	3800 4700 3900 4700
+Connection ~ 3900 4700
+Wire Wire Line
+	3900 4700 3900 5000
+Wire Wire Line
+	3800 4500 3900 4500
+Connection ~ 3900 4500
+Wire Wire Line
+	3900 4500 3900 4700
+Wire Wire Line
+	3900 4300 3900 4500
+$Comp
+L Ignition:GCM188R71E105KA64D C1
+U 1 1 60EA869A
+P 5800 3200
+F 0 "C1" V 5571 3200 50  0000 C CNN
+F 1 "GCM188R71E105KA64D" H 5810 3120 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+F 4 "1uF" V 5662 3200 50  0000 C CNN "Capacitance"
+F 5 "25V" V 5571 3200 50  0001 C CNN "VDC"
+F 6 "X7R" V 5662 3200 50  0001 C CNN "Coefficient"
+F 7 "0603" H 5800 2800 50  0001 L CNN "Package"
+	1    5800 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 60EAAB66
+P 6200 3200
+F 0 "J2" H 6300 3175 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6300 3084 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6200 3200 50  0001 C CNN
+F 3 " ~" H 6200 3200 50  0001 C CNN
+	1    6200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ignition:GCM188R71E105KA64D C2
+U 1 1 60EC4148
+P 5800 3600
+F 0 "C2" V 5571 3600 50  0000 C CNN
+F 1 "GCM188R71E105KA64D" H 5810 3520 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 3600 50  0001 C CNN
+F 3 "~" H 5800 3600 50  0001 C CNN
+F 4 "1uF" V 5662 3600 50  0000 C CNN "Capacitance"
+F 5 "25V" V 5571 3600 50  0001 C CNN "VDC"
+F 6 "X7R" V 5662 3600 50  0001 C CNN "Coefficient"
+F 7 "0603" H 5800 3200 50  0001 L CNN "Package"
+	1    5800 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Ignition:GCM188R71E105KA64D C3
+U 1 1 60EC44C9
+P 5800 4000
+F 0 "C3" V 5571 4000 50  0000 C CNN
+F 1 "GCM188R71E105KA64D" H 5810 3920 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 4000 50  0001 C CNN
+F 3 "~" H 5800 4000 50  0001 C CNN
+F 4 "1uF" V 5662 4000 50  0000 C CNN "Capacitance"
+F 5 "25V" V 5571 4000 50  0001 C CNN "VDC"
+F 6 "X7R" V 5662 4000 50  0001 C CNN "Coefficient"
+F 7 "0603" H 5800 3600 50  0001 L CNN "Package"
+	1    5800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Ignition:GCM188R71E105KA64D C4
+U 1 1 60EC4838
+P 5800 4400
+F 0 "C4" V 5571 4400 50  0000 C CNN
+F 1 "GCM188R71E105KA64D" H 5810 4320 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 4400 50  0001 C CNN
+F 3 "~" H 5800 4400 50  0001 C CNN
+F 4 "1uF" V 5662 4400 50  0000 C CNN "Capacitance"
+F 5 "25V" V 5571 4400 50  0001 C CNN "VDC"
+F 6 "X7R" V 5662 4400 50  0001 C CNN "Coefficient"
+F 7 "0603" H 5800 4000 50  0001 L CNN "Package"
+	1    5800 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 60EC4D7A
+P 6200 3600
+F 0 "J3" H 6300 3575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6300 3484 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6200 3600 50  0001 C CNN
+F 3 " ~" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J4
+U 1 1 60EC5051
+P 6200 4000
+F 0 "J4" H 6300 3975 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6300 3884 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6200 4000 50  0001 C CNN
+F 3 " ~" H 6200 4000 50  0001 C CNN
+	1    6200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J5
+U 1 1 60EC5453
+P 6200 4400
+F 0 "J5" H 6300 4375 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6300 4284 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6200 4400 50  0001 C CNN
+F 3 " ~" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60EC5BC2
+P 6500 4600
+F 0 "#PWR03" H 6500 4350 50  0001 C CNN
+F 1 "GND" H 6505 4427 50  0000 C CNN
+F 2 "" H 6500 4600 50  0001 C CNN
+F 3 "" H 6500 4600 50  0001 C CNN
+	1    6500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3400 6500 3400
+Wire Wire Line
+	6500 3400 6500 3800
+Wire Wire Line
+	6200 4600 6500 4600
+Connection ~ 6500 4600
+Wire Wire Line
+	6200 4200 6500 4200
+Connection ~ 6500 4200
+Wire Wire Line
+	6500 4200 6500 4600
+Wire Wire Line
+	6200 3800 6500 3800
+Connection ~ 6500 3800
+Wire Wire Line
+	6500 3800 6500 4200
+Text Label 5100 3200 0    50   ~ 0
+AUX0_RX_P
+Text Label 5100 3600 0    50   ~ 0
+AUX0_RX_N
+Text Label 5100 4000 0    50   ~ 0
+AUX1_RX_P
+Text Label 5100 4400 0    50   ~ 0
+AUX1_RX_N
+Wire Wire Line
+	5100 3200 5700 3200
+Wire Wire Line
+	5100 3600 5700 3600
+Wire Wire Line
+	5100 4000 5700 4000
+Wire Wire Line
+	5100 4400 5700 4400
+Wire Wire Line
+	5900 4400 6000 4400
+Wire Wire Line
+	5900 4000 6000 4000
+Wire Wire Line
+	5900 3600 6000 3600
+Wire Wire Line
+	5900 3200 6000 3200
+Text Label 7000 3300 0    50   ~ 0
+AUX0_TX_P
+Text Label 7000 3500 0    50   ~ 0
+AUX0_TX_N
+$Comp
+L Connector:Conn_Coaxial J6
+U 1 1 60ED827F
+P 8700 3200
+F 0 "J6" H 8800 3175 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8800 3084 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 8700 3200 50  0001 C CNN
+F 3 " ~" H 8700 3200 50  0001 C CNN
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J7
+U 1 1 60ED8285
+P 8700 3600
+F 0 "J7" H 8800 3575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8800 3484 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 8700 3600 50  0001 C CNN
+F 3 " ~" H 8700 3600 50  0001 C CNN
+	1    8700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J8
+U 1 1 60ED828B
+P 8700 4000
+F 0 "J8" H 8800 3975 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8800 3884 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 8700 4000 50  0001 C CNN
+F 3 " ~" H 8700 4000 50  0001 C CNN
+	1    8700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J9
+U 1 1 60ED8291
+P 8700 4400
+F 0 "J9" H 8800 4375 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8800 4284 50  0001 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 8700 4400 50  0001 C CNN
+F 3 " ~" H 8700 4400 50  0001 C CNN
+	1    8700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 60ED8297
+P 9000 4600
+F 0 "#PWR04" H 9000 4350 50  0001 C CNN
+F 1 "GND" H 9005 4427 50  0000 C CNN
+F 2 "" H 9000 4600 50  0001 C CNN
+F 3 "" H 9000 4600 50  0001 C CNN
+	1    9000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3400 9000 3400
+Wire Wire Line
+	9000 3400 9000 3800
+Wire Wire Line
+	8700 4600 9000 4600
+Connection ~ 9000 4600
+Wire Wire Line
+	8700 4200 9000 4200
+Connection ~ 9000 4200
+Wire Wire Line
+	9000 4200 9000 4600
+Wire Wire Line
+	8700 3800 9000 3800
+Connection ~ 9000 3800
+Wire Wire Line
+	9000 3800 9000 4200
+Wire Wire Line
+	8400 4400 8500 4400
+Wire Wire Line
+	8400 4000 8500 4000
+Wire Wire Line
+	8400 3600 8500 3600
+Wire Wire Line
+	8400 3200 8500 3200
+$Comp
+L Ignition:MCZ1210AH900L2TA0G L2
+U 1 1 60ED953B
+P 7900 4200
+F 0 "L2" H 7900 4481 50  0000 C CNN
+F 1 "MCZ1210AH900L2TA0G" H 7900 4390 50  0000 C CNN
+F 2 "passives:L_Choke_MCZ1210AH" H 7900 3900 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_mcz1210ah_en.pdf" H 7900 4200 50  0001 C CNN
+	1    7900 4200
+	1    0    0    -1  
+$EndComp
+Text Label 7000 4300 0    50   ~ 0
+AUX1_TX_P
+Text Label 7000 4100 0    50   ~ 0
+AUX1_TX_N
+Wire Wire Line
+	7000 3500 7700 3500
+Wire Wire Line
+	7000 3300 7700 3300
+Wire Wire Line
+	8100 3300 8400 3300
+Wire Wire Line
+	8400 3300 8400 3200
+Wire Wire Line
+	8100 3500 8400 3500
+Wire Wire Line
+	8400 3500 8400 3600
+Wire Wire Line
+	8100 4100 8400 4100
+Wire Wire Line
+	8400 4100 8400 4000
+Wire Wire Line
+	8100 4300 8400 4300
+Wire Wire Line
+	8400 4300 8400 4400
+Wire Wire Line
+	7000 4300 7700 4300
+Wire Wire Line
+	7000 4100 7700 4100
+NoConn ~ 3300 4000
+NoConn ~ 3300 4200
+NoConn ~ 3300 4400
+NoConn ~ 3300 4600
+NoConn ~ 3300 4800
+NoConn ~ 3300 4900
+NoConn ~ 3800 4900
+NoConn ~ 3800 4800
+NoConn ~ 3800 4600
+NoConn ~ 3800 4400
+NoConn ~ 3800 4200
+NoConn ~ 3800 4000
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60F2E116
+P 3200 4900
+F 0 "#FLG0101" H 3200 4975 50  0001 C CNN
+F 1 "PWR_FLAG" V 3200 5027 50  0000 L CNN
+F 2 "" H 3200 4900 50  0001 C CNN
+F 3 "~" H 3200 4900 50  0001 C CNN
+	1    3200 4900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3200 4900
+Wire Wire Line
+	3200 4900 3200 5000
+$Comp
+L Ignition:MCZ1210AH900L2TA0G L1
+U 1 1 60ECF4A3
+P 7900 3400
+F 0 "L1" H 7900 3681 50  0000 C CNN
+F 1 "MCZ1210AH900L2TA0G" H 7900 3590 50  0000 C CNN
+F 2 "passives:L_Choke_MCZ1210AH" H 7900 3100 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_mcz1210ah_en.pdf" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 60F66C75
+P 5200 5100
+F 0 "FID1" H 5285 5146 50  0000 L CNN
+F 1 "Fiducial" H 5285 5055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5200 5100 50  0001 C CNN
+F 3 "~" H 5200 5100 50  0001 C CNN
+	1    5200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 60F67A91
+P 5200 5400
+F 0 "FID2" H 5285 5446 50  0000 L CNN
+F 1 "Fiducial" H 5285 5355 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5200 5400 50  0001 C CNN
+F 3 "~" H 5200 5400 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 60F67DC4
+P 5200 5700
+F 0 "FID3" H 5285 5746 50  0000 L CNN
+F 1 "LVDS Adapter" H 5285 5655 50  0000 L CNN
+F 2 "grumpy:Oxide_Board_Identifier_23x6mm" H 5200 5700 50  0001 C CNN
+F 3 "~" H 5200 5700 50  0001 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,116 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADAFRUIT_FT232H_REV_D
+D Adafruit FT232H rev D
+F https://learn.adafruit.com/assets/88382
+$ENDCMP
+#
+$CMP AMPMGFB-50.0000T
+D Clock Oscillator MEMS 50MHz XO 25ppm
+K OSC XO MEMS
+F https://www.mouser.com/datasheet/2/3/AMPM-1381360.pdf
+$ENDCMP
+#
+$CMP C0603C106M8PACTU
+D Cap Ceramic 10uF 10V X5R 0603
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP GCM188R71E105KA64D
+D Cap Ceramic 1uF 25V X7R 0603
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP GRM21BR61E106KA73K
+D Cap Ceramic 10uF 25V X5R 0805
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP IGNITION001-QFN
+D Ignition Target, programmable
+K Ignition iCE401K DRQFN84
+F https://rfd.shared.oxide.computer/rfd/0142
+$ENDCMP
+#
+$CMP IGNITION_TARGET_HDR
+D Ignition Target programming/debug header
+K ignition program debug
+F https://www.samtec.com/products/tfc-105-02-f-d-a-k
+$ENDCMP
+#
+$CMP LT3013EFE#PBF
+D LDO Voltage Regulator 80Vin, 250mA, Power Good
+K LDO PWRGD TSSOP
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3013fe.pdf
+$ENDCMP
+#
+$CMP LTST-C193KGKT-5A
+D Light emitting diode, filled shape
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP MCZ1210AH900L2TA0G
+D Coupled inductor with iron core
+K inductor choke coil reactor magnetic coupled
+F https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_mcz1210ah_en.pdf
+$ENDCMP
+#
+$CMP MT25QL128ABB8E12-0AUT
+D 128Mb, 3V Multiple I/O Serial Flash Memory
+K spi flash bga
+F https://www.mouser.com/datasheet/2/671/mict_s_a0006161798_1-2291050.pdf
+$ENDCMP
+#
+$CMP PMOD_2A_PERIPHERAL
+D PMOD 2A SPI Peripheral
+K pmod spi
+F https://www.digilentinc.com/Pmods/Digilent-Pmod_%20Interface_Specification.pdf
+$ENDCMP
+#
+$CMP SN74CBTLV3257RSV
+D Low-Voltage 4-Bit 1-of-2 FET MUX/DEMUX
+K fet mux demux 2:1
+F https://www.ti.com/lit/ds/symlink/sn74cbtlv3257.pdf
+$ENDCMP
+#
+$CMP TPS7A0525PDBVR
+D LDO 200mA 2.5Vout
+K LDO SOT-23
+F https://www.ti.com/lit/ds/symlink/tps7a05.pdf
+$ENDCMP
+#
+$CMP V1P2
+D Power symbol creates a global label with name "V1P2"
+K power-flag
+$ENDCMP
+#
+$CMP V2P5
+D Power symbol creates a global label with name "V2P5"
+K power-flag
+$ENDCMP
+#
+$CMP V3P3
+D Power symbol creates a global label with name "V3P3"
+K power-flag
+$ENDCMP
+#
+$CMP VCCIO_3
+D Power symbol creates a global label with name "VCCIO_3"
+K power-flag
+$ENDCMP
+#
+$CMP VIN_12V
+D Power symbol creates a global label with name "VIN_12V"
+K power-flag
+$ENDCMP
+#
+$CMP VIN_VBUS
+D Power symbol creates a global label with name "VIN_VBUS"
+K power-flag
+$ENDCMP
+#
+#End Doc Library
