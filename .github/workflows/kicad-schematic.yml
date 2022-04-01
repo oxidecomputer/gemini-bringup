@@ -20,7 +20,7 @@ jobs:
     - name: 'Render: gemini-bringup'
       uses: ./.github/actions/kicad-schematic-pdf
       with:
-        schematic: gemini-bringup.sch
+        schematic: gemini-bringup/gemini-bringup.sch
         output_directory: tmp/rendered
     - uses: actions/upload-artifact@v2
       with:
@@ -36,7 +36,7 @@ jobs:
     - name: 'Render: lpc55_carrier'
       uses: ./.github/actions/kicad-schematic-pdf
       with:
-        schematic: lpc55_carrier.sch
+        schematic: lpc55-carrier/lpc55_carrier.sch
         output_directory: tmp/rendered
     - uses: actions/upload-artifact@v2
       with:
@@ -52,7 +52,7 @@ jobs:
     - name: 'Render: gimletlet'
       uses: ./.github/actions/kicad-schematic-pdf
       with:
-        schematic: gimletlet.sch
+        schematic: gimletlet-2/gimletlet.sch
         output_directory: tmp/rendered
     - uses: actions/upload-artifact@v2
       with:
