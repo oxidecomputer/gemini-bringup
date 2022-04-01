@@ -57,3 +57,14 @@ Daughterboard for the Gimletlet 2 which uses a KSZ8463 to break out two
 ethernet (RJ-45) connectors. In active use for Hubris development.
 
 [Subfolder](nic2)
+
+## Ignitionlet
+
+![](<https://img.shields.io/badge/-Kicad 5-blue>)
+![](<https://img.shields.io/badge/-Active-green>)  
+
+Breakout board for the ice40 FPGA. This subfolder also includes adapter boards
+for the [Adafruit FT232H breakout](https://www.adafruit.com/product/2264) and
+an LVDS-to-SMA adapter.
+
+[Subfolder](nic2)
