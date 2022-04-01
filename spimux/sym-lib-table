@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name oxide_spimux)(type Legacy)(uri ${KIPRJMOD}/oxide_spimux.lib)(options "")(descr ""))
+  (lib (name gimletlet-cache)(type Legacy)(uri D:/oxide/gemini-bringup/gimletlet-cache.lib)(options "")(descr ""))
+  (lib (name ignitionlet-cache)(type Legacy)(uri D:/oxide/gemini-bringup/ignitionlet-cache.lib)(options "")(descr ""))
+)
