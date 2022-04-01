@@ -59,12 +59,19 @@ ethernet (RJ-45) connectors. In active use for Hubris development.
 [Subfolder](nic2)
 
 ## Ignitionlet
-
 ![](<https://img.shields.io/badge/-Kicad 5-blue>)
-![](<https://img.shields.io/badge/-Active-green>)  
+![](<https://img.shields.io/badge/-Active-green>)
 
 Breakout board for the ice40 FPGA. This subfolder also includes adapter boards
 for the [Adafruit FT232H breakout](https://www.adafruit.com/product/2264) and
 an LVDS-to-SMA adapter.
 
 [Subfolder](nic2)
+
+## SPI mux
+![](<https://img.shields.io/badge/-Kicad 5-blue>)
+![](<https://img.shields.io/badge/-Active-green>)
+
+Breaks out the Gimletlet QSPI port to a MT25QU256ABA8E12 Flash memory IC.
+
+[Subfolder](spimux)
