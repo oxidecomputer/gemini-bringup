@@ -49,7 +49,15 @@ Swiss Army Knife around the lab.
 
 [Subfolder](gimletlet-2)
 
-## Gimletlet NIC
+## Gimletlet NIC 1
+![](<https://img.shields.io/badge/-Kicad 5-green>)
+![](<https://img.shields.io/badge/-Incomplete-red>)
+
+Incomplete design; superceeded by **Gimletlet NIC 2** (below)
+
+[Subfolder](nic1)
+
+## Gimletlet NIC 2
 ![](<https://img.shields.io/badge/-Kicad 6-green>)
 ![](<https://img.shields.io/badge/-Active-green>)
 
@@ -75,3 +83,19 @@ an LVDS-to-SMA adapter.
 Breaks out the Gimletlet QSPI port to a MT25QU256ABA8E12 Flash memory IC.
 
 [Subfolder](spimux)
+
+## Dimmlet
+![](<https://img.shields.io/badge/-Kicad 5-blue>)
+![](<https://img.shields.io/badge/-Active-green>)
+
+Breaks out I2C connections to 2x DIMM sockets.
+
+
+[Subfolder](dimmlet)
+
+## Samtec Debug Breakout
+![](<https://img.shields.io/badge/-Kicad 5-blue>)
+![](<https://img.shields.io/badge/-Active-green>)
+
+Allows for conversion between SFM-105-02-X-DH-XX, TFC-105-02-F-D-A-K, and
+a 2x5 0.1" header.
