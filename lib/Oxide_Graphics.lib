@@ -1,0 +1,16 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Oxide_Board_Identifier
+#
+DEF Oxide_Board_Identifier G 0 40 Y Y 1 F N
+F0 "G" 50 50 50 H V L CNN
+F1 "Oxide_Board_Identifier" 50 -50 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 50 0 1 0 F
+ENDDRAW
+ENDDEF
+#
+#End Library
