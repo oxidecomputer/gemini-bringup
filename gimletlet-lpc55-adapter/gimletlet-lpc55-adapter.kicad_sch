@@ -4,6 +4,15 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Gimletlet-LPC55 Adapter")
+    (date "2022-04-06")
+    (rev "A")
+    (company "Oxide Computer Company")
+    (comment 1 "matt@oxide.computer")
+    (comment 2 "Matt Keeter")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_ARM_JTAG_SWD_10" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at -2.54 16.51 0)
