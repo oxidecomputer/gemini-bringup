@@ -46,3 +46,9 @@ round-trip min/avg/max/std-dev = 2.010/2.942/3.680/0.613 ms
 ```
 
 Congratulations! You have a working Gimletlet + NIC.
+
+### Testing note
+When testing multiple NICs, the Gimletlet does not need to be reflashed,
+and the MAC / IPv6 address will not change, so you can detach the debugger.
+
+**Always remove 12V power from the Gimletlet before swapping the NIC.**
