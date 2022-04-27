@@ -18,14 +18,14 @@ $ cargo xtask flash app/gimletlet/app.toml
 ```console
 $ cargo xtask humility app/gimletlet/app.toml -- readvar MAC_ADDRESS
 humility: attached via ST-Link V3
-MAC_ADDRESS (0x200037f0) =  {
+MAC_ADDRESS (0x20013640) =  {
     value: [
         0xe,
         0x1d,
-        0x9a,
-        0x64,
-        0xb8,
-        0xc2
+        0xdd,
+        0xf8,
+        0xfb,
+        0x69
     ]
 }
 ```
