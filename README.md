@@ -99,3 +99,13 @@ Breaks out I2C connections to 2x DIMM sockets.
 
 Allows for conversion between SFM-105-02-X-DH-XX, TFC-105-02-F-D-A-K, and
 a 2x5 0.1" header.
+
+
+## Gimletlet-LPC55 Adapter
+![](<https://img.shields.io/badge/-Kicad 6-green>)
+![](<https://img.shields.io/badge/-Active-green>)
+
+Adapter board to connect a **LPC55 Carrier** to a **Gimletlet 2**, with extra
+LPC55 IO pins broken out to connectors.
+
+[Subfolder](gimletlet-lpc55-adapter)
