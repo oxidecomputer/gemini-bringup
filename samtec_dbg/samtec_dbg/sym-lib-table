@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name SFC-105-T2-L-D-A-K-TR)(type Legacy)(uri ${KIPRJMOD}/../samtec/SFC-105-T2-L-D-A-K-TR.lib)(options "")(descr ""))
-  (lib (name TFC-105-02-F-D-A-K)(type Legacy)(uri ${KIPRJMOD}/../samtec/TFC-105-02-F-D-A-K.lib)(options "")(descr ""))
-  (lib (name SFM-105-02-X-DH-XX)(type Legacy)(uri ${KIPRJMOD}/../samtec/SFM-105-02-X-DH-XX.lib)(options "")(descr ""))
-)

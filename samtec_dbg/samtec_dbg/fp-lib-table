@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name samtec)(type KiCad)(uri ${KIPRJMOD}/../samtec)(options "")(descr ""))
-  (lib (name tps)(type KiCad)(uri ${KIPRJMOD}/tps.pretty)(options "")(descr ""))
-)

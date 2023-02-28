@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name pmod)(type KiCad)(uri ${KIPRJMOD}/../lib/pmod.pretty)(options "")(descr ""))
-  (lib (name spimux)(type KiCad)(uri ${KIPRJMOD}/spimux.pretty)(options "")(descr ""))
-  (lib (name grumpy)(type KiCad)(uri ${KIPRJMOD}/../lib/grumpy.pretty)(options "")(descr ""))
-)

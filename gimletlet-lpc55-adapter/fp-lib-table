@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "Oxide Connectors")(type "KiCad")(uri "${KIPRJMOD}/../lib6/Connectors_0x.pretty")(options "")(descr ""))
-)

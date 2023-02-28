@@ -1,5 +1,0 @@
-(version 1)
-
-(rule matched_length
-  (condition "A.NetClass=='RMII'")
-  (constraint skew (max 5mm)))

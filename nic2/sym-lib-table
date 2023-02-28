@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name "Ethernet (Oxide)")(type "KiCad")(uri "${KIPRJMOD}/../lib6/Interface_Ethernet_0x.kicad_sym")(options "")(descr ""))
-  (lib (name "Power protection (Oxide)")(type "KiCad")(uri "${KIPRJMOD}/../lib6/Power_Protection_0x.kicad_sym")(options "")(descr ""))
-  (lib (name "Logos_0x")(type "KiCad")(uri "${KIPRJMOD}/../lib6/Logos_0x.kicad_sym")(options "")(descr ""))
-)
